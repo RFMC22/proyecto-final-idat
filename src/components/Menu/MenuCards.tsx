@@ -1,6 +1,5 @@
 import './../../styles/MenuCards.css';
 import BlueBtn from '../shared/BlueBtn';
-import { menuCardOptionsProps } from '../../interfaces/MenuProps';
 import { Link } from 'react-router-dom';
 
 const MenuCards = ({ menuCardOptions }: any) => {
