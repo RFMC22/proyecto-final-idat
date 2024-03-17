@@ -1,0 +1,142 @@
+/* DESKTOP VARIABLES
+    BG-COLOR: rgb(23, 48, 131)
+*/
+
+.Header {
+  margin: 0;
+  padding: 0;
+
+  .topBar {
+    padding: 10px 2px;
+
+    .icon__logo {
+      height: 60px;
+
+      .fill-blue {
+        fill: #21388b;
+      }
+    }
+
+    .fill-white {
+      fill: rgb(33, 56, 139);
+    }
+  }
+
+  .imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  .flex-around {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container-m {
+    width: 420px;
+    margin: 0 auto;
+  }
+
+  .hamburguer {
+    height: 30px;
+  }
+
+  .none-m {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Header {
+    img {
+      width: 100%;
+    }
+
+    .container-m {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .topBar {
+      background-color: rgb(23, 48, 131);
+
+      .icon__logo {
+        .fill-blue {
+          fill: white;
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        align-items: center;
+      }
+
+      .display-d {
+        display: block;
+      }
+
+      .fill-white {
+        fill: white;
+      }
+
+      .none-d {
+        display: none;
+      }
+
+      .phone {
+        margin: 0 10px;
+      }
+
+      .textDelivery {
+        color: rgb(251, 185, 5);
+        font-size: 18px;
+        font-weight: 600;
+        span {
+          font-size: 16px;
+          font-weight: 700;
+          color: white;
+        }
+
+        select {
+          background-color: transparent;
+          border: none;
+          color: white;
+        }
+      }
+
+      .phoneNumber {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .login {
+        margin-left: 15px;
+
+        .login-icon {
+          margin-right: 10px;
+        }
+
+        .loginText {
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

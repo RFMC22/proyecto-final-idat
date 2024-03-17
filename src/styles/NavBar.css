@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'din-1451', sans-serif;
+  src: url('./../assets/typography/DIN1451-36breit.ttf');
+}
+
+.NavBarComponent {
+  background-color: #21388b;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+
+  .navBarHeader {
+    margin-bottom: 50px;
+    padding: 10px 20px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .socMedia {
+    margin-top: 60px;
+  }
+
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .navList {
+    text-align: center;
+    li {
+      font-size: 25px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 15px 0;
+      font-family: 'din-1451', sans-serif;
+      font-weight: 600;
+    }
+  }
+
+  .btnClose {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #192e7a;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+}
