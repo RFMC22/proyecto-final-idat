@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'din-1451', sans-serif;
-  src: url('./../assets/typography/DIN1451-36breit.ttf');
-}
-
 .NavBarComponent {
   background-color: #21388b;
   padding: 10px;
@@ -11,6 +6,8 @@
   left: 0;
   width: 80%;
   height: 100%;
+  max-width: 350px;
+  min-width: 250px;
 
   .navBarHeader {
     margin-bottom: 50px;
@@ -35,17 +32,19 @@
   li {
     text-decoration: none;
     list-style: none;
+    cursor: pointer;
   }
 
   .navList {
     text-align: center;
+
     li {
-      font-size: 25px;
+      font-size: 30px;
       color: #fff;
       text-transform: uppercase;
       padding: 15px 0;
-      font-family: 'din-1451', sans-serif;
-      font-weight: 600;
+      font-family: var(--din);
+      font-weight: 100;
     }
   }
 
@@ -55,8 +54,10 @@
     left: 100%;
     background-color: #192e7a;
     padding: 20px;
+    cursor: pointer;
   }
-}
 
-@media (min-width: 800px) {
+  .circle {
+    cursor: pointer;
+  }
 }

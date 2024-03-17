@@ -1,7 +1,3 @@
-/* DESKTOP VARIABLES
-    BG-COLOR: rgb(23, 48, 131)
-*/
-
 .Header {
   margin: 0;
   padding: 0;
@@ -11,6 +7,7 @@
 
     .icon__logo {
       height: 60px;
+      cursor: pointer;
 
       .fill-blue {
         fill: #21388b;
@@ -27,21 +24,29 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    max-height: 57px;
+    width: 100%;
+
+    img {
+      max-height: 57px;
+    }
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
 
   .flex {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .flex-around {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -52,6 +57,7 @@
 
   .hamburguer {
     height: 30px;
+    cursor: pointer;
   }
 
   .none-m {
@@ -59,10 +65,31 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .Header {
     img {
       width: 100%;
+    }
+
+    .imgContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      max-height: 57px;
+      width: 100%;
+      background-color: black;
+      border: 1px solid black;
+
+      img {
+        max-height: 57px;
+        max-width: 1121px;
+        margin: 0 auto;
+      }
+    }
+    .flex {
+      display: flex;
+      align-items: center;
     }
 
     .container-m {
@@ -71,6 +98,9 @@
       margin: auto;
     }
 
+    .display-d {
+      display: block;
+    }
     .topBar {
       background-color: rgb(23, 48, 131);
 
@@ -86,10 +116,6 @@
         align-items: center;
       }
 
-      .display-d {
-        display: block;
-      }
-
       .fill-white {
         fill: white;
       }
@@ -100,15 +126,18 @@
 
       .phone {
         margin: 0 10px;
+        cursor: pointer;
       }
 
       .textDelivery {
         color: rgb(251, 185, 5);
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 300;
+
         span {
-          font-size: 16px;
-          font-weight: 700;
+          margin-left: 5px;
+          font-size: 14px;
+          font-weight: 400;
           color: white;
         }
 
@@ -121,8 +150,8 @@
 
       .phoneNumber {
         color: white;
-        font-size: 30px;
-        font-weight: 700;
+        font-size: 24px;
+        font-weight: 300;
       }
 
       .login {
