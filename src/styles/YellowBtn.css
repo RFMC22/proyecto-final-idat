@@ -1,0 +1,22 @@
+.btnYellow {
+  background-color: rgb(251, 185, 5);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: rgb(23, 48, 131);
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .red {
+    color: red;
+    font-weight: 700;
+  }
+  svg {
+    width: 50px;
+  }
+}
