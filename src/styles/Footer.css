@@ -34,6 +34,11 @@
   flex-direction: row;
 }
 
+.img-logo {
+  text-align: center;
+  margin-top: 25px;
+}
+
 .item-top span {
   color: var(--white);
   text-align: center;
@@ -155,6 +160,15 @@
   min-height: 32px;
 }
 
+@media (min-width: 1024px) {
+  .item-top span {
+    display: none;
+  }
+  .toggle {
+    display: block;
+  }
+}
+
 @media (max-width: 1023px) {
   .main-content {
     flex-direction: column;
@@ -170,6 +184,9 @@
     width: 100%;
     text-align: center;
   }
+  .img-logo {
+    display: none;
+}
   .item-top ul li {
     padding: 10px;
   }
