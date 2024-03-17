@@ -1,0 +1,12 @@
+.bluetBtn {
+  background-color: rgb(33, 56, 139);
+  border-radius: 25px;
+  color: white;
+  font-family: var(--din);
+  border: none;
+  font-size: 30px;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
