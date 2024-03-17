@@ -1,0 +1,44 @@
+.NavBarDesktop {
+  padding: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 6px -3px;
+  li {
+    list-style: none;
+    color: rgb(1, 22, 137);
+    font-weight: 400;
+    font-size: 24px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-between {
+    justify-content: space-between;
+  }
+
+  .flex-5 {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .width-70 {
+    width: 77%;
+  }
+
+  svg {
+    margin: 0 8px;
+  }
+
+  .gap-20 {
+    gap: 10px;
+  }
+
+  li:hover,
+  li:focus {
+    border-bottom: 2px solid rgb(225, 11, 25);
+  }
+}

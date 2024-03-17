@@ -1,22 +1,62 @@
 .btnYellow {
   background-color: rgb(251, 185, 5);
-  border-radius: 15px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 10px;
-  font-size: 12px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 100;
   color: rgb(23, 48, 131);
+  cursor: pointer;
 
   .flex-col {
     flex-direction: column;
+  }
+
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .red {
     color: red;
     font-weight: 700;
   }
-  svg {
+  .icon {
     width: 50px;
+    height: 32px;
   }
+
+  .icon.height-20 {
+    height: 20px;
+    width: 35px;
+  }
+  .relative {
+    position: relative;
+  }
+
+  .redCircle {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    background-color: red;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .none {
+    display: none;
+  }
+}
+
+.btnYellow.position-right {
+  flex-direction: row-reverse;
+  gap: 5px;
 }
