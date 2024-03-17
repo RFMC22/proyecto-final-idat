@@ -1,13 +1,10 @@
 import { NavBarProps } from '../../interfaces/NavBarProps';
 import '../../styles/NavBar.css';
 
-const NavBar:React.FC<NavBarProps> = ({setOpenHamburguer}) => {
-
-    const handleClose=()=>{
-        console.log('Hizo click');
-        setOpenHamburguer(false);
-
-    }
+const NavBar: React.FC<NavBarProps> = ({ setOpenHamburguer }) => {
+  const handleClose = () => {
+    setOpenHamburguer(false);
+  };
   return (
     <div className="NavBarComponent">
       <div className="flex-between navBarHeader">
@@ -134,4 +131,4 @@ const NavBar:React.FC<NavBarProps> = ({setOpenHamburguer}) => {
   );
 };
 
-export default NavBar
+export default NavBar;

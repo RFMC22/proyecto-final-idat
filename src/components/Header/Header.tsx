@@ -1,13 +1,14 @@
 import { useState } from 'react';
-import { YellowBtn } from '../shared/YellowBtn';
+import YellowBtn from '../shared/YellowBtn';
 import '../../styles/Header.css';
 import NavBar from './NavBar';
+import NavBarDesktop from './NavBarDesktop';
+import iconStore from './../../assets/images/icon-store.svg';
 
 const Header = () => {
   const [openHamburguer, setOpenHamburguer] = useState<boolean>(false);
 
   const handleOpenHamburguer = () => {
-    console.log('Quiere abrir');
     setOpenHamburguer(true);
   };
   return (
@@ -45,34 +46,42 @@ const Header = () => {
           </svg>
 
           <div className="flex none-d">
-            <YellowBtn text={'Pide en tiendas'} redText={'SIN COLAS'} />
+            <YellowBtn
+              text={'Pide en tiendas'}
+              redText={'SIN COLAS'}
+              icon={iconStore}
+              position=""
+              iconHeight=""
+              Circle="none"
+            />
           </div>
 
-          <div className="flex">
-            <svg
-              data-v-17182645=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="36"
-              viewBox="0 0 68.79 68.794"
-              className="phone fill-white"
-            >
-              <path
-                d="m674.718 596.213-8.3-8.3a6.878 6.878 0 0 0-9.718 0l-3.774 3.774a3.425 3.425 0 0 1-2.438 1.008 3.419 3.419 0 0 1-2.437-1.008l-16.36-16.373a3.445 3.445 0 0 1 0-4.876l3.774-3.774a6.882 6.882 0 0 0 0-9.721l-8.3-8.274a6.873 6.873 0 0 0-9.708-.009l-3.028 3a22.194 22.194 0 0 0 0 31.355l25.921 25.935a22.16 22.16 0 0 0 31.356 0l3.02-3.02a6.879 6.879 0 0 0-.008-9.717zm-53.762-42.705.667-.66a.949.949 0 0 1 .676-.279.958.958 0 0 1 .68.282l8.3 8.274a.959.959 0 0 1 0 1.354l-.677.677zm-2.356 25.326a16.17 16.17 0 0 1-1.693-21.007l9.6 9.6a9.378 9.378 0 0 0 .995 12.066l16.36 16.373a9.374 9.374 0 0 0 12.065.995l9.6 9.6a16.159 16.159 0 0 1-21.007-1.694zm52.213 22.238a.95.95 0 0 1-.28.677l-.677.676-9.657-9.657.677-.677a.959.959 0 0 1 1.354 0l8.3 8.3a.95.95 0 0 1 .286.681z"
-                transform="translate(-607.937 -546.654)"
-              ></path>
-            </svg>
+          <div className="flex flex-around">
+            <div className="flex">
+              <svg
+                data-v-17182645=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="36"
+                viewBox="0 0 68.79 68.794"
+                className="phone fill-white"
+              >
+                <path
+                  d="m674.718 596.213-8.3-8.3a6.878 6.878 0 0 0-9.718 0l-3.774 3.774a3.425 3.425 0 0 1-2.438 1.008 3.419 3.419 0 0 1-2.437-1.008l-16.36-16.373a3.445 3.445 0 0 1 0-4.876l3.774-3.774a6.882 6.882 0 0 0 0-9.721l-8.3-8.274a6.873 6.873 0 0 0-9.708-.009l-3.028 3a22.194 22.194 0 0 0 0 31.355l25.921 25.935a22.16 22.16 0 0 0 31.356 0l3.02-3.02a6.879 6.879 0 0 0-.008-9.717zm-53.762-42.705.667-.66a.949.949 0 0 1 .676-.279.958.958 0 0 1 .68.282l8.3 8.274a.959.959 0 0 1 0 1.354l-.677.677zm-2.356 25.326a16.17 16.17 0 0 1-1.693-21.007l9.6 9.6a9.378 9.378 0 0 0 .995 12.066l16.36 16.373a9.374 9.374 0 0 0 12.065.995l9.6 9.6a16.159 16.159 0 0 1-21.007-1.694zm52.213 22.238a.95.95 0 0 1-.28.677l-.677.676-9.657-9.657.677-.677a.959.959 0 0 1 1.354 0l8.3 8.3a.95.95 0 0 1 .286.681z"
+                  transform="translate(-607.937 -546.654)"
+                ></path>
+              </svg>
 
-            <div className="display-d none-m">
-              <div className="flex-col">
-                <p className="textDelivery">
-                  Delivery <span>LIMA</span>
-                  <select name="data-location" id="idLocation"></select>
-                </p>
-                <p className="phoneNumber">014191919</p>
+              <div className="display-d none-m">
+                <div className="flex-col">
+                  <p className="textDelivery">
+                    Delivery <span>LIMA</span>
+                    <select name="data-location" id="idLocation"></select>
+                  </p>
+                  <p className="phoneNumber">014191919</p>
+                </div>
               </div>
             </div>
-
             <div className="display-d none-m login">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,8 +115,12 @@ const Header = () => {
       </div>
 
       {openHamburguer && <NavBar setOpenHamburguer={setOpenHamburguer} />}
+
+      <div className="none-m display-d ">
+        <NavBarDesktop />
+      </div>
     </header>
   );
 };
 
-export default Header
+export default Header;
