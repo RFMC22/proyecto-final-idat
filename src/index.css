@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'din';
+  src: url('./assets/typography/Din1451-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'chicken';
+  src: url('./assets/typography/ChickenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'kulristaRegular';
+  src: url('./assets/typography/Kulturista-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'kulristaBold';
+  src: url('./assets/typography/Kulturista-Bold.woff') format('woff');
+}
 :root {
   --black: #000;
   --blue: #173083;
@@ -6,6 +25,10 @@
   --white: #fff;
   --grey: #6f6c6c;
   --grey-white: #a6adcb;
+  --din: 'din';
+  --chicken: 'chicken';
+  --kulristaR: 'kulristaRegular';
+  --kulristaB: 'kulristaBold';
 }
 
 *,
@@ -16,6 +39,10 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+}
+
+body {
+  font-family: 'din';
 }
 
 .container {
