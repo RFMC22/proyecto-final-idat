@@ -1,0 +1,92 @@
+.MenuCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+
+  .position-relative {
+    position: relative;
+  }
+
+  .imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.473);
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      aspect-ratio: auto 509 / 360;
+      
+    }
+  }
+  .flex {
+    display: flex;
+  }
+
+  .flex-center {
+    justify-content: center;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+  .width-100 {
+    width: 100%;
+  }
+
+  .textRed {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 300;
+    text-size-adjust: 100%;
+    cursor: pointer;
+    text-shadow: -4px -4px 0 #d90f06, -4px -3px 0 #d90f06, -4px -2px 0 #d90f06,
+      -4px -1px 0 #d90f06, -4px 0 0 #d90f06, -4px 1px 0 #d90f06,
+      -4px 2px 0 #d90f06, -4px 3px 0 #d90f06, -4px 4px 0 #d90f06,
+      -3px -4px 0 #d90f06, -3px -3px 0 #d90f06, -3px -2px 0 #d90f06,
+      -3px -1px 0 #d90f06, -3px 0 0 #d90f06, -3px 1px 0 #d90f06,
+      -3px 2px 0 #d90f06, -3px 3px 0 #d90f06, -3px 4px 0 #d90f06,
+      -2px -4px 0 #d90f06, -2px -3px 0 #d90f06, -2px -2px 0 #d90f06,
+      -2px -1px 0 #d90f06, -2px 0 0 #d90f06, -2px 1px 0 #d90f06,
+      -2px 2px 0 #d90f06, -2px 3px 0 #d90f06, -2px 4px 0 #d90f06,
+      -1px -4px 0 #d90f06, -1px -3px 0 #d90f06, -1px -2px 0 #d90f06,
+      -1px -1px 0 #d90f06, -1px 0 0 #d90f06, -1px 1px 0 #d90f06,
+      -1px 2px 0 #d90f06, -1px 3px 0 #d90f06, -1px 4px 0 #d90f06,
+      0 -4px 0 #d90f06, 0 -3px 0 #d90f06, 0 -2px 0 #d90f06, 0 -1px 0 #d90f06,
+      0 0 0 #d90f06, 0 1px 0 #d90f06, 0 2px 0 #d90f06, 0 3px 0 #d90f06,
+      0 4px 0 #d90f06, 1px -4px 0 #d90f06, 1px -3px 0 #d90f06,
+      1px -2px 0 #d90f06, 1px -1px 0 #d90f06, 1px 0 0 #d90f06, 1px 1px 0 #d90f06,
+      1px 2px 0 #d90f06, 1px 3px 0 #d90f06, 1px 4px 0 #d90f06,
+      2px -4px 0 #d90f06, 2px -3px 0 #d90f06, 2px -2px 0 #d90f06,
+      2px -1px 0 #d90f06, 2px 0 0 #d90f06, 2px 1px 0 #d90f06, 2px 2px 0 #d90f06,
+      2px 3px 0 #d90f06, 2px 4px 0 #d90f06, 3px -4px 0 #d90f06,
+      3px -3px 0 #d90f06, 3px -2px 0 #d90f06, 3px -1px 0 #d90f06,
+      3px 0 0 #d90f06, 3px 1px 0 #d90f06, 3px 2px 0 #d90f06, 3px 3px 0 #d90f06,
+      3px 4px 0 #d90f06, 4px -4px 0 #d90f06, 4px -3px 0 #d90f06,
+      4px -2px 0 #d90f06, 4px -1px 0 #d90f06, 4px 0 0 #d90f06, 4px 1px 0 #d90f06,
+      4px 2px 0 #d90f06, 4px 3px 0 #d90f06, 4px 4px 0 #d90f06;
+  }
+
+  article:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 780px) {
+  .MenuCards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
