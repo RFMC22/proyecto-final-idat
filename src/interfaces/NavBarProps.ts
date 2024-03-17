@@ -5,7 +5,7 @@ export interface NavBarProps {
 export interface yellowBtnProps {
   text: string;
   redText: string;
-  icon: string;
+  icon: any;
   position: string;
   iconHeight: string;
   Circle: string;
