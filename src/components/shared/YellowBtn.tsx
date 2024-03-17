@@ -1,5 +1,5 @@
 import './../../styles/YellowBtn.css';
-import { YellowBtnProps } from '../../interfaces/NavBarProps';
+import { yellowBtnProps } from '../../interfaces/NavBarProps';
 
 const YellowBtn = ({
   text,
@@ -8,7 +8,7 @@ const YellowBtn = ({
   position,
   iconHeight,
   Circle,
-}: YellowBtnProps) => {
+}: yellowBtnProps) => {
   return (
     <div className={`btnYellow ${position}`}>
       <div className=" flex flex-col ">
