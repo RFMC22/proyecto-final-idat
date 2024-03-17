@@ -1,6 +1,7 @@
-import './../../styles/NavBar.css';
+import { NavBarProps } from '../../interfaces/NavBarProps';
+import '../../styles/NavBar.css';
 
-export const NavBar = ({setOpenHamburguer}:any) => {
+const NavBar:React.FC<NavBarProps> = ({setOpenHamburguer}) => {
 
     const handleClose=()=>{
         console.log('Hizo click');
@@ -132,3 +133,5 @@ export const NavBar = ({setOpenHamburguer}:any) => {
     </div>
   );
 };
+
+export default NavBar

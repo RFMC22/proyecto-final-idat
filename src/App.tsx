@@ -1,10 +1,12 @@
-import './App.css';
-import { Header } from './components/Header/Header.tsx';
+import {Footer, Header} from './components'
+
+import './App.css'
 
 function App() {
   return (
     <>
-      <Header />
+      <Header/>
+      <Footer/>
     </>
   );
 }

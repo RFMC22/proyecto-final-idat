@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { YellowBtn } from '../shared/YellowBtn';
-import './../../styles/Header.css';
-import { NavBar } from './NavBar';
+import '../../styles/Header.css';
+import NavBar from './NavBar';
 
-export const Header = () => {
+const Header = () => {
   const [openHamburguer, setOpenHamburguer] = useState<boolean>(false);
 
   const handleOpenHamburguer = () => {
@@ -109,3 +109,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header

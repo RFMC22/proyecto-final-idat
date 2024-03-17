@@ -1,0 +1,190 @@
+.footer {
+  background-color: var(--blue);
+}
+
+.footer .container .social-icons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 35px;
+  padding-top: 30px;
+}
+
+.footer .container .social-icons a {
+  margin: 0 13px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.main-content__item {
+  width: 33%;
+}
+
+.item-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-top span {
+  color: var(--white);
+  text-align: center;
+  border-top: 1px solid var(--grey);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.item-top ul {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  list-style: none;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle.active {
+  display: block;
+}
+
+.item-top .b-b {
+  border-bottom: 1px solid var(--grey);
+}
+
+.item-top ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+}
+.title-methods {
+  color: var(--white);
+  letter-spacing: -1px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.list-methods {
+  padding: 0 55px;
+  margin: 0;
+  display: flex;
+}
+
+.list-methods li {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.list-methods li svg {
+  max-width: 100%;
+  height: 32px;
+}
+.img_express svg {
+  background-color: #fff;
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.safety {
+  padding: 20px 15px 0;
+  text-align: center;
+}
+
+.comprobante {
+  padding: 30px 45px;
+  text-align: center;
+}
+
+.comprobante a {
+  background: var(--yellow);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--blue);
+  width: 223px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: Kulturista;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.comprobante a svg {
+  margin: auto 15px auto 0;
+}
+
+.main-content .p-15 {
+  padding: 0 15px;
+}
+
+.libro-reclamaciones{
+  min-height: 60px;
+  color: var(--white);
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.libro-reclamaciones img {
+  border-radius: 5px;
+  max-width: 100px;
+}
+
+.main-footer {
+  text-align: center;
+  color: var(--grey-white);
+  font-size: 13px;
+  border-top: 1px solid;
+  padding: 8px 0;
+  min-height: 32px;
+}
+
+@media (max-width: 1023px) {
+  .main-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-content__item {
+    width: 100%;
+  }
+  .item-top {
+    flex-direction: column;
+  }
+  .item-top ul {
+    width: 100%;
+    text-align: center;
+  }
+  .item-top ul li {
+    padding: 10px;
+  }
+  .item-top ul li a {
+    font-size: 22px;
+  }
+  .title-methods {
+    padding-top: 50px;
+  }
+  .libro-reclamaciones {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .main-footer {
+    padding-bottom: 66px;
+  }
+}
