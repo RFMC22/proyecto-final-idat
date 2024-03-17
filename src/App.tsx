@@ -1,14 +1,10 @@
-import { Footer, Header, Menu } from './components';
-
-import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/Router';
+import './App.css'
 
 function App() {
   return (
-    <>
-      <Header />
-      <Menu />
-      <Footer />
-    </>
+    <RouterProvider router={router}/>
   );
 }
 

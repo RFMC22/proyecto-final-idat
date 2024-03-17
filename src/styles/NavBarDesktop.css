@@ -37,6 +37,50 @@
     gap: 10px;
   }
 
+  .nav-menu-item {
+    position: relative;
+  }
+
+  .hoversubs {
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 1px 4px 4px 0 rgba(0,0,0,.25);
+    border-radius: 0 0 19px 19px;
+    padding: 4px 13px 5px;
+    width: 205px;
+    top: 99%;
+    list-style: none;
+    > li {
+      border-bottom: 1px solid #505050;
+      padding: 4px 0;
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        border-bottom: none;
+      }
+      > a {
+        color: #243986;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 6px 7px;
+        display: block;
+        &:hover {
+          background: #243986;
+          border-radius: 10px;
+          color: #fbb905;
+        }
+      }
+    }
+  }
+
+  .nav-menu-item:hover {
+    .hoversubs {
+      display: block;
+    }
+  }
+
   li:hover,
   li:focus {
     border-bottom: 2px solid rgb(225, 11, 25);
