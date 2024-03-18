@@ -22,7 +22,9 @@ import {
 
 import MenuSwiper from '../components/Menu/MenuSwiper';
 import MenuCards from '../components/Menu/MenuCards';
-import { PathConstants } from '../utils/PathConstants';
+import { useEffect, useState } from 'react';
+import { MenuResponse } from '../interfaces/MenuProps';
+import { getMenuOptions } from '../services/fetchMenuOptions';
 
 const Menu = () => {
   const slidesArray: Array<string> = [
@@ -49,53 +51,17 @@ const Menu = () => {
     slideMob9,
   ];
 
-  const menuCardOptions = [
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/509x360-duo-qt-categoria-nuevo-mayo.webp',
-      text: 'PROMOCIONES EXCLUSIVAS WEB',
-      link: PathConstants.PROMOCIONES,
-    },
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/combo-churrita-509x360.webp',
-      text: 'COMBOS',
-      link: PathConstants.INDEX,
-    },
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/509x360-hamburguesas.webp',
-      text: 'HAMBURGUESAS',
-      link: PathConstants.INDEX,
-    },
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/509x360-pollo.webp',
-      text: 'POLLO',
-      link: PathConstants.INDEX,
-    },
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/loncherita-509x360.webp',
-      text: 'LONCHERITAS',
-      link: PathConstants.INDEX,
-    },
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/complementos_desktop_1.webp',
-      text: 'COMPLEMENTOS',
-      link: PathConstants.INDEX,
-    },
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/509x360-gaseosa.webp',
-      text: 'BEBIDAS',
-      link: PathConstants.INDEX,
-    },
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/509x360-categoria-bembos.webp',
-      text: 'HELADOS',
-      link: PathConstants.INDEX,
-    },
-    {
-      img: 'https://www.bembos.com.pe/_ipx/q_75,s_540x382/https://d31npzejelj8v1.cloudfront.net/media/catalog/category/509x360-inka-chips-nuevo.webp',
-      text: 'INKACHIPS',
-      link: PathConstants.INDEX,
-    },
-  ];
+  const [menuCardsOptions, setMenuCardsOptions] = useState<MenuResponse>({});
+
+  useEffect(() => {
+    const getMenuData = async () => {
+      const data = await getMenuOptions();
+      return setMenuCardsOptions(data);
+    };
+    getMenuData();
+    console.log(menuCardsOptions);
+  }, []);
+  console.log(menuCardsOptions.data);
 
   return (
     <section className="Menu container-m sectionContainer">
@@ -105,7 +71,11 @@ const Menu = () => {
         <MenuSwiper slidesArray={slidesArray} display={'none-m'} />
         <MenuSwiper slidesArray={slidesMobileArray} display={'none-d'} />
 
-        <MenuCards menuCardOptions={menuCardOptions} />
+        {menuCardsOptions.data ? (
+          <MenuCards menuCardOptions={menuCardsOptions.data} />
+        ) : (
+          ''
+        )}
       </div>
     </section>
   );
