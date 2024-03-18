@@ -1,16 +1,13 @@
 import { TabTitle } from "../utils/GeneralFunctions"
 import '../styles/pages/Promociones.css'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/grid';
-import 'swiper/css/pagination';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { GrUserManager } from "react-icons/gr";
 import { getPromosPersonales } from "../services/fetchPromociones";
 import { PromocionPersonalResponse } from "../interfaces";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Grid } from 'swiper/modules';
+import { SwiperComponent } from "../components/shared";
 
 const Promociones = () => {
   TabTitle('Promociones de Hamburguesas Bembos | Delivery Perú');
@@ -36,6 +33,27 @@ const Promociones = () => {
     };
     getDataPersonal();
   },[]);
+
+  const promocionesPersonalesOptions = {
+    slidesPerView:1,
+    grid:{
+      rows: 2
+    },
+    spaceBetween:30,
+    navigation:true, 
+    modules:[Grid, Navigation, Pagination],
+    pagination:{
+      clickable: true,
+    },
+    breakpoints:{
+        768: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        },
+    }
+  }
   
   return (
     <section>
@@ -86,28 +104,7 @@ const Promociones = () => {
             <div className="promociones-familiares">
               <div id="item__personales" className="ppromos-listaProductos">
                 <div className="list-promociones list-promo-horizontal">
-                  <Swiper 
-                    slidesPerView={1}
-                    grid={{
-                      rows: 2
-                    }}
-                    spaceBetween={30}
-                    navigation={true} 
-                    modules={[Grid, Navigation, Pagination]}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    breakpoints={
-                      {
-                        768: {
-                          slidesPerView: 2,
-                        },
-                        320: {
-                          slidesPerView: 1,
-                        },
-                      }
-                    }
-                    className="swiper-promo-personal">
+                  <SwiperComponent options={promocionesPersonalesOptions} className="swiper-promo-personal">
                     {promosPersonales.data?.map(promoPersonal => (
                       <SwiperSlide key={promoPersonal.id} className="list-subsub-block">
                         <div className="content">
@@ -138,7 +135,7 @@ const Promociones = () => {
                         </div>
                       </SwiperSlide>
                     ))}
-                  </Swiper>
+                  </SwiperComponent>
                 </div>
                 <h3 className="complementos-label">Complementos: </h3>
                 <div className="carousel-complementos hasNavigation">
