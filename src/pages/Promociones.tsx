@@ -30,7 +30,7 @@ const Promociones = () => {
     const getDataPersonal = async () => {
       const data = await getPromosPersonales();
       return setPromosPersonales(data);
-    }
+    };
     getDataPersonal();
   },[]);
 
