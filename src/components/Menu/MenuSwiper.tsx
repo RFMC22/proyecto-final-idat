@@ -4,7 +4,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import './../../styles/Menu.css';
+import '../../styles/MenuSwiper.css';
 
 const MenuSwiper = ({ slidesArray, display }: any) => {
   return (
