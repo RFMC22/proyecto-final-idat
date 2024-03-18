@@ -79,7 +79,7 @@ const NavBarDesktop = () => {
                   fill="#E71D1D"
                 />
               </svg>
-              MENU
+              <Link to={PathConstants.MENU}>MENU</Link>
             </li>
             <li className="flex">
               <svg

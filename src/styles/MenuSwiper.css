@@ -1,11 +1,4 @@
 .Menu {
-  .menuTitle {
-    font-size: 32px;
-    font-weight: 300;
-    padding: 10px 0;
-    border-bottom: 1px solid black;
-  }
-
   .mySwiper {
     margin: 30px 0;
     border-radius: 15px;
@@ -43,36 +36,6 @@
 
     .swiper-button-next {
       right: 35px;
-    }
-  }
-
-  .none-m {
-    display: none;
-  }
-
-  .none-d {
-    display: block;
-  }
-}
-
-.Menu.container-m {
-  max-width: 420px;
-  margin: 0 auto;
-}
-
-@media (min-width: 800px) {
-  .Menu.container-m {
-    max-width: 1124px;
-    margin: 0 auto;
-  }
-
-  .Menu {
-    .none-d {
-      display: none;
-    }
-
-    .none-m {
-      display: block;
     }
   }
 }
