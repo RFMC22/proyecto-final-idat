@@ -297,7 +297,7 @@ const NavBarDesktop = () => {
             icon={iconStore}
             position="position-right"
             iconHeight="height-20"
-            Circle='none'
+            Circle="none"
           />
 
           <YellowBtn
@@ -306,7 +306,7 @@ const NavBarDesktop = () => {
             icon={iconCart}
             position=""
             iconHeight=""
-            Circle='redCircle'
+            Circle="redCircle"
           />
         </div>
       </div>
