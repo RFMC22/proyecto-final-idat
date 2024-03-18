@@ -78,6 +78,7 @@
   .nav-menu-item:hover {
     .hoversubs {
       display: block;
+      z-index: 4;
     }
   }
 
