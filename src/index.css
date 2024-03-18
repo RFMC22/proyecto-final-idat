@@ -52,6 +52,18 @@ body {
   margin: auto;
 }
 
+.container-main {
+  border-radius: 15px;
+  margin: 23px 10px 30px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px){
+  .container-main {
+      margin-top: 0;
+  }
+}
+
 .sectionContainer {
   max-width: 1124px;
   width: 100%;

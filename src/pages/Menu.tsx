@@ -1,4 +1,4 @@
-import './../styles/Menu.css';
+import '../styles/pages/Menu.css';
 import {
   slide1,
   slide2,
