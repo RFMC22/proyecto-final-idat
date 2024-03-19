@@ -20,11 +20,10 @@ import {
   slideMob9,
 } from '../assets/images';
 
-import MenuSwiper from '../components/Menu/MenuSwiper';
-import MenuCards from '../components/Menu/MenuCards';
+import { MenuSwiper, MenuCards } from '../components/';
 import { useEffect, useState } from 'react';
-import { MenuResponse } from '../interfaces/responses/MenuResponse';
-import { getMenuOptions } from '../services/fetchMenuOptions';
+import { MenuResponse } from '../interfaces/';
+import { getMenuOptions } from '../services/';
 
 const Menu = () => {
   const slidesArray: Array<string> = [

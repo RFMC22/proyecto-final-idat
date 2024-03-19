@@ -13,6 +13,8 @@
   }
 
   .imageContainer {
+    height: 400px;
+    overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,9 +27,11 @@
     text-align: center;
 
     img {
-      width: 100%;
-      height: auto;
+      max-width: inherit;
+      width: inherit;
       object-fit: cover;
+      position: relative;
+      bottom: 40px;
     }
   }
   .flex {
@@ -47,6 +51,7 @@
 
   .textRed {
     position: absolute;
+    text-transform: uppercase;
     top: 25px;
     left: 20px;
     color: rgb(255, 255, 255);
