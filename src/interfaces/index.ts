@@ -1,3 +1,7 @@
 export * from './requests/PromocionPersonalRequest'
 export * from './responses/PromocionPersonalResponse'
 export * from './SwiperProps'
+export * from './MenuProps'
+export * from './NavBarProps'
+export * from './responses/MenuResponse'
+export * from './requests/MenuRequest'

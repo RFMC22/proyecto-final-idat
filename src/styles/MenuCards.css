@@ -13,10 +13,10 @@
   }
 
   .imageContainer {
+    height: 400px;
+    overflow: hidden;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.473);
@@ -25,9 +25,11 @@
     text-align: center;
 
     img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
+      width: inherit;
+      height: 510px;
+      aspect-ratio: auto 509 / 360;
+      position: relative;
+      bottom: 60px;
     }
   }
   .flex {
@@ -47,6 +49,7 @@
 
   .textRed {
     position: absolute;
+    text-transform: uppercase;
     top: 25px;
     left: 20px;
     color: rgb(255, 255, 255);
