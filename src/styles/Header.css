@@ -1,9 +1,14 @@
 .Header {
   margin: 0;
   padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
   .topBar {
     padding: 10px 2px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 6px -3px;
 
     .icon__logo {
       height: 60px;
@@ -26,6 +31,7 @@
     overflow: hidden;
     max-height: 57px;
     width: 100%;
+    border: 2px solid black;
 
     img {
       max-height: 57px;
