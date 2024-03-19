@@ -17,8 +17,6 @@
     overflow: hidden;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.473);
@@ -27,11 +25,11 @@
     text-align: center;
 
     img {
-      max-width: inherit;
       width: inherit;
-      object-fit: cover;
+      height: 510px;
+      aspect-ratio: auto 509 / 360;
       position: relative;
-      bottom: 40px;
+      bottom: 60px;
     }
   }
   .flex {
