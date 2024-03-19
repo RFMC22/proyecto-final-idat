@@ -23,7 +23,7 @@ import {
 import MenuSwiper from '../components/Menu/MenuSwiper';
 import MenuCards from '../components/Menu/MenuCards';
 import { useEffect, useState } from 'react';
-import { MenuResponse } from '../interfaces/MenuProps';
+import { MenuResponse } from '../interfaces/responses/MenuResponse';
 import { getMenuOptions } from '../services/fetchMenuOptions';
 
 const Menu = () => {
@@ -38,7 +38,6 @@ const Menu = () => {
     slide8,
     slide9,
   ];
-
   const slidesMobileArray: Array<string> = [
     slideMob1,
     slideMob2,
@@ -50,7 +49,6 @@ const Menu = () => {
     slideMob8,
     slideMob9,
   ];
-
   const [menuCardsOptions, setMenuCardsOptions] = useState<MenuResponse>({});
 
   useEffect(() => {
@@ -59,9 +57,7 @@ const Menu = () => {
       return setMenuCardsOptions(data);
     };
     getMenuData();
-    console.log(menuCardsOptions);
   }, []);
-  console.log(menuCardsOptions.data);
 
   return (
     <section className="Menu container-m sectionContainer">
