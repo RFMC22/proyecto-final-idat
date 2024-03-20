@@ -184,7 +184,7 @@ const NavBarDesktop = () => {
                   fill="#F9A213"
                 />
               </svg>
-              COMBOS
+              <Link to={PathConstants.COMBOS}>COMBOS</Link>
             </li>
             <li className='nav-menu-item'>
               <div className='flex'>
