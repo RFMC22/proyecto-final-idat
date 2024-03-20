@@ -1,6 +1,8 @@
 .NavBarDesktop {
   padding: 15px 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 6px -3px;
+  background-color: white;
+
   li {
     list-style: none;
     color: rgb(1, 22, 137);
@@ -45,7 +47,7 @@
     display: none;
     position: absolute;
     background: #fff;
-    box-shadow: 1px 4px 4px 0 rgba(0,0,0,.25);
+    box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 0 0 19px 19px;
     padding: 4px 13px 5px;
     width: 205px;
