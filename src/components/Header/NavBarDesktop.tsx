@@ -189,10 +189,10 @@ const NavBarDesktop = () => {
                   fill="#F9A213"
                 />
               </svg>
-              COMBOS
+              <Link to={PathConstants.COMBOS}>COMBOS</Link>
             </li>
-            <li className='nav-menu-item'>
-              <div className='flex'>
+            <li className="nav-menu-item">
+              <div className="flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
