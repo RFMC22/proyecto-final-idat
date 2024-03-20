@@ -102,7 +102,7 @@ const Cart = () => {
           )}
         </div>
 
-        <div className="cart-container">
+        <div className="cart-container cart-container-sticky">
           <div className="btns">
             <button className="btn btn-rojo">
               <div className="circle">1</div>
