@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { PathConstants } from '../utils/PathConstants';
 import { Cupones, Error404, Home, Promociones, Root, Menu } from '../pages';
+import { Cart } from '../components';
 
 export const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ export const router = createBrowserRouter([
       { path: PathConstants.MENU, element: <Menu /> },
       { path: PathConstants.PROMOCIONES, element: <Promociones /> },
       { path: PathConstants.CUPONES, element: <Cupones /> },
+      { path: PathConstants.CART, element: <Cart /> },
     ],
   },
 ]);

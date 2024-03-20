@@ -184,10 +184,10 @@ const NavBarDesktop = () => {
                   fill="#F9A213"
                 />
               </svg>
-              COMBOS
+              <Link to={PathConstants.COMBOS}>COMBOS</Link>
             </li>
-            <li className='nav-menu-item'>
-              <div className='flex'>
+            <li className="nav-menu-item">
+              <div className="flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"
@@ -216,13 +216,17 @@ const NavBarDesktop = () => {
               </div>
               <ul className="hoversubs">
                 <li>
-                  <Link to={PathConstants.PROMOCIONES}>Promociones Personales</Link>
+                  <Link to={PathConstants.PROMOCIONES}>
+                    Promociones Personales
+                  </Link>
                 </li>
                 <li>
                   <Link to={PathConstants.PROMOCIONES}>Promociones para 2</Link>
                 </li>
                 <li>
-                  <Link to={PathConstants.PROMOCIONES}>Promociones para compartir</Link>
+                  <Link to={PathConstants.PROMOCIONES}>
+                    Promociones para compartir
+                  </Link>
                 </li>
                 <li>
                   <Link to={PathConstants.CUPONES}>Cupones</Link>
