@@ -1,3 +1,5 @@
 export * from './requests/PromocionPersonalRequest'
 export * from './responses/PromocionPersonalResponse'
+export * from './requests/ComplementoRequest'
+export * from './responses/ComplementoResponse'
 export * from './SwiperProps'
