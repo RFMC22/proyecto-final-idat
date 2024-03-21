@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { ComboResponse } from "../interfaces";
 import { getCombos } from "../services/fetchCombos";
 import '../styles/pages/Combos.css';
+
+
 const Combos = () => {
     const [combos, setCombos] = useState<ComboResponse>({});
     const [isExpanded, setIsExpanded] = useState(true);
@@ -30,16 +32,11 @@ const Combos = () => {
 
     return (
         <div className="contenedor-general-combos">
-            {/* {
-                combos.data?.map(combo => (
-                    <div>{combo.nombre}</div>
-                ))
-            } */}
 
             <header className="contenedor-navegacion-combos">
 
                 <nav className="navegacion-seccion-combos">
-                    <ul className={isExpanded ? 'expanded' : 'collapsed'}>
+                    <ul className={isExpanded ? '' : 'collapsed'}>
                         <li><a href="#">Combos</a></li>
                         <li><a href="#">Hamburguesas</a></li>
                         <li><a href="#">Pollo</a></li>
@@ -52,42 +49,37 @@ const Combos = () => {
                     </ul>
                 </nav>
             </header>
-
-            <div className="contenedor-fondo-medio">
-                <div className="contenedor-combos-contenido">
-                    <h2>COMBOS DE HAMBURGUESAS</h2>
-                    <div className="contenedor-lista-combos">
-                        <div className="lista-combos">
-                            <div className="item-lista">
-                                <div className="item-content">
-                                    <div className="item-card">
-                                        asdsadsda
-                                    </div>
-                                </div>
+            <div className="max-contenedor">
+                <div className="contenedor-fondo-medio">
+                    <div className="contenedor-combos-contenido">
+                        <h2>COMBOS DE HAMBURGUESAS</h2>
+                        <div className="contenedor-lista-combos">
+                            <div className="lista-combos">
+                                {
+                                    combos.data?.map(combo => (
+                                        <div className="item-lista">
+                                            <div className="item-content">
+                                                <div className="item-card">
+                                                    <picture className="card-img">
+                                                        <img src={combo.img} alt="" />
+                                                    </picture>
+                                                    <div className="card-cotent-item">
+                                                        <a href="#" className="card-nombre-producto"><h4 >{combo.nombre}</h4></a>
+                                                        <p className="card-precio">S/. {combo.precio}</p>
+                                                        <a href="" className="card-termino-condiciones">Términos y condiciones</a>
+                                                        <button className="btn-ver-mas">Ver más</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
                             </div>
-                            <div className="item-lista">
-                                <div className="item-content">
-                                    <div className="item-card">
-                                        asdsadsda
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item-lista">
-                                <div className="item-content">
-                                    <div className="item-card">
-                                        asdsadsda
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
     )
 }
 
