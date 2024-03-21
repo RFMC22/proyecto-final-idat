@@ -7,8 +7,7 @@ import { PathConstants } from '../../utils/PathConstants';
 import { tabScrollClick } from '../../utils/GeneralFunctions';
 
 const NavBarDesktop = () => {
-
-  const handleTabClick = (id:string) => {
+  const handleTabClick = (id: string) => {
     tabScrollClick(id);
   };
   return (
@@ -221,13 +220,28 @@ const NavBarDesktop = () => {
               </div>
               <ul className="hoversubs">
                 <li>
-                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__personales')}>Promociones Personales</Link>
+                  <Link
+                    to={PathConstants.PROMOCIONES_DELIVERY}
+                    onClick={() => handleTabClick('item__personales')}
+                  >
+                    Promociones Personales
+                  </Link>
                 </li>
                 <li>
-                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__combo-para-2')}>Promociones para 2</Link>
+                  <Link
+                    to={PathConstants.PROMOCIONES_DELIVERY}
+                    onClick={() => handleTabClick('item__combo-para-2')}
+                  >
+                    Promociones para 2
+                  </Link>
                 </li>
                 <li>
-                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__para-compartir')}>Promociones para compartir</Link>
+                  <Link
+                    to={PathConstants.PROMOCIONES_DELIVERY}
+                    onClick={() => handleTabClick('item__para-compartir')}
+                  >
+                    Promociones para compartir
+                  </Link>
                 </li>
                 <li>
                   <Link to={PathConstants.CUPONES}>Cupones</Link>
@@ -305,14 +319,16 @@ const NavBarDesktop = () => {
             Circle="none"
           />
 
-          <YellowBtn
-            text={''}
-            redText={''}
-            icon={iconCart}
-            position=""
-            iconHeight=""
-            Circle="redCircle"
-          />
+          <Link to={PathConstants.CART}>
+            <YellowBtn
+              text={''}
+              redText={''}
+              icon={iconCart}
+              position=""
+              iconHeight=""
+              Circle="redCircle"
+            />
+          </Link>
         </div>
       </div>
     </div>

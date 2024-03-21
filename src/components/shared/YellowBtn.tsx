@@ -8,6 +8,7 @@ const YellowBtn = ({
   position,
   iconHeight,
   Circle,
+  handleClick
 }: yellowBtnProps) => {
   return (
     <div className={`btnYellow ${position}`}>
@@ -16,7 +17,7 @@ const YellowBtn = ({
         <span className="red">{redText}</span>
       </div>
 
-      <img src={icon} alt="icon" className={`icon ${iconHeight}`} />
+      <img src={icon} alt="icon" className={`icon ${iconHeight}`} onClick={handleClick} />
       <div className="relative">
         <span className={`${Circle}`}>0</span>
       </div>

@@ -10,6 +10,10 @@ import { GoChevronDown } from 'react-icons/go';
 import { IoIosClose } from 'react-icons/io';
 
 const Cart = () => {
+
+  const handleClose =()=>{
+    
+  }
   const [complementos, setComplementos] = useState<ComplementoResponse>({});
 
   useEffect(() => {
@@ -30,7 +34,7 @@ const Cart = () => {
             Entregar en: <span>Av. Benavides N°1821</span>
           </p>
           <GoChevronDown className="select" />
-          <IoIosClose className="close" />
+          <IoIosClose className="close" onClick={handleClose} />
         </div>
 
         <div className="cart-container">
