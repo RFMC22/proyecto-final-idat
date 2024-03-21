@@ -1,8 +1,10 @@
 .Header {
   margin: 0;
   padding: 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 999;
 
   .topBar {
@@ -93,6 +95,7 @@
         margin: 0 auto;
       }
     }
+
     .flex {
       display: flex;
       align-items: center;
@@ -107,6 +110,7 @@
     .display-d {
       display: block;
     }
+
     .topBar {
       background-color: rgb(23, 48, 131);
 
