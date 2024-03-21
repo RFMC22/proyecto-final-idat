@@ -1,5 +1,4 @@
-import React, { Children, useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, Grid } from 'swiper/modules';
 import { SwiperComponent } from '../shared';
 
