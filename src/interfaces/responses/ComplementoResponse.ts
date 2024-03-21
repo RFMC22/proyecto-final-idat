@@ -1,4 +1,4 @@
-import { Complemento } from '../model/ComplementosCart';
+import { Complemento } from "../model/Complemento";
 
 export interface ComplementoResponse {
   data?: Complemento[];
