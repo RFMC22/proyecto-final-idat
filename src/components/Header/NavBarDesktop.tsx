@@ -313,7 +313,7 @@ const NavBarDesktop = () => {
             id=""
             handleClick=""
           />
-
+          <Link to={PathConstants.CART}>
           <YellowBtn
             text={''}
             redText={''}
@@ -324,6 +324,7 @@ const NavBarDesktop = () => {
             id="cart"
             handleClick={handleClick}
           />
+          </Link>
         </div>
       </div>
     </div>
