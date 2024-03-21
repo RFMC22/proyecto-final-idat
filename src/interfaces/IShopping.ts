@@ -9,7 +9,7 @@ export type iShoppingType = {
 };
 
 export const iShoppingContext = {
-  cartState: null,
+  cartState: false,
   setCartState: () => {},
   
 };
