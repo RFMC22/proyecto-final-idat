@@ -8,9 +8,11 @@ import { FaPencil } from 'react-icons/fa6';
 import { CiTrash } from 'react-icons/ci';
 import { GoChevronDown } from 'react-icons/go';
 import { IoIosClose } from 'react-icons/io';
+import useShopping from '../../hooks/useShopping';
 
 const Cart = () => {
   const [complementos, setComplementos] = useState<ComplementoResponse>({});
+  
 
   useEffect(() => {
     const getComplementos = async () => {
@@ -23,6 +25,7 @@ const Cart = () => {
 
   return (
     <>
+    
       <div className="blackscreen"></div>
       <section className="Cart">
         <div className="cart-header flex">

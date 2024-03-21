@@ -1,10 +1,13 @@
 import { RouterProvider } from 'react-router-dom';
 import { router } from './routes/Router';
-import './App.css'
+import './App.css';
+import { ShoppingProvider } from './context/ShoppingProvider';
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+    <ShoppingProvider>
+      <RouterProvider router={router} />
+    </ShoppingProvider>
   );
 }
 

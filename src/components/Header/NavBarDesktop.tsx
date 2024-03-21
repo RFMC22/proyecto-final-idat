@@ -4,8 +4,16 @@ import iconStore from './../../assets/images/icon-store.svg';
 import iconCart from './../../assets/images/icon-cart.svg';
 import { Link } from 'react-router-dom';
 import { PathConstants } from '../../utils/PathConstants';
+import useShopping from '../../hooks/useShopping';
+import { Cart } from '..';
 
 const NavBarDesktop = () => {
+  const { cartState, setCartState } = useShopping();
+  const handleClick = (e: any) => {
+    cartState
+      ? (setCartState(false), console.log(cartState))
+      : (setCartState(true), console.log(cartState));
+  };
   return (
     <div className="NavBarDesktop ">
       <div className="container">
@@ -302,6 +310,8 @@ const NavBarDesktop = () => {
             position="position-right"
             iconHeight="height-20"
             Circle="none"
+            id=""
+            handleClick=""
           />
 
           <YellowBtn
@@ -311,6 +321,8 @@ const NavBarDesktop = () => {
             position=""
             iconHeight=""
             Circle="redCircle"
+            id="cart"
+            handleClick={handleClick}
           />
         </div>
       </div>
