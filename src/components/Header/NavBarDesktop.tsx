@@ -4,10 +4,16 @@ import iconStore from './../../assets/images/icon-store.svg';
 import iconCart from './../../assets/images/icon-cart.svg';
 import { Link } from 'react-router-dom';
 import { PathConstants } from '../../utils/PathConstants';
+import { tabScrollClick } from '../../utils/GeneralFunctions';
 import useShopping from '../../hooks/useShopping';
 import { Cart } from '..';
 
 const NavBarDesktop = () => {
+
+  const handleTabClick = (id:string) => {
+    tabScrollClick(id);
+  };
+
   const { cartState, setCartState } = useShopping();
   const handleClick = (e: any) => {
     cartState
@@ -220,21 +226,17 @@ const NavBarDesktop = () => {
                     fill="#F4B83F"
                   />
                 </svg>
-                <Link to={PathConstants.PROMOCIONES}>PROMOCIONES</Link>
+                <Link to={PathConstants.PROMOCIONES_DELIVERY}>PROMOCIONES</Link>
               </div>
               <ul className="hoversubs">
                 <li>
-                  <Link to={PathConstants.PROMOCIONES}>
-                    Promociones Personales
-                  </Link>
+                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__personales')}>Promociones Personales</Link>
                 </li>
                 <li>
-                  <Link to={PathConstants.PROMOCIONES}>Promociones para 2</Link>
+                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__combo-para-2')}>Promociones para 2</Link>
                 </li>
                 <li>
-                  <Link to={PathConstants.PROMOCIONES}>
-                    Promociones para compartir
-                  </Link>
+                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__para-compartir')}>Promociones para compartir</Link>
                 </li>
                 <li>
                   <Link to={PathConstants.CUPONES}>Cupones</Link>

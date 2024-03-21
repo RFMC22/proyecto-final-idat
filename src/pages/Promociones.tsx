@@ -1,36 +1,36 @@
-import { TabTitle } from "../utils/GeneralFunctions"
+import { TabTitle, tabScrollClick } from "../utils/GeneralFunctions"
 import '../styles/pages/Promociones.css'
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { GrUserManager } from "react-icons/gr";
-import { getPromosPersonales } from "../services/fetchPromociones";
-import { PromocionPersonalResponse } from "../interfaces";
+import { ComplementoResponse, PromocionPersonalResponse } from "../interfaces";
 import { SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Grid } from 'swiper/modules';
 import { SwiperComponent } from "../components/shared";
+import { getComplementos, getPromosPersonales } from "../services";
 
 const Promociones = () => {
   TabTitle('Promociones de Hamburguesas Bembos | Delivery Perú');
 
   const [activeTab, setActiveTab] = useState('item__personales');
   const [promosPersonales, setPromosPersonales] = useState<PromocionPersonalResponse>({});
+  const [complementos, setComplementos] = useState<ComplementoResponse>({});
 
   const handleTabClick = (id:string) => {
     setActiveTab(id);
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        behavior: 'smooth',
-        top: element.offsetTop,
-      });
-    }
+    tabScrollClick(id)
   };
 
   useEffect(()=>{
     const getDataPersonal = async () => {
-      const data = await getPromosPersonales();
-      return setPromosPersonales(data);
-    };
+      const [promos, complements] = await Promise.all([
+        getPromosPersonales(), 
+        getComplementos()
+      ]);
+      
+      setPromosPersonales(promos);
+      setComplementos(complements);
+    }
     getDataPersonal();
   },[]);
 
@@ -54,7 +54,16 @@ const Promociones = () => {
         },
     }
   }
-  
+  const complementosOptions = {
+    slidesPerView:3,
+    spaceBetween:30,
+    navigation:true,
+    modules:[Pagination, Navigation],
+    pagination:{
+      clickable: true,
+    }
+  }
+
   return (
     <section>
       <div className="ppromos-tabs-main showDesktop ppromos-tabs-list">
@@ -139,7 +148,13 @@ const Promociones = () => {
                 </div>
                 <h3 className="complementos-label">Complementos: </h3>
                 <div className="carousel-complementos hasNavigation">
-                  b
+                  <SwiperComponent options={complementosOptions}>
+                    {complementos.data?.map(complemento => (
+                      <SwiperSlide key={complemento.id}>
+                        <h1>{complemento.nombre}</h1>
+                      </SwiperSlide>
+                    ))}
+                  </SwiperComponent>
                 </div>
               </div>
               <div id="item__combo-para-2">

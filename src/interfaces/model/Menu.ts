@@ -1,4 +1,4 @@
-export interface menuProps {
+export interface MenuProps {
   nombre: string;
   img: string;
   link: string;
