@@ -1,5 +1,5 @@
-import { menuProps } from "../model/Menu";
+import { MenuProps } from "../model/Menu";
 
 export interface MenuRequest {
-    promociones_personales: menuProps;
+    promociones_personales: MenuProps;
   }

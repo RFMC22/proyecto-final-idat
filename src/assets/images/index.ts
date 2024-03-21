@@ -18,3 +18,7 @@ export { default as slideMob6 } from './bannermob-6.jpg';
 export { default as slideMob7 } from './bannermob-7.jpg';
 export { default as slideMob8 } from './bannermob-8.jpg';
 export { default as slideMob9 } from './bannermob-9.jpg';
+export { default as salonDesk } from './salon-desk.webp';
+export { default as salonMobile } from './salon-mobile.webp';
+export { default as linkFb } from './link-fb.webp';
+export { default as linkTw } from './link-tw.webp';

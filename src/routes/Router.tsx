@@ -10,10 +10,11 @@ export const router = createBrowserRouter([
     errorElement: <Error404 />,
     children: [
       { path: PathConstants.INDEX, element: <Home /> },
-      { path: PathConstants.MENU, element: <Menu /> },
-      { path: PathConstants.PROMOCIONES, element: <Promociones /> },
+      { path: PathConstants.MENU, element: <Menu />, },
+      { path: PathConstants.PROMOCIONES_DELIVERY, element: <Promociones /> },
       { path: PathConstants.CUPONES, element: <Cupones /> },
       { path: PathConstants.CART, element: <Cart /> },
+      { path: PathConstants.PROMOCIONES_ID, element: <Menu/> }
     ],
   },
 ]);
