@@ -63,6 +63,54 @@
   .cart-container {
     padding: 10px 20px 20px 15px;
   }
+  .cart-container-sticky {
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    border-top: 2px solid rgb(204, 204, 204);
+
+    .btns {
+      padding: 10px 20px;
+
+      .btn {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 30px;
+        padding: 15px 20px;
+        border: none;
+        margin: 5px 0;
+        font-family: 'kulristaBold', sans-serif;
+        align-items: center;
+      }
+
+      .btn-rojo {
+        background-color: rgb(217, 15, 6);
+        color: white;
+        cursor: pointer;
+      }
+
+      .btn-blanco {
+        justify-content: center;
+        background-color: white;
+        color: rgb(217, 15, 6);
+        border: 2px solid rgb(217, 15, 6);
+        cursor: pointer;
+      }
+
+      .circle {
+        background-color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 
   .cart-title-container {
     text-align: center;
@@ -95,7 +143,7 @@
     font-family: 'din', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    padding: 10px 20px 10px 50px;
+    padding: 10px 0px 10px 30px;
 
     .subtotal {
       display: flex;
@@ -118,55 +166,14 @@
   }
 
   .complementos {
-    border-bottom: 2px solid rgb(204, 204, 204);
     border-top: 2px solid rgb(204, 204, 204);
+
     background-color: rgb(230, 230, 230);
     padding: 0 20px;
 
     .complementos-title {
       text-align: center;
       padding: 20px 0;
-    }
-  }
-
-  .btns {
-    padding: 10px 20px;
-
-    .btn {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      border-radius: 30px;
-      padding: 15px 20px;
-      border: none;
-      margin: 5px 0;
-      font-family: 'kulristaBold', sans-serif;
-      align-items: center;
-    }
-
-    .btn-rojo {
-      background-color: rgb(217, 15, 6);
-      color: white;
-      cursor: pointer;
-    }
-
-    .btn-blanco {
-      justify-content: center;
-      background-color: white;
-      color: rgb(217, 15, 6);
-      border: 2px solid rgb(217, 15, 6);
-      cursor: pointer;
-    }
-
-    .circle {
-      background-color: white;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 
@@ -241,15 +248,17 @@
             color: red;
             width: 20px;
             height: 20px;
+            cursor: pointer;
           }
 
           .readMore {
             font-family: 'din', sans-serif;
             font-style: italic;
-            font-weight: 700;
-            font-size: 12px;
+            font-weight: 800;
+            font-size: 16px;
             color: rgb(33, 56, 139);
             margin-left: 20px;
+            cursor: pointer;
           }
         }
 
@@ -276,6 +285,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 8px;
+            cursor: pointer;
           }
         }
       }

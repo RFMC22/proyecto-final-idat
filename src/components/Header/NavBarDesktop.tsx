@@ -5,11 +5,20 @@ import iconCart from './../../assets/images/icon-cart.svg';
 import { Link } from 'react-router-dom';
 import { PathConstants } from '../../utils/PathConstants';
 import { tabScrollClick } from '../../utils/GeneralFunctions';
+import useShopping from '../../hooks/useShopping';
+import { Cart } from '..';
 
 const NavBarDesktop = () => {
 
   const handleTabClick = (id:string) => {
     tabScrollClick(id);
+  };
+
+  const { cartState, setCartState } = useShopping();
+  const handleClick = (e: any) => {
+    cartState
+      ? (setCartState(false), console.log(cartState))
+      : (setCartState(true), console.log(cartState));
   };
   return (
     <div className="NavBarDesktop ">
@@ -303,8 +312,10 @@ const NavBarDesktop = () => {
             position="position-right"
             iconHeight="height-20"
             Circle="none"
+            id=""
+            handleClick=""
           />
-
+          <Link to={PathConstants.CART}>
           <YellowBtn
             text={''}
             redText={''}
@@ -312,7 +323,10 @@ const NavBarDesktop = () => {
             position=""
             iconHeight=""
             Circle="redCircle"
+            id="cart"
+            handleClick={handleClick}
           />
+          </Link>
         </div>
       </div>
     </div>
