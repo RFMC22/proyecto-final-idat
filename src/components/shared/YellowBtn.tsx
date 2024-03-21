@@ -8,10 +8,15 @@ const YellowBtn = ({
   position,
   iconHeight,
   Circle,
-  handleClick
+  id,
+  handleClick,
 }: yellowBtnProps) => {
+  const doNothing =()=>{
+    
+  }
+
   return (
-    <div className={`btnYellow ${position}`}>
+    <div className={`btnYellow ${position}`} onClick={handleClick?handleClick:doNothing()}>
       <div className=" flex flex-col ">
         <span>{text}</span>
         <span className="red">{redText}</span>
