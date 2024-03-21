@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { ComboResponse } from "../interfaces";
 import { getCombos } from "../services/fetchCombos";
 import '../styles/pages/Combos.css';
+import { PathConstants } from "../utils/PathConstants";
+import { Link } from "react-router-dom";
 
 
 const Combos = () => {
@@ -37,7 +39,7 @@ const Combos = () => {
 
                 <nav className="navegacion-seccion-combos">
                     <ul className={isExpanded ? '' : 'collapsed'}>
-                        <li><a href="#">Combos</a></li>
+                        <li><Link to={PathConstants.COMBOS}>Combos</Link></li>
                         <li><a href="#">Hamburguesas</a></li>
                         <li><a href="#">Pollo</a></li>
                         <li><a href="#">Menú al Plato</a></li>
