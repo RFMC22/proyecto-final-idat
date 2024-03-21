@@ -147,7 +147,7 @@ const Home = () => {
       <div className="banner container">
         <Link to={`${PathConstants.PROMOCIONES}/tiendas-callcenter-auto`}>
           <picture>
-            <source srcSet={salonMobile} media="(max-width:1200px)" />
+            <source srcSet={salonMobile} media="(max-width:800px)" />
             <img src={salonDesk} className="img" alt="salonDesk" />
           </picture>
         </Link>
