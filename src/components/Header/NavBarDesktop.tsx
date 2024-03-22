@@ -6,20 +6,20 @@ import { Link } from 'react-router-dom';
 import { PathConstants } from '../../utils/PathConstants';
 import { tabScrollClick } from '../../utils/GeneralFunctions';
 import useShopping from '../../hooks/useShopping';
-import { Cart } from '..';
+import { useNavigate } from 'react-router-dom';
 
 const NavBarDesktop = () => {
-
-  const handleTabClick = (id:string) => {
+  const handleTabClick = (id: string) => {
     tabScrollClick(id);
   };
+  const navigate = useNavigate();
 
-  const { cartState, setCartState } = useShopping();
-  const handleClick = (e: any) => {
-    cartState
-      ? (setCartState(false), console.log(cartState))
-      : (setCartState(true), console.log(cartState));
+  const { setCartState } = useShopping();
+  const handleClick = () => {
+    setCartState(true);
+    navigate(PathConstants.CART);
   };
+
   return (
     <div className="NavBarDesktop ">
       <div className="container">
@@ -230,13 +230,28 @@ const NavBarDesktop = () => {
               </div>
               <ul className="hoversubs">
                 <li>
-                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__personales')}>Promociones Personales</Link>
+                  <Link
+                    to={PathConstants.PROMOCIONES_DELIVERY}
+                    onClick={() => handleTabClick('item__personales')}
+                  >
+                    Promociones Personales
+                  </Link>
                 </li>
                 <li>
-                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__combo-para-2')}>Promociones para 2</Link>
+                  <Link
+                    to={PathConstants.PROMOCIONES_DELIVERY}
+                    onClick={() => handleTabClick('item__combo-para-2')}
+                  >
+                    Promociones para 2
+                  </Link>
                 </li>
                 <li>
-                  <Link to={PathConstants.PROMOCIONES_DELIVERY} onClick={() => handleTabClick('item__para-compartir')}>Promociones para compartir</Link>
+                  <Link
+                    to={PathConstants.PROMOCIONES_DELIVERY}
+                    onClick={() => handleTabClick('item__para-compartir')}
+                  >
+                    Promociones para compartir
+                  </Link>
                 </li>
                 <li>
                   <Link to={PathConstants.CUPONES}>Cupones</Link>
@@ -315,7 +330,7 @@ const NavBarDesktop = () => {
             id=""
             handleClick=""
           />
-          <Link to={PathConstants.CART}>
+          {/* <Link to={PathConstants.CART}> */}
           <YellowBtn
             text={''}
             redText={''}
@@ -326,7 +341,7 @@ const NavBarDesktop = () => {
             id="cart"
             handleClick={handleClick}
           />
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
     </div>

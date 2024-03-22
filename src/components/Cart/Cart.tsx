@@ -9,8 +9,18 @@ import { CiTrash } from 'react-icons/ci';
 import { GoChevronDown } from 'react-icons/go';
 import { IoIosClose } from 'react-icons/io';
 import useShopping from '../../hooks/useShopping';
+import { PathConstants } from '../../utils/PathConstants';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
+  const {setCartState, cartState} = useShopping();
+  const navigate = useNavigate();
+
+  const handleClose =()=>{
+    setCartState(false)
+    navigate(-2);
+  }
   const [complementos, setComplementos] = useState<ComplementoResponse>({});
   
 
@@ -25,15 +35,16 @@ const Cart = () => {
 
   return (
     <>
-    
-      <div className="blackscreen"></div>
+      {cartState &&
+        <>
+        <div className="blackscreen"></div>
       <section className="Cart">
         <div className="cart-header flex">
           <p className="cart-address">
             Entregar en: <span>Av. Benavides N°1821</span>
           </p>
           <GoChevronDown className="select" />
-          <IoIosClose className="close" />
+          <Link to={PathConstants.INDEX}><IoIosClose className="close" onClick={handleClose} /></Link>
         </div>
 
         <div className="cart-container">
@@ -115,6 +126,7 @@ const Cart = () => {
           </div>
         </div>
       </section>
+      </>}
     </>
   );
 };
