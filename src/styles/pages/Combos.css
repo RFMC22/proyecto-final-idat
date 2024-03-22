@@ -1,0 +1,259 @@
+main {
+    padding-top: 219.4px;
+}
+
+.contenedor-navegacion-combos {
+    position: fixed;
+    top: 250px;
+    right: 115px;
+    left: 115px;
+    z-index: 2;
+    transition: 0.7s;
+}
+
+.contenedor-general-combos {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #f6f7f8;
+}
+
+.navegacion-seccion-combos ul {
+    width: auto;
+    height: 50.8px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5px 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 10px #ccc;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+
+.navegacion-seccion-combos ul li {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0;
+    margin: 0 5px;
+}
+
+.navegacion-seccion-combos ul li:hover {
+    background: #e4e4ea;
+    color: #21388b;
+    border-radius: 20px;
+}
+
+.navegacion-seccion-combos ul li a:hover {
+    color: #21388b;
+}
+
+
+.navegacion-seccion-combos ul li a {
+    text-decoration: none;
+    font-family: var(--din);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    color: #373d42;
+    font-weight: 300;
+    position: relative;
+    transition: 0.7s;
+}
+
+.click-seleccion-amarillo {
+    background: var(--yellow-100);
+    border-radius: 20px;
+}
+
+/* finish-navbar-menu */
+
+/* contenido-siguiente-al-navbar */
+
+.contenedor-fondo-medio {
+    width: auto;
+    width: 1114px;
+    padding-top: 2rem;
+    height: auto;
+    border-radius: 15px;
+    margin: 70px 10px 30px 10px;
+    background-color: #fff;
+}
+
+.max-contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-combos-contenido {
+    max-width: 1014px;
+    margin: 0 auto;
+}
+
+.contenedor-combos-contenido h2 {
+    text-transform: uppercase;
+    color: var(--blue);
+    font-size: 28px;
+}
+
+.contenedor-lista-combos {
+    margin: 0 10px;
+}
+
+.lista-combos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.item-lista {
+    width: 33%;
+}
+
+.item-content {
+    padding: 13px;
+    margin: 0 10px;
+    position: relative;
+    height: 100%;
+    /*100% */
+}
+
+.item-card {
+    position: relative;
+    transition: all .2s;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(178, 178, 178, 0.636);
+    border-radius: 20px;
+    background: #fff;
+    height: auto;
+    border: 3px solid white;
+}
+
+.contenedor-navegacion-combos .navegacion-seccion-combos .collapsed {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 219.4px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #ccc;
+
+}
+
+
+
+.card-img img {
+    width: 100%;
+    height: 255px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    transition: all .4s;
+}
+
+/* .card-img {
+    width: auto;
+
+} */
+.card-cotent-item {
+    text-align: center;
+    padding: 10px 15px 15px;
+}
+
+.card-nombre-producto h4 {
+    color: #030819;
+    font-size: 23px;
+    line-height: 22px;
+    font-weight: 400;
+    min-height: 44px;
+}
+
+.card-precio {
+    font-weight: 700;
+    color: #030819;
+    font-size: 27px;
+    padding: 5px 0;
+    border-radius: 20px;
+
+}
+
+.card-termino-condiciones {
+    font-size: 17px;
+    color: #030819;
+    display: block;
+    line-height: 22px;
+    font-weight: 400;
+    min-height: 44px;
+    text-decoration: underline;
+}
+
+.btn-ver-mas {
+    width: 100%;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    background: var(--blueText);
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: var(--din);
+    outline: 0;
+    height: 43px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .item-lista {
+        width: 50%;
+    }
+
+
+    .contenedor-fondo-medio {
+        margin: 30px 10px;
+    }
+
+    main {
+        padding-top: 141px;
+    }
+
+    .contenedor-combos-contenido h2 {
+        margin: 10px 0 0 11px;
+    }
+
+    .contenedor-fondo-medio {
+        padding-top: 10px;
+    }
+
+    .contenedor-lista-combos {
+        margin: 20px 10px;
+    }
+
+    .item-content {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .card-img img {
+        height: 175px;
+    }
+
+    .card-termino-condiciones {
+        font-size: 17px;
+    }
+
+    .card-precio {
+        font-size: 18px;
+    }
+
+
+}
