@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { Link, createBrowserRouter } from 'react-router-dom';
 import { PathConstants } from '../utils/PathConstants';
 import {
   Cupones,
@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
       },
       { path: PathConstants.CUPONES, element: <Cupones /> },
       { path: PathConstants.COMBOS, element: <Combos /> },
-      { path: PathConstants.CART, element: <Cart /> },
+      { path: PathConstants.CART },
       { path: PathConstants.PROMOCIONES_ID, element: <Menu /> },
     ],
   },

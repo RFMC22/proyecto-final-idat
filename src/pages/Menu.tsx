@@ -24,6 +24,7 @@ import { MenuSwiper, MenuCards } from '../components/';
 import { useEffect, useState } from 'react';
 import { MenuResponse } from '../interfaces/';
 import { getMenuOptions } from '../services/';
+import ExtraOptionCardComponent from '../components/shared/ExtraOptionCardComponent';
 
 const Menu = () => {
   const slidesArray: Array<string> = [
@@ -71,6 +72,15 @@ const Menu = () => {
         ) : (
           ''
         )}
+
+        {/* <ExtraOptionCardComponent
+          image={
+            'https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-sabor-original-450ml.png'
+          }
+          btn={<div className='flex-row'><button className='btn'>-</button><p className='quantity'>0</p><button className='btn'>+</button></div>}
+          width={""}
+          text={'Coca Cola Sabor Original 500 ml + S/. 0.00'}
+        /> */}
       </div>
     </section>
   );
