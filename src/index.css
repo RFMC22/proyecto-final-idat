@@ -69,3 +69,16 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+html {
+  scrollbar-width: 20px;
+  scrollbar-color: rgb(26, 49, 126) rgb(167, 167, 167);
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-button:vertical:start:increment,
+html::-webkit-scrollbar-button:vertical:end:decrement,
+html::-webkit-scrollbar-button:horizontal:start:increment,
+html::-webkit-scrollbar-button:horizontal:end:decrement {
+  display: none;
+}

@@ -8,15 +8,21 @@ const YellowBtn = ({
   position,
   iconHeight,
   Circle,
+  id,
+  handleClick,
 }: yellowBtnProps) => {
+  const doNothing =()=>{
+    
+  }
+
   return (
-    <div className={`btnYellow ${position}`}>
+    <div className={`btnYellow ${position}`} onClick={handleClick?handleClick:doNothing()}>
       <div className=" flex flex-col ">
         <span>{text}</span>
         <span className="red">{redText}</span>
       </div>
 
-      <img src={icon} alt="icon" className={`icon ${iconHeight}`} />
+      <img src={icon} alt="icon" className={`icon ${iconHeight}`} onClick={handleClick} />
       <div className="relative">
         <span className={`${Circle}`}>0</span>
       </div>
