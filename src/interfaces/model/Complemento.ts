@@ -1,7 +1,5 @@
-export interface Complemento {
-  nombre: string;
+import { BaseProps } from "../BaseProps";
+
+export interface Complemento extends BaseProps{
   precio: number;
-  img:    string;
-  id:     number;
-  link:   string;
 }

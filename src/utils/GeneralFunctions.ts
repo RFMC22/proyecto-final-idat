@@ -7,7 +7,7 @@ export const tabScrollClick = (id:string) => {
     if (element) {
       window.scrollTo({
         behavior: 'smooth',
-        top: element.offsetTop,
+        top: element.offsetTop - 300,
       });
     }
 }
