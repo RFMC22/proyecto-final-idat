@@ -1,6 +1,6 @@
-import { PromocionPersonal } from "../model/PromocionPersonal";
+import { Promocion } from "../model/Promocion";
 
 export interface PromocionPersonalRequest {
-  promociones_personales: PromocionPersonal;
+  promociones_personales: Promocion;
 }
 

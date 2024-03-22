@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './../../styles/Cart.css';
 
 import { ComplementoResponse } from '../../interfaces';
-import { getComplementosCart } from '../../services/fetchComplementos';
+import { getComplementos } from '../../services/fetchComplementos';
 import CartSwiper from './CartSwiper';
 import { FaPencil } from 'react-icons/fa6';
 import { CiTrash } from 'react-icons/ci';
@@ -25,12 +25,12 @@ const Cart = () => {
   
 
   useEffect(() => {
-    const getComplementos = async () => {
-      const data = await getComplementosCart();
+    const getDataComplementos = async () => {
+      const data = await getComplementos();
       return setComplementos(data);
     };
 
-    getComplementos();
+    getDataComplementos();
   }, []);
 
   return (

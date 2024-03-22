@@ -10,8 +10,12 @@ import {
 import { AiOutlineFileText } from "react-icons/ai"
 import { useState } from 'react'
 import InputEmail from '../InputEmail/InputEmail'
+import { useLocation } from 'react-router-dom'
+import { PathConstants } from '../../utils/PathConstants'
 
 const Footer = () => {
+  const {pathname} = useLocation();
+  
   const [showLocales, setShowLocales] = useState(false);
   const [showTerms, setShowTerms] = useState(false);
 
@@ -97,7 +101,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='main-footer'>
+        <div className={PathConstants.PROMOCIONES_DELIVERY === pathname ? 'main-footer footer-p' : 'main-footer'}>
           <p>&copy; 2019 Todos los derechos reservados</p>
         </div>
       </div>
