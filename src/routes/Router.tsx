@@ -8,6 +8,7 @@ import {
   Root,
   Menu,
   Combos,
+  Orders,
 } from '../pages';
 import { Cart } from '../components';
 import SecondRoot from '../pages/SecondRoot';
@@ -25,7 +26,12 @@ export const router = createBrowserRouter([
         element: <Promociones />,
       },
       { path: PathConstants.CUPONES, element: <Cupones /> },
-      { path: PathConstants.COMBOS, element: <Combos /> },
+      {
+        path: PathConstants.COMBOS,
+        element: <Combos />,
+        children: [],
+      },
+      { path: PathConstants.COMBOS_ORDERS, element: <Orders /> },
       { path: PathConstants.CART },
       { path: PathConstants.PROMOCIONES_ID, element: <Menu /> },
     ],

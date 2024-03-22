@@ -59,6 +59,8 @@ const Menu = () => {
     getMenuData();
   }, []);
 
+  console.log(menuCardsOptions.data);
+
   return (
     <section className="Menu container-m sectionContainer">
       <h1 className="menuTitle">ELIGE TU MENÚ DE BEMBOS</h1>
@@ -73,14 +75,7 @@ const Menu = () => {
           ''
         )}
 
-        {/* <ExtraOptionCardComponent
-          image={
-            'https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-sabor-original-450ml.png'
-          }
-          btn={<div className='flex-row'><button className='btn'>-</button><p className='quantity'>0</p><button className='btn'>+</button></div>}
-          width={""}
-          text={'Coca Cola Sabor Original 500 ml + S/. 0.00'}
-        /> */}
+       
       </div>
     </section>
   );
