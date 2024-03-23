@@ -1406,74 +1406,66 @@
       ],
       "pollo": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Cuántos puntos recibo por comprar sándwiches de pollo a la plarrilla o hamburguesa crispy de Bembos?",
+          "respuesta": "Los puntos que se reciben por la compra del crujiente sandwich de pollo varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿De qué están hechas la hamburguesa de pollo o hamburguesa broaster de Bembos?",
+          "respuesta": "Las hamburguesas de pollo están hechas de carne de pollo, junto con las más exquisitos ingredientes peruanos. ¡Pídelo por Online delivery!"
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
+          "titulo": "¿Los sandwiches de pollo a la parrilla de Bembos están acompañados de papas fritas?",
+          "respuesta": "Sí, el Sandwich de pollo a la parrilla incluye distintos acompañamientos, podrás incluir: Huevo, Papas extras, Plátano, queso y Tocino. También puedes pedirlo únicamente solo sin acompañamiento."
         },
         {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Qué adicionales tienen los sandwich de pollo a la parrilla de Bembos?",
+          "respuesta": "Los adicionales que tienen las hamburguesas de pollo varían según elección del usuario. Entre estas tenemos añadir: Plátano, huevo, queso, tocino y papas al hilo extras. También añadir las más exquisitas salsas peruanas."
         }
       ],
       "loncheritas": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Hay delivery de Loncheritas Bembos?",
+          "respuesta": "Sí, elige la loncherita de tu preferencia comprando por delivery online. Y disfruta de un pack con la mejor hamburguesa a la parrilla o nuggets. Incluye papas fritas y bebida."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Qué productos tienen las loncheritas Bembos?",
+          "respuesta": "Hay 3 alternativas: Loncherita Básica, Loncherita Nuggets y Loncherita básica de pollo. Todas incluyen papitas fritas, salsas exquisitas y una bebida a tu preferencia. Disfruta dnuestras famosas Loncheritas para tus niños."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
-        },
-        {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Qué son las loncheritas Bembos?",
+          "respuesta": "Las Loncheritas de Bembos son una divertida opción para los pequeños. Elige tu pack favorito que incluye papitas fritas y bebida, tienes la opción de elegir alguna Hamburguesa a la parrilla o deliciosos nuggets."
         }
       ],
       "complementos": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Puedo comprar más de un complemento Bembos?",
+          "respuesta": "Sí, Podrás pedir tus papitas fritas bembos, chicken nuggets, chesse fingers y papas inka chips. Recuerda que para acceder al delivery debes considear un pedido como mínimo de S/12.90."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Cuáles son los 'complementos Bembos'?",
+          "respuesta": "Los complementos Bembos que pueden ser pedidos son papas fritas, Chicken Nuggets y Cheese Fingers. Estas son un perfecto acompañamiento adicional para tus deliciosas hamburguesas a la parilla."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
+          "titulo": "¿Cuántos Cheese fingers vienen por pedido de Delivery Online?",
+          "respuesta": "¿Cuántos Cheese fingers vienen por pedido de Delivery Online?"
         },
         {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Cuántos nuggets vienen en los complementos Bembos?",
+          "respuesta": "¿Cuántos nuggets vienen en los complementos Bembos?"
         }
       ],
       "helados": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Qué adicionales puedo agregarle a mi helado Bembos?",
+          "respuesta": "Podrás añadir hasta 9 toppings dulces, de chocolate o maní. Elige el mejor complemente para tu helado Mini Princesa y Choco Vainilla."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Puedo comprar mi postre de helados Bembos por Delivery?",
+          "respuesta": "Sí, puedes elegir y pedir tus helados por Delivery Online. Tenemos para ti el helado Mini Princesa de Vainilla o Mixta y también el helado Choco Maní. Recuerda añadir tus toppings preferidos y disfrutar de este exquisito antojo."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
-        },
-        {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Qué sabores de helados Bembos existen?",
+          "respuesta": "Existen dos tipos de helados en la tienda en línea de Bembos. Tenemos el Helado Mini Princesa que es un helado de vainilla o mixto con trozos de chocolate princesa y fudge de chocolate. Y también está el Choco Maní que está hecho con helado de vainilla y una delicios cobertura de chocolate derretido con maní picado."
         }
       ]
     }

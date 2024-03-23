@@ -1,0 +1,29 @@
+.titulo-categoria-preguntas {
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.encabezado-pregutnas-frecuentes {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.descripcion-seccion-preguntas {
+    font-size: 14px;
+    font-family: var(--kulristaR);
+    margin: 0 10px 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.titulo-preguntas-ultimo {
+    text-align: center;
+    color: var(--blue);
+    font-weight: 900;
+    margin-top: 30px;
+    padding: 10px 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+}

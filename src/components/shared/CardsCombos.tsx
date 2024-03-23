@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { ComboResponse } from "../../interfaces";
+import PreguntasFrecuentes from "./PreguntasFrecuentes";
+import '../../styles/CardCombos.css'
 
 
 interface Props {
     tituloSeccion: string;
+    subtitulo: string;
+    descripcion: string;
+    encabezado: string;
     getData: () => Promise<ComboResponse>;
+    variante: boolean;
 }
 
-const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData }) => {
+const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData, variante, subtitulo, descripcion, encabezado }) => {
     const [combos, setCombos] = useState<ComboResponse>({});
 
     useEffect(() => {
@@ -52,6 +58,20 @@ const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData }) => {
                         </div>
                     </div>
                 </div>
+                {
+
+                }
+                {
+                    variante &&
+                    <div>
+                        <div className="encabezado-pregutnas-frecuentes">
+                            <h2 className="titulo-categoria-preguntas">{subtitulo}</h2>
+                            <p className="descripcion-seccion-preguntas">{descripcion}</p>
+                            <h2 className="titulo-preguntas-ultimo">{encabezado}</h2>
+                        </div>
+                        <PreguntasFrecuentes title="¿Cuántos puntos recibo por comprar una hamburguesa online delivery?" children="Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web." />
+                    </div>
+                }
             </div>
         </div>
     )
