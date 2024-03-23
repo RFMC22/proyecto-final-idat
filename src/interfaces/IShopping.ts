@@ -1,4 +1,9 @@
 import React from 'react';
+import {  ComplementoResponse, 
+          CuponResponse, 
+          PromocionCompartirResponse, 
+          PromocionDosResponse, 
+          PromocionPersonalResponse  } from '.';
 
 export interface cartStateProps {}
 
@@ -15,6 +20,13 @@ export type iShoppingType = {
   setOrderBigPrice: React.Dispatch<React.SetStateAction<number>>;
   orderSecondImage: string;
   orderBigPrice: number;
+  promosPersonales: PromocionPersonalResponse;
+  promosDos: PromocionDosResponse,
+  promosCompartir: PromocionCompartirResponse,
+  complementos: ComplementoResponse;
+  cupones: CuponResponse;
+  getDataPromociones: () => Promise<void>;
+
 };
 
 export const iShoppingContext = {
@@ -30,4 +42,11 @@ export const iShoppingContext = {
   setOrderBigPrice: () => {},
   orderSecondImage: '',
   orderBigPrice: 0,
+  promosPersonales: {},
+  promosDos: {},
+  promosCompartir: {},
+  complementos: {},
+  cupones: {},
+  getDataPromociones: async () => {},
+  
 };

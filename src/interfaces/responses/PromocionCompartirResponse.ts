@@ -1,5 +1,5 @@
 import { Promocion } from "../model/Promocion";
 
-export interface PromocionPersonalResponse {
+export interface PromocionCompartirResponse {
   data?: Promocion[];
 }

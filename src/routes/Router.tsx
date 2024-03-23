@@ -11,8 +11,6 @@ import {
   Orders,
 } from '../pages';
 import { Cart } from '../components';
-import SecondRoot from '../pages/SecondRoot';
-
 export const router = createBrowserRouter([
   {
     path: PathConstants.INDEX,
