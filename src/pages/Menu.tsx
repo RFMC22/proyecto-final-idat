@@ -61,7 +61,6 @@ const Menu = () => {
     getMenuData();
   }, []);
 
-  console.log(menuCardsOptions.data);
 
   return (
     <section className="Menu container-m sectionContainer">
