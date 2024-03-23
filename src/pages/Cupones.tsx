@@ -9,7 +9,7 @@ const Cupones = () => {
 
   useEffect(() => {
     getDataPromociones();
-  }, [getDataPromociones])
+  }, [])
   
 
   const promocionesPersonalesOptions = {

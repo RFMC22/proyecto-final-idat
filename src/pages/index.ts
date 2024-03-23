@@ -5,4 +5,5 @@ export { default as Cupones } from './Cupones';
 export { default as Error404 } from './404/Error404';
 export { default as Menu } from './Menu';
 export { default as Combos } from './Combos';
+export { default as Tiendas } from './Tiendas';
 export { default as Orders } from './Pedidos/Orders';
