@@ -6,12 +6,13 @@ const Root = () => {
   return (
     <>
       <ShoppingProvider>
-        <Cart/>
+        
         <Header />
         <main>
           <Outlet />
         </main>
         <Footer />
+        <Cart/>
       </ShoppingProvider>
     </>
   );

@@ -1,0 +1,123 @@
+.tienda {
+  .detail-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: #3b3c40;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  h1 svg {
+    margin-right: 8px;
+  }
+  .detail-info-right {
+    display: flex;
+    align-items: center;
+  }
+  .ppromos-buscar-col {
+    position: relative;
+    margin-right: 18px;
+  }
+  .ppromos-buscar-col input[type=text] {
+    border: 1px solid #c3c3c3;
+    height: 42px;
+    padding: 0 24px 3px;
+    border-radius: 24px;
+    font-family: Kulturista;
+    font-size: 15px;
+    line-height: 1;
+    width: 54px;
+    font-size: 0;
+  }
+  div#btn-lugar-cercanow {
+    height: 38px;
+    min-width: 250px;
+  }
+  a.btn-lugar-cercano {
+    background: #173083;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 36px 0 59px;
+    height: 38px;
+    border-radius: 21px;
+    font-family: var(--kulristaR);
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    transition: opacity .2s ease-in;
+  }
+  a.btn-lugar-cercano svg{
+    position: absolute;
+    top: 6px;
+    left: 35px;
+    font-size: 25px;
+    color: #fbb905;
+  }
+  .ppromos-buscar-col input[type=text] {
+    width: 210px;
+    font-size: 15px;
+  
+  }
+  .ppromos-buscar-col.active .ppromos-lupa {
+    pointer-events: all;
+  } 
+  .container-main .page-body .promociones-familiares .list-promociones {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 44px;
+  }
+  .list-promo-horizontal .content {
+    width: 50%;
+    height: 100%;
+  }
+  .list-promo-horizontal h2 span{
+    text-transform: uppercase;
+  }
+  h2 span svg{
+    margin-right: 10px;
+  }
+}
+@media (max-width: 768px){
+  .tienda .detail-info {
+      flex-direction: column;
+  }
+  .tienda h1 {
+    margin: 10px 0 0 11px;
+    order: 1;
+  }
+  .tienda .showDesktop {
+    display: none;
+  }
+  .tienda .ppromos-buscar-col {
+    margin-bottom: 24px;
+    margin-top: 25px;
+    width: 100%;
+  }
+  .tienda .ppromos-buscar-col input[type=text] {
+    height: 47px;
+    font-size: 17px;
+    width: 100%;
+  }
+  .tienda div#btn-lugar-cercanow {
+    width: 100%;
+  }
+  .tienda a.btn-lugar-cercano {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .tienda .ppromos-lupa {
+    right: 13px;
+    top: 11px;
+    height: 24px;
+    width: 23px;
+  }
+  .tienda .list-promo-horizontal .content {
+    width: 100%;
+  }
+}
