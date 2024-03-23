@@ -1,0 +1,93 @@
+.Orders {
+  margin-bottom: 200px;
+
+  .order-container {
+    display: flex;
+    flex-direction: row;
+
+    .order-right {
+      margin-right: 56px;
+    }
+
+    .imgContainer {
+      width: 340px;
+      float: left;
+      border-radius: 10px;
+      max-height: 340px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        max-height: 340px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+      }
+    }
+
+    .order-details {
+      background-color: white;
+      margin-left: 40px;
+
+      .order-title {
+        color: rgb(35, 56, 139);
+        font-family: 'kulristaBold', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+
+      .order-description {
+        margin: 20px 0 25px 0;
+        color: rgb(10, 38, 60);
+        font-family: 'kulristaRegular', sans-serif;
+        font-size: 14px;
+        font-weight: 100;
+      }
+
+      .items-container {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+  }
+
+  .accordion-container {
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgb(112, 112, 112);
+      padding: 5px 0;
+      align-items: center;
+
+      .left-title {
+        display: flex;
+      }
+
+      .circle {
+        background-color: rgb(255, 181, 0);
+        width: 23px;
+        height: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .icon {
+        width: 50px;
+        height: 50px;
+        color: rgb(33, 56, 139);
+      }
+    }
+    .title {
+      color: rgb(33, 56, 139);
+      font-family: 'din', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

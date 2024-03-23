@@ -6,3 +6,5 @@ export { default as MenuSwiper } from './Menu/MenuSwiper';
 export { default as Cart } from './Cart/Cart';
 export { default as Card } from './Card/Card';
 export { default as Tabs } from './Tabs/Tabs';
+export { default as Breadcrumb } from './Breadcrumb/Breadcrumb';
+export { default as Counter } from './shared/Counter';
