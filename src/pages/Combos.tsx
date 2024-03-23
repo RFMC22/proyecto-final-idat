@@ -9,7 +9,7 @@ const Combos = () => {
     return (
         <div className="contenedor-general-combos">
             <NavbarCombos />
-            <CardsCombos tituloSeccion="COMBOS DE HAMBURGESAS" getData={getCombos} variante={false} subtitulo="" encabezado="" descripcion="" />
+            <CardsCombos tituloSeccion="CONOCE NUESTROS COMBOS | BEMBOS" getData={getCombos} variante={false} subtitulo="" encabezado="" descripcion="" />
             <PantallaDescarga />
 
         </div>

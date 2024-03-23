@@ -1,12 +1,13 @@
 import { CardsCombos, NavbarCombos, PantallaDescarga } from "../components/shared"
+import { getLoncheritas } from "../services/fetchLoncheritas"
 
 const Loncheritas = () => {
   return (
     <div className="contenedor-general-combos">
       <NavbarCombos />
       <CardsCombos
-        tituloSeccion="COMBOS DE HAMBURGESAS"
-        getData={getCombos}
+        tituloSeccion="DESCUBRE NUESTRAS LONCHERAS | BEMBOS"
+        getData={getLoncheritas}
         variante={false}
         subtitulo="LONCHERITAS DE BEMBOS"
         encabezado="PREGUNTAS FRECUENTES SOBRE LAS LONCHERITAS"

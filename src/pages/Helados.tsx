@@ -6,7 +6,7 @@ const Helados = () => {
     <div className="contenedor-general-combos">
       <NavbarCombos />
       <CardsCombos
-        tituloSeccion="COMBOS DE HAMBURGESAS"
+        tituloSeccion="DELICIOSOS HELADOS PARA TI | BEMBOS"
         getData={getHelados}
         variante={false}
         subtitulo="POSTRES HELADOS"

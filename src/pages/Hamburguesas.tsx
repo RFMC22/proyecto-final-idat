@@ -6,7 +6,7 @@ const Hamburguesas = () => {
         <div className="contenedor-general-combos">
             <NavbarCombos />
             <CardsCombos
-                tituloSeccion="COMBOS DE HAMBURGESAS"
+                tituloSeccion="CONOCE NUESTRAS IRRESISTIBLES HAMBURGUESAS | BEMBOS"
                 getData={getHamburguesas}
                 variante={true}
                 subtitulo="HAMBURGUESAS A LA PARRILLA"

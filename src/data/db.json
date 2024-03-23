@@ -8,7 +8,7 @@
       "link": "combo-extrema",
       "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
-      "bigPrice":4
+      "bigPrice": 4
     },
     {
       "nombre": "Combo Carretillera",
@@ -18,7 +18,7 @@
       "link": "combo-carretillera",
       "descripcion": "Vive el sabor único de la Hamburguesa de pollo deshilachado llamada 'Carretillera a la parrilla de Bembos'. Esta creación incluye una sabrosa hamburguesa a la parrilla, complementada con tierno pollo deshilachado. Además, la salsa tártara añade un toque cremoso y refinado, mientras que las papas al hilo aportan una textura crujiente y deliciosa. La frescura viene de la mano del tomate y la lechuga. Completa tu experiencia gastronómica con una porción mediana de nuestras papas y una refrescante gaseosa de 500 ml. Un combo perfecto para satisfacer todos tus antojos.¡Pídelo online ya!",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-carretillera-calada_2.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo A lo Pobre",
@@ -28,7 +28,7 @@
       "link": "combo-a-lo-pobre",
       "descripcion": "Hamburguesa A lo Pobre a la parrilla: Hamburguesa a la parrilla, huevo frito, plátano frito, cebolla blanca, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-calada_3.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Churrita",
@@ -38,7 +38,7 @@
       "link": "combo-churrita",
       "descripcion": "Hamburguesa Churrita a la parrilla: Hamburguesa, tocino, papas al hilo y mayonesa de chimichurri. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-churrita-calada_4.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Alemana",
@@ -48,7 +48,7 @@
       "link": "combo-alemana",
       "descripcion": "1 Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa, papa mediana y gaseosa 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
-      "bigPrice":4
+      "bigPrice": 4
     },
     {
       "nombre": "Combo Queabuso",
@@ -58,7 +58,7 @@
       "link": "combo-queabuso",
       "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Royal",
@@ -68,7 +68,7 @@
       "link": "combo-royal",
       "descripcion": "Hamburguesa Royal a la parrilla: Hamburguesa a la parrilla, huevo, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-royal-calada-2_1__1.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Queso Tocino",
@@ -78,7 +78,7 @@
       "link": "combo-queso-tocino",
       "descripcion": "Hamburguesa Queso tocino a la parrilla: Hamburguesa a la parrilla, doble tocino, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-queso-tocino-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Cheese",
@@ -88,7 +88,7 @@
       "link": "combo-cheese",
       "descripcion": "Hamburguesa Cheese a la parrilla: Hamburguesa a la parrilla, lechuga, tomate, mayonesa y queso. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Clásica",
@@ -98,7 +98,7 @@
       "link": "combo-clasica",
       "descripcion": "Hamburguesa Clásica a la parrilla: Hamburguesa a la parrilla, lechuga, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/l/clasicas_0002_clasica_4.png",
-      "bigPrice":3
+      "bigPrice": 3
     }
   ],
   "hamburguesas": [
@@ -1106,67 +1106,106 @@
       "distritos": [
         {
           "nombre_distrito": "Ate",
-          "sedes": ["Plaza Vea Ate", "Santa Clara", "Puruchuco"],
+          "sedes": [
+            "Plaza Vea Ate",
+            "Santa Clara",
+            "Puruchuco"
+          ],
           "id": 86
         },
         {
           "nombre_distrito": "Cercado de Lima",
-          "sedes": ["Jirón de la Unión", "Centro Cívico"],
+          "sedes": [
+            "Jirón de la Unión",
+            "Centro Cívico"
+          ],
           "id": 87
         },
         {
           "nombre_distrito": "Chorillos",
-          "sedes": ["Real Plaza Chorrillos Venturosa", "Mega Plaza Chorrillos"],
+          "sedes": [
+            "Real Plaza Chorrillos Venturosa",
+            "Mega Plaza Chorrillos"
+          ],
           "id": 88
         },
         {
           "nombre_distrito": "Comas",
-          "sedes": ["Mallplaza Comas"],
+          "sedes": [
+            "Mallplaza Comas"
+          ],
           "id": 89
         },
         {
           "nombre_distrito": "Independencia",
-          "sedes": ["Mega Plaza", "Plaza Norte In Line (1er piso)"],
+          "sedes": [
+            "Mega Plaza",
+            "Plaza Norte In Line (1er piso)"
+          ],
           "id": 90
         },
         {
           "nombre_distrito": "Jesus María",
-          "sedes": ["Jesus María", "Real Plaza Salaverry"],
+          "sedes": [
+            "Jesus María",
+            "Real Plaza Salaverry"
+          ],
           "id": 91
         },
         {
           "nombre_distrito": "La Molina",
-          "sedes": ["La Fontana", "Wong Camacho", "DK La Molina"],
+          "sedes": [
+            "La Fontana",
+            "Wong Camacho",
+            "DK La Molina"
+          ],
           "id": 92
         },
         {
           "nombre_distrito": "La Victoria",
-          "sedes": ["Metro Canada In Line"],
+          "sedes": [
+            "Metro Canada In Line"
+          ],
           "id": 93
         },
         {
           "nombre_distrito": "Magdalena del Mar",
-          "sedes": ["Magdalena", "DK Magdalena"],
+          "sedes": [
+            "Magdalena",
+            "DK Magdalena"
+          ],
           "id": 94
         },
         {
           "nombre_distrito": "Miraflores",
-          "sedes": ["Aurora", "Larco I", "Larco II"],
+          "sedes": [
+            "Aurora",
+            "Larco I",
+            "Larco II"
+          ],
           "id": 95
         },
         {
           "nombre_distrito": "Pueblo Libre",
-          "sedes": ["Sucre"],
+          "sedes": [
+            "Sucre"
+          ],
           "id": 96
         },
         {
           "nombre_distrito": "Punta Hermosa",
-          "sedes": ["Movil 2 Punta Hermosa"],
+          "sedes": [
+            "Movil 2 Punta Hermosa"
+          ],
           "id": 97
         },
         {
           "nombre_distrito": "San Borja",
-          "sedes": ["Real Plaza Primavera", "Aviación", "Rambla Food Court"],
+          "sedes": [
+            "Real Plaza Primavera",
+            "Aviación",
+            "Rambla Food Court"
+          ],
           "id": 98
         },
         {
@@ -1182,27 +1221,41 @@
         },
         {
           "nombre_distrito": "San Juan de Miraflores",
-          "sedes": ["Mall del Sur", "San Juan Atocongo"],
+          "sedes": [
+            "Mall del Sur",
+            "San Juan Atocongo"
+          ],
           "id": 100
         },
         {
           "nombre_distrito": "San Martín de Porres",
-          "sedes": ["Plaza Lima Norte FC", "Real Plaza Pro"],
+          "sedes": [
+            "Plaza Lima Norte FC",
+            "Real Plaza Pro"
+          ],
           "id": 101
         },
         {
           "nombre_distrito": "San Miguel",
-          "sedes": ["Plaza San Miguel", "La mar", "Plaza San Miguel FC"],
+          "sedes": [
+            "Plaza San Miguel",
+            "La mar",
+            "Plaza San Miguel FC"
+          ],
           "id": 102
         },
         {
           "nombre_distrito": "Santa Anita",
-          "sedes": ["Santa Anita"],
+          "sedes": [
+            "Santa Anita"
+          ],
           "id": 103
         },
         {
           "nombre_distrito": "Santiago de Surco",
-          "sedes": ["Bembos Universidad de Lima"],
+          "sedes": [
+            "Bembos Universidad de Lima"
+          ],
           "id": 104
         },
         {
@@ -1219,12 +1272,16 @@
         },
         {
           "nombre_distrito": "Surquillo",
-          "sedes": ["Dark Kitchen Surquillo"],
+          "sedes": [
+            "Dark Kitchen Surquillo"
+          ],
           "id": 106
         },
         {
           "nombre_distrito": "Villa el Salvador",
-          "sedes": ["Villa el Salvador"],
+          "sedes": [
+            "Villa el Salvador"
+          ],
           "id": 107
         }
       ]
@@ -1247,7 +1304,11 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Plaza Vea Callao", "Bellavista", "Minka"]
+          "sedes": [
+            "Plaza Vea Callao",
+            "Bellavista",
+            "Minka"
+          ]
         }
       ]
     },
@@ -1256,7 +1317,10 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Chiclayo Real Plaza", "Mall Aventura Chiclayo"]
+          "sedes": [
+            "Chiclayo Real Plaza",
+            "Mall Aventura Chiclayo"
+          ]
         }
       ]
     },
@@ -1265,7 +1329,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Huancayo"]
+          "sedes": [
+            "Huancayo"
+          ]
         }
       ]
     },
@@ -1274,7 +1340,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["El Quinde Ica"]
+          "sedes": [
+            "El Quinde Ica"
+          ]
         }
       ]
     },
@@ -1283,7 +1351,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Real Plaza Juliaca"]
+          "sedes": [
+            "Real Plaza Juliaca"
+          ]
         }
       ]
     },
@@ -1292,7 +1362,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Real Plaza Piura"]
+          "sedes": [
+            "Real Plaza Piura"
+          ]
         }
       ]
     },
@@ -1301,7 +1373,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Real Plaza Pucallpa"]
+          "sedes": [
+            "Real Plaza Pucallpa"
+          ]
         }
       ]
     },
@@ -1310,7 +1384,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Plaza vea - Puno"]
+          "sedes": [
+            "Plaza vea - Puno"
+          ]
         }
       ]
     },
@@ -1319,7 +1395,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Plaza vea Tacna"]
+          "sedes": [
+            "Plaza vea Tacna"
+          ]
         }
       ]
     },
@@ -1328,7 +1406,10 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Real Plaza Trujillo", "Trujillo Mall Plaza"]
+          "sedes": [
+            "Real Plaza Trujillo",
+            "Trujillo Mall Plaza"
+          ]
         }
       ]
     }

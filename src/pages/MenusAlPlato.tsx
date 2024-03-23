@@ -1,4 +1,5 @@
 import { CardsCombos, NavbarCombos, PantallaDescarga } from "../components/shared"
+import { getMenusAlPlato } from "../services/fetchMenusalplato"
 
 const MenusAlPlato = () => {
   return (
@@ -6,7 +7,7 @@ const MenusAlPlato = () => {
       <NavbarCombos />
       <CardsCombos
         tituloSeccion="COMBOS DE HAMBURGESAS"
-        getData={getCombos}
+        getData={getMenusAlPlato}
         variante={false}
         subtitulo=""
         encabezado=""

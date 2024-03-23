@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { ComboResponse } from '../../interfaces';
 import useShopping from '../../hooks/useShopping';
 import { Link } from 'react-router-dom';
 import PreguntasFrecuentes from './PreguntasFrecuentes';
+import '../../styles/CardCombos.css'
 
-interface Props {
+interface Props<T> {
   subtitulo: string;
   descripcion: string;
   encabezado: string;
   variante: boolean;
   tituloSeccion: string;
-  getData: () => Promise<ComboResponse>;
+  getData: () => Promise<T>;
 }
-
-const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData, descripcion, encabezado, subtitulo, variante }) => {
-  const [combos, setCombos] = useState<ComboResponse>({});
+const CardsCombos: React.FC<Props<any>> = ({ tituloSeccion, getData, descripcion, encabezado, subtitulo, variante }) => {
+  const [combos, setCombos] = useState<any>({});
   const {
     setOrderTitle,
     setOrderDescripcion,
@@ -35,6 +34,8 @@ const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData, descripcion, enc
     fetchData();
   }, [getData]);
 
+  console.log(combos.data)
+
   return (
     <div className="max-contenedor">
       <div className="contenedor-fondo-medio">
@@ -42,7 +43,7 @@ const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData, descripcion, enc
           <h2>{tituloSeccion}</h2>
           <div className="contenedor-lista-combos">
             <div className="lista-combos">
-              {combos.data?.map((combo) => (
+              {combos.data?.map((combo: any) => (
                 <div className="item-lista">
                   <div className="item-content">
                     <div className="item-card">

@@ -6,7 +6,7 @@ const InkaChips = () => {
     <div className="contenedor-general-combos">
       <NavbarCombos />
       <CardsCombos
-        tituloSeccion="COMBOS DE HAMBURGESAS"
+        tituloSeccion="DESCUBRE NUESTRAS DELICOSAS INKA CHIPS | BEMBOS"
         getData={getInkaChips}
         variante={false}
         subtitulo=""

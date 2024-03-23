@@ -6,7 +6,7 @@ const Pollo = () => {
         <div className="contenedor-general-combos">
             <NavbarCombos />
             <CardsCombos
-                tituloSeccion="COMBOS DE HAMBURGESAS"
+                tituloSeccion="DESCUBRE NUESTRO IRRESISTIBLE MENÚ DE POLLO | BEMBOS"
                 getData={getPollo}
                 variante={true}
                 subtitulo="SÁNDWICHES Y HAMBURGUESAS DE POLLO"

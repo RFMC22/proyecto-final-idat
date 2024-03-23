@@ -21,6 +21,7 @@ const PreguntasFrecuentes: React.FC<AccordionSectionProps> = ({ title, children 
   return (
 
     <div className='contendor-principal-accordion'>
+
       <div className="contenedor-accordion-interior">
         <div className="header-accordion" onClick={toggleAccordion}>
           <div className='superior-cerrado-abierto-icon'>

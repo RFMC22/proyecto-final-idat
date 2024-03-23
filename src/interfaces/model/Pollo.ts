@@ -1,5 +1,5 @@
 
-export interface MenuAlPlato {
+export interface Pollo {
     pollo: Pollo[];
 }
 
