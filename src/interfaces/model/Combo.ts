@@ -4,4 +4,7 @@ export interface Combo {
     id: number;
     img: string;
     link: string;
+    descripcion:string;
+    orderimg:string;
+    bigPrice:number;
 }

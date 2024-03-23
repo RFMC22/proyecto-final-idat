@@ -5,70 +5,100 @@
       "precio": 32.8,
       "id": 1,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-extrema-nuevo-bb.jpg",
-      "link": "combo-extrema"
+      "link": "combo-extrema",
+      "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
+      "bigPrice":4
     },
     {
       "nombre": "Combo Carretillera",
       "precio": 30.8,
       "id": 2,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-carretillera-nuevo-bb.jpg",
-      "link": "combo-carretillera"
+      "link": "combo-carretillera",
+      "descripcion": "Vive el sabor único de la Hamburguesa de pollo deshilachado llamada 'Carretillera a la parrilla de Bembos'. Esta creación incluye una sabrosa hamburguesa a la parrilla, complementada con tierno pollo deshilachado. Además, la salsa tártara añade un toque cremoso y refinado, mientras que las papas al hilo aportan una textura crujiente y deliciosa. La frescura viene de la mano del tomate y la lechuga. Completa tu experiencia gastronómica con una porción mediana de nuestras papas y una refrescante gaseosa de 500 ml. Un combo perfecto para satisfacer todos tus antojos.¡Pídelo online ya!",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-carretillera-calada_2.png",
+      "bigPrice":3
     },
     {
       "nombre": "Combo A lo Pobre",
       "precio": 27.8,
       "id": 3,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-a-lo-pobre-nuevo-bb.jpg",
-      "link": "combo-a-lo-pobre"
+      "link": "combo-a-lo-pobre",
+      "descripcion": "Hamburguesa A lo Pobre a la parrilla: Hamburguesa a la parrilla, huevo frito, plátano frito, cebolla blanca, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-calada_3.png",
+      "bigPrice":3
     },
     {
       "nombre": "Combo Churrita",
       "precio": 27.8,
       "id": 4,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-churrita-nuevo-bb.jpg",
-      "link": "combo-churrita"
+      "link": "combo-churrita",
+      "descripcion": "Hamburguesa Churrita a la parrilla: Hamburguesa, tocino, papas al hilo y mayonesa de chimichurri. Papa mediana y gaseosa de 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-churrita-calada_4.png",
+      "bigPrice":3
     },
     {
       "nombre": "Combo Alemana",
       "precio": 27.8,
       "id": 5,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-alemana-nuevo-bb.jpg",
-      "link": "combo-alemana"
+      "link": "combo-alemana",
+      "descripcion": "1 Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa, papa mediana y gaseosa 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
+      "bigPrice":4
     },
     {
       "nombre": "Combo Queabuso",
       "precio": 27.8,
       "id": 6,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-queabuso-nuevo-bb.jpg",
-      "link": "combo-queabuso"
+      "link": "combo-queabuso",
+      "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
+      "bigPrice":3
     },
     {
       "nombre": "Combo Royal",
       "precio": 26.8,
       "id": 7,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-royal-nuevo-bb.jpg",
-      "link": "combo-royal"
+      "link": "combo-royal",
+      "descripcion": "Hamburguesa Royal a la parrilla: Hamburguesa a la parrilla, huevo, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-royal-calada-2_1__1.png",
+      "bigPrice":3
     },
     {
       "nombre": "Combo Queso Tocino",
       "precio": 26.8,
       "id": 8,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-queso-tocino-nuevo-bb.jpg",
-      "link": "combo-queso-tocino"
+      "link": "combo-queso-tocino",
+      "descripcion": "Hamburguesa Queso tocino a la parrilla: Hamburguesa a la parrilla, doble tocino, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-queso-tocino-calada_5.png",
+      "bigPrice":3
     },
     {
       "nombre": "Combo Cheese",
       "precio": 25.8,
       "id": 9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-cheese-nuevo-bb.jpg",
-      "link": "combo-cheese"
+      "link": "combo-cheese",
+      "descripcion": "Hamburguesa Cheese a la parrilla: Hamburguesa a la parrilla, lechuga, tomate, mayonesa y queso. Papa mediana y gaseosa de 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
+      "bigPrice":3
     },
     {
       "nombre": "Combo Clásica",
       "precio": 23.8,
       "id": 10,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-clasica-nuevo-bb.jpg",
-      "link": "combo-clasica"
+      "link": "combo-clasica",
+      "descripcion": "Hamburguesa Clásica a la parrilla: Hamburguesa a la parrilla, lechuga, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
+      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/l/clasicas_0002_clasica_4.png",
+      "bigPrice":3
     }
   ],
   "hamburguesas": [
@@ -1428,15 +1458,10 @@
             }
           ]
         }
-      ],
-      "complementos": [
-        {
-
-        }
       ]
     }
   ],
-  "preguntas": [
+  "preguntas_pedidos": [
     {
       "nropregunta": 1,
       "nombrepregunta": "ELIGE EL TAMAÑO DE TU PAPA",

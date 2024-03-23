@@ -9,6 +9,7 @@ const Breadcrumb = () => {
     .trim()
     .replace('-', ' ')
     .replace('-', ' ')
+    .replace('-', ' ')
     .split('/');
 
   return (

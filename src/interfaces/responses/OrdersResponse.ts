@@ -1,5 +1,5 @@
-import { Order } from '../';
+import { PreguntasPedido } from '../';
 
 export interface OrdenesResponse {
-    orders: Order[];
-  }
+  data?: PreguntasPedido[];
+}

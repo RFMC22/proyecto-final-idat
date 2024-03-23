@@ -1,47 +1,11 @@
-export interface Order {
-  combos:       Combo[];
-  complementos: Complemento[];
-}
-
-export interface Combo {
-  Combo_Extrema: ComboExtremum[];
-}
-
-export interface ComboExtremum {
-  id:               number;
-  nombre:           string;
-  descripcion:      string;
-  imagen_principal: string;
-  sizes:            Size[];
-}
-
-export interface Size {
-  mediana?: Mediana[];
-  grande?:  Grande[];
-}
-
-export interface Grande {
-  imagen_grande: string;
-  texto_grande:  string;
-}
-
-export interface Mediana {
-  imagen_mediana: string;
-  texto_mediana:  string;
-}
-
-export interface Complemento {
-  preguntas: Pregunta[];
-}
-
-export interface Pregunta {
+export interface PreguntasPedido {
   nropregunta:     number;
   nombrepregunta:  string;
   descrippregunta: string;
-  combinaciones:   Combinacione[];
+  combinaciones:   Combinaciones[];
 }
 
-export interface Combinacione {
+export interface Combinaciones {
   nrocomb:    number;
   titulocomb: string;
   imgcomb:    string;
