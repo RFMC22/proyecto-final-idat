@@ -12,10 +12,13 @@ import useShopping from '../../hooks/useShopping';
 import { PathConstants } from '../../utils/PathConstants';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { GoAlert } from 'react-icons/go';
 import { Counter } from '..';
 
 const Cart = () => {
   const { setCartState, cartState } = useShopping();
+  const [payBtnDisable, setPayBtnDisable] = useState(false);
+
   const navigate = useNavigate();
 
   const handleClose = () => {
@@ -32,6 +35,12 @@ const Cart = () => {
 
     getDataComplementos();
   }, []);
+
+  const isDisabled = () => {
+    const currentDate = new Date();
+    const currentHour = currentDate.getHours();
+    return currentHour >= 23 || currentHour < 11; // Disable button between 11 pm and 10 am
+  };
 
   return (
     <>
@@ -51,6 +60,14 @@ const Cart = () => {
 
             <div className="cart-container">
               <div className="cart-title-container">
+                <div className="center">
+                  {isDisabled() && (
+                    <p className="close-store">
+                      <GoAlert className="icon-alert" />
+                      Nuestra tienda está cerrada, regresa de 10:00PM a 11:00AM.
+                    </p>
+                  )}
+                </div>
                 <h2 className="cart-title">Tu Carrito</h2>
                 <p className="cart-description">
                   <span className="cart-question">
@@ -116,7 +133,7 @@ const Cart = () => {
 
             <div className="cart-container cart-container-sticky">
               <div className="btns">
-                <button className="btn btn-rojo">
+                <button className="btn btn-rojo" disabled={isDisabled()}>
                   <div className="circle">1</div>
                   IR A PAGAR <span>S/. 70.40</span>
                 </button>
