@@ -8,6 +8,14 @@ export * from './responses/PromocionCompartirResponse';
 export * from './responses/PromocionDosResponse';
 export * from './responses/MenuResponse';
 export * from './responses/ComboResponse';
+export * from './responses/BebidaResponse';
+export * from './responses/HamburguesaResponse';
+export * from './responses/HeladoResponse';
+export * from './responses/InkaChipsResponse';
+export * from './responses/LoncheritaResponse';
+export * from './responses/MenuAlPlatoResponse';
+export * from './responses/PolloResponse';
+export * from './responses/PreguntasFrecuentesResponse';
 export * from './responses/CuponResponse';
 export * from './responses/OrdersResponse';
 

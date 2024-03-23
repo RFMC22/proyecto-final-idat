@@ -1,0 +1,44 @@
+.titulo-accordion {
+    color: var(--blue);
+    font-family: var(--kulristaB);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.superior-cerrado-abierto-icon {
+    height: 42.4px;
+    padding: 0 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.superior-cerrado-abierto-icon img {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-accordion-interior {
+
+    font-family: var(--kulristaR);
+    border: 2px solid #dcdcdc;
+    cursor: pointer;
+    padding: 0 10px;
+    margin: 5px 10px;
+    overflow: hidden;
+    transition: height 0.9s ease;
+}
+
+
+.accordion-content {
+    margin: 5px 0;
+    padding: 0 10px;
+    font-size: 12px;
+    transition: height 0.9s ease;
+}
+
+.contendor-principal-accordion {
+    margin-bottom: 30px;
+}

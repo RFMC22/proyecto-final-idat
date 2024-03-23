@@ -8,7 +8,7 @@
       "link": "combo-extrema",
       "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
-      "bigPrice":4
+      "bigPrice": 4
     },
     {
       "nombre": "Combo Carretillera",
@@ -18,7 +18,7 @@
       "link": "combo-carretillera",
       "descripcion": "Vive el sabor único de la Hamburguesa de pollo deshilachado llamada 'Carretillera a la parrilla de Bembos'. Esta creación incluye una sabrosa hamburguesa a la parrilla, complementada con tierno pollo deshilachado. Además, la salsa tártara añade un toque cremoso y refinado, mientras que las papas al hilo aportan una textura crujiente y deliciosa. La frescura viene de la mano del tomate y la lechuga. Completa tu experiencia gastronómica con una porción mediana de nuestras papas y una refrescante gaseosa de 500 ml. Un combo perfecto para satisfacer todos tus antojos.¡Pídelo online ya!",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-carretillera-calada_2.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo A lo Pobre",
@@ -28,7 +28,7 @@
       "link": "combo-a-lo-pobre",
       "descripcion": "Hamburguesa A lo Pobre a la parrilla: Hamburguesa a la parrilla, huevo frito, plátano frito, cebolla blanca, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-calada_3.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Churrita",
@@ -38,7 +38,7 @@
       "link": "combo-churrita",
       "descripcion": "Hamburguesa Churrita a la parrilla: Hamburguesa, tocino, papas al hilo y mayonesa de chimichurri. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-churrita-calada_4.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Alemana",
@@ -48,7 +48,7 @@
       "link": "combo-alemana",
       "descripcion": "1 Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa, papa mediana y gaseosa 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
-      "bigPrice":4
+      "bigPrice": 4
     },
     {
       "nombre": "Combo Queabuso",
@@ -58,7 +58,7 @@
       "link": "combo-queabuso",
       "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Royal",
@@ -68,7 +68,7 @@
       "link": "combo-royal",
       "descripcion": "Hamburguesa Royal a la parrilla: Hamburguesa a la parrilla, huevo, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-royal-calada-2_1__1.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Queso Tocino",
@@ -78,7 +78,7 @@
       "link": "combo-queso-tocino",
       "descripcion": "Hamburguesa Queso tocino a la parrilla: Hamburguesa a la parrilla, doble tocino, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-queso-tocino-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Cheese",
@@ -88,7 +88,7 @@
       "link": "combo-cheese",
       "descripcion": "Hamburguesa Cheese a la parrilla: Hamburguesa a la parrilla, lechuga, tomate, mayonesa y queso. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Clásica",
@@ -98,7 +98,7 @@
       "link": "combo-clasica",
       "descripcion": "Hamburguesa Clásica a la parrilla: Hamburguesa a la parrilla, lechuga, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/l/clasicas_0002_clasica_4.png",
-      "bigPrice":3
+      "bigPrice": 3
     }
   ],
   "hamburguesas": [
@@ -1106,67 +1106,106 @@
       "distritos": [
         {
           "nombre_distrito": "Ate",
-          "sedes": ["Plaza Vea Ate", "Santa Clara", "Puruchuco"],
+          "sedes": [
+            "Plaza Vea Ate",
+            "Santa Clara",
+            "Puruchuco"
+          ],
           "id": 86
         },
         {
           "nombre_distrito": "Cercado de Lima",
-          "sedes": ["Jirón de la Unión", "Centro Cívico"],
+          "sedes": [
+            "Jirón de la Unión",
+            "Centro Cívico"
+          ],
           "id": 87
         },
         {
           "nombre_distrito": "Chorillos",
-          "sedes": ["Real Plaza Chorrillos Venturosa", "Mega Plaza Chorrillos"],
+          "sedes": [
+            "Real Plaza Chorrillos Venturosa",
+            "Mega Plaza Chorrillos"
+          ],
           "id": 88
         },
         {
           "nombre_distrito": "Comas",
-          "sedes": ["Mallplaza Comas"],
+          "sedes": [
+            "Mallplaza Comas"
+          ],
           "id": 89
         },
         {
           "nombre_distrito": "Independencia",
-          "sedes": ["Mega Plaza", "Plaza Norte In Line (1er piso)"],
+          "sedes": [
+            "Mega Plaza",
+            "Plaza Norte In Line (1er piso)"
+          ],
           "id": 90
         },
         {
           "nombre_distrito": "Jesus María",
-          "sedes": ["Jesus María", "Real Plaza Salaverry"],
+          "sedes": [
+            "Jesus María",
+            "Real Plaza Salaverry"
+          ],
           "id": 91
         },
         {
           "nombre_distrito": "La Molina",
-          "sedes": ["La Fontana", "Wong Camacho", "DK La Molina"],
+          "sedes": [
+            "La Fontana",
+            "Wong Camacho",
+            "DK La Molina"
+          ],
           "id": 92
         },
         {
           "nombre_distrito": "La Victoria",
-          "sedes": ["Metro Canada In Line"],
+          "sedes": [
+            "Metro Canada In Line"
+          ],
           "id": 93
         },
         {
           "nombre_distrito": "Magdalena del Mar",
-          "sedes": ["Magdalena", "DK Magdalena"],
+          "sedes": [
+            "Magdalena",
+            "DK Magdalena"
+          ],
           "id": 94
         },
         {
           "nombre_distrito": "Miraflores",
-          "sedes": ["Aurora", "Larco I", "Larco II"],
+          "sedes": [
+            "Aurora",
+            "Larco I",
+            "Larco II"
+          ],
           "id": 95
         },
         {
           "nombre_distrito": "Pueblo Libre",
-          "sedes": ["Sucre"],
+          "sedes": [
+            "Sucre"
+          ],
           "id": 96
         },
         {
           "nombre_distrito": "Punta Hermosa",
-          "sedes": ["Movil 2 Punta Hermosa"],
+          "sedes": [
+            "Movil 2 Punta Hermosa"
+          ],
           "id": 97
         },
         {
           "nombre_distrito": "San Borja",
-          "sedes": ["Real Plaza Primavera", "Aviación", "Rambla Food Court"],
+          "sedes": [
+            "Real Plaza Primavera",
+            "Aviación",
+            "Rambla Food Court"
+          ],
           "id": 98
         },
         {
@@ -1182,27 +1221,41 @@
         },
         {
           "nombre_distrito": "San Juan de Miraflores",
-          "sedes": ["Mall del Sur", "San Juan Atocongo"],
+          "sedes": [
+            "Mall del Sur",
+            "San Juan Atocongo"
+          ],
           "id": 100
         },
         {
           "nombre_distrito": "San Martín de Porres",
-          "sedes": ["Plaza Lima Norte FC", "Real Plaza Pro"],
+          "sedes": [
+            "Plaza Lima Norte FC",
+            "Real Plaza Pro"
+          ],
           "id": 101
         },
         {
           "nombre_distrito": "San Miguel",
-          "sedes": ["Plaza San Miguel", "La mar", "Plaza San Miguel FC"],
+          "sedes": [
+            "Plaza San Miguel",
+            "La mar",
+            "Plaza San Miguel FC"
+          ],
           "id": 102
         },
         {
           "nombre_distrito": "Santa Anita",
-          "sedes": ["Santa Anita"],
+          "sedes": [
+            "Santa Anita"
+          ],
           "id": 103
         },
         {
           "nombre_distrito": "Santiago de Surco",
-          "sedes": ["Bembos Universidad de Lima"],
+          "sedes": [
+            "Bembos Universidad de Lima"
+          ],
           "id": 104
         },
         {
@@ -1219,12 +1272,16 @@
         },
         {
           "nombre_distrito": "Surquillo",
-          "sedes": ["Dark Kitchen Surquillo"],
+          "sedes": [
+            "Dark Kitchen Surquillo"
+          ],
           "id": 106
         },
         {
           "nombre_distrito": "Villa el Salvador",
-          "sedes": ["Villa el Salvador"],
+          "sedes": [
+            "Villa el Salvador"
+          ],
           "id": 107
         }
       ]
@@ -1247,7 +1304,11 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Plaza Vea Callao", "Bellavista", "Minka"]
+          "sedes": [
+            "Plaza Vea Callao",
+            "Bellavista",
+            "Minka"
+          ]
         }
       ]
     },
@@ -1256,7 +1317,10 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Chiclayo Real Plaza", "Mall Aventura Chiclayo"]
+          "sedes": [
+            "Chiclayo Real Plaza",
+            "Mall Aventura Chiclayo"
+          ]
         }
       ]
     },
@@ -1265,7 +1329,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Huancayo"]
+          "sedes": [
+            "Huancayo"
+          ]
         }
       ]
     },
@@ -1274,7 +1340,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["El Quinde Ica"]
+          "sedes": [
+            "El Quinde Ica"
+          ]
         }
       ]
     },
@@ -1283,7 +1351,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Real Plaza Juliaca"]
+          "sedes": [
+            "Real Plaza Juliaca"
+          ]
         }
       ]
     },
@@ -1292,7 +1362,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Real Plaza Piura"]
+          "sedes": [
+            "Real Plaza Piura"
+          ]
         }
       ]
     },
@@ -1301,7 +1373,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Real Plaza Pucallpa"]
+          "sedes": [
+            "Real Plaza Pucallpa"
+          ]
         }
       ]
     },
@@ -1310,7 +1384,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Plaza vea - Puno"]
+          "sedes": [
+            "Plaza vea - Puno"
+          ]
         }
       ]
     },
@@ -1319,7 +1395,9 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Plaza vea Tacna"]
+          "sedes": [
+            "Plaza vea Tacna"
+          ]
         }
       ]
     },
@@ -1328,7 +1406,10 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": ["Real Plaza Trujillo", "Trujillo Mall Plaza"]
+          "sedes": [
+            "Real Plaza Trujillo",
+            "Trujillo Mall Plaza"
+          ]
         }
       ]
     }
@@ -1355,74 +1436,66 @@
       ],
       "pollo": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Cuántos puntos recibo por comprar sándwiches de pollo a la plarrilla o hamburguesa crispy de Bembos?",
+          "respuesta": "Los puntos que se reciben por la compra del crujiente sandwich de pollo varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿De qué están hechas la hamburguesa de pollo o hamburguesa broaster de Bembos?",
+          "respuesta": "Las hamburguesas de pollo están hechas de carne de pollo, junto con las más exquisitos ingredientes peruanos. ¡Pídelo por Online delivery!"
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
+          "titulo": "¿Los sandwiches de pollo a la parrilla de Bembos están acompañados de papas fritas?",
+          "respuesta": "Sí, el Sandwich de pollo a la parrilla incluye distintos acompañamientos, podrás incluir: Huevo, Papas extras, Plátano, queso y Tocino. También puedes pedirlo únicamente solo sin acompañamiento."
         },
         {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Qué adicionales tienen los sandwich de pollo a la parrilla de Bembos?",
+          "respuesta": "Los adicionales que tienen las hamburguesas de pollo varían según elección del usuario. Entre estas tenemos añadir: Plátano, huevo, queso, tocino y papas al hilo extras. También añadir las más exquisitas salsas peruanas."
         }
       ],
       "loncheritas": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Hay delivery de Loncheritas Bembos?",
+          "respuesta": "Sí, elige la loncherita de tu preferencia comprando por delivery online. Y disfruta de un pack con la mejor hamburguesa a la parrilla o nuggets. Incluye papas fritas y bebida."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Qué productos tienen las loncheritas Bembos?",
+          "respuesta": "Hay 3 alternativas: Loncherita Básica, Loncherita Nuggets y Loncherita básica de pollo. Todas incluyen papitas fritas, salsas exquisitas y una bebida a tu preferencia. Disfruta dnuestras famosas Loncheritas para tus niños."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
-        },
-        {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Qué son las loncheritas Bembos?",
+          "respuesta": "Las Loncheritas de Bembos son una divertida opción para los pequeños. Elige tu pack favorito que incluye papitas fritas y bebida, tienes la opción de elegir alguna Hamburguesa a la parrilla o deliciosos nuggets."
         }
       ],
       "complementos": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Puedo comprar más de un complemento Bembos?",
+          "respuesta": "Sí, Podrás pedir tus papitas fritas bembos, chicken nuggets, chesse fingers y papas inka chips. Recuerda que para acceder al delivery debes considear un pedido como mínimo de S/12.90."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Cuáles son los 'complementos Bembos'?",
+          "respuesta": "Los complementos Bembos que pueden ser pedidos son papas fritas, Chicken Nuggets y Cheese Fingers. Estas son un perfecto acompañamiento adicional para tus deliciosas hamburguesas a la parilla."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
+          "titulo": "¿Cuántos Cheese fingers vienen por pedido de Delivery Online?",
+          "respuesta": "¿Cuántos Cheese fingers vienen por pedido de Delivery Online?"
         },
         {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Cuántos nuggets vienen en los complementos Bembos?",
+          "respuesta": "¿Cuántos nuggets vienen en los complementos Bembos?"
         }
       ],
       "helados": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Qué adicionales puedo agregarle a mi helado Bembos?",
+          "respuesta": "Podrás añadir hasta 9 toppings dulces, de chocolate o maní. Elige el mejor complemente para tu helado Mini Princesa y Choco Vainilla."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Puedo comprar mi postre de helados Bembos por Delivery?",
+          "respuesta": "Sí, puedes elegir y pedir tus helados por Delivery Online. Tenemos para ti el helado Mini Princesa de Vainilla o Mixta y también el helado Choco Maní. Recuerda añadir tus toppings preferidos y disfrutar de este exquisito antojo."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
-        },
-        {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Qué sabores de helados Bembos existen?",
+          "respuesta": "Existen dos tipos de helados en la tienda en línea de Bembos. Tenemos el Helado Mini Princesa que es un helado de vainilla o mixto con trozos de chocolate princesa y fudge de chocolate. Y también está el Choco Maní que está hecho con helado de vainilla y una delicios cobertura de chocolate derretido con maní picado."
         }
       ]
     }
