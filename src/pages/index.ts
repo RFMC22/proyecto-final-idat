@@ -13,4 +13,5 @@ export { default as Complementos } from './Complementos';
 export { default as Bebidas } from './Bebidas';
 export { default as Helados } from './Helados';
 export { default as InkaChips } from './InkaChips';
+export { default as Tiendas } from './Tiendas';
 export { default as Orders } from './Pedidos/Orders';

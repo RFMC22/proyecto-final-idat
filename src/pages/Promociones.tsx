@@ -1,12 +1,11 @@
-import { TabTitle, tabScrollClick } from "../utils/GeneralFunctions"
+import { TabTitle } from "../utils/GeneralFunctions"
 import '../styles/pages/Promociones.css'
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { GrUserManager } from "react-icons/gr";
 import { SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Grid } from 'swiper/modules';
 import { SwiperComponent } from "../components/shared";
-import { Card } from "../components";
+import { Card, Tabs } from "../components";
 import useShopping from "../hooks/useShopping";
 
 const Promociones = () => {
@@ -19,16 +18,9 @@ const Promociones = () => {
         } = useShopping();
   TabTitle('Promociones de Hamburguesas Bembos | Delivery Perú');
 
-  const [activeTab, setActiveTab] = useState('item__personales');
-
-  const handleTabClick = (id:string) => {
-    setActiveTab(id);
-    tabScrollClick(id)
-  };
-
   useEffect(()=>{
     getDataPromociones();
-  },[getDataPromociones]);
+  },[]);
 
   const promocionesPersonalesOptions = {
     slidesPerView:1,
@@ -76,12 +68,16 @@ const Promociones = () => {
 
   return (
     <section>
-      <div className="ppromos-tabs-main showDesktop ppromos-tabs-list">
-        <Link to="#" onClick={() => handleTabClick('item__personales')} className={activeTab === 'item__personales' ? 'active' : ''}>Promociones Personales</Link>
-        <Link to="#" onClick={() => handleTabClick('item__combo-para-2')} className={activeTab === 'item__combo-para-2' ? 'active' : ''}>Promociones para 2</Link>
-        <Link to="#" onClick={() => handleTabClick('item__para-compartir')} className={activeTab === 'item__para-compartir' ? 'active' : ''}>Promociones para compartir</Link>
-        <Link to="#" onClick={() => handleTabClick('item__cupones')} className={activeTab === 'item__cupones' ? 'active' : ''}>Cupones</Link>
-      </div>
+      <Tabs
+        elementoIncial={1}
+        show={'desktop'}
+        elementos={[
+          {id:1,nombre:'Promociones Personales'},
+          {id:2,nombre:'Promociones para 2'},
+          {id:3,nombre:'Promociones para compartir'},
+          {id:4,nombre:'Cupones'}
+        ]}
+      />
       <div className="container">
         <div className="container-main">
           <div className="ppromos-address-bar">
@@ -103,12 +99,16 @@ const Promociones = () => {
             </div>
           </div>
           <div className="ppromos-tabs-main-w showMobile">
-            <div className="ppromos-tabs-main showMobile ppromos-tabs-list" style={{top: '0px'}}>
-              <Link to="#" onClick={() => handleTabClick('item__personales')} className={activeTab === 'item__personales' ? 'active' : ''}>Promociones Personales</Link>
-              <Link to="#" onClick={() => handleTabClick('item__combo-para-2')} className={activeTab === 'item__combo-para-2' ? 'active' : ''}>Promociones para 2</Link>
-              <Link to="#" onClick={() => handleTabClick('item__para-compartir')} className={activeTab === 'item__para-compartir' ? 'active' : ''}>Promociones para compartir</Link>
-              <Link to="#" onClick={() => handleTabClick('item__cupones')} className={activeTab === 'item__cupones' ? 'active' : ''}>Cupones</Link>
-            </div>
+          <Tabs
+            elementoIncial={1}
+            show={'mobile'}
+            elementos={[
+              {id:1,nombre:'Promociones Personales'},
+              {id:2,nombre:'Promociones para 2'},
+              {id:3,nombre:'Promociones para compartir'},
+              {id:4,nombre:'Cupones'}
+            ]}
+          />
           </div>
           <div className="page-body">
             <h1>Promociones de Hamburguesas para ti con delivery</h1>
@@ -121,7 +121,7 @@ const Promociones = () => {
               </h2>
             </div>
             <div className="promociones-familiares">
-              <div id="item__personales" className="ppromos-listaProductos">
+              <div id="1" className="ppromos-listaProductos">
                 <div className="list-promociones list-promo-horizontal">
                   <SwiperComponent options={promocionesPersonalesOptions} className="swiper-promo-personal">
                   <div className="btn-next-2"></div>
@@ -173,7 +173,7 @@ const Promociones = () => {
                   </SwiperComponent>
                 </div>
               </div>
-              <div id="item__combo-para-2">
+              <div id="2">
                 <h2 className="subcatTitle">
                   <span data-categoryid="0" id="subcatTitle-97" className="subcatTitle">
                     <div className="person">
@@ -234,7 +234,7 @@ const Promociones = () => {
                   </SwiperComponent>
                 </div>
               </div>
-              <div id="item__para-compartir">
+              <div id="3">
                 <h2 className="subcatTitle">
                   <span data-categoryid="0" id="subcatTitle-97" className="subcatTitle">
                     <div className="person child-2">
@@ -296,7 +296,7 @@ const Promociones = () => {
                   </SwiperComponent>
                 </div>
               </div>
-              <div id="item__cupones">
+              <div id="4">
                 <h2 className="subcatTitle">
                   <span data-categoryid="0" id="subcatTitle-97" className="subcatTitle">
                     Cupones
