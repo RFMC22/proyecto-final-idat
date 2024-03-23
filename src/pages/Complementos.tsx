@@ -1,7 +1,10 @@
 import { CardsCombos, NavbarCombos, PantallaDescarga } from "../components/shared"
 import { getComplementos } from "../services"
+import { TabTitle } from "../utils/GeneralFunctions"
 
 const Complementos = () => {
+  TabTitle("Deléitate con nuestros complementos en BEMBOS: nuggets, papas, etc")
+
   return (
     <div className="contenedor-general-combos">
       <NavbarCombos />

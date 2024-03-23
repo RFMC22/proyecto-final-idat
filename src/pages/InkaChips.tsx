@@ -1,7 +1,10 @@
 import { CardsCombos, NavbarCombos, PantallaDescarga } from "../components/shared"
 import { getInkaChips } from "../services/fetchInkaChips"
+import { TabTitle } from "../utils/GeneralFunctions"
 
 const InkaChips = () => {
+  TabTitle("Conoce nuestras deliciosas Inka Chips | BEMBOS")
+
   return (
     <div className="contenedor-general-combos">
       <NavbarCombos />

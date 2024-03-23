@@ -1,7 +1,10 @@
 import { CardsCombos, NavbarCombos, PantallaDescarga } from "../components/shared"
 import { getHelados } from "../services/fetchHelados"
+import { TabTitle } from "../utils/GeneralFunctions"
 
 const Helados = () => {
+  TabTitle("Prueba nuestros deliciosos helados | BEMBOS")
+
   return (
     <div className="contenedor-general-combos">
       <NavbarCombos />

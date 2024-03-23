@@ -1,7 +1,10 @@
 import { CardsCombos, NavbarCombos, PantallaDescarga } from "../components/shared"
 import { getLoncheritas } from "../services/fetchLoncheritas"
+import { TabTitle } from "../utils/GeneralFunctions"
 
 const Loncheritas = () => {
+  TabTitle("Descubre las loncheras | BEMBOS")
+
   return (
     <div className="contenedor-general-combos">
       <NavbarCombos />
