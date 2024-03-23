@@ -1,4 +1,6 @@
+export * from './fetchCombos';
 export * from './fetchComplementos';
-export * from './fetchPromociones';
+export * from './fetchCupones';
+export * from './fetchHamburguesas'
 export * from './fetchMenuOptions';
 export * from './fetchPromociones';

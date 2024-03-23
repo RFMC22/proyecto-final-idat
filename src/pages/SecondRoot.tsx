@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Cart, Footer, Header } from '../components';
-import { Root } from '.';
+import { Footer, Header } from '../components';
 
 const SecondRoot = () => {
   return (
