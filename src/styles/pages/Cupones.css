@@ -1,0 +1,69 @@
+.blueT{
+  color: #193694 !important;
+}
+.cupones {
+  position: relative;
+}
+.cupones .swiper-promo-personal {
+  width: 90%;
+}
+.cupones .btn-next-2,
+.cupones .btn-prev-2 {
+  background: #173083;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  border-radius: 50%;
+}
+.cupones .btn-prev-2 {
+  left: 0;
+  top: 50%;
+}
+.cupones .btn-next-2 {
+  right: 0;
+  top: 50%;
+}
+.cupones .btn-next-2:before, 
+.cupones .btn-prev-2:before {
+  width: 11px;
+  border-radius: 2em;
+  height: 23px;
+  content: "" !important;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  background: url('../../assets/images/arrow.svg') no-repeat 50%;
+  background-size: 100%;
+}
+.cupones .btn-prev-2:before {
+  transform: rotateY(180deg);
+}
+.cupones .promotion-card {
+  max-height: 255px;
+}
+.cupones .swiper-wrapper {
+  height: 310px;
+}
+.cupones .extra-text {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .cupones .swiper-promo-personal {
+    width: 100%;
+  }
+  .cupones .btn-next-2,
+  .cupones .btn-prev-2 {
+    top: 20px !important;
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+  }
+  .cupones .btn-next-2:before, 
+  .cupones .btn-prev-2:before {
+    top: 10px;
+  }
+  .cupones .btn-prev-2 {
+    left: 250px;
+  }
+}

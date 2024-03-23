@@ -1,5 +1,5 @@
-import { PromocionPersonal } from "../model/PromocionPersonal";
+import { Promocion } from "../model/Promocion";
 
 export interface PromocionPersonalResponse {
-  data?: PromocionPersonal[];
+  data?: Promocion[];
 }

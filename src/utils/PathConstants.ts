@@ -6,6 +6,7 @@ export const PathConstants = {
   PROMOCIONES_ID: '/promociones/:id',
   CUPONES: '/cupones',
   COMBOS: '/menu/combos',
+  COMBOS_ORDERS: '/menu/combos/*',
   HAMBURGUESAS: '/menu/hamburguesas',
   POLLO: '/menu/pollo',
   MENUSALPLATO: '/menu/menus-al-plato',

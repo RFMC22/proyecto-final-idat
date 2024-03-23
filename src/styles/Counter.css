@@ -1,0 +1,57 @@
+.Counter {
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn {
+    background-color: rgb(103, 103, 103);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+    width: 25px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .quantity {
+    font-family: 'kulristaRegular', sans-serif;
+    font-size: 13px;
+    color: rgb(110, 107, 107);
+  }
+}
+
+.counter-cart {
+  margin: 15px 0;
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quantity {
+    font-family: 'din', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .btn {
+    width: 23px;
+    height: 23px;
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 18px;
+    font-family: 'din', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
