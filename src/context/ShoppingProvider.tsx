@@ -18,50 +18,13 @@ import { getCupones } from '../services/fetchCupones';
 
 const ShoppingContext = createContext<iShoppingType>(iShoppingContext);
 
-// const ShoppingProvider = ({ children }: any) => {
-//   const [cartState, setCartState] = useState<boolean | null>(false);
-
-//   // VARIABLES PARA PEDIDOS
-
-//   const [orderTitle, setOrderTitle] = useState<string>('');
-//   const [orderDescripcion, setOrderDescripcion] = useState<string | null>('');
-//   const [orderMainImage, setOrderMainImage] = useState<string>('');
-//   const [orderSecondImage, setOrderSecondImage] = useState<string>('');
-//   const [orderBigPrice, setOrderBigPrice] = useState<number>(0);
-
-//   return (
-//     <ShoppingContext.Provider
-//       value={{
-//         cartState,
-//         setCartState,
-//         setOrderTitle,
-//         setOrderDescripcion,
-//         setOrderMainImage,
-//         setOrderSecondImage,
-//         setOrderBigPrice,
-//         orderTitle,
-//         orderDescripcion,
-//         orderMainImage,
-//         orderSecondImage,
-//         orderBigPrice,
-//       }}
-//     >
-//       </ShoppingContext.Provider>
-//   )}
-
-
 const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [cartState, setCartState] = useState<boolean | null>(false);
-
-  // VARIABLES PARA PEDIDOS
-
   const [orderTitle, setOrderTitle] = useState<string>('');
   const [orderDescripcion, setOrderDescripcion] = useState<string | null>('');
   const [orderMainImage, setOrderMainImage] = useState<string>('');
   const [orderSecondImage, setOrderSecondImage] = useState<string>('');
   const [orderBigPrice, setOrderBigPrice] = useState<number>(0);
-
-  // OTROS
   const [promosPersonales, setPromosPersonales] =
     useState<PromocionPersonalResponse>({});
   const [promosDos, setPromosDos] = useState<PromocionDosResponse>({});
@@ -91,22 +54,22 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
       value={{
         cartState,
         setCartState,
-        getDataPromociones,
+        setOrderTitle,
+        setOrderDescripcion,
+        setOrderMainImage,
+        orderTitle,
+        orderDescripcion,
+        orderMainImage,
+        setOrderSecondImage,
+        setOrderBigPrice,
+        orderSecondImage,
+        orderBigPrice,
         promosPersonales,
         promosDos,
         promosCompartir,
         complementos,
         cupones,
-        setOrderTitle,
-        setOrderDescripcion,
-        setOrderMainImage,
-        setOrderSecondImage,
-        setOrderBigPrice,
-        orderTitle,
-        orderDescripcion,
-        orderMainImage,
-        orderSecondImage,
-        orderBigPrice,
+        getDataPromociones,
       }}
     >
       {children}
