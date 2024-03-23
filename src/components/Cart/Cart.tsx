@@ -13,6 +13,7 @@ import { PathConstants } from '../../utils/PathConstants';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { GoAlert } from 'react-icons/go';
+import { Counter } from '..';
 
 const Cart = () => {
   const { setCartState, cartState } = useShopping();
@@ -100,11 +101,7 @@ const Cart = () => {
                       <CiTrash className="trash-icon" />
                       <p className="readMore">Leer más</p>
                     </div>
-                    <div className="change-quantity">
-                      <button className="btn-quantity btn-decrease">-</button>
-                      <p className="number-quantity">2</p>
-                      <button className="btn-quantity btn-increase">+</button>
-                    </div>
+                    <Counter myclass="counter-cart" />
                   </div>
                 </div>
               </div>
