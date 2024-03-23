@@ -17,7 +17,7 @@ import { Counter } from '..';
 
 const Cart = () => {
   const { setCartState, cartState } = useShopping();
-  const [payBtnDisable, setPayBtnDisable] = useState(false);
+
 
   const navigate = useNavigate();
 
