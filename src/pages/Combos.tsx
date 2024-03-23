@@ -5,7 +5,6 @@ import CardsCombos from "../components/shared/CardsCombos";
 
 
 const Combos = () => {
-
     return (
         <div className="contenedor-general-combos">
             <NavbarCombos />

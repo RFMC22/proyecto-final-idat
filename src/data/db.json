@@ -495,7 +495,7 @@
   "complementos": [
     {
       "nombre": "Papas Inka Chips",
-      "precio": 3.0,
+      "precio": 3,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-inka-chips-nueva.jpg",
       "id": 29,
       "link": "papas-inka-chips"
@@ -836,7 +836,7 @@
       "nombre": "Personal Cheese",
       "descripcion": "Cheese mediana, papa mediana",
       "precio_actual": 17.9,
-      "precio_antiguo": 23.0,
+      "precio_antiguo": 23,
       "descuento": 25,
       "id": 63,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-cheese-bembos.webp"
@@ -845,7 +845,7 @@
       "nombre": "Personal Clásico",
       "descripcion": "Clásica mediana, papa mediana",
       "precio_actual": 15.9,
-      "precio_antiguo": 21.0,
+      "precio_antiguo": 21,
       "descuento": 27,
       "id": 64,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-clasico-bembos-delivery.webp"
@@ -863,7 +863,7 @@
       "nombre": "Combo Tártara",
       "descripcion": "Tártara regular + papa mediana",
       "precio_actual": 11.9,
-      "precio_antiguo": 13.0,
+      "precio_antiguo": 13,
       "descuento": 14,
       "id": 66,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/a/base-bembos-tartara_2.webp"
