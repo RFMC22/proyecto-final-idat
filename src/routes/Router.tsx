@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
       },
       { path: PathConstants.CUPONES, element: <Cupones /> },
       { path: PathConstants.COMBOS, element: <Combos /> },
-      { path: PathConstants.CART },
+      { path: PathConstants.CART, element: <Cart /> },
       { path: PathConstants.PROMOCIONES_ID, element: <Menu /> },
     ],
   },
