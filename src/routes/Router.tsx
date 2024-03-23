@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { Link, createBrowserRouter } from 'react-router-dom';
 import { PathConstants } from '../utils/PathConstants';
 import {
   Cupones,
@@ -16,10 +16,9 @@ import {
   Bebidas,
   Helados,
   InkaChips,
+  Orders,
 } from '../pages';
 import { Cart } from '../components';
-import SecondRoot from '../pages/SecondRoot';
-
 export const router = createBrowserRouter([
   {
     path: PathConstants.INDEX,
@@ -42,6 +41,7 @@ export const router = createBrowserRouter([
       { path: PathConstants.BEBIDAS, element: <Bebidas /> },
       { path: PathConstants.HELADOS, element: <Helados /> },
       { path: PathConstants.INKACHIPS, element: <InkaChips /> },
+      { path: PathConstants.COMBOS_ORDERS, element: <Orders /> },
       { path: PathConstants.CART, element: <Cart /> },
       { path: PathConstants.PROMOCIONES_ID, element: <Menu /> },
     ],

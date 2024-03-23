@@ -245,6 +245,7 @@
 }
 .swiper-promo-personal {
   max-height: 700px;
+  position: relative;
 }
 .swiper-promo-personal .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #173083;
@@ -381,7 +382,7 @@
   margin-bottom: 1rem;
 }
 .list-promo-horizontal .content-price, 
-.promociones-delivery-hamburgesas .list-promo-horizontal .content {
+.carousel-complementos-hamburgesas .list-promo-horizontal .content {
   width: 100%;
 }
 .content .content-promotion-card .promotion-card .promotion-content .content-price .price {
@@ -427,21 +428,112 @@
 .content .content-promotion-card .promotion-card .promotion-img img:hover {
   transform: scale(1.1);
 }
-.list-promo-horizontal .swiper-button-next, 
-.list-promo-horizontal .swiper-button-prev {
+
+
+.carousel-complementos {
+    position: relative;
+}
+.carousel-complementos .btn-next, .carousel-complementos .btn-prev {
   background: #173083;
   width: 44px;
   z-index: 1;
   width: 46px !important;
   height: 46px !important;
-  border-radius: 50%;
-  top: 52%;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.list-promo-horizontal .swiper-button-next::after, 
-  .list-promo-horizontal .swiper-button-prev::after {
-    font-size: 1.4rem !important;
-    color: var(--white);
+.carousel-complementos .btn-next {
+  right: 0;
+}
+.carousel-complementos .btn-prev {
+  left: 0;
+}
+.carousel-complementos .btn-prev:before {
+  transform: rotate(180deg);
+}
+.carousel-complementos .btn-next:before, .carousel-complementos .btn-prev:before {
+  width: 11px;
+  border-radius: 2em;
+  height: 23px;
+  content: "" !important;
+  position: absolute;
+  top: 10px;
+  background: url('../../assets/images/arrow.svg') no-repeat 50%;
+  background-size: 100%;
+}
+.btn-next.swiper-button-disabled,
+.btn-prev.swiper-button-disabled, 
+.btn-next-2.swiper-button-disabled,
+.btn-prev-2.swiper-button-disabled {
+  opacity: 0.7;
+}
+.swiper-promo-personal .btn-next-2,
+.swiper-promo-personal .btn-prev-2 {
+  position: absolute;
+  background: #173083;
+  z-index: 1;
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 50%;
+  top: 50%;
+}
+.swiper-promo-personal .btn-next-2 {
+  right: 0;
+}
+.swiper-promo-personal .btn-next-2::before,
+.swiper-promo-personal .btn-prev-2::before {
+  content: "";
+  width: 11px;
+  height: 23px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: url('../../assets/images/arrow.svg') no-repeat 50%;
+  background-size: 100%;
+}
+.swiper-promo-personal .btn-prev-2::before {
+  transform: rotateY(180deg);
+  left: 15px;
+}
+.complementos-label {
+  font-size: 2rem;
+}
+#subcatTitle-97{
+  margin: 15px 0;
+  color: #3b3c40;
+  font-size: 30px;
+  font-weight: 100;
+  padding-left: 10px;
+}
+.person {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  svg {
+    position: absolute;
+    &:first-child {
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    &:last-child{
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
   }
+}
+.child-2{
+  svg {
+    &:nth-child(2){
+      left: 25%;
+    }
+  }
+}
 @media (max-width: 420px) {
   .ppromos-hasta-col, 
   .promos-hasta-label-w {
@@ -482,6 +574,15 @@
 @media (min-width: 769px) {
   .showMobile {
     display: none;
+  }
+  .carousel-complementos.hasNavigation {
+    padding: 0 81px;
+  }
+  .carousel-complementos .btn-next, .carousel-complementos .btn-prev {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    z-index: 98;
   }
 }
 @media (max-width: 768px) {
@@ -556,22 +657,21 @@
   .showDesktop {
     display: none;
   }
-  .list-promo-horizontal .swiper-button-next, 
-  .list-promo-horizontal .swiper-button-prev {
-    width: 38px !important;
-    height: 38px !important;
+  .carousel-complementos .btn-next {
+    right: -310px;
   }
-  .list-promo-horizontal .swiper-button-prev {
-    left: auto;
-    right: 107px;
+  .carousel-complementos .btn-prev {
+    left: 200px;
+    top: -45px;
   }
-  .list-promo-horizontal .swiper-button-next, 
-  .list-promo-horizontal .swiper-button-prev {
-    top: 28px;
+  .swiper-promo-personal .btn-next-2,
+  .swiper-promo-personal .btn-prev-2 {
+    top: 0;
   }
-  .list-promo-horizontal .swiper-button-next::after, 
-  .list-promo-horizontal .swiper-button-prev::after {
-    font-size: 1.5rem !important;
-    color: var(--white);
+  .swiper-promo-personal .btn-prev-2 {
+    right: 90px;
+  }
+  .carousel-complementos {
+    margin-top: -40px;
   }
 }

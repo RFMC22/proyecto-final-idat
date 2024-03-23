@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
 import { Cart, Footer, Header } from '../components';
-import { Root } from '.';
 
 const SecondRoot = () => {
   return (
@@ -10,6 +9,7 @@ const SecondRoot = () => {
         <Outlet />
       </main>
       <Footer />
+      <Cart />
     </>
   );
 };
