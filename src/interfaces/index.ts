@@ -18,6 +18,7 @@ export * from './responses/PolloResponse';
 export * from './responses/PreguntasFrecuentesResponse';
 export * from './responses/CuponResponse';
 export * from './responses/OrdersResponse';
+export * from './model/PreguntasFrecuentes.ts';
 
 export * from './SwiperProps';
 export * from './MenuProps';

@@ -22,3 +22,7 @@ export { default as salonDesk } from './salon-desk.webp';
 export { default as salonMobile } from './salon-mobile.webp';
 export { default as linkFb } from './link-fb.webp';
 export { default as linkTw } from './link-tw.webp';
+export { default as gileos } from './gileos.svg';
+export { default as friendzone } from './friendzone.svg';
+export { default as relacion } from './relacion.svg';
+export { default as destinados } from './destinados.svg';
