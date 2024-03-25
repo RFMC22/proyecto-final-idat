@@ -25,6 +25,7 @@ import { useEffect, useState } from 'react';
 import { MenuResponse } from '../interfaces/';
 import { getMenuOptions } from '../services/';
 import { TabTitle } from '../utils/GeneralFunctions';
+import NavBarMobile from '../components/Header/NavBarMobile';
 
 const Menu = () => {
 
@@ -69,7 +70,6 @@ const Menu = () => {
       <div className="container-m ">
         <MenuSwiper slidesArray={slidesArray} display={'none-m'} />
         <MenuSwiper slidesArray={slidesMobileArray} display={'none-d'} />
-
         {menuCardsOptions.data ? (
           <MenuCards menuCardOptions={menuCardsOptions.data} />
         ) : (
