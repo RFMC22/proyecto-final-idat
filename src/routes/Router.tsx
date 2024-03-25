@@ -18,9 +18,10 @@ import {
   InkaChips,
   Tiendas,
   Orders,
+  Beneficios,
 } from '../pages';
 import { Cart } from '../components';
-import Beneficios from '../pages/Beneficios';
+
 export const router = createBrowserRouter([
   {
     path: PathConstants.INDEX,
@@ -44,6 +45,6 @@ export const router = createBrowserRouter([
       { path: PathConstants.CART, element: <Cart /> },
       { path: PathConstants.PROMOCIONES_ID, element: <Tiendas /> },
       { path: PathConstants.BENEFICIOS, element: <Beneficios /> },
-    ]
+    ],
   },
 ]);
