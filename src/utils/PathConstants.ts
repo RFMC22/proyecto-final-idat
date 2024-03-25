@@ -2,5 +2,14 @@ export const PathConstants = {
   INDEX: '/',
   MENU: '/menu',
   PROMOCIONES: '/promociones/delivery-hamburguesas',
-  CUPONES: '/cupones'
-}
+  CUPONES: '/cupones',
+  COMBOS: '/combos',
+  HAMBURGUESAS: '/hamburguesas',
+  POLLO: '/pollo',
+  MENUSALPLATO: '/menus-al-plato',
+  LONCHERITAS: '/loncheritas',
+  COMPLEMENTOS: '/complementos',
+  BEBIDAS: '/bebidas',
+  HELADOS: '/helados',
+  INKACHIPS: '/inka-chips',
+};
