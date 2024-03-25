@@ -1,0 +1,116 @@
+.content-menu-card {
+  padding: 13px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.content-menu-card .menu-card {
+  position: relative;
+  min-height: 300px;
+  height: 100%;
+  transition: all .2s;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,.11);
+  border-radius: 15px;
+  background: #fff;
+}
+.content-menu-card .menu-card .menu-img {
+  height: 255px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+}
+.content-menu-card .menu-card .menu-img img {
+  border-radius: 15px 15px 0 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  transition: all .4s;
+}
+.menu-img img {
+  border-radius: 15px 15px 0 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  transition: all .4s;
+}
+.content-menu-card .menu-card .menu-content {
+  padding: 10px 15px 15px;
+  text-align: center;
+}
+.content-menu-card .menu-card .menu-content a {
+  color: #030819;
+  font-size: 23px;
+  font-family: var(--din);
+  line-height: 22px;
+  text-align: center;
+  margin: auto;
+  padding-left: 5px;
+  min-height: 44px;
+  display: inline-block;
+  text-decoration: none;
+}
+.content-menu-card .menu-card .menu-content button {
+  width: 100%;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  background: #193694;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: var(--din);
+  outline: 0;
+  height: 43px;
+  padding-top: 5px;
+}
+.menu-home-promociones-bembos-delivery p {
+  color: var(--white);
+}
+.container-menu-home {
+  margin-top: 50px !important;
+}
+.container-menu-home .top-content {
+  display: flex;
+  justify-content: space-between;
+}
+.container-menu-home .top-content h2 {
+  font-size: 33px;
+  font-family: var(--din);
+  color: #030819;
+  letter-spacing: 4px;
+  font-weight: 300;
+  padding-left: 13px;
+  margin: 10px 0;
+}
+.container-menu-home .top-content .btn-content button {
+  border: none;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}
+.content-menu-card .menu-card .menu-img img:hover {
+  transform: scale(1.1);
+}
+.content-price {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.content-price .price {
+  font-weight: 700;
+  color: #030819;
+  font-family: var(--din);
+  font-size: 25px;
+  padding: 5px 2px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.price-center {
+  text-align: center;
+}

@@ -1,6 +1,26 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { PathConstants } from '../utils/PathConstants';
-import { Cupones, Error404, Home, Promociones, Root, Menu } from '../pages';
+import {
+  Cupones,
+  Error404,
+  Home,
+  Promociones,
+  Root,
+  Menu,
+  Combos,
+  Hamburguesas,
+  Pollo,
+  MenusAlPlato,
+  Loncheritas,
+  Complementos,
+  Bebidas,
+  Helados,
+  InkaChips,
+  Tiendas,
+  Orders,
+  Beneficios,
+} from '../pages';
+import { Cart } from '../components';
 
 export const router = createBrowserRouter([
   {
@@ -9,23 +29,22 @@ export const router = createBrowserRouter([
     errorElement: <Error404 />,
     children: [
       { path: PathConstants.INDEX, element: <Home /> },
-      {
-        path: PathConstants.MENU,
-        element: <Menu />,
-        // children: [
-        //   { path: PathConstants.COMBOS, element: <Combos /> }]
-        //   { path: PathConstants.HAMBURGUESAS, element: <Cupones /> },
-        //   { path: PathConstants.POLLO, element: <Cupones /> },
-        //   { path: PathConstants.MENUSALPLATO, element: <Cupones /> },
-        //   { path: PathConstants.LONCHERITAS, element: <Cupones /> },
-        //   { path: PathConstants.COMPLEMENTOS, element: <Cupones /> },
-        //   { path: PathConstants.BEBIDAS, element: <Cupones /> },
-        //   { path: PathConstants.HELADOS, element: <Cupones /> },
-        //   { path: PathConstants.INKACHIPS, element: <Cupones /> },
-        // ],
-      },
-      { path: PathConstants.PROMOCIONES, element: <Promociones /> },
+      { path: PathConstants.MENU, element: <Menu /> },
+      { path: PathConstants.PROMOCIONES_DELIVERY, element: <Promociones /> },
       { path: PathConstants.CUPONES, element: <Cupones /> },
+      { path: PathConstants.COMBOS, element: <Combos /> },
+      { path: PathConstants.HAMBURGUESAS, element: <Hamburguesas /> },
+      { path: PathConstants.POLLO, element: <Pollo /> },
+      { path: PathConstants.MENUSALPLATO, element: <MenusAlPlato /> },
+      { path: PathConstants.LONCHERITAS, element: <Loncheritas /> },
+      { path: PathConstants.COMPLEMENTOS, element: <Complementos /> },
+      { path: PathConstants.BEBIDAS, element: <Bebidas /> },
+      { path: PathConstants.HELADOS, element: <Helados /> },
+      { path: PathConstants.INKACHIPS, element: <InkaChips /> },
+      { path: PathConstants.COMBOS_ORDERS, element: <Orders /> },
+      { path: PathConstants.CART, element: <Cart /> },
+      { path: PathConstants.PROMOCIONES_ID, element: <Tiendas /> },
+      { path: PathConstants.BENEFICIOS, element: <Beneficios /> },
     ],
   },
 ]);

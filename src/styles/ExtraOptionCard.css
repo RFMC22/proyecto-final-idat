@@ -1,0 +1,60 @@
+.extraOptionCard {
+  width: 125px;
+  cursor: pointer;
+
+  .flex-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .imgContainer {
+      border-radius: 10px;
+      border: 1px solid rgb(112, 112, 112);
+      margin-bottom: 5px;
+      overflow: hidden;
+      width: 78px;
+    }
+
+    .imgContainer:active,
+    .imgContainer:visited {
+      border: 3px solid rgb(34, 57, 143);
+    }
+  }
+
+  .text-wrap {
+    text-align: center;
+    text-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 400;
+  }
+}
+
+.extraOptionCard.width-136 {
+  width: 136px;
+  .text-wrap {
+    font-size: 14px;
+    font-family: 'kulristaRegular', sans-serif;
+  }
+
+  .flex-col {
+    .imgContainer {
+      width: 88px;
+    }
+  }
+}
+
+.circle.extraOptionCard {
+  .text-wrap {
+    font-family: 'kulristaRegular', sans-serif;
+  }
+  .flex-col {
+    .imgContainer {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+    }
+  }
+}

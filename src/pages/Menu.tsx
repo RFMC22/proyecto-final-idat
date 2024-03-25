@@ -24,8 +24,11 @@ import { MenuSwiper, MenuCards } from '../components/';
 import { useEffect, useState } from 'react';
 import { MenuResponse } from '../interfaces/';
 import { getMenuOptions } from '../services/';
+import { TabTitle } from '../utils/GeneralFunctions';
 
 const Menu = () => {
+
+  TabTitle("¡Descubre todas las delicias que tenemos para ti en nuestro menú!")
   const slidesArray: Array<string> = [
     slide1,
     slide2,
@@ -58,6 +61,7 @@ const Menu = () => {
     getMenuData();
   }, []);
 
+
   return (
     <section className="Menu container-m sectionContainer">
       <h1 className="menuTitle">ELIGE TU MENÚ DE BEMBOS</h1>
@@ -71,6 +75,8 @@ const Menu = () => {
         ) : (
           ''
         )}
+
+       
       </div>
     </section>
   );

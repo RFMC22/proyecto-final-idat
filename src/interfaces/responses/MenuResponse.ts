@@ -1,5 +1,5 @@
-import { menuProps } from "../model/Menu";
+import { MenuProps } from "../model/Menu";
 
 export interface MenuResponse {
-    data?: menuProps[];
-  }
+    data?: MenuProps[];
+}

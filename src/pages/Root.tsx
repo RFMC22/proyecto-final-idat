@@ -1,16 +1,21 @@
-import { Outlet } from "react-router-dom"
-import { Footer, Header } from "../components"
+import { Outlet } from 'react-router-dom';
+import { Cart, Footer, Header } from '../components';
+import { ShoppingProvider } from '../context/ShoppingProvider';
 
 const Root = () => {
   return (
     <>
-      <Header/>
+      <ShoppingProvider>
+        
+        <Header />
         <main>
-          <Outlet/>
+          <Outlet />
         </main>
-      <Footer/>
+        <Footer />
+        <Cart/>
+      </ShoppingProvider>
     </>
-  )
-}
+  );
+};
 
-export default Root
+export default Root;
