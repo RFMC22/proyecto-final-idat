@@ -262,7 +262,7 @@ const NavBarDesktop = () => {
                   fill="#B44031"
                 />
               </svg>
-              HAMBURGUESAS
+              <Link to={PathConstants.HAMBURGUESAS}>Cupones</Link>
             </li>
             <li className="flex">
               <svg
@@ -291,7 +291,7 @@ const NavBarDesktop = () => {
                   fill="#BB0011"
                 />
               </svg>
-              BENEFICIOS
+              
             </li>
           </ul>
 
