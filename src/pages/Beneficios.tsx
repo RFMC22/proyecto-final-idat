@@ -1,13 +1,13 @@
 import PreguntasFrecuentes from '../components/shared/PreguntasFrecuentes';
 import { getPreguntasFrecuentes } from '../services';
 import { useEffect, useState } from 'react';
-import { PreguntasFrecuente } from '../interfaces/';
+import { BeneficiosHeaderProps, PreguntasFrecuente } from '../interfaces/';
 import './../styles/pages/Beneficios.css';
 import { friendzone, gileos, relacion, destinados } from '../assets/images';
 import { SwiperComponent } from '../components/shared';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { SwiperSlide } from 'swiper/react';
-import { Card } from '../components';
+import { BeneficioHeader, Card } from '../components';
 import { BeneficiosResponse } from '../interfaces/responses/BeneficiosResponse';
 import { getBeneficios } from '../services/fetchBeneficios';
 import { Destinado } from '../interfaces/model/Beneficios';
@@ -28,25 +28,19 @@ const Beneficios = () => {
   >();
   const [clickedData, setClickedData] = useState<Destinado[] | undefined>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  try {
-    useEffect(() => {
-      const getDataOrders = async () => {
-        const response = await getPreguntasFrecuentes();
-        return response && setPreguntasFrecuentesData(response.data);
-      };
-      getDataOrders();
-    }, []);
-  } catch (error) {
-    console.log(error);
-  }
+  const [clickedDataHeader, setClickedDataHeader] = useState<
+    BeneficiosHeaderProps | undefined
+  >({
+    img: friendzone,
+    title: 'FRIENDZONE',
+    subtitle: 'Iniciar Sesion',
+    reason: 'PROMOCIONES POR TU AMISTAD',
+  });
 
   const beneficioSwiperOptions = {
     slidesPerView: 2,
     spaceBetween: 60,
     navigation: true,
-    // pagination: {
-    //   clickable: false,
-    // },
     modules: [Navigation],
     breakpoints: {
       768: {
@@ -58,6 +52,14 @@ const Beneficios = () => {
     },
   };
 
+  const getDataOrders = async () => {
+    try {
+      const response = await getPreguntasFrecuentes();
+      return response && setPreguntasFrecuentesData(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const getBeneficiosData = async () => {
     try {
       const response = await getBeneficios();
@@ -81,24 +83,48 @@ const Beneficios = () => {
         }
       }
       setLoading(false);
-      console.log(clickedData);
     } catch (error) {
       console.log(error);
     }
   };
   useEffect(() => {
     getBeneficiosData();
+    getDataOrders();
   }, []);
 
   const cardDefault = { nombre: '', img: '', link: '', id: 1, precio: 0 };
   const handleClick = (set: string = 'friendzone') => {
     if (set === 'friendzone') {
+      setClickedDataHeader({
+        img: friendzone,
+        title: 'FRIENDZONE',
+        subtitle: 'Iniciar Sesion',
+        reason: 'PROMOCIONES POR TU AMISTAD',
+      });
       return setClickedData(friendzoneData);
     } else if (set === 'gileos') {
+      setClickedDataHeader({
+        img: gileos,
+        title: 'GILEOS',
+        subtitle: 'ALCANZA 100 PTS',
+        reason: 'MULTIPLICA PUNTOS X2',
+      });
       return setClickedData(gileosData);
     } else if (set === 'relacion') {
+      setClickedDataHeader({
+        img: relacion,
+        title: 'RELACIÓN',
+        subtitle: 'ALCANZA 400 PTS',
+        reason: 'MULTIPLICA PUNTOS X3 | DELIVERY GRATIS',
+      });
       return setClickedData(relacionData);
     } else if (set === 'destinados') {
+      setClickedDataHeader({
+        img: destinados,
+        title: 'DESTINADOS',
+        subtitle: 'ALCANZA 700 PTS',
+        reason: 'MULTIPLICA PUNTOS X4 | DELIVERY GRATIS',
+      });
       return setClickedData(destinadosData);
     }
   };
@@ -132,18 +158,12 @@ const Beneficios = () => {
           </ul>
         </nav>
         <section className="beneficios-menu">
-          <div className="beneficios-menu-header">
-            <div className="left">
-              <div className="circle">
-                <img src={friendzone} alt="friendzone-icon" />
-              </div>
-              <h3>FRIENDZONE</h3>
-              <p>Iniciar Sesion</p>
-            </div>
-            <div className="right">
-              <p>PROMOCIONES POR TU AMISTAD</p>
-            </div>
-          </div>
+          <BeneficioHeader
+            img={clickedDataHeader?.img ||friendzone}
+            title={clickedDataHeader?.title ||'FRIENDZONE'}
+            subtitle={clickedDataHeader?.subtitle||'Iniciar Sesion'}
+            reason={clickedDataHeader?.reason||'PROMOCIONES POR TU AMISTAD'}
+          />
 
           <SwiperComponent
             options={beneficioSwiperOptions}
@@ -179,14 +199,43 @@ const Beneficios = () => {
             )}
           </SwiperComponent>
         </section>
-        {preguntasFrecuentesData &&
+        {preguntasFrecuentesData ? (
           preguntasFrecuentesData[0].beneficios.map((pregunta) => (
             <PreguntasFrecuentes
               title={pregunta.titulo}
               children={pregunta.respuesta}
               myclass={'MyQuestions'}
             />
-          ))}
+          ))
+        ) : (
+          <>
+            <PreguntasFrecuentes
+              title={''}
+              children={''}
+              myclass={'MyQuestions'}
+            />
+            <PreguntasFrecuentes
+              title={''}
+              children={''}
+              myclass={'MyQuestions'}
+            />
+            <PreguntasFrecuentes
+              title={''}
+              children={''}
+              myclass={'MyQuestions'}
+            />
+            <PreguntasFrecuentes
+              title={''}
+              children={''}
+              myclass={'MyQuestions'}
+            />
+            <PreguntasFrecuentes
+              title={''}
+              children={''}
+              myclass={'MyQuestions'}
+            />
+          </>
+        )}
       </div>
     </section>
   );

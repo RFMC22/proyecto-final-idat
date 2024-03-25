@@ -26,3 +26,4 @@ export * from './NavBarProps';
 export * from './model/Menu';
 export * from './model/Orders';
 export * from './ShoppingProviderProps';
+export * from './BeneficioProps.ts';
