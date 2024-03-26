@@ -2,22 +2,20 @@ import YellowBtn from '../shared/YellowBtn';
 import './../../styles/NavBarDesktop.css';
 import iconStore from './../../assets/images/icon-store.svg';
 import iconCart from './../../assets/images/icon-cart.svg';
-import { Link } from 'react-router-dom';
-import { PathConstants } from '../../utils/PathConstants';
-import { tabScrollClick } from '../../utils/GeneralFunctions';
+import { Link, useLocation } from 'react-router-dom';
 import useShopping from '../../hooks/useShopping';
-import { useNavigate } from 'react-router-dom';
+import { PathConstants, FoodTypes } from '../../utils';
+import { tabScrollClick } from '../../utils/GeneralFunctions';
 
 const NavBarDesktop = () => {
+  const location = useLocation();
   const handleTabClick = (id: string) => {
     tabScrollClick(id);
   };
-  const navigate = useNavigate();
 
   const { setCartState } = useShopping();
   const handleClick = () => {
     setCartState(true);
-    navigate(PathConstants.CART);
   };
 
   return (
@@ -198,7 +196,7 @@ const NavBarDesktop = () => {
                   fill="#F9A213"
                 />
               </svg>
-              <Link to={PathConstants.COMBOS}>COMBOS</Link>
+              <Link to={`${PathConstants.MENU}/${FoodTypes.COMBOS.path}`}>COMBOS</Link>
             </li>
             <li className="nav-menu-item">
               <div className="flex">
@@ -330,7 +328,7 @@ const NavBarDesktop = () => {
             id=""
             handleClick=""
           />
-          {/* <Link to={PathConstants.CART}> */}
+          <Link to={PathConstants.CART} state={{ background: location }}>
           <YellowBtn
             text={''}
             redText={''}
@@ -341,7 +339,7 @@ const NavBarDesktop = () => {
             id="cart"
             handleClick={handleClick}
           />
-          {/* </Link> */}
+          </Link> 
         </div>
       </div>
     </div>
