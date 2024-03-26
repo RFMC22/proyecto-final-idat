@@ -57,6 +57,8 @@ const Header = () => {
               position=""
               iconHeight=""
               Circle="none"
+              id='1'
+              handleClick={''}
             />
           </div>
 
@@ -123,6 +125,7 @@ const Header = () => {
       <div className="none-m display-d ">
         <NavBarDesktop />
       </div>
+      
     </header>
   );
 };
