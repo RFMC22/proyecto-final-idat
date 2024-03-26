@@ -10,6 +10,7 @@ import {
   Combos,
   Tiendas,
   Orders,
+  Recojo,
 } from '../pages';
 import { Cart } from '../components';
 export const router = createBrowserRouter([
@@ -25,7 +26,8 @@ export const router = createBrowserRouter([
       { path: PathConstants.COMBOS, element: <Combos /> },
       { path: PathConstants.COMBOS_ORDERS, element: <Orders /> },
       { path: PathConstants.CART, element: <Cart /> },
-      { path: PathConstants.PROMOCIONES_ID, element: <Tiendas /> }
+      { path: PathConstants.PROMOCIONES_ID, element: <Tiendas /> },
+      { path: PathConstants.RECOJO_ID, element: <Recojo /> }
     ]
   },
 ]);

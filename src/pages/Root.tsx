@@ -6,7 +6,6 @@ const Root = () => {
   return (
     <>
       <ShoppingProvider>
-        
         <Header />
         <main>
           <Outlet />

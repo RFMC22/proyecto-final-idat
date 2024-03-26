@@ -7,6 +7,8 @@ import { Navigation, Pagination, Grid } from 'swiper/modules';
 import { SwiperComponent } from "../components/shared";
 import { Card, Tabs } from "../components";
 import useShopping from "../hooks/useShopping";
+import { PathConstants } from "../utils/PathConstants";
+import { Link } from "react-router-dom";
 
 const Promociones = () => {
   const { getDataPromociones, 
@@ -84,7 +86,7 @@ const Promociones = () => {
             <div className="ppromos-address-col1 address">
               <div className="ppromos-mark-yellow"></div> 
               <div className="ppromos-address-col1-text">
-                <span>Av. Benavides N° 1821</span> <b>Aurora</b>
+                <Link to={`${PathConstants.RECOJO}/recojo`}><span>Av. Benavides N° 1821</span> <b>Aurora</b></Link>
               </div>
             </div> 
             <div className="promos-hasta-label-w">
