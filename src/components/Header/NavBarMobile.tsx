@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { PathConstants } from '../../utils/PathConstants';
 import {
   menuIcon,
   combosIcon,
@@ -10,6 +9,7 @@ import {
 import { tabScrollClick } from '../../utils/GeneralFunctions';
 
 import './../../styles/NavBarMobile.css';
+import { FoodTypes, PathConstants } from '../../utils';
 const NavBarMobile = ({ display }: { display: string }) => {
   const handleTabClick = (id: string) => {
     tabScrollClick(id);
@@ -26,7 +26,7 @@ const NavBarMobile = ({ display }: { display: string }) => {
             MENU
           </li>
         </Link>
-        <Link to={PathConstants.COMBOS}>
+        <Link to={`${PathConstants.MENU}/${FoodTypes.COMBOS.path}`}>
           <li className="flex-icon">
             <div className="menu-icon-container">
               <img src={combosIcon} alt="combosIcon" className="item-icon" />
