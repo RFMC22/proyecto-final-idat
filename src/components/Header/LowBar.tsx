@@ -3,7 +3,7 @@ import { BsCart2 } from 'react-icons/bs';
 import { lowbarMenu, lowbarAccount } from '../../assets/images';
 import './../../styles/LowBar.css';
 import { Link } from 'react-router-dom';
-import { PathConstants } from '../../utils/PathConstants';
+import { PathConstants } from '../../utils';
 const LowBar = ({ display }: { display: string }) => {
   return (
     <>
