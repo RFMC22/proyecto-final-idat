@@ -1,15 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { ComboResponse } from '../../interfaces';
 import useShopping from '../../hooks/useShopping';
 import { Link } from 'react-router-dom';
+import PreguntasFrecuentes from './PreguntasFrecuentes';
+import '../../styles/CardCombos.css'
 
-interface Props {
+interface ComboConfigProps {
   tituloSeccion: string;
-  getData: () => Promise<ComboResponse>;
+  getData: Promise<any>;
+  variante: boolean;
+  subtitulo: string;
+  encabezado: string;
+  descripcion: string;
 }
-
-const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData }) => {
-  const [combos, setCombos] = useState<ComboResponse>({});
+const CardsCombos: React.FC<{config: ComboConfigProps}> = ({ config }) => {
+  const [combos, setCombos] = useState<any>({});
+  const { 
+    tituloSeccion, 
+    getData, 
+    variante, 
+    subtitulo, 
+    encabezado, 
+    descripcion
+  } = config;
   const {
     setOrderTitle,
     setOrderDescripcion,
@@ -22,13 +34,23 @@ const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData }) => {
     const fetchData = async () => {
       try {
         const dataCombos = await getData();
-        setCombos(dataCombos);
+          setCombos(dataCombos);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     };
     fetchData();
   }, [getData]);
+
+  const getInfo = info => {
+    if (Array.isArray(info)) {
+      console.log(info[0].tipos);
+      return info[0].tipos || []
+    }else {
+      return info.data || []
+    }
+  }
+  
 
   return (
     <div className="max-contenedor">
@@ -37,7 +59,7 @@ const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData }) => {
           <h2>{tituloSeccion}</h2>
           <div className="contenedor-lista-combos">
             <div className="lista-combos">
-              {combos.data?.map((combo) => (
+              {getInfo(combos).map(combo => (
                 <div className="item-lista">
                   <div className="item-content">
                     <div className="item-card">
@@ -71,6 +93,17 @@ const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData }) => {
                   </div>
                 </div>
               ))}
+              {
+                variante &&
+                <div>
+                  <div className="encabezado-pregutnas-frecuentes">
+                    <h2 className="titulo-categoria-preguntas">{subtitulo}</h2>
+                    <p className="descripcion-seccion-preguntas">{descripcion}</p>
+                    <h2 className="titulo-preguntas-ultimo">{encabezado}</h2>
+                  </div>
+                  <PreguntasFrecuentes title="¿Cuántos puntos recibo por comprar una hamburguesa online delivery?" children="Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web." />
+                </div>
+              }
             </div>
           </div>
         </div>
@@ -78,5 +111,6 @@ const CardsCombos: React.FC<Props> = ({ tituloSeccion, getData }) => {
     </div>
   );
 };
+
 
 export default CardsCombos;

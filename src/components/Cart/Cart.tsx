@@ -9,11 +9,11 @@ import { CiTrash } from 'react-icons/ci';
 import { GoChevronDown } from 'react-icons/go';
 import { IoIosClose } from 'react-icons/io';
 import useShopping from '../../hooks/useShopping';
-import { PathConstants } from '../../utils/PathConstants';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { GoAlert } from 'react-icons/go';
 import { Counter } from '..';
+import { PathConstants } from '../../utils';
 
 const Cart = () => {
   const { setCartState, cartState } = useShopping();
@@ -23,7 +23,7 @@ const Cart = () => {
 
   const handleClose = () => {
     setCartState(false);
-    navigate(-2);
+    navigate(-1);
   };
   const [complementos, setComplementos] = useState<ComplementoResponse>({});
 
@@ -53,9 +53,7 @@ const Cart = () => {
                 Entregar en: <span>Av. Benavides N°1821</span>
               </p>
               <GoChevronDown className="select" />
-              <Link to={PathConstants.INDEX}>
                 <IoIosClose className="close" onClick={handleClose} />
-              </Link>
             </div>
 
             <div className="cart-container">

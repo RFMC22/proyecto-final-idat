@@ -29,7 +29,7 @@ const Orders = () => {
     console.log(error);
   }
 
-  let strArr: Array<string> = orderTitle.split(' ');
+  const strArr: Array<string> = orderTitle.split(' ');
   console.log(strArr[strArr.length - 1]);
 
   return (

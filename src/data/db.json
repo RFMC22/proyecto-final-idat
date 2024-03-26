@@ -8,7 +8,7 @@
       "link": "combo-extrema",
       "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
-      "bigPrice":4
+      "bigPrice": 4
     },
     {
       "nombre": "Combo Carretillera",
@@ -18,7 +18,7 @@
       "link": "combo-carretillera",
       "descripcion": "Vive el sabor único de la Hamburguesa de pollo deshilachado llamada 'Carretillera a la parrilla de Bembos'. Esta creación incluye una sabrosa hamburguesa a la parrilla, complementada con tierno pollo deshilachado. Además, la salsa tártara añade un toque cremoso y refinado, mientras que las papas al hilo aportan una textura crujiente y deliciosa. La frescura viene de la mano del tomate y la lechuga. Completa tu experiencia gastronómica con una porción mediana de nuestras papas y una refrescante gaseosa de 500 ml. Un combo perfecto para satisfacer todos tus antojos.¡Pídelo online ya!",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-carretillera-calada_2.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo A lo Pobre",
@@ -28,7 +28,7 @@
       "link": "combo-a-lo-pobre",
       "descripcion": "Hamburguesa A lo Pobre a la parrilla: Hamburguesa a la parrilla, huevo frito, plátano frito, cebolla blanca, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-calada_3.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Churrita",
@@ -38,7 +38,7 @@
       "link": "combo-churrita",
       "descripcion": "Hamburguesa Churrita a la parrilla: Hamburguesa, tocino, papas al hilo y mayonesa de chimichurri. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-churrita-calada_4.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Alemana",
@@ -48,7 +48,7 @@
       "link": "combo-alemana",
       "descripcion": "1 Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa, papa mediana y gaseosa 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
-      "bigPrice":4
+      "bigPrice": 4
     },
     {
       "nombre": "Combo Queabuso",
@@ -58,7 +58,7 @@
       "link": "combo-queabuso",
       "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Royal",
@@ -68,7 +68,7 @@
       "link": "combo-royal",
       "descripcion": "Hamburguesa Royal a la parrilla: Hamburguesa a la parrilla, huevo, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-royal-calada-2_1__1.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Queso Tocino",
@@ -78,7 +78,7 @@
       "link": "combo-queso-tocino",
       "descripcion": "Hamburguesa Queso tocino a la parrilla: Hamburguesa a la parrilla, doble tocino, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-queso-tocino-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Cheese",
@@ -88,7 +88,7 @@
       "link": "combo-cheese",
       "descripcion": "Hamburguesa Cheese a la parrilla: Hamburguesa a la parrilla, lechuga, tomate, mayonesa y queso. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
-      "bigPrice":3
+      "bigPrice": 3
     },
     {
       "nombre": "Combo Clásica",
@@ -98,7 +98,7 @@
       "link": "combo-clasica",
       "descripcion": "Hamburguesa Clásica a la parrilla: Hamburguesa a la parrilla, lechuga, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/l/clasicas_0002_clasica_4.png",
-      "bigPrice":3
+      "bigPrice": 3
     }
   ],
   "hamburguesas": [
@@ -525,7 +525,7 @@
   "complementos": [
     {
       "nombre": "Papas Inka Chips",
-      "precio": 3.0,
+      "precio": 3,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-inka-chips-nueva.jpg",
       "id": 29,
       "link": "papas-inka-chips"
@@ -866,7 +866,7 @@
       "nombre": "Personal Cheese",
       "descripcion": "Cheese mediana, papa mediana",
       "precio_actual": 17.9,
-      "precio_antiguo": 23.0,
+      "precio_antiguo": 23,
       "descuento": 25,
       "id": 63,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-cheese-bembos.webp"
@@ -875,7 +875,7 @@
       "nombre": "Personal Clásico",
       "descripcion": "Clásica mediana, papa mediana",
       "precio_actual": 15.9,
-      "precio_antiguo": 21.0,
+      "precio_antiguo": 21,
       "descuento": 27,
       "id": 64,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-clasico-bembos-delivery.webp"
@@ -893,7 +893,7 @@
       "nombre": "Combo Tártara",
       "descripcion": "Tártara regular + papa mediana",
       "precio_actual": 11.9,
-      "precio_antiguo": 13.0,
+      "precio_antiguo": 13,
       "descuento": 14,
       "id": 66,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/a/base-bembos-tartara_2.webp"
@@ -1355,74 +1355,88 @@
       ],
       "pollo": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Cuántos puntos recibo por comprar sándwiches de pollo a la plarrilla o hamburguesa crispy de Bembos?",
+          "respuesta": "Los puntos que se reciben por la compra del crujiente sandwich de pollo varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿De qué están hechas la hamburguesa de pollo o hamburguesa broaster de Bembos?",
+          "respuesta": "Las hamburguesas de pollo están hechas de carne de pollo, junto con las más exquisitos ingredientes peruanos. ¡Pídelo por Online delivery!"
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
+          "titulo": "¿Los sandwiches de pollo a la parrilla de Bembos están acompañados de papas fritas?",
+          "respuesta": "Sí, el Sandwich de pollo a la parrilla incluye distintos acompañamientos, podrás incluir: Huevo, Papas extras, Plátano, queso y Tocino. También puedes pedirlo únicamente solo sin acompañamiento."
         },
         {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Qué adicionales tienen los sandwich de pollo a la parrilla de Bembos?",
+          "respuesta": "Los adicionales que tienen las hamburguesas de pollo varían según elección del usuario. Entre estas tenemos añadir: Plátano, huevo, queso, tocino y papas al hilo extras. También añadir las más exquisitas salsas peruanas."
         }
       ],
       "loncheritas": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Hay delivery de Loncheritas Bembos?",
+          "respuesta": "Sí, elige la loncherita de tu preferencia comprando por delivery online. Y disfruta de un pack con la mejor hamburguesa a la parrilla o nuggets. Incluye papas fritas y bebida."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Qué productos tienen las loncheritas Bembos?",
+          "respuesta": "Hay 3 alternativas: Loncherita Básica, Loncherita Nuggets y Loncherita básica de pollo. Todas incluyen papitas fritas, salsas exquisitas y una bebida a tu preferencia. Disfruta dnuestras famosas Loncheritas para tus niños."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
-        },
-        {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Qué son las loncheritas Bembos?",
+          "respuesta": "Las Loncheritas de Bembos son una divertida opción para los pequeños. Elige tu pack favorito que incluye papitas fritas y bebida, tienes la opción de elegir alguna Hamburguesa a la parrilla o deliciosos nuggets."
         }
       ],
       "complementos": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Puedo comprar más de un complemento Bembos?",
+          "respuesta": "Sí, Podrás pedir tus papitas fritas bembos, chicken nuggets, chesse fingers y papas inka chips. Recuerda que para acceder al delivery debes considear un pedido como mínimo de S/12.90."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Cuáles son los 'complementos Bembos'?",
+          "respuesta": "Los complementos Bembos que pueden ser pedidos son papas fritas, Chicken Nuggets y Cheese Fingers. Estas son un perfecto acompañamiento adicional para tus deliciosas hamburguesas a la parilla."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
+          "titulo": "¿Cuántos Cheese fingers vienen por pedido de Delivery Online?",
+          "respuesta": "¿Cuántos Cheese fingers vienen por pedido de Delivery Online?"
         },
         {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Cuántos nuggets vienen en los complementos Bembos?",
+          "respuesta": "¿Cuántos nuggets vienen en los complementos Bembos?"
         }
       ],
       "helados": [
         {
-          "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
-          "respuesta": "Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
+          "titulo": "¿Qué adicionales puedo agregarle a mi helado Bembos?",
+          "respuesta": "Podrás añadir hasta 9 toppings dulces, de chocolate o maní. Elige el mejor complemente para tu helado Mini Princesa y Choco Vainilla."
         },
         {
-          "titulo": "¿De qué están hechas las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Nuestras hamburguesas Bembos están hechas de carnes de res junto a los más exquisitos ingredientes peruanos."
+          "titulo": "¿Puedo comprar mi postre de helados Bembos por Delivery?",
+          "respuesta": "Sí, puedes elegir y pedir tus helados por Delivery Online. Tenemos para ti el helado Mini Princesa de Vainilla o Mixta y también el helado Choco Maní. Recuerda añadir tus toppings preferidos y disfrutar de este exquisito antojo."
         },
         {
-          "titulo": "¿Las hamburguesas delivery de Bembos están acompañadas de papas fritas?",
-          "respuesta": "Sí, Puedes hacer tu pedido de hamburguesas online y podrás comprarla únicamente sola o con papas fritas, incluso puedes pedirlo en combo (Papas+Gaseosa de 500ml)"
+          "titulo": "¿Qué sabores de helados Bembos existen?",
+          "respuesta": "Existen dos tipos de helados en la tienda en línea de Bembos. Tenemos el Helado Mini Princesa que es un helado de vainilla o mixto con trozos de chocolate princesa y fudge de chocolate. Y también está el Choco Maní que está hecho con helado de vainilla y una delicios cobertura de chocolate derretido con maní picado."
+        }
+      ],
+      "beneficios": [
+        {
+          "titulo": "¿Cómo funcionan los puntos?",
+          "respuesta": "Tus consumos se convierten en puntos para acceder a distintos estados de relación y así seguir obteniendo más productos. Conforme vayas fortaleciendo la relación, podrás acceder a más beneficios y descuentos!"
         },
         {
-          "titulo": "¿Qué adicionales tienen las hamburguesas a la parrilla de Bembos?",
-          "respuesta": "Los adicionales que tiene nuestra carta de hamburguesas varían según la elección del usuario, entre estos tenemos: Plátano, huevo, queso, tocino, papas al hilo y las más exquisitas salsas peruanas."
+          "titulo": "¿Cuáles son los beneficios?",
+          "respuesta": "Existen diferentes beneficios en cada estado de relación que vas alcanzando. Puedes tener desde descuentos con más del 30% hasta delivery gratis."
+        },
+        {
+          "titulo": "¿Hay beneficios por el método de pago?",
+          "respuesta": "Actualmente no existe un beneficio por pagar a través de un método de pago en particular."
+        },
+        {
+          "titulo": "¿Los cupones de descuentos tienen fecha límite para usar?",
+          "respuesta": "Si tienen una fecha límite y puedes revisar los legales en el pie de página del mismo."
+        },
+        {
+          "titulo": "¿Hay beneficios en compras por la App?",
+          "respuesta": "Haciendo tu compra a través de la APP o el sitio web podrás acumular puntos para tener más beneficios con nosotros."
         }
       ]
     }
@@ -1644,6 +1658,108 @@
           "titulocomb": "Ají Bembos 2 Oz + S/.1.50",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_68x68/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/a/j/aji_1.jpg",
           "preccomb": 1.5
+        }
+      ]
+    }
+  ],
+  "beneficios": [
+    {
+      "relacion": [
+        {
+          "id": 3165,
+          "nombre": "La Churrita del barrio",
+          "link": "la-churrita-del-barrio",
+          "precio": 39.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-la-churrita-del-barrio-benenficios.jpg"
+        },
+        {
+          "id": 3167,
+          "nombre": "Rica pero humilde",
+          "link": "rica-pero-humilde",
+          "precio": 21.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-rica-pero-humilde-beneficios.jpg"
+        },
+        {
+          "id": 3166,
+          "nombre": "Amor a la parrilla mediano",
+          "link": "amor-a-la-parrilla-mediano",
+          "precio": 34.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-amor-a-la-parrilla-mediano-beneficios.jpg"
+        }
+      ]
+    },
+    {
+      "frienzone": [
+        {
+          "id": 3159,
+          "nombre": "Pareja real",
+          "link": "pareja-real",
+          "precio": 39.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-pareja-real-beneficios.jpg"
+        },
+        {
+          "id": 3160,
+          "nombre": "Clásico amor",
+          "link": "clasico-amor",
+          "precio": 42.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-clasico-amor-beneficios.jpg"
+        }
+      ]
+    },
+    {
+      "gileos": [
+        {
+          "id": 3163,
+          "nombre": "Amor a la churrita",
+          "link": "amor-a-la-churrita",
+          "precio": 18.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-amor-a-la-churrita-beneficios.jpg"
+        },
+        {
+          "id": 3162,
+          "nombre": "Pasión de barrio",
+          "link": "pasion-de-barrio",
+          "precio": 29.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-pasion-de-barrio-benenficios.jpg"
+        },
+        {
+          "id": 3164,
+          "nombre": "Amor sin fronteras",
+          "link": "amor-sin-fronteras",
+          "precio": 52.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-amor-sin-fronteras-benenficios.jpg"
+        }
+      ]
+    },
+    {
+      "destinados": [
+        {
+          "id": 3168,
+          "nombre": "Almas gemelas",
+          "link": "almas-gemelas",
+          "precio": 25.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-almas-gemelas-beneficios.jpg"
+        },
+        {
+          "id": 3171,
+          "nombre": "Mi Complice perfecto",
+          "link": "mi-complice-perfecto",
+          "precio": 19.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-mi-complice-perfecto-beneficios.jpg"
+        },
+        {
+          "id": 3172,
+          "nombre": "Amor Parrillero",
+          "link": "amor-parrillero",
+          "precio": 23.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-amor-parrillero-beneficios.jpg"
+        },
+        {
+          "id": 3170,
+          "nombre": "Amor Extremo",
+          "link": "amor-extremo",
+          "precio": 21.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-amor-extremo-beneficios.jpg"
         }
       ]
     }

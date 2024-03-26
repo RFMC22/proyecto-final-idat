@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Proyecto Idat Bembos
+![alt text](image-2.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Instalación 💻
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+**Clonar repositorio**
+```bash
+git clone https://github.com/RFMC22/proyecto-final-idat
+```
+**Instalar paquetes**:
+con el comando `npm i`, `npm install`, `yarn install` son los mismos.
+```bash
+npm i
+npm install
+yarn install
+```
+**Levantar el front**:
+utilizar el comando:
+```bash
+npm run dev
+yarn dev
+```
+**Levantar el json server**:
+utilizar el comando:
+```bash
+npm run fakeData
+yarn fakeData
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+##  Tecnologias utilizadas 🔧
+* React
+* React Router DOM
+* Vite
+* HTML5
+* CSS3
+* TypeScript
+* Axios
+* Swiperjs
+* GitFlow
+* Metodologia agil
+* BEM
+
+##  Estructura de carpeta y archivos 🔧
+![alt text](image.png)
+
+![alt text](image-1.png)
