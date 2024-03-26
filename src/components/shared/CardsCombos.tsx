@@ -4,16 +4,24 @@ import { Link } from 'react-router-dom';
 import PreguntasFrecuentes from './PreguntasFrecuentes';
 import '../../styles/CardCombos.css'
 
-interface Props<T> {
-  subtitulo: string;
-  descripcion: string;
-  encabezado: string;
-  variante: boolean;
+interface ComboConfigProps {
   tituloSeccion: string;
-  getData: () => Promise<T>;
+  getData: Promise<any>;
+  variante: boolean;
+  subtitulo: string;
+  encabezado: string;
+  descripcion: string;
 }
-const CardsCombos: React.FC<Props<any>> = ({ tituloSeccion, getData, descripcion, encabezado, subtitulo, variante }) => {
+const CardsCombos: React.FC<{config: ComboConfigProps}> = ({ config }) => {
   const [combos, setCombos] = useState<any>({});
+  const { 
+    tituloSeccion, 
+    getData, 
+    variante, 
+    subtitulo, 
+    encabezado, 
+    descripcion
+  } = config;
   const {
     setOrderTitle,
     setOrderDescripcion,
@@ -26,7 +34,7 @@ const CardsCombos: React.FC<Props<any>> = ({ tituloSeccion, getData, descripcion
     const fetchData = async () => {
       try {
         const dataCombos = await getData();
-        setCombos(dataCombos);
+          setCombos(dataCombos);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -34,7 +42,15 @@ const CardsCombos: React.FC<Props<any>> = ({ tituloSeccion, getData, descripcion
     fetchData();
   }, [getData]);
 
-  combos.data && console.log(combos.data)
+  const getInfo = info => {
+    if (Array.isArray(info)) {
+      console.log(info[0].tipos);
+      return info[0].tipos || []
+    }else {
+      return info.data || []
+    }
+  }
+  
 
   return (
     <div className="max-contenedor">
@@ -43,7 +59,7 @@ const CardsCombos: React.FC<Props<any>> = ({ tituloSeccion, getData, descripcion
           <h2>{tituloSeccion}</h2>
           <div className="contenedor-lista-combos">
             <div className="lista-combos">
-              {combos.data?.map((combo: any) => (
+              {getInfo(combos).map(combo => (
                 <div className="item-lista">
                   <div className="item-content">
                     <div className="item-card">

@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 import NavBarDesktop from './NavBarDesktop';
 import iconStore from './../../assets/images/icon-store.svg';
 import { Link } from 'react-router-dom';
-import { PathConstants } from '../../utils/PathConstants';
+import { PathConstants } from '../../utils';
 
 const Header = () => {
   const [openHamburguer, setOpenHamburguer] = useState<boolean>(false);

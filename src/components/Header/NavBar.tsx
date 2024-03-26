@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { NavBarProps } from '../../interfaces/NavBarProps';
 import '../../styles/NavBar.css';
-import { PathConstants } from '../../utils/PathConstants';
+import { PathConstants } from '../../utils';
 
 const NavBar: React.FC<NavBarProps> = ({ setOpenHamburguer }) => {
   const handleClose = () => {

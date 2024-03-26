@@ -11,7 +11,7 @@ import { AiOutlineFileText } from "react-icons/ai"
 import { useState } from 'react'
 import InputEmail from '../InputEmail/InputEmail'
 import { useLocation } from 'react-router-dom'
-import { PathConstants } from '../../utils/PathConstants'
+import { PathConstants } from '../../utils'
 
 const Footer = () => {
   const {pathname} = useLocation();

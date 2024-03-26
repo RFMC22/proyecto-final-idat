@@ -33,9 +33,9 @@ import { MenuResponse } from '../interfaces';
 import { getMenuOptions } from '../services';
 import { Card } from '../components';
 import { Link } from 'react-router-dom';
-import { PathConstants } from '../utils/PathConstants';
 import NavBarMobile from '../components/Header/NavBarMobile';
 import LowBar from '../components/Header/LowBar';
+import { PathConstants } from '../utils';
 
 const Home = () => {
   TabTitle('Hamburguesas Delivery | Bembos Perú | !Pide Online¡');
