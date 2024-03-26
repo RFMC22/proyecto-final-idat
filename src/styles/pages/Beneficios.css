@@ -1,26 +1,34 @@
 .Beneficios {
-  margin: 20px 0 50px 0;
+  margin: 30px 12px 50px 12px;
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
+  margin: 0 12px;
 
+  .questions {
+    margin-bottom: 50px;
+  }
   .beneficios-header {
     background-color: rgb(33, 56, 139);
+    border-radius: 15px 15px 0 0;
     color: white;
     font-size: 30px;
     font-family: 'din', sans-serif;
     text-transform: uppercase;
     text-align: center;
     padding: 10px;
+    min-width: 360px;
+    margin: 0 auto;
   }
   .contendor-principal-accordion.MyQuestions {
     margin-bottom: 0px;
   }
 
   .beneficios-nav {
-    width: 930px;
+    min-width: 360px;
     margin: 0 auto;
     padding: 30px 0 20px 0;
+
     .benficios-nav-list {
       display: flex;
       justify-content: space-between;
@@ -49,7 +57,7 @@
   }
 
   .beneficios-menu {
-    width: 930px;
+    min-width: 360px;
     margin: 0 auto;
 
     .beneficios-menu-header {
@@ -133,8 +141,20 @@
       width: 20px;
       height: 30px;
     }
-
+    .content-menu-card {
+      .menu-card {
+        .menu-img {
+          border-radius: 0;
+          img {
+            border-radius: 0;
+          }
+        }
+      }
+    }
     .menu-card {
+      overflow: hidden;
+      border: 1px solid rgb(167, 167, 167);
+      border-radius: 15px;
       .menu-img {
         width: 60%;
         height: 280px;
@@ -166,6 +186,22 @@
         flex-direction: row;
         min-height: auto;
       }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .Beneficios {
+    margin: 30px 0 50px 0;
+    .beneficios-header {
+      max-width: 1000px;
+    }
+    .beneficios-nav {
+      max-width: 1000px;
+    }
+
+    .beneficios-menu {
+      max-width: 1000px;
     }
   }
 }
