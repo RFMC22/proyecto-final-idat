@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { PathConstants } from '../../utils/PathConstants';
 import './../../styles/Breadcrumb.css';
+import { PathConstants } from '../../utils';
 
 const Breadcrumb = () => {
   const location = useLocation();
