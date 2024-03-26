@@ -26,7 +26,7 @@ const NavbarCombos = () => {
                     <Link to={PathConstants.COMBOS}><li><a>Combos</a></li></Link>
                     <Link to={PathConstants.HAMBURGUESAS}><li><a>Hamburguesas</a></li></Link>
                     <Link to={PathConstants.POLLO}><li><a>Pollo</a></li></Link>
-                    <Link to={PathConstants.MENUSALPLATO}><li><a>Menús al Plato</a></li></Link>
+                    <Link to={PathConstants.MENUSALPLATO}><li><a>Menús al PLato</a></li></Link>
                     <Link to={PathConstants.LONCHERITAS}><li><a>Loncheritas</a></li></Link>
                     <Link to={PathConstants.COMPLEMENTOS}><li><a>Complementos</a></li></Link>
                     <Link to={PathConstants.BEBIDAS}><li><a>Bebidas</a></li></Link>

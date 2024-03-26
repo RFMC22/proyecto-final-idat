@@ -9,7 +9,7 @@ const MenusAlPlato = () => {
     <div className="contenedor-general-combos">
       <NavbarCombos />
       <CardsCombos
-        tituloSeccion="COMBOS DE HAMBURGESAS"
+        tituloSeccion="CONOCE NUESTROS MENÚ AL PLATO | BEMBOS"
         getData={getMenusAlPlato}
         variante={false}
         subtitulo=""
