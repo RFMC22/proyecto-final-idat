@@ -15,8 +15,6 @@ interface AccordionSectionProps {
 
 
 const PreguntasFrecuentes: React.FC<AccordionSectionProps> = ({
-  title,
-  children,
   myclass,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,28 +36,31 @@ const PreguntasFrecuentes: React.FC<AccordionSectionProps> = ({
 
     getFrecuentes();
   }, [getPreguntasFrecuentes]);
-  console.log(preguntasFrecuentes.data)
+  preguntasFrecuentes.data && console.log(preguntasFrecuentes.data[0].hamburguesas)
 
   return (
 
     <div className={`contendor-principal-accordion ${myclass}`}>
-      {preguntasFrecuentes.data?.map((preguntasFrecuentes: any) => (
+
+
+      {preguntasFrecuentes.data?.map((hamburguesas: any) => (
         <div className="contenedor-accordion-interior">
           <div className="header-accordion" onClick={toggleAccordion}>
             <div className='superior-cerrado-abierto-icon'>
-              <h3 className='titulo-accordion'>{preguntasFrecuentes.titulo}</h3>
+              <h3 className='titulo-accordion'>{hamburguesas.titulo}</h3>
               <div className='img-accordion'> {isOpen ? imgFalse : imgTrue} </div>
             </div>
           </div>
           {isOpen && (
             <div className="accordion-content">
-              {preguntasFrecuentes.respuesta}
+              {hamburguesas.respuesta}
             </div>
           )}
         </div>
       ))}
+
     </div>
-  );
-};
+  )
+}
 
 export default PreguntasFrecuentes;
