@@ -316,7 +316,7 @@ const NavBarDesktop = () => {
                   fill="#BB0011"
                 />
               </svg>
-              BENEFICIOS
+              <Link to={PathConstants.BENEFICIOS}>BENEFICIOS</Link>
             </li>
           </ul>
 
