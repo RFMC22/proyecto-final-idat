@@ -6,13 +6,19 @@ import abierto from '../../../public/abierto.png'
 import cerrado from '../../../public/cerrado.png'
 
 
-
 interface AccordionSectionProps {
   title: string;
   children: React.ReactNode;
+  myclass: string;
 }
 
-const PreguntasFrecuentes: React.FC<AccordionSectionProps> = () => {
+
+
+const PreguntasFrecuentes: React.FC<AccordionSectionProps> = ({
+  title,
+  children,
+  myclass,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const imgFalse = <img src={abierto} alt="" />
@@ -36,7 +42,7 @@ const PreguntasFrecuentes: React.FC<AccordionSectionProps> = () => {
 
   return (
 
-    <div className='contendor-principal-accordion'>
+    <div className={`contendor-principal-accordion ${myclass}`}>
       {preguntasFrecuentes.data?.map((preguntasFrecuentes: any) => (
         <div className="contenedor-accordion-interior">
           <div className="header-accordion" onClick={toggleAccordion}>
@@ -53,8 +59,7 @@ const PreguntasFrecuentes: React.FC<AccordionSectionProps> = () => {
         </div>
       ))}
     </div>
-
   );
 };
 
-export default PreguntasFrecuentes
+export default PreguntasFrecuentes;

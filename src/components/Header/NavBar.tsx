@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { NavBarProps } from '../../interfaces/NavBarProps';
 import '../../styles/NavBar.css';
+import { PathConstants } from '../../utils/PathConstants';
 
 const NavBar: React.FC<NavBarProps> = ({ setOpenHamburguer }) => {
   const handleClose = () => {
@@ -44,10 +46,10 @@ const NavBar: React.FC<NavBarProps> = ({ setOpenHamburguer }) => {
 
       <nav>
         <ul className="navList">
-          <li>MI CUENTA</li>
-          <li>LOCALES</li>
-          <li>ZONAS DE REPARTO</li>
-          <li>NOSOTROS</li>
+          <Link to={PathConstants.INDEX}><li>MI CUENTA</li></Link>
+          <Link to={PathConstants.INDEX}><li>LOCALES</li></Link>
+          <Link to={PathConstants.INDEX}><li>ZONAS DE REPARTO</li></Link>
+          <Link to={PathConstants.INDEX}><li>NOSOTROS</li></Link>
         </ul>
       </nav>
 

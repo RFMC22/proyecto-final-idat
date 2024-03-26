@@ -16,4 +16,5 @@ export const PathConstants = {
   HELADOS: '/menu/helados',
   INKACHIPS: '/menu/inka-chips',
   CART: '/checkout/cart',
+  BENEFICIOS: '/beneficios',
 };

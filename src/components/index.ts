@@ -8,3 +8,4 @@ export { default as Card } from './Card/Card';
 export { default as Tabs } from './Tabs/Tabs';
 export { default as Breadcrumb } from './Breadcrumb/Breadcrumb';
 export { default as Counter } from './shared/Counter';
+export { default as BeneficioHeader } from './Beneficios/BeneficiosHeader';
