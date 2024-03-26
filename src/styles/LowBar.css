@@ -1,0 +1,33 @@
+.lowBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgb(23, 48, 131);
+  .lowBar-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px 16px;
+    justify-items: center;
+  }
+
+  .lowBar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .lowBar-icon {
+      width: 25px;
+      height: 25px;
+      fill: rgb(251, 185, 5);
+    }
+
+    .lowBar-text {
+      color: white;
+      font-size: 15px;
+      font-family: 'din', sans-serif;
+    }
+  }
+}
