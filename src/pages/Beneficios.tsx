@@ -38,16 +38,13 @@ const Beneficios = () => {
   });
 
   const beneficioSwiperOptions = {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 60,
     navigation: true,
     modules: [Navigation],
     breakpoints: {
-      768: {
+      800: {
         slidesPerView: 2,
-      },
-      320: {
-        slidesPerView: 1,
       },
     },
   };
@@ -159,10 +156,10 @@ const Beneficios = () => {
         </nav>
         <section className="beneficios-menu">
           <BeneficioHeader
-            img={clickedDataHeader?.img ||friendzone}
-            title={clickedDataHeader?.title ||'FRIENDZONE'}
-            subtitle={clickedDataHeader?.subtitle||'Iniciar Sesion'}
-            reason={clickedDataHeader?.reason||'PROMOCIONES POR TU AMISTAD'}
+            img={clickedDataHeader?.img || friendzone}
+            title={clickedDataHeader?.title || 'FRIENDZONE'}
+            subtitle={clickedDataHeader?.subtitle || 'Iniciar Sesion'}
+            reason={clickedDataHeader?.reason || 'PROMOCIONES POR TU AMISTAD'}
           />
 
           <SwiperComponent
@@ -199,43 +196,45 @@ const Beneficios = () => {
             )}
           </SwiperComponent>
         </section>
-        {preguntasFrecuentesData ? (
-          preguntasFrecuentesData[0].beneficios.map((pregunta) => (
-            <PreguntasFrecuentes
-              title={pregunta.titulo}
-              children={pregunta.respuesta}
-              myclass={'MyQuestions'}
-            />
-          ))
-        ) : (
-          <>
-            <PreguntasFrecuentes
-              title={''}
-              children={''}
-              myclass={'MyQuestions'}
-            />
-            <PreguntasFrecuentes
-              title={''}
-              children={''}
-              myclass={'MyQuestions'}
-            />
-            <PreguntasFrecuentes
-              title={''}
-              children={''}
-              myclass={'MyQuestions'}
-            />
-            <PreguntasFrecuentes
-              title={''}
-              children={''}
-              myclass={'MyQuestions'}
-            />
-            <PreguntasFrecuentes
-              title={''}
-              children={''}
-              myclass={'MyQuestions'}
-            />
-          </>
-        )}
+        <div className="questions">
+          {preguntasFrecuentesData ? (
+            preguntasFrecuentesData[0].beneficios.map((pregunta) => (
+              <PreguntasFrecuentes
+                title={pregunta.titulo}
+                children={pregunta.respuesta}
+                myclass={'MyQuestions'}
+              />
+            ))
+          ) : (
+            <>
+              <PreguntasFrecuentes
+                title={''}
+                children={''}
+                myclass={'MyQuestions'}
+              />
+              <PreguntasFrecuentes
+                title={''}
+                children={''}
+                myclass={'MyQuestions'}
+              />
+              <PreguntasFrecuentes
+                title={''}
+                children={''}
+                myclass={'MyQuestions'}
+              />
+              <PreguntasFrecuentes
+                title={''}
+                children={''}
+                myclass={'MyQuestions'}
+              />
+              <PreguntasFrecuentes
+                title={''}
+                children={''}
+                myclass={'MyQuestions'}
+              />
+            </>
+          )}
+        </div>
       </div>
     </section>
   );
