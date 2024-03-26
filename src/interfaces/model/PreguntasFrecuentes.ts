@@ -1,4 +1,4 @@
-export interface PreguntasFrecuentes {
+export interface IPreguntasFrecuentes {
     preguntas_frecuentes: PreguntasFrecuente[];
 }
 
@@ -8,6 +8,7 @@ export interface PreguntasFrecuente {
     loncheritas: Complemento[];
     complementos: Complemento[];
     helados: Complemento[];
+    beneficios: Complemento[];
 }
 
 export interface Complemento {

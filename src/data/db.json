@@ -1106,106 +1106,67 @@
       "distritos": [
         {
           "nombre_distrito": "Ate",
-          "sedes": [
-            "Plaza Vea Ate",
-            "Santa Clara",
-            "Puruchuco"
-          ],
+          "sedes": ["Plaza Vea Ate", "Santa Clara", "Puruchuco"],
           "id": 86
         },
         {
           "nombre_distrito": "Cercado de Lima",
-          "sedes": [
-            "Jirón de la Unión",
-            "Centro Cívico"
-          ],
+          "sedes": ["Jirón de la Unión", "Centro Cívico"],
           "id": 87
         },
         {
           "nombre_distrito": "Chorillos",
-          "sedes": [
-            "Real Plaza Chorrillos Venturosa",
-            "Mega Plaza Chorrillos"
-          ],
+          "sedes": ["Real Plaza Chorrillos Venturosa", "Mega Plaza Chorrillos"],
           "id": 88
         },
         {
           "nombre_distrito": "Comas",
-          "sedes": [
-            "Mallplaza Comas"
-          ],
+          "sedes": ["Mallplaza Comas"],
           "id": 89
         },
         {
           "nombre_distrito": "Independencia",
-          "sedes": [
-            "Mega Plaza",
-            "Plaza Norte In Line (1er piso)"
-          ],
+          "sedes": ["Mega Plaza", "Plaza Norte In Line (1er piso)"],
           "id": 90
         },
         {
           "nombre_distrito": "Jesus María",
-          "sedes": [
-            "Jesus María",
-            "Real Plaza Salaverry"
-          ],
+          "sedes": ["Jesus María", "Real Plaza Salaverry"],
           "id": 91
         },
         {
           "nombre_distrito": "La Molina",
-          "sedes": [
-            "La Fontana",
-            "Wong Camacho",
-            "DK La Molina"
-          ],
+          "sedes": ["La Fontana", "Wong Camacho", "DK La Molina"],
           "id": 92
         },
         {
           "nombre_distrito": "La Victoria",
-          "sedes": [
-            "Metro Canada In Line"
-          ],
+          "sedes": ["Metro Canada In Line"],
           "id": 93
         },
         {
           "nombre_distrito": "Magdalena del Mar",
-          "sedes": [
-            "Magdalena",
-            "DK Magdalena"
-          ],
+          "sedes": ["Magdalena", "DK Magdalena"],
           "id": 94
         },
         {
           "nombre_distrito": "Miraflores",
-          "sedes": [
-            "Aurora",
-            "Larco I",
-            "Larco II"
-          ],
+          "sedes": ["Aurora", "Larco I", "Larco II"],
           "id": 95
         },
         {
           "nombre_distrito": "Pueblo Libre",
-          "sedes": [
-            "Sucre"
-          ],
+          "sedes": ["Sucre"],
           "id": 96
         },
         {
           "nombre_distrito": "Punta Hermosa",
-          "sedes": [
-            "Movil 2 Punta Hermosa"
-          ],
+          "sedes": ["Movil 2 Punta Hermosa"],
           "id": 97
         },
         {
           "nombre_distrito": "San Borja",
-          "sedes": [
-            "Real Plaza Primavera",
-            "Aviación",
-            "Rambla Food Court"
-          ],
+          "sedes": ["Real Plaza Primavera", "Aviación", "Rambla Food Court"],
           "id": 98
         },
         {
@@ -1221,41 +1182,27 @@
         },
         {
           "nombre_distrito": "San Juan de Miraflores",
-          "sedes": [
-            "Mall del Sur",
-            "San Juan Atocongo"
-          ],
+          "sedes": ["Mall del Sur", "San Juan Atocongo"],
           "id": 100
         },
         {
           "nombre_distrito": "San Martín de Porres",
-          "sedes": [
-            "Plaza Lima Norte FC",
-            "Real Plaza Pro"
-          ],
+          "sedes": ["Plaza Lima Norte FC", "Real Plaza Pro"],
           "id": 101
         },
         {
           "nombre_distrito": "San Miguel",
-          "sedes": [
-            "Plaza San Miguel",
-            "La mar",
-            "Plaza San Miguel FC"
-          ],
+          "sedes": ["Plaza San Miguel", "La mar", "Plaza San Miguel FC"],
           "id": 102
         },
         {
           "nombre_distrito": "Santa Anita",
-          "sedes": [
-            "Santa Anita"
-          ],
+          "sedes": ["Santa Anita"],
           "id": 103
         },
         {
           "nombre_distrito": "Santiago de Surco",
-          "sedes": [
-            "Bembos Universidad de Lima"
-          ],
+          "sedes": ["Bembos Universidad de Lima"],
           "id": 104
         },
         {
@@ -1272,16 +1219,12 @@
         },
         {
           "nombre_distrito": "Surquillo",
-          "sedes": [
-            "Dark Kitchen Surquillo"
-          ],
+          "sedes": ["Dark Kitchen Surquillo"],
           "id": 106
         },
         {
           "nombre_distrito": "Villa el Salvador",
-          "sedes": [
-            "Villa el Salvador"
-          ],
+          "sedes": ["Villa el Salvador"],
           "id": 107
         }
       ]
@@ -1304,11 +1247,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Plaza Vea Callao",
-            "Bellavista",
-            "Minka"
-          ]
+          "sedes": ["Plaza Vea Callao", "Bellavista", "Minka"]
         }
       ]
     },
@@ -1317,10 +1256,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Chiclayo Real Plaza",
-            "Mall Aventura Chiclayo"
-          ]
+          "sedes": ["Chiclayo Real Plaza", "Mall Aventura Chiclayo"]
         }
       ]
     },
@@ -1329,9 +1265,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Huancayo"
-          ]
+          "sedes": ["Huancayo"]
         }
       ]
     },
@@ -1340,9 +1274,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "El Quinde Ica"
-          ]
+          "sedes": ["El Quinde Ica"]
         }
       ]
     },
@@ -1351,9 +1283,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Real Plaza Juliaca"
-          ]
+          "sedes": ["Real Plaza Juliaca"]
         }
       ]
     },
@@ -1362,9 +1292,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Real Plaza Piura"
-          ]
+          "sedes": ["Real Plaza Piura"]
         }
       ]
     },
@@ -1373,9 +1301,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Real Plaza Pucallpa"
-          ]
+          "sedes": ["Real Plaza Pucallpa"]
         }
       ]
     },
@@ -1384,9 +1310,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Plaza vea - Puno"
-          ]
+          "sedes": ["Plaza vea - Puno"]
         }
       ]
     },
@@ -1395,9 +1319,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Plaza vea Tacna"
-          ]
+          "sedes": ["Plaza vea Tacna"]
         }
       ]
     },
@@ -1406,10 +1328,7 @@
       "distritos": [
         {
           "nombre_distrito": "",
-          "sedes": [
-            "Real Plaza Trujillo",
-            "Trujillo Mall Plaza"
-          ]
+          "sedes": ["Real Plaza Trujillo", "Trujillo Mall Plaza"]
         }
       ]
     }
@@ -1496,6 +1415,28 @@
         {
           "titulo": "¿Qué sabores de helados Bembos existen?",
           "respuesta": "Existen dos tipos de helados en la tienda en línea de Bembos. Tenemos el Helado Mini Princesa que es un helado de vainilla o mixto con trozos de chocolate princesa y fudge de chocolate. Y también está el Choco Maní que está hecho con helado de vainilla y una delicios cobertura de chocolate derretido con maní picado."
+        }
+      ],
+      "beneficios": [
+        {
+          "titulo": "¿Cómo funcionan los puntos?",
+          "respuesta": "Tus consumos se convierten en puntos para acceder a distintos estados de relación y así seguir obteniendo más productos. Conforme vayas fortaleciendo la relación, podrás acceder a más beneficios y descuentos!"
+        },
+        {
+          "titulo": "¿Cuáles son los beneficios?",
+          "respuesta": "Existen diferentes beneficios en cada estado de relación que vas alcanzando. Puedes tener desde descuentos con más del 30% hasta delivery gratis."
+        },
+        {
+          "titulo": "¿Hay beneficios por el método de pago?",
+          "respuesta": "Actualmente no existe un beneficio por pagar a través de un método de pago en particular."
+        },
+        {
+          "titulo": "¿Los cupones de descuentos tienen fecha límite para usar?",
+          "respuesta": "Si tienen una fecha límite y puedes revisar los legales en el pie de página del mismo."
+        },
+        {
+          "titulo": "¿Hay beneficios en compras por la App?",
+          "respuesta": "Haciendo tu compra a través de la APP o el sitio web podrás acumular puntos para tener más beneficios con nosotros."
         }
       ]
     }
@@ -1717,6 +1658,108 @@
           "titulocomb": "Ají Bembos 2 Oz + S/.1.50",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_68x68/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/a/j/aji_1.jpg",
           "preccomb": 1.5
+        }
+      ]
+    }
+  ],
+  "beneficios": [
+    {
+      "relacion": [
+        {
+          "id": 3165,
+          "nombre": "La Churrita del barrio",
+          "link": "la-churrita-del-barrio",
+          "precio": 39.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-la-churrita-del-barrio-benenficios.jpg"
+        },
+        {
+          "id": 3167,
+          "nombre": "Rica pero humilde",
+          "link": "rica-pero-humilde",
+          "precio": 21.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-rica-pero-humilde-beneficios.jpg"
+        },
+        {
+          "id": 3166,
+          "nombre": "Amor a la parrilla mediano",
+          "link": "amor-a-la-parrilla-mediano",
+          "precio": 34.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-amor-a-la-parrilla-mediano-beneficios.jpg"
+        }
+      ]
+    },
+    {
+      "frienzone": [
+        {
+          "id": 3159,
+          "nombre": "Pareja real",
+          "link": "pareja-real",
+          "precio": 39.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-pareja-real-beneficios.jpg"
+        },
+        {
+          "id": 3160,
+          "nombre": "Clásico amor",
+          "link": "clasico-amor",
+          "precio": 42.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-clasico-amor-beneficios.jpg"
+        }
+      ]
+    },
+    {
+      "gileos": [
+        {
+          "id": 3163,
+          "nombre": "Amor a la churrita",
+          "link": "amor-a-la-churrita",
+          "precio": 18.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-amor-a-la-churrita-beneficios.jpg"
+        },
+        {
+          "id": 3162,
+          "nombre": "Pasión de barrio",
+          "link": "pasion-de-barrio",
+          "precio": 29.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-pasion-de-barrio-benenficios.jpg"
+        },
+        {
+          "id": 3164,
+          "nombre": "Amor sin fronteras",
+          "link": "amor-sin-fronteras",
+          "precio": 52.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-amor-sin-fronteras-benenficios.jpg"
+        }
+      ]
+    },
+    {
+      "destinados": [
+        {
+          "id": 3168,
+          "nombre": "Almas gemelas",
+          "link": "almas-gemelas",
+          "precio": 25.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-almas-gemelas-beneficios.jpg"
+        },
+        {
+          "id": 3171,
+          "nombre": "Mi Complice perfecto",
+          "link": "mi-complice-perfecto",
+          "precio": 19.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-mi-complice-perfecto-beneficios.jpg"
+        },
+        {
+          "id": 3172,
+          "nombre": "Amor Parrillero",
+          "link": "amor-parrillero",
+          "precio": 23.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-amor-parrillero-beneficios.jpg"
+        },
+        {
+          "id": 3170,
+          "nombre": "Amor Extremo",
+          "link": "amor-extremo",
+          "precio": 21.9,
+          "img": "https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-amor-extremo-beneficios.jpg"
         }
       ]
     }

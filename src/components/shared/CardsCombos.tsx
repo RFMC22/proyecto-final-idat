@@ -34,7 +34,6 @@ const CardsCombos: React.FC<Props<any>> = ({ tituloSeccion, getData, descripcion
     fetchData();
   }, [getData]);
 
-  console.log(combos.data)
 
   return (
     <div className="max-contenedor">
