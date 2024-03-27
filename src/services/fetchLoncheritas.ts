@@ -1,7 +1,12 @@
-import axios from "axios";
-import { LoncheraResponse } from "../interfaces/responses/LoncheritaResponse";
+import axios from 'axios';
+import { LoncheraResponse } from '../interfaces';
 
-export async function getLoncheritas(): Promise<LoncheraResponse> {
-    const respuesta = await axios.get(import.meta.env.VITE_API_URL_LONCHERITAS);
-    return respuesta;
-}
+export const getLoncheritas = async (): Promise<LoncheraResponse> => {
+    try {
+        const response = await axios.get<LoncheraResponse>(import.meta.env.VITE_API_URL_LONCHERITAS);
+        return response.data;
+    } catch (error: unknown) { // Aquí estamos especificando el tipo de error como 'unknown'
+        throw new Error('Error fetching pollo data: ' + (error as Error).message);
+    }
+};
+
