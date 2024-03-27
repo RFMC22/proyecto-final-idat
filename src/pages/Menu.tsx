@@ -25,7 +25,6 @@ import { useEffect, useState } from 'react';
 import { MenuResponse } from '../interfaces/';
 import { getMenuOptions } from '../services/';
 import { TabTitle } from '../utils/GeneralFunctions';
-import NavBarMobile from '../components/Header/NavBarMobile';
 
 const Menu = () => {
 

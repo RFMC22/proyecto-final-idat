@@ -2,6 +2,7 @@ import { createContext, useState } from 'react';
 import {
   ComplementoResponse,
   CuponResponse,
+  PolloResponse,
   PromocionCompartirResponse,
   PromocionDosResponse,
   PromocionPersonalResponse,
@@ -9,22 +10,29 @@ import {
 } from '../interfaces';
 import {
   getComplementos,
+  getPollo,
   getPromosCompartir,
   getPromosDos,
   getPromosPersonales,
 } from '../services';
-import { iShoppingContext, iShoppingType } from '../interfaces/IShopping';
+import {
+  OrderItem,
+  iShoppingContext,
+  iShoppingType,
+} from '../interfaces/IShopping';
 import { getCupones } from '../services/fetchCupones';
 
 const ShoppingContext = createContext<iShoppingType>(iShoppingContext);
 
 const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [cartState, setCartState] = useState<boolean | null>(false);
-  const [orderTitle, setOrderTitle] = useState<string>('');
-  const [orderDescripcion, setOrderDescripcion] = useState<string | null>('');
-  const [orderMainImage, setOrderMainImage] = useState<string>('');
-  const [orderSecondImage, setOrderSecondImage] = useState<string>('');
-  const [orderBigPrice, setOrderBigPrice] = useState<number>(0);
+  const [orderInfo, setOrderInfo] = useState({
+    name: '',
+    description: '',
+    mainImg: '',
+    secondImg: '',
+    price: 0,
+  });
   const [promosPersonales, setPromosPersonales] =
     useState<PromocionPersonalResponse>({});
   const [promosDos, setPromosDos] = useState<PromocionDosResponse>({});
@@ -32,6 +40,25 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     useState<PromocionCompartirResponse>({});
   const [complementos, setComplementos] = useState<ComplementoResponse>({});
   const [cupones, setCupones] = useState<CuponResponse>({});
+  const [polloQuestions, setPolloQuestions] = useState<PolloResponse>({});
+  const [orderList, setOrderList] = useState<OrderItem[]>([]);
+
+  const handleOrderClick = (id: string, price: number, text: string) => {
+    const checkOrderList = orderList.some((item) => item.id === id);
+
+    checkOrderList
+      ? setOrderList((prevOrderList) =>
+          prevOrderList.map((item) =>
+            item.id !== id ? item : { id: id, price: price, product: text }
+          )
+        )
+      : setOrderList((prevOrderList) => [
+          ...prevOrderList,
+          { id: id, price: price, product: text },
+        ]);
+    orderList && console.log(orderList);
+    console.log(checkOrderList);
+  };
 
   const getDataPromociones = async () => {
     const [promos, promosD, promosC, complements, cupons] = await Promise.all([
@@ -49,27 +76,29 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     setCupones(cupons);
   };
 
+  const getPolloData = async () => {
+    const polloData = await getPollo();
+    polloData && setPolloQuestions(polloData);
+  };
+
   return (
     <ShoppingContext.Provider
       value={{
         cartState,
         setCartState,
-        setOrderTitle,
-        setOrderDescripcion,
-        setOrderMainImage,
-        orderTitle,
-        orderDescripcion,
-        orderMainImage,
-        setOrderSecondImage,
-        setOrderBigPrice,
-        orderSecondImage,
-        orderBigPrice,
+        setOrderInfo,
+        orderInfo,
         promosPersonales,
         promosDos,
         promosCompartir,
         complementos,
         cupones,
         getDataPromociones,
+        polloQuestions,
+        getPolloData,
+        setOrderList,
+        orderList,
+        handleOrderClick,
       }}
     >
       {children}
