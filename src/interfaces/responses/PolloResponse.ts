@@ -1,5 +1,5 @@
-import { Tipo } from "../model/Pollo";
+import { Pollo } from "../model/Pollo";
 
 export interface PolloResponse {
-    data?: Tipo[];
+    dato?: Pollo[];
 }

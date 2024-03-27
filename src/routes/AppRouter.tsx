@@ -1,18 +1,11 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
-import {
-  Beneficios,
-  Combos,
-  Cupones,
-  Error404,
-  Home,
-  Menu,
-  Orders,
-  Promociones,
-  Root,
-  Tiendas,
-} from '../pages';
-import { Cart } from '../components';
-import { PathConstants } from '../utils';
+import { Routes, Route, useLocation } from "react-router-dom"
+import { 
+  Beneficios, Combos, Cupones, 
+  Error404, Home, Menu, Orders, 
+  Product, 
+  Promociones, Root, Tiendas } from "../pages"
+import { Cart } from "../components"
+import { PathConstants } from "../utils"
 
 const AppRouter = () => {
   const location = useLocation();
@@ -50,6 +43,10 @@ const AppRouter = () => {
             element={<Beneficios />}
           ></Route>
           <Route path={PathConstants.CART} element={<Cart />}></Route>
+          <Route
+          path={PathConstants.ADMIN_PRODUCT}
+          element={<Product/>}
+          ></Route>
         </Route>
       </Routes>
       {background && (

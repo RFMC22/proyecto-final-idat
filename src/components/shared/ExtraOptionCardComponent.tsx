@@ -25,16 +25,18 @@ const ExtraOptionCardComponent = ({
   price,
   count,
 }: ExtraOptionCardComponent) => {
-  
-  const {handleOrderClick} = useShopping();
+  const { handleOrderClick } = useShopping();
 
+  const handleClick = () => {
+    onClick(), handleOrderClick(id, price, text, count);
+  };
   return (
     <div className={`extraOptionCard ${width}`}>
       <div className="flex-col">
         <div
           className="imgContainer"
           onClick={() => {
-            onClick(), handleOrderClick(id, price, text);
+            handleClick();
           }}
           style={{
             border: isActive

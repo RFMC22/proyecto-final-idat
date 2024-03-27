@@ -24,7 +24,7 @@ export type iShoppingType = {
   promosCompartir: PromocionCompartirResponse;
   complementos: ComplementoResponse;
   cupones: CuponResponse;
-  handleOrderClick: (id: string, price: number, product: string) => void;
+  handleOrderClick: (id: string, price: number, product: string,count:number) => void;
   getDataPromociones: () => Promise<void>;
   getPolloData: () => Promise<void>;
   polloQuestions: PolloResponse;

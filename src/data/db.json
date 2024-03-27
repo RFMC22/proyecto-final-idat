@@ -8,7 +8,8 @@
       "link": "combo-extrema",
       "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
-      "bigPrice": 4
+      "bigPrice": 4,
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Combo Carretillera",
@@ -18,7 +19,8 @@
       "link": "combo-carretillera",
       "descripcion": "Vive el sabor único de la Hamburguesa de pollo deshilachado llamada 'Carretillera a la parrilla de Bembos'. Esta creación incluye una sabrosa hamburguesa a la parrilla, complementada con tierno pollo deshilachado. Además, la salsa tártara añade un toque cremoso y refinado, mientras que las papas al hilo aportan una textura crujiente y deliciosa. La frescura viene de la mano del tomate y la lechuga. Completa tu experiencia gastronómica con una porción mediana de nuestras papas y una refrescante gaseosa de 500 ml. Un combo perfecto para satisfacer todos tus antojos.¡Pídelo online ya!",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-carretillera-calada_2.png",
-      "bigPrice": 3
+      "bigPrice": 3,
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Combo A lo Pobre",
@@ -28,7 +30,8 @@
       "link": "combo-a-lo-pobre",
       "descripcion": "Hamburguesa A lo Pobre a la parrilla: Hamburguesa a la parrilla, huevo frito, plátano frito, cebolla blanca, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-calada_3.png",
-      "bigPrice": 3
+      "bigPrice": 3,
+      "terminoscondiciones": "Promoción válida para delivery. Válida solo para web, app, WhatsApp bot, y Call Center. Válido hasta agotar stock. Stock mínimo disponible 500 unidades. Sujeto a disponibilidad de tiendas y cambios sin previo aviso. Zona de reparto limitada. Recargo por delivery S/ 5.90. Promoción no acumulable con otras promociones. Máximo 3 promociones por transacción. Fotos referenciales. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Combo Churrita",
@@ -38,7 +41,8 @@
       "link": "combo-churrita",
       "descripcion": "Hamburguesa Churrita a la parrilla: Hamburguesa, tocino, papas al hilo y mayonesa de chimichurri. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-churrita-calada_4.png",
-      "bigPrice": 3
+      "bigPrice": 3,
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Combo Alemana",
@@ -48,7 +52,8 @@
       "link": "combo-alemana",
       "descripcion": "1 Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa, papa mediana y gaseosa 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
-      "bigPrice": 4
+      "bigPrice": 4,
+      "terminoscondiciones": ""
     },
     {
       "nombre": "Combo Queabuso",
@@ -58,7 +63,8 @@
       "link": "combo-queabuso",
       "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
-      "bigPrice": 3
+      "bigPrice": 3,
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Combo Royal",
@@ -68,7 +74,8 @@
       "link": "combo-royal",
       "descripcion": "Hamburguesa Royal a la parrilla: Hamburguesa a la parrilla, huevo, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-royal-calada-2_1__1.png",
-      "bigPrice": 3
+      "bigPrice": 3,
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Combo Queso Tocino",
@@ -78,7 +85,8 @@
       "link": "combo-queso-tocino",
       "descripcion": "Hamburguesa Queso tocino a la parrilla: Hamburguesa a la parrilla, doble tocino, queso edam, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-queso-tocino-calada_5.png",
-      "bigPrice": 3
+      "bigPrice": 3,
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Combo Cheese",
@@ -88,7 +96,8 @@
       "link": "combo-cheese",
       "descripcion": "Hamburguesa Cheese a la parrilla: Hamburguesa a la parrilla, lechuga, tomate, mayonesa y queso. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_5.png",
-      "bigPrice": 3
+      "bigPrice": 3,
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Combo Clásica",
@@ -98,7 +107,8 @@
       "link": "combo-clasica",
       "descripcion": "Hamburguesa Clásica a la parrilla: Hamburguesa a la parrilla, lechuga, tomate y mayonesa. Papa mediana y gaseosa de 500 ml.",
       "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/l/clasicas_0002_clasica_4.png",
-      "bigPrice": 3
+      "bigPrice": 3,
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     }
   ],
   "hamburguesas": [
@@ -108,9 +118,7 @@
       "id": 11,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-clasica_1_1.jpg",
       "link": "hamburguesa-clasica-bembos",
-      "descripcion": "¿Ya probaste la deliciosa hamburguesa a la parrilla clásica Bembos? Con su delicioso sabor ahumado y consistencia característica, este clásico Bembos lleva como ingredientes:Mayonesa, Tomate, Lechuga Agrega gratis: Mayonesa (01), Ají Bembos (01) y Kétchup (01).¡Pídela ya con delivery!",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/l/clasicas_0002_clasica_9_1_3_1_1_2.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Hamburguesa Cheese",
@@ -118,9 +126,7 @@
       "id": 12,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-base.jpg",
       "link": "hamburguesa-cheese",
-      "descripcion": "Deliciosa Hamburguesa con Queso. ¡Una de las favoritas! Entre sus ingredientes encontramos.Hamburguesa de Carne a la Parrilla, Queso Edam, Mayonesa, Tomate, Lechuga. Además incluye Mayonesa (01), Ketchup (01), Ají Bembos (x1) ¡Pruébala en tamaño mediano o grande y no te olvides de agregrarle a tu pedido cualquiera de nuestros adicionales!.",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-calada_3_1_4_2_1_2_1.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Hamburguesa Bembos Queso Tocino",
@@ -128,9 +134,7 @@
       "id": 13,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-tocino_1.jpg",
       "link": "hamburguesa-bembos-queso-tocino",
-      "descripcion": "La Hamburguesa Bembos preferida por la mayoría: Una rica combinación de Hamburguesa con Queso y Doble Tocino, uno de los clásicos por excelencia. Ingredientes: Hamburguesa a la parrilla, Doble Tocino, Queso Edam,Mayonesa, Lechuga, Tomate. Pide tu Hamburguesa con Queso y Doble Tocino Bembos en tamaño mediano o grande. Transfórmala en combo al agregar papas y gaseosas. ¿Quieres más? Personaliza tu pedido añadiendo más tocino, queso o huevo. ¡Qué rico!",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-queso-tocino-calada_7_1_1_2_1_2.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Hamburguesa Royal",
@@ -138,9 +142,7 @@
       "id": 14,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-royal-base_1.jpg",
       "link": "hamburguesa-royal",
-      "descripcion": "¿Con antojo de una royal clásica? Disfruta de nuestra deliciosa Hamburguesa Royal Bembos. Ingredientes:Hamburguesa de Carne a la parrilla, Huevo, Queso Edam, Mayonesa, Lechuga, Tomate. Pídela en tamaño mediana o grande. También, transfórmala en Combo agregando papas fritas y gaseosa.Si deseas personalizar tu orden, puedes escoger entre agregar un huevo frito extra, papas al hilo, más queso o tocino. ¡Pruébala ahora!",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-royal-calada-2_1__1_2_1_3_1_1.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Hamburguesa Churrita",
@@ -148,9 +150,7 @@
       "id": 15,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-churrita_1_1_1.jpg",
       "link": "hamburguesa-churrita",
-      "descripcion": "¡Disfruta de una de la famosa Hamburguesa Churrita Bembos, la más jugosas hamburguesas de carne a la parrilla! Acompañada de mayonesa de chimichurri y el característico sabor y aroma a parrilla, es toda una experiencia probarla.Ingredientes:Hamburguesa de carne a la parrilla,Tocino,Papas al hilo, Mayonesa de Chimichurri.Transfórmala en combo o agrega a sus ingredientes: huevo frito, tocino extra, plátano frito y queso.      ¡Pídela online con delivery hoy!",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-churrita-calada_4_1_2_1_1_2_1_3.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Hamburguesa A lo Pobre",
@@ -158,9 +158,7 @@
       "id": 16,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-base_1.jpg",
       "link": "hamburguesa-a-lo-pobre",
-      "descripcion": "¡Prueba la Bembos más peruana de todas! Disfruta de tu Hamburguesa a lo Pobre preferida, hecha en parrilla y con ese sabor casero que la caracteriza.Ingredientes:Hamburguesa de Carne, Huevo Frito, Plátano Frito, Mayonesa, Tomate, Cebolla Blanca. Pídela en tamaño mediano o grande. También arma tu combo añadiendo papas y gaseosa. O, personaliza tu orden agregando un huevo frito extra, más tocino, entre otros. Costo adicional.",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-calada_3_1_2_2_1_2_2_1.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Alemana",
@@ -168,9 +166,7 @@
       "id": 17,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-alemana.jpg",
       "link": "hamburguesa-alemana",
-      "descripcion": "¡Prueba la Bembos más peruana de todas! Disfruta de tu Hamburguesa a lo Pobre preferida, hecha en parrilla y con ese sabor casero que la caracteriza.Ingredientes:Hamburguesa de Carne, Huevo Frito, Plátano Frito, Mayonesa, Tomate, Cebolla Blanca. Pídela en tamaño mediano o grande. También arma tu combo añadiendo papas y gaseosa. O, personaliza tu orden agregando un huevo frito extra, más tocino, entre otros. Costo adicional.",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-calada_3_1_2_2_1_2_2_1.png",
-      "bigPrice": 3
+      "terminoscondiciones": ""
     },
     {
       "nombre": "Queabuso",
@@ -178,9 +174,7 @@
       "id": 18,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-la-sin-nombre.jpg",
       "link": "hamburguesa-queabuso",
-      "descripcion": "¡Prueba la Bembos más peruana de todas! Disfruta de tu Hamburguesa a lo Pobre preferida, hecha en parrilla y con ese sabor casero que la caracteriza.Ingredientes:Hamburguesa de Carne, Huevo Frito, Plátano Frito, Mayonesa, Tomate, Cebolla Blanca. Pídela en tamaño mediano o grande. También arma tu combo añadiendo papas y gaseosa. O, personaliza tu orden agregando un huevo frito extra, más tocino, entre otros. Costo adicional.",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-calada_3_1_2_2_1_2_2_1.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Hamburguesa Parrillera",
@@ -188,9 +182,7 @@
       "id": 19,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-parrillera-base.jpg",
       "link": "hamburguesa-parrillera",
-      "descripcion": "Prueba nuestra deliciosa Hamburguesa Parrillera Bembos con Chorizo y Chimichurri, pensada para los amantes de la carne. Con el característico aroma a parrilla, incluye entre sus ingredientes:Hamburguesa de Carne, Chorizo, Tomate, Salsa chimichurri, Mostaza. Agrega gratis: Mayonesa (01), Ketchup (01) o Ají Bembos (01). ¡Transfórmala en un combo parrillero añadiendo gaseosa y papas regulares, medianas o grandes! También, puedes personalizar tu orden añadiendo papas al hilo extra, tocino, huevo o queso. Costo adicional.",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-parrillera-calada_4_1_1_2.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Hamburguesa La Carretillera",
@@ -198,9 +190,7 @@
       "id": 20,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-carretillera-base.jpg",
       "link": "hamburguesa-carretillera",
-      "descripcion": "Deliciosa hamburguesa de carne a la parrilla con pollo deshilachado, salsa tártara y papitas al hilo. Incluye: Mayonesa x1, Ketchup x1, Ají Bembos x1. Promoción válida solo para Delivery Web y App Bembos.",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-carretillera-calada_4_3.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Hamburguesa Extrema",
@@ -208,9 +198,7 @@
       "id": 21,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema_1.jpg",
       "link": "hamburguesa-extrema",
-      "descripcion": "Te presentamos a la más contundente de todas: La Bembos Extrema. La hamburguesa de doble carne a la parrilla que entre sus ingredientes encontramos:Doble carne a la parrilla, Queso Edam, Tocino, Tomate, Lechuga, Mayonesa. Llévatela en tamaño mediano o grande.",
-      "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_3_1_1_1_2.png",
-      "bigPrice": 3
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     }
   ],
   "pollo": [
@@ -222,9 +210,7 @@
           "id": 22,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-clasica-regular_3_1.jpg",
           "link": "bembroster-clasica",
-          "descripcion": "¡Disfruta de Bembos con una Hamburguesa Broaster! Un sándwich de tamaño regular que combina a la perfección el crujiente del pollo recién frito con la frescura de la lechuga y el tomate. El pollo, dorado y crujiente, es el protagonista indiscutible, sazonado a la perfección y frito hasta lograr esa textura irresistible. Acompañándolo, encontramos capas de lechuga fresca y jugosas rodajas de tomate, brindando un contraste refrescante al sabor intenso del pollo. Para unificar estos ingredientes, una generosa capa de mayonesa cremosa se esparce, asegurando que cada mordida sea una combinación armoniosa de texturas y sabores. Al comprar una hamburguesa broaster, también recibes: Mayonesa: Suave y cremosa, aporta un toque aterciopelado a cada bocado. Ketchup: Con un toque dulce y ácido, es un favorito atemporal que realza la experiencia del sándwich. Ají Bembos: Para aquellos que se atreven a añadir un toque picante, esta salsa, inspirada en los sabores tradicionales peruanos,promete una sensación emocionante en cada mordida. Vive la experiencia del crujiente, la frescura y los sabores que solo Bembos puede ofrecer. ¡Pídelo hoy!",
-          "orderimg": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-clasica-regular_3_1.jpg",
-          "bigPrice": 3
+          "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
         },
         {
           "nombre": "Bembroster Tártara",
@@ -232,9 +218,7 @@
           "id": 23,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-tartara-base_1_1.jpg",
           "link": "bembroster-tartara",
-          "descripcion": "Nuestro delicioso sandwich de pollo con salsa tártara Bembroster. Contiene: Pollo broaster crujiente, Papas fritas, Lechuga.¡Elige tus salsas favoritas y agrega el combo que desees!",
-          "orderimg": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-clasica-regular_3_1.jpg",
-          "bigPrice": 3
+          "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
         },
         {
           "nombre": "Bembroster Queso Tocino",
@@ -242,9 +226,7 @@
           "id": 24,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-queso-tocino-base_2.jpg",
           "link": "bembroster-queso-tocino",
-          "descripcion": "El Sandwich de Pollo Bembroster es la combinación perfecta de sabor y textura que llevará tu experiencia culinaria a nuevas alturas. Cada ingrediente ha sido seleccionado cuidadosamente para garantizar un disfrute completo: Pechuga de Pollo Crujiente: El corazón de nuestro sandwich de pollo, cocinado a la perfección. Queso Edam: Suave y fundente, añade una riqueza inigualable. Tocino: Un toque de crocancia salada para complementar el pollo. Mayonesa Casera: Cremosidad y sabor que une todos los componentes. Lechuga y Tomate: Frescura y jugosidad en cada bocado. Personaliza tu Sandwich de Pollo Bembroster a tu gusto directamente desde nuestra web y prepárate para disfrutar de una experiencia culinaria que te dejará deseando más. ¡Tu próximo bocadillo favorito te está esperando! R.U.C. No. 20101087647",
-          "orderimg": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-queso-tocino-base_2.jpg",
-          "bigPrice": 3
+          "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
         },
         {
           "nombre": "Bembos Chicken Grill",
@@ -252,9 +234,7 @@
           "id": 25,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/h/chicken-base.jpg",
           "link": "bembos-chicken-grill",
-          "descripcion": "Delicioso Sandwich de Pechuga de pollo a la parrilla. Entre sus ingredientes encontramos: Pollo marinado a la parrilla, Lechuga, Tomate, Mayonesa. Podrás escogerla en tamaño mediana o grande.",
-          "orderimg": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembos-chicken-grill_1_1_1_1.png",
-          "bigPrice": 3
+          "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
         }
       ]
     },
@@ -377,21 +357,24 @@
           "precio": 10.9,
           "id": 26,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/l/o/loncherita-basica-pollo.jpg",
-          "link": "loncherita-basica-de-pollo"
+          "link": "loncherita-basica-de-pollo",
+          "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
         },
         {
           "nombre": "Loncherita Básica",
           "precio": 10.9,
           "id": 27,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/l/o/loncherita-basica_1.jpg",
-          "link": "loncherita-basica"
+          "link": "loncherita-basica",
+          "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
         },
         {
           "nombre": "Loncherita Nuggets",
           "precio": 10.9,
           "id": 28,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/l/o/loncherita-nuggets_1.jpg",
-          "link": "loncherita-nuggets"
+          "link": "loncherita-nuggets",
+          "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
         }
       ]
     },
@@ -570,38 +553,43 @@
   "complementos": [
     {
       "nombre": "Papas Inka Chips",
-      "precio": 3,
+      "precio": 3.0,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-inka-chips-nueva.jpg",
       "id": 29,
-      "link": "papas-inka-chips"
+      "link": "papas-inka-chips",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Papas Fritas Bembos",
       "precio": 4.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/n/u/nueva-papas-medianas_2.jpg",
       "id": 30,
-      "link": "papas-fritas-bembos"
+      "link": "papas-fritas-bembos",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Chicken nuggets",
       "precio": 10.5,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/n/u/nuggets-base.jpg",
       "id": 31,
-      "link": "chicken-nuggets"
+      "link": "chicken-nuggets",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Cheese Fingers",
       "precio": 11.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/h/cheese-fingers-base_3.jpg",
       "id": 32,
-      "link": "cheese-fingers"
+      "link": "cheese-fingers",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Family Box Piqueo",
       "precio": 22.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-piqueo-nuevo-abril.jpg",
       "id": 33,
-      "link": "family-box-piqueo"
+      "link": "family-box-piqueo",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     }
   ],
   "bebidas": [
@@ -610,49 +598,56 @@
       "precio": 4.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/s/a/san-luis-sin-gas-nueva.jpg",
       "id": 34,
-      "link": "agua-san-luis-s-g"
+      "link": "agua-san-luis-s-g",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Coca Cola Sabor Original 500 ml",
       "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-original-500ml-nuevo.jpg",
       "id": 35,
-      "link": "coca-cola-sabor-original-500-ml"
+      "link": "coca-cola-sabor-original-500-ml",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Coca Cola Sin Azúcar 500 ml",
       "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-sin-azucar-500ml-nuevo.jpg",
       "id": 36,
-      "link": "coca-cola-sin-azucar-500-ml"
+      "link": "coca-cola-sin-azucar-500-ml",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Inca Kola Sabor Original 500 ml",
       "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/i/n/inca-kola-original-500ml-nuevo.jpg",
       "id": 37,
-      "link": "inka-kola-sabor-original-500-ml"
+      "link": "inka-kola-sabor-original-500-ml",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Sprite Sabor Original 500 ml",
       "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/s/p/sprite-500ml-nuevo.jpg",
       "id": 38,
-      "link": "sprite-sabor-original-500-ml"
+      "link": "sprite-sabor-original-500-ml",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Fanta Sabor Original 500 ml",
       "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/f/a/fanta-500ml-nuevo.jpg",
       "id": 39,
-      "link": "fanta-sabor-original-500-ml"
+      "link": "fanta-sabor-original-500-ml",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     },
     {
       "nombre": "Inca kola Sin Azúcar 500 ml",
       "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/i/n/inca-kola-sin-kola-500ml-nuevo.jpg",
       "id": 40,
-      "link": "inca-kola-sin-azucar-500-ml"
+      "link": "inca-kola-sin-azucar-500-ml",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     }
   ],
   "helados": [
@@ -662,6 +657,7 @@
       "id": 41,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/e/helado-mini-princesa-base_1.jpg",
       "link": "helado-mini-princesa",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647.",
       "preguntas": [
         {
           "nropregunta": 1,
@@ -743,10 +739,11 @@
   "inka-chips": [
     {
       "nombre": "Papas Inka Chips",
-      "precio": 3,
+      "precio": 3.0,
       "id": 42,
-      "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-inka-chips-nueva.jpg",
-      "link": "papas-inka-chips"
+      "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-inka-chips-nueva.jpg",
+      "link": "papas-inka-chips",
+      "terminoscondiciones": "Foto referencial. BEMBOS S.A.C RUC 20101087647."
     }
   ],
   "menu": [
@@ -911,7 +908,7 @@
       "nombre": "Personal Cheese",
       "descripcion": "Cheese mediana, papa mediana",
       "precio_actual": 17.9,
-      "precio_antiguo": 23,
+      "precio_antiguo": 23.0,
       "descuento": 25,
       "id": 63,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-cheese-bembos.webp"
@@ -920,7 +917,7 @@
       "nombre": "Personal Clásico",
       "descripcion": "Clásica mediana, papa mediana",
       "precio_actual": 15.9,
-      "precio_antiguo": 21,
+      "precio_antiguo": 21.0,
       "descuento": 27,
       "id": 64,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-clasico-bembos-delivery.webp"
@@ -938,7 +935,7 @@
       "nombre": "Combo Tártara",
       "descripcion": "Tártara regular + papa mediana",
       "precio_actual": 11.9,
-      "precio_antiguo": 13,
+      "precio_antiguo": 13.0,
       "descuento": 14,
       "id": 66,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/a/base-bembos-tartara_2.webp"
@@ -968,7 +965,7 @@
       "nombre_azul": "Dúo Queso Tocino",
       "descripcion": "2 Queso Tocino regulares, 2 Papas medianas.",
       "precio_actual": 27.9,
-      "precio_antiguo": "43.60",
+      "precio_antiguo": 43.6,
       "descuento": 42,
       "id": 69,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-dupla-perfecta-cyber-nov-2023.webp",
@@ -1029,7 +1026,7 @@
       "nombre_azul": "Extremadamente Cheesy Cyber",
       "descripcion": "2 Extremas regulares, 2 Cheese regulares, 4 papas...",
       "precio_actual": 52.9,
-      "precio_antiguo": "91.20",
+      "precio_antiguo": 91.2,
       "descuento": 42,
       "id": 75,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-dupla-perfecta-cyber-nov-2023.webp",
@@ -1486,6 +1483,40 @@
       ]
     }
   ],
+  "orders": [
+    {
+      "combos": [
+        {
+          "Combo_Extrema": [
+            {
+              "id": 1,
+              "nombre": "Combo Extrema",
+              "descripcion": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500 ml.",
+              "imagen_principal": "https://www.bembos.com.pe/_ipx/q_85/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x800-combo-extrema-nuevo-bb.jpg",
+              "sizes": [
+                {
+                  "mediana": [
+                    {
+                      "imagen_mediana": "https://www.bembos.com.pe/_ipx/q_60,s_62x62/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_1_.png",
+                      "texto_mediana": "Extrema Mediana + S/. 0.00"
+                    }
+                  ]
+                },
+                {
+                  "grande": [
+                    {
+                      "imagen_grande": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema-calada_3_1__1_2_1_1.png",
+                      "texto_grande": "Extrema Grande + S/. 4.00"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "preguntas_pedidos": [
     {
       "nropregunta": 1,
@@ -1519,39 +1550,39 @@
       "combinaciones": [
         {
           "nrocomb": 16,
-          "titulocomb": "Coca Cola Sabor Original 500 ml + S/0.00",
+          "titulocomb": "Coca Cola Sabor Original 500 ml + S/5.90",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-sabor-original_1.webp",
-          "preccomb": 0
+          "preccomb": 5.9
         },
         {
           "nrocomb": 17,
-          "titulocomb": "Coca Cola Sin Azúcar 500 ml + S/.0.00",
+          "titulocomb": "Coca Cola Sin Azúcar 500 ml + S/.5.90",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-sin-azucar_1_1.webp",
-          "preccomb": 0
+          "preccomb": 5.9
         },
         {
           "nrocomb": 18,
-          "titulocomb": "Inca Kola Sabor Original 500 ml + S/.0.00",
+          "titulocomb": "Inca Kola Sabor Original 500 ml + S/.5.90",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/i/n/incakola-sabor-original_1.webp",
-          "preccomb": 0
+          "preccomb": 5.9
         },
         {
           "nrocomb": 19,
-          "titulocomb": "Inca kola Sin Azúcar 500 ml + S/.0.00",
+          "titulocomb": "Inca kola Sin Azúcar 500 ml + S/.5.90",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/i/n/inca-kola-sin-azucar_1_1.webp",
-          "preccomb": 0
+          "preccomb": 5.9
         },
         {
           "nrocomb": 20,
-          "titulocomb": "Sprite Sabor Original 500 ml + S/.0.00",
+          "titulocomb": "Sprite Sabor Original 500 ml + S/.5.90",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/s/p/sprite-con-azucar_2.webp",
-          "preccomb": 0
+          "preccomb": 5.9
         },
         {
           "nrocomb": 21,
-          "titulocomb": "Fanta Sabor Original 500 ml + S/.0.00",
+          "titulocomb": "Fanta Sabor Original 500 ml + S/.5.90",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/f/a/fanta-con-azucar_3_2.webp",
-          "preccomb": 0
+          "preccomb": 5.9
         }
       ]
     },
@@ -1671,6 +1702,40 @@
           "preccomb": 1.5
         }
       ]
+    }
+  ],
+  "menus_al_plato": [
+    {
+      "nombre": "Menú A lo pobre",
+      "precio": 18.9,
+      "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-a-lo-pobre-menu-2024.jpg",
+      "id": 81,
+      "link": "menú-a-lo-pobre",
+      "terminoscondiciones": "Foto referencial. Stock mínimo disponible 500 unidades. Válido hasta agotar stock. Válido de lunes a viernes por Web,App, WhatsApp bot y Call Center. Zona de reparto limitada. Recargo por delivery S/ 5.90."
+    },
+    {
+      "nombre": "Menú Taypa",
+      "precio": 18.9,
+      "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-taypa-menu-2024.jpg",
+      "id": 82,
+      "link": "menu-taypa",
+      "terminoscondiciones": "Foto referencial. Stock mínimo disponible 500 unidades. Válido hasta agotar stock. Válido de lunes a viernes por Web,App, WhatsApp bot y Call Center. Zona de reparto limitada. Recargo por delivery S/ 5.90."
+    },
+    {
+      "nombre": "Menú Pechugon",
+      "precio": 16.9,
+      "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-pechugon-menu-2024.jpg",
+      "id": 83,
+      "link": "menu-prechugon",
+      "terminoscondiciones": "Foto referencial. Stock mínimo disponible 500 unidades. Válido hasta agotar stock. Válido de lunes a viernes por Web,App, WhatsApp bot y Call Center. Zona de reparto limitada. Recargo por delivery S/ 5.90."
+    },
+    {
+      "nombre": "Burger Menú",
+      "precio": 16.9,
+      "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-burger-menu-2024.jpg",
+      "id": 84,
+      "link": "burger-menu",
+      "terminoscondiciones": "Foto referencial. Stock mínimo disponible 500 unidades. Válido hasta agotar stock. Válido de lunes a viernes por Web,App, WhatsApp bot y Call Center. Zona de reparto limitada. Recargo por delivery S/ 5.90."
     }
   ],
   "beneficios": [

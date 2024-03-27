@@ -25,7 +25,7 @@ const Orders = () => {
     accordion9: false,
   });
 
-  const { orderInfo, polloQuestions, getPolloData } = useShopping();
+  const { orderInfo, polloQuestions, getPolloData,handleOrderClick } = useShopping();
 
   const getDataOrders = async () => {
     try {
@@ -99,6 +99,8 @@ const Orders = () => {
       ...prevActiveIds,
       [accordionTitle]: prevActiveIds[accordionTitle] === id ? null : id,
     }));
+
+    
   };
 
   return (
@@ -223,7 +225,7 @@ const Orders = () => {
                     <Accordion
                       title={
                         polloQuestions &&
-                        polloQuestions[1].preguntas[0].nombrepregunta
+                        polloQuestions[1].preguntas[1].nombrepregunta
                       }
                       className={'accordion-container'}
                       id={2}
@@ -421,6 +423,7 @@ const Orders = () => {
                                   width=""
                                   key={extra.nrocomb}
                                   id={extra.nrocomb}
+                                  count={1}
                                   price={extra.preccomb}
                                   isActive={
                                     activeIds[extra.title] === extra.nrocomb

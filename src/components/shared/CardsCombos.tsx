@@ -39,11 +39,12 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
   const getInfo = (info) => {
     if (Array.isArray(info)) {
       console.log(info[0].tipos);
-      return info[0].tipos || [];
+      return info[0].tipos || []
     } else {
-      return info.data || [];
+      return info.data || []
     }
-  };
+  }
+
 
   return (
     <div className="max-contenedor">
@@ -97,11 +98,7 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
                     </p>
                     <h2 className="titulo-preguntas-ultimo">{encabezado}</h2>
                   </div>
-                  <PreguntasFrecuentes
-                    title="¿Cuántos puntos recibo por comprar una hamburguesa online delivery?"
-                    children="Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web."
-                    myclass=""
-                  />
+                  {/* <PreguntasFrecuentes title="¿Cuántos puntos recibo por comprar una hamburguesa online delivery?" children="Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web." myclass='' /> */}
                 </div>
               )}
             </div>

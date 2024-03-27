@@ -43,21 +43,37 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [polloQuestions, setPolloQuestions] = useState<PolloResponse>({});
   const [orderList, setOrderList] = useState<OrderItem[]>([]);
 
-  const handleOrderClick = (id: string, price: number, text: string) => {
+  const handleOrderClick = (
+    id: string,
+    price: number,
+    text: string,
+    count: number
+  ) => {
     const checkOrderList = orderList.some((item) => item.id === id);
-
+    console.log(checkOrderList);
     checkOrderList
       ? setOrderList((prevOrderList) =>
           prevOrderList.map((item) =>
-            item.id !== id ? item : { id: id, price: price, product: text }
+            item.id !== id
+              ? item
+              : { id: id, price: price, product: text, count: count }
           )
         )
       : setOrderList((prevOrderList) => [
           ...prevOrderList,
           { id: id, price: price, product: text },
         ]);
+    const number = {
+      nombre: 'mediano',
+      price: 0,
+    };
+    const test = { ...complementos, number };
+    console.log({ test });
+    showData(orderList);
+  };
+
+  const showData = (orderList: any) => {
     orderList && console.log(orderList);
-    console.log(checkOrderList);
   };
 
   const getDataPromociones = async () => {
