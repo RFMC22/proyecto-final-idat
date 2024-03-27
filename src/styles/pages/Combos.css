@@ -65,10 +65,7 @@ main {
     transition: 0.7s;
 }
 
-.click-seleccion-amarillo {
-    background: var(--yellow-100);
-    border-radius: 20px;
-}
+
 
 /* finish-navbar-menu */
 
@@ -209,6 +206,11 @@ main {
     height: 43px;
 }
 
+.contenedor-navegacion-combos .selec-amarillo {
+    background-color: var(--yellow-100);
+    border-radius: 20px;
+
+}
 
 
 @media (max-width: 600px) {
