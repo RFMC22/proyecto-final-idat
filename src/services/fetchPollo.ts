@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { PolloResponse } from '../interfaces/responses/PolloResponse';
+import { PolloResponse } from '../interfaces';
 
 export const getPollo = async (): Promise<PolloResponse> => {
     try {

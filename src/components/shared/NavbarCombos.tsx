@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { FoodTypes, PathConstants } from "../../utils";
-
 
 const NavbarCombos = () => {
     const [isExpanded, setIsExpanded] = useState(true);
+    const [selectedItem, setSelectedItem] = useState(null);
 
     useEffect(() => {
-        //TODO: agregar en generalFunctions
         const handleScroll = () => {
             const scrollTop = window.pageYOffset;
             setIsExpanded(scrollTop < 50);
@@ -20,21 +19,28 @@ const NavbarCombos = () => {
         };
     }, []);
 
+    const handleItemClick = (index) => {
+        setSelectedItem(index);
+    };
+
     return (
         <header className="contenedor-navegacion-combos">
             <nav className="navegacion-seccion-combos">
                 <ul className={isExpanded ? '' : 'collapsed'}>
-                    {Object.values(FoodTypes).map(foodType => (
-                        <Link 
-                            key={foodType.path}
+                    {Object.values(FoodTypes).map((foodType, index) => (
+                        <Link
                             to={`${PathConstants.MENU}/${foodType.path}`}
-                        > <li> <a> {foodType.name} </a> </li> </Link>
+                            onClick={() => handleItemClick(index)}
+                        ><li key={foodType.path} className={index === selectedItem ? 'selec-amarillo' : ''}>
+
+                                <a >{foodType.name}</a>
+
+                            </li></Link>
                     ))}
                 </ul>
             </nav>
         </header>
-    )
-}
+    );
+};
 
-
-export default NavbarCombos
+export default NavbarCombos;
