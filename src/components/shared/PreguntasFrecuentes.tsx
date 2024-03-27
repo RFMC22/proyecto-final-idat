@@ -38,12 +38,17 @@ const PreguntasFrecuentes: React.FC<AccordionSectionProps> = ({
   }, [getPreguntasFrecuentes]);
   preguntasFrecuentes.data && console.log(preguntasFrecuentes.data[0].hamburguesas)
 
+
+
+
+
+
   return (
 
     <div className={`contendor-principal-accordion ${myclass}`}>
 
 
-      {preguntasFrecuentes.data?.map((hamburguesas: any) => (
+      {getInfo(preguntasFrecuentes).map((hamburguesas: any) => (
         <div className="contenedor-accordion-interior">
           <div className="header-accordion" onClick={toggleAccordion}>
             <div className='superior-cerrado-abierto-icon'>

@@ -5,13 +5,14 @@ import CardsCombos from "../components/shared/CardsCombos";
 import { TabTitle } from "../utils/GeneralFunctions";
 import { useParams } from "react-router-dom";
 import { FoodTypes } from "../utils";
-import { getHamburguesas, getPollo } from "../services";
+import { getBebidas, getComplementos, getHamburguesas, getHelados, getInkaChips, getLoncheritas, getPollo } from "../services";
+import { getMenusAlPlato } from "../services/fetchMenusalplato";
 
 
 const Combos = () => {
-    const {type} = useParams();
+    const { type } = useParams();
     let combosConfig = {};
-    
+
     switch (type) {
         case FoodTypes.COMBOS.path:
             TabTitle("Combos irresistibles en BEMBOS !Ordénalos ahora!");
@@ -47,27 +48,83 @@ const Combos = () => {
             }
             break;
         case FoodTypes.AL_PLATO.path:
-            
+            TabTitle("CONOCE NUESTROS MENÚ AL PLATO | BEMBOS")
+            combosConfig = {
+                tituloSeccion: "CONOCE NUESTROS MENÚ AL PLATO | BEMBOS",
+                getData: getMenusAlPlato,
+                variante: false,
+                subtitulo: "",
+                descripcion: "",
+                encabezado: ""
+
+            }
+
             break;
         case FoodTypes.LONCHERITAS.path:
-            
+            TabTitle("Descubre las loncheras | BEMBOS")
+            combosConfig = {
+                tituloSeccion: "DESCUBRE NUESTRAS LONCHERAS | BEMBOS",
+                getData: getLoncheritas,
+                variante: true,
+                subtitulo: "LONCHERITAS DE BEMBOS",
+                descripcion: "Las loncheritas infantiles son una opción ideal para los más chicos. Puedes pedir tu loncherita Bembos con hamburguesa o nuggets, y te incluye papas fritas y bebida.",
+                encabezado: "PREGUNTAS FRECUENTES SOBRE LAS LONCHERITAS"
+
+            }
+
             break;
         case FoodTypes.COMPLEMENTOS.path:
-            
+            TabTitle("Deléitate con nuestros complementos en BEMBOS: nuggets, papas, etec.")
+            combosConfig = {
+                tituloSeccion: "CONOCE NUESTROS DELICIOSOS COMPLEMENTOS | BEMBOS",
+                getData: getComplementos,
+                variante: true,
+                subtitulo: "",
+                descripcion: "",
+                encabezado: "PREGUNTAS FRECUENTES SOBRE NUESTROS COMPLEMENTOS"
+
+            }
+
             break;
         case FoodTypes.BEBIDAS.path:
-            
+            TabTitle("Prueba nuetsra deliciosas bebidas | BEMBOS")
+            combosConfig = {
+                tituloSeccion: "BEBIDAS PARA REFRESCAR TU DIA | BEMBOS",
+                getData: getBebidas,
+                variante: false,
+                subtitulo: "",
+                descripcion: "",
+                encabezado: ""
+
+            }
             break;
         case FoodTypes.HELADOS.path:
-            
+            TabTitle("Prueba nuestros deliciosos helados | BEMBOS")
+            combosConfig = {
+                tituloSeccion: "DELICIOSOS HELADOS PARA TI | BEMBOS",
+                getData: getHelados,
+                variante: true,
+                subtitulo: "POSTRES HELADOS",
+                descripcion: "Cualquier momento es ideal para un postre helado. Conoce las variedades que tenemos en Bembos. Distintos sabores de helados, salsas y topping para que disfrutes. ¡Puedes elegir el tuyo, pedirlo online y recibirlo en tu hogar!",
+                encabezado: "PREGUNTAS FRECUENTES SOBRE NUESTROS HELADOS"
+
+            }
             break;
         case FoodTypes.INKA_CHIPS.path:
-            
+            TabTitle("DESCUBRE NUESTRAS DELICOSAS INKA CHIPS | BEMBOS")
+            combosConfig = {
+                tituloSeccion: "DESCUBRE NUESTRAS DELICOSAS INKA CHIPS | BEMBOS",
+                getData: getInkaChips,
+                variante: false,
+                subtitulo: "",
+                descripcion: "",
+                encabezado: ""
+            }
             break;
         default:
             break;
     }
-    
+
     return (
         <div className="contenedor-general-combos">
             <NavbarCombos />

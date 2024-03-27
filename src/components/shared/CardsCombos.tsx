@@ -12,14 +12,14 @@ interface ComboConfigProps {
   encabezado: string;
   descripcion: string;
 }
-const CardsCombos: React.FC<{config: ComboConfigProps}> = ({ config }) => {
+const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
   const [combos, setCombos] = useState<any>({});
-  const { 
-    tituloSeccion, 
-    getData, 
-    variante, 
-    subtitulo, 
-    encabezado, 
+  const {
+    tituloSeccion,
+    getData,
+    variante,
+    subtitulo,
+    encabezado,
     descripcion
   } = config;
   const {
@@ -34,7 +34,7 @@ const CardsCombos: React.FC<{config: ComboConfigProps}> = ({ config }) => {
     const fetchData = async () => {
       try {
         const dataCombos = await getData();
-          setCombos(dataCombos);
+        setCombos(dataCombos);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -46,11 +46,11 @@ const CardsCombos: React.FC<{config: ComboConfigProps}> = ({ config }) => {
     if (Array.isArray(info)) {
       console.log(info[0].tipos);
       return info[0].tipos || []
-    }else {
+    } else {
       return info.data || []
     }
   }
-  
+
 
   return (
     <div className="max-contenedor">
@@ -101,7 +101,7 @@ const CardsCombos: React.FC<{config: ComboConfigProps}> = ({ config }) => {
                     <p className="descripcion-seccion-preguntas">{descripcion}</p>
                     <h2 className="titulo-preguntas-ultimo">{encabezado}</h2>
                   </div>
-                  <PreguntasFrecuentes title="¿Cuántos puntos recibo por comprar una hamburguesa online delivery?" children="Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web." />
+                  {/* <PreguntasFrecuentes title="¿Cuántos puntos recibo por comprar una hamburguesa online delivery?" children="Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web." myclass='' /> */}
                 </div>
               }
             </div>
