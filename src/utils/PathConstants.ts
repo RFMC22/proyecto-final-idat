@@ -2,6 +2,7 @@ const PathConstants = {
   INDEX: '/',
   MENU: '/menu',
   MENU_TYPE: '/menu/:type',
+  MENU_TYPE_ORDERS: '/menu/:type/:order',
   PROMOCIONES: '/promociones',
   PROMOCIONES_DELIVERY: '/promociones/delivery-hamburguesas',
   PROMOCIONES_ID: '/promociones/:id',
@@ -10,6 +11,7 @@ const PathConstants = {
   CART: '/checkout/cart',
   BENEFICIOS: '/beneficios',
   CHECKOUT: '/checkout',
+  ADMIN_PRODUCT: '/admin/product'
 };
 
 export default PathConstants;

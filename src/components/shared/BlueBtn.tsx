@@ -1,6 +1,6 @@
 import './../../styles/BluetBtn.css';
-const BlueBtn = ({ text }: { text: string }) => {
-  return <button className="bluetBtn">{text}</button>;
+const BlueBtn = ({ text, myclass }: { text: string,myclass:string }) => {
+  return <button className={`blueBtn ${myclass}`}>{text}</button>;
 };
 
 export default BlueBtn;

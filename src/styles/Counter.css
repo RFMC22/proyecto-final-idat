@@ -53,5 +53,43 @@
     justify-content: center;
     border-radius: 8px;
     cursor: pointer;
+    margin: 0 5px;
+  }
+}
+
+.low-bar-cart {
+  margin: 15px 0;
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quantity {
+    background: #fff;
+    border-radius: 5px;
+    width: 44px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'kulturistaRegular';
+    font-size: 14px;
+  }
+
+  .btn {
+    background: #dbe0e3;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'kulturistaRegular';
+    font-size: 30px;
+    text-align: center;
+    line-height: 26px;
+    padding: 0 0 4px;
+    outline: 0;
+    cursor: pointer;
   }
 }

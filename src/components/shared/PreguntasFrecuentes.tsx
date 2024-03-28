@@ -39,9 +39,6 @@ const PreguntasFrecuentes: React.FC<AccordionSectionProps> = ({ myclass }) => {
           case FoodTypes.HELADOS.path:
             preguntas = data.data[0].helados;
             break;
-          case FoodTypes.BENEFICIOS.path:
-            preguntas = data.data[0].beneficios;
-            break;
           default:
             break;
         }

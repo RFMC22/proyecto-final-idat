@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useShopping from '../../hooks/useShopping';
 import { Link } from 'react-router-dom';
 import PreguntasFrecuentes from './PreguntasFrecuentes';
-import '../../styles/CardCombos.css'
+import '../../styles/CardCombos.css';
 
 interface ComboConfigProps {
   tituloSeccion: string;
@@ -20,15 +20,9 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
     variante,
     subtitulo,
     encabezado,
-    descripcion
+    descripcion,
   } = config;
-  const {
-    setOrderTitle,
-    setOrderDescripcion,
-    setOrderMainImage,
-    setOrderSecondImage,
-    setOrderBigPrice,
-  } = useShopping();
+  const { setOrderInfo } = useShopping();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,7 +36,7 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
     fetchData();
   }, [getData]);
 
-  const getInfo = info => {
+  const getInfo = (info) => {
     if (Array.isArray(info)) {
       console.log(info[0].tipos);
       return info[0].tipos || []
@@ -59,7 +53,7 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
           <h2>{tituloSeccion}</h2>
           <div className="contenedor-lista-combos">
             <div className="lista-combos">
-              {getInfo(combos).map(combo => (
+              {getInfo(combos).map((combo: any) => (
                 <div className="item-lista">
                   <div className="item-content">
                     <div className="item-card">
@@ -78,11 +72,14 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
                           <button
                             className="btn-ver-mas"
                             onClick={() => {
-                              setOrderTitle(combo.nombre),
-                                setOrderDescripcion(combo.descripcion),
-                                setOrderSecondImage(combo.orderimg),
-                                setOrderBigPrice(combo.bigPrice),
-                                setOrderMainImage(combo.img);
+                              setOrderInfo({
+                                name: combo.nombre,
+                                description: combo.descripcion,
+                                mainImg: combo.img,
+                                secondImg: combo.orderimg,
+                                price: combo.precio,
+                                bigSizePrice: combo.bigPrice,
+                              });
                             }}
                           >
                             Ver más
@@ -113,6 +110,5 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
     </div>
   );
 };
-
 
 export default CardsCombos;
