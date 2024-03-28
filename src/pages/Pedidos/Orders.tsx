@@ -30,7 +30,7 @@ const Orders = () => {
     polloQuestions,
     getPolloData,
     generalCounter,
-    setGeneralCounter,
+    setGeneralCounter
   } = useShopping();
 
   const getDataOrders = async () => {
@@ -555,6 +555,7 @@ const Orders = () => {
               <BlueBtn
                 text={`AGREGAR S/.32.80`}
                 myclass="bluetBtn low-bar-blueBtn"
+                
               />
             </div>
           </div>

@@ -42,6 +42,7 @@ export type iShoppingType = {
     price: number;
     bigSizePrice: number;
   };
+  setSaveLocalStorage:any
 
   baseList: OrderItem[];
   generalCounter: number;
@@ -86,4 +87,5 @@ export const iShoppingContext = {
   setOrderInfo: () => {},
   baseList: [],
   setBaseList: () => {},
+  setSaveLocalStorage:()=>{}
 };

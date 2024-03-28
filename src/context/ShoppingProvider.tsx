@@ -48,6 +48,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   let hamburguerOrder = {};
   const [generalCounter, setGeneralCounter] = useState(1);
   const [acumulateList, setAccumulateList] = useState({});
+  const [saveLocalStorage, setSaveLocalStorage] = useState(false);
 
   // Functions for Fetching
   const getDataPromociones = async () => {
@@ -119,7 +120,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     orderTheList(baseList);
   }, [baseList]);
 
-// When the pathname changes see if the second element is combos or pollo
+  // When the pathname changes see if the second element is combos or pollo
   useEffect(() => {
     setGeneralCounter(1);
   }, [location.pathname]);
@@ -197,11 +198,14 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
 
   useEffect(() => {
     console.log(acumulateList);
-
-
+    if (saveLocalStorage === true) {
+      sentLocalStorage(acumulateList)
+    }
   }, [acumulateList]);
 
-
+  const sentLocalStorage = (acumulateList:any) => {
+    localStorage.setItem('order', JSON.stringify(acumulateList));
+  };
   return (
     <ShoppingContext.Provider
       value={{
@@ -222,6 +226,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         handleOrderClick,
         setGeneralCounter,
         generalCounter,
+        setSaveLocalStorage,
       }}
     >
       {children}
