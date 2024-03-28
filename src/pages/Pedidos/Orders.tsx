@@ -42,7 +42,6 @@ const Orders = () => {
     }
   };
 
-  
   useEffect(() => {
     const pathSegments = location.pathname.split('/');
     const newAddress = pathSegments[2] || '';
@@ -61,7 +60,7 @@ const Orders = () => {
           accordion6: true,
           accordion7: false,
           accordion8: false,
-          accordion9: false,
+          accordion9: true,
         });
         getDataOrders();
         console.log('Handling combos...');
@@ -72,25 +71,120 @@ const Orders = () => {
           accordion1: true,
           accordion2: false,
           accordion3: false,
-          accordion4: true,
+          accordion4: false,
           accordion5: true,
           accordion6: true,
           accordion7: true,
           accordion8: true,
+          accordion9: true,
+        });
+        getPolloData();
+        getDataOrders();
+        break;
+      case 'menus-al-plato':
+        setAccordionBoolean({
+          accordion1: true,
+          accordion2: false,
+          accordion3: false,
+          accordion4: true,
+          accordion5: true,
+          accordion6: true,
+          accordion7: false,
+          accordion8: false,
           accordion9: false,
         });
         getPolloData();
         getDataOrders();
-        {
-          polloQuestions[1] &&
-            console.log(polloQuestions[1].preguntas[0].combinaciones);
-        }
 
-        console.log('Handling pollo...');
+        console.log('Handling menus-al-plato...');
         break;
+
+      case 'loncheritas':
+        setAccordionBoolean({
+          accordion1: true,
+          accordion2: true,
+          accordion3: false,
+          accordion4: true,
+          accordion5: true,
+          accordion6: true,
+          accordion7: false,
+          accordion8: false,
+          accordion9: false,
+        });
+        getPolloData();
+        getDataOrders();
+
+        console.log('Handling loncheritas...');
+        break;
+
+      case 'complementos':
+        setAccordionBoolean({
+          accordion1: true,
+          accordion2: false,
+          accordion3: false,
+          accordion4: false,
+          accordion5: true,
+          accordion6: true,
+          accordion7: false,
+          accordion8: false,
+          accordion9: false,
+        });
+        getPolloData();
+        getDataOrders();
+
+        console.log('Handling loncheritas...');
+        break;
+
+      case 'bebidas':
+        setAccordionBoolean({
+          accordion1: true,
+          accordion2: false,
+          accordion3: false,
+          accordion4: false,
+          accordion5: false,
+          accordion6: false,
+          accordion7: false,
+          accordion8: false,
+          accordion9: false,
+        });
+        getPolloData();
+        getDataOrders();
+
+        console.log('Handling loncheritas...');
+        break;
+
+      case 'helados':
+        setAccordionBoolean({
+          accordion1: true,
+          accordion2: false,
+          accordion3: false,
+          accordion4: false,
+          accordion5: false,
+          accordion6: false,
+          accordion7: false,
+          accordion8: false,
+          accordion9: false,
+        });
+        getPolloData();
+        getDataOrders();
+
+        console.log('Handling loncheritas...');
+        break;
+
       default:
         // Handle other cases if necessary
         console.log('Unknown address:', address);
+        setAccordionBoolean({
+          accordion1: true,
+          accordion2: false,
+          accordion3: false,
+          accordion4: false,
+          accordion5: false,
+          accordion6: false,
+          accordion7: false,
+          accordion8: false,
+          accordion9: false,
+        });
         break;
     }
   }, [address]);
@@ -153,38 +247,36 @@ const Orders = () => {
                             );
                           }}
                         />
-
-                        <ExtraOptionCardComponent
-                          image={orderInfo.secondImg}
-                          btn={''}
-                          text={`${orderInfo.name} Grande +S/${orderInfo.bigSizePrice}.00`}
-                          width=""
-                          key={orderInfo.secondImg + 1}
-                          question={1}
-                          id={1}
-                          price={orderInfo.bigSizePrice + orderInfo.price}
-                          count={generalCounter}
-                          isActive={
-                            activeIds[orderInfo.name] ===
-                            orderInfo.secondImg + 1
-                          }
-                          onClick={() =>
-                            handleImageClick(
-                              orderInfo.name,
+                        {accordionBoolean.accordion9 && (
+                          <ExtraOptionCardComponent
+                            image={orderInfo.secondImg}
+                            btn={''}
+                            text={`${orderInfo.name} Grande +S/${orderInfo.bigSizePrice}.00`}
+                            width=""
+                            key={orderInfo.secondImg + 1}
+                            question={1}
+                            id={1}
+                            price={orderInfo.bigSizePrice + orderInfo.price}
+                            count={generalCounter}
+                            isActive={
+                              activeIds[orderInfo.name] ===
                               orderInfo.secondImg + 1
-                            )
-                          }
-                        />
+                            }
+                            onClick={() =>
+                              handleImageClick(
+                                orderInfo.name,
+                                orderInfo.secondImg + 1
+                              )
+                            }
+                          />
+                        )}
                       </section>
                     </Accordion>
                   )}
 
                   {accordionBoolean.accordion7 && (
                     <Accordion
-                      title={
-                        polloQuestions &&
-                        polloQuestions[1].preguntas[0].nombrepregunta
-                      }
+                      title={'DESEA COMBEAR'}
                       className={'accordion-container'}
                       id={2}
                     >
@@ -221,10 +313,7 @@ const Orders = () => {
                   )}
                   {accordionBoolean.accordion8 && (
                     <Accordion
-                      title={
-                        polloQuestions &&
-                        polloQuestions[1].preguntas[1].nombrepregunta
-                      }
+                      title={'¿DESEAS QUITAR ALGÚN INGREDIENTE?'}
                       className={'accordion-container'}
                       id={2}
                     >

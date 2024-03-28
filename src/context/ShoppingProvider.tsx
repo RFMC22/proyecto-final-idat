@@ -26,7 +26,7 @@ const ShoppingContext = createContext<iShoppingType>(iShoppingContext);
 
 const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [cartState, setCartState] = useState<boolean | null>(false);
-  let accumulateList = {};
+  // let accumulateList = {};
   const [orderInfo, setOrderInfo] = useState({
     name: '',
     description: '',
@@ -47,11 +47,31 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   let extras = {};
   let hamburguerOrder = {};
   const [generalCounter, setGeneralCounter] = useState(1);
-  // const [orderBase, setOrderBase] = useState({
-  //   name: '',
-  //   quantity: 0,
-  //   unit_price: 0,
-  // });
+  const [acumulateList, setAccumulateList] = useState({});
+
+  // Functions for Fetching
+  const getDataPromociones = async () => {
+    const [promos, promosD, promosC, complements, cupons] = await Promise.all([
+      getPromosPersonales(),
+      getPromosDos(),
+      getPromosCompartir(),
+      getComplementos(),
+      getCupones(),
+    ]);
+
+    setPromosPersonales(promos);
+    setPromosDos(promosD);
+    setPromosCompartir(promosC);
+    setComplementos(complements);
+    setCupones(cupons);
+  };
+
+  const getPolloData = async () => {
+    const polloData = await getPollo();
+    polloData && setPolloQuestions(polloData);
+  };
+
+  // Functions for the Shopping Cart
   const handleOrderClick = (
     id: any,
     price: number,
@@ -93,11 +113,13 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     // console.log({ test });
   };
 
+  // When the baseList changes ran the OrderList
   useEffect(() => {
     // showData(baseList);
     orderTheList(baseList);
   }, [baseList]);
 
+// When the pathname changes see if the second element is combos or pollo
   useEffect(() => {
     setGeneralCounter(1);
   }, [location.pathname]);
@@ -169,37 +191,16 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         })),
       };
     }
-
-    accumulateList = { ...hamburguerOrder, extras };
+    setAccumulateList({ ...hamburguerOrder, extras });
+    // accumulateList = { ...hamburguerOrder, extras };
   };
 
-  useEffect(() => {console.log(accumulateList);}, [accumulateList]);
-  const showData = (orderList: any) => {
-    if (orderList) {
-      console.log(orderList);
-    }
-  };
+  useEffect(() => {
+    console.log(acumulateList);
 
-  const getDataPromociones = async () => {
-    const [promos, promosD, promosC, complements, cupons] = await Promise.all([
-      getPromosPersonales(),
-      getPromosDos(),
-      getPromosCompartir(),
-      getComplementos(),
-      getCupones(),
-    ]);
 
-    setPromosPersonales(promos);
-    setPromosDos(promosD);
-    setPromosCompartir(promosC);
-    setComplementos(complements);
-    setCupones(cupons);
-  };
+  }, [acumulateList]);
 
-  const getPolloData = async () => {
-    const polloData = await getPollo();
-    polloData && setPolloQuestions(polloData);
-  };
 
   return (
     <ShoppingContext.Provider
