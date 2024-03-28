@@ -53,7 +53,7 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
           <h2>{tituloSeccion}</h2>
           <div className="contenedor-lista-combos">
             <div className="lista-combos">
-              {getInfo(combos).map((combo) => (
+              {getInfo(combos).map((combo:any) => (
                 <div className="item-lista">
                   <div className="item-content">
                     <div className="item-card">
@@ -77,7 +77,8 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
                                 description: combo.descripcion,
                                 mainImg: combo.img,
                                 secondImg: combo.orderimg,
-                                price: combo.bigPrice,
+                                price: combo.precio,
+                                bigSizePrice:combo.bigPrice,
                               });
                             }}
                           >

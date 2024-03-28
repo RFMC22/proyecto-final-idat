@@ -24,7 +24,13 @@ export type iShoppingType = {
   promosCompartir: PromocionCompartirResponse;
   complementos: ComplementoResponse;
   cupones: CuponResponse;
-  handleOrderClick: (id: string, price: number, product: string,count:number) => void;
+  handleOrderClick: (
+    id: any,
+    price: number,
+    product: string,
+    count: number,
+    question: number
+  ) => void;
   getDataPromociones: () => Promise<void>;
   getPolloData: () => Promise<void>;
   polloQuestions: PolloResponse;
@@ -34,8 +40,12 @@ export type iShoppingType = {
     mainImg: string;
     secondImg: string;
     price: number;
+    bigSizePrice: number;
   };
-  orderList: OrderItem[];
+
+  baseList: OrderItem[];
+  generalCounter: number;
+  setGeneralCounter: React.Dispatch<React.SetStateAction<number>>;
 
   setOrderInfo: React.Dispatch<
     React.SetStateAction<{
@@ -44,9 +54,10 @@ export type iShoppingType = {
       mainImg: string;
       secondImg: string;
       price: number;
+      bigSizePrice: number;
     }>
   >;
-  setOrderList: Dispatch<SetStateAction<OrderItem[]>>;
+  setBaseList: Dispatch<SetStateAction<OrderItem[]>>;
 };
 
 export const iShoppingContext = {
@@ -58,6 +69,8 @@ export const iShoppingContext = {
   complementos: {},
   cupones: {},
   polloQuestions: {},
+  generalCounter: 1,
+  setGeneralCounter: () => {},
   getDataPromociones: async () => {},
   getPolloData: async () => {},
   handleOrderClick: () => {},
@@ -68,8 +81,9 @@ export const iShoppingContext = {
     mainImg: '',
     secondImg: '',
     price: 0,
+    bigSizePrice: 0,
   },
   setOrderInfo: () => {},
-  orderList: [],
-  setOrderList: () => {},
+  baseList: [],
+  setBaseList: () => {},
 };

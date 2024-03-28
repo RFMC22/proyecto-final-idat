@@ -25,7 +25,13 @@ const Orders = () => {
     accordion9: false,
   });
 
-  const { orderInfo, polloQuestions, getPolloData,handleOrderClick } = useShopping();
+  const {
+    orderInfo,
+    polloQuestions,
+    getPolloData,
+    generalCounter,
+    setGeneralCounter,
+  } = useShopping();
 
   const getDataOrders = async () => {
     try {
@@ -36,10 +42,10 @@ const Orders = () => {
     }
   };
 
+  
   useEffect(() => {
     const pathSegments = location.pathname.split('/');
-    const newAddress = pathSegments[2] || ''; // Handle case when pathSegments[2] is undefined
-    // getDataOrders();
+    const newAddress = pathSegments[2] || '';
     setAddress(newAddress);
   }, [location.pathname]);
 
@@ -99,8 +105,6 @@ const Orders = () => {
       ...prevActiveIds,
       [accordionTitle]: prevActiveIds[accordionTitle] === id ? null : id,
     }));
-
-    
   };
 
   return (
@@ -131,13 +135,14 @@ const Orders = () => {
                       <section className="items-container">
                         <ExtraOptionCardComponent
                           image={orderInfo.secondImg}
-                          btn=""
+                          btn={''}
                           text={`${orderInfo.name} Mediana +S/0.00`}
                           width=""
                           key={orderInfo.secondImg}
+                          question={1}
                           id={1}
-                          price={0}
-                          count={1}
+                          price={0 + orderInfo.price}
+                          count={generalCounter}
                           isActive={
                             activeIds[orderInfo.name] === orderInfo.secondImg
                           }
@@ -151,13 +156,14 @@ const Orders = () => {
 
                         <ExtraOptionCardComponent
                           image={orderInfo.secondImg}
-                          btn=""
-                          text={`${orderInfo.name} Grande +S/${orderInfo.price}.00`}
+                          btn={''}
+                          text={`${orderInfo.name} Grande +S/${orderInfo.bigSizePrice}.00`}
                           width=""
                           key={orderInfo.secondImg + 1}
+                          question={1}
                           id={1}
-                          price={orderInfo.price}
-                          count={1}
+                          price={orderInfo.bigSizePrice + orderInfo.price}
+                          count={generalCounter}
                           isActive={
                             activeIds[orderInfo.name] ===
                             orderInfo.secondImg + 1
@@ -189,22 +195,14 @@ const Orders = () => {
                               return (
                                 <ExtraOptionCardComponent
                                   image={extra.imgcomb}
-                                  btn={
-                                    <p
-                                      style={{
-                                        textAlign: 'center',
-                                        fontSize: '14px',
-                                        fontFamily: 'kulristaRegular',
-                                        padding: '2px 0',
-                                      }}
-                                    >{`+S/.${extra.preccomb}`}</p>
-                                  }
+                                  btn={''}
                                   text={extra.titulocomb}
                                   width=""
                                   id={extra.nrocomb}
+                                  question={7}
                                   price={extra.preccomb}
                                   key={extra.nrocomb}
-                                  count={1}
+                                  count={''}
                                   isActive={
                                     activeIds[extra.imgcomb] === extra.nrocomb
                                   }
@@ -242,8 +240,9 @@ const Orders = () => {
                                   width="circle"
                                   key={extra.nrocomb}
                                   id={extra.nrocomb}
+                                  question={8}
                                   price={extra.preccomb}
-                                  count={1}
+                                  count={''}
                                   isActive={
                                     activeIds[extra.imgcomb] === extra.nrocomb
                                   }
@@ -272,13 +271,14 @@ const Orders = () => {
                             return (
                               <ExtraOptionCardComponent
                                 image={extra.imgcomb}
-                                btn=""
+                                btn={''}
                                 text={extra.titulocomb}
                                 width=""
                                 key={extra.nrocomb}
                                 id={2}
+                                question={2}
                                 price={extra.preccomb}
-                                count={1}
+                                count={''}
                                 isActive={activeIds['1'] === extra.nrocomb}
                                 onClick={() =>
                                   handleImageClick('1', extra.nrocomb)
@@ -306,8 +306,9 @@ const Orders = () => {
                                 width=""
                                 key={extra.nrocomb}
                                 id={3}
+                                question={3}
                                 price={extra.preccomb}
-                                count={1}
+                                count={''}
                                 isActive={
                                   activeIds[extra.title] === extra.nrocomb
                                 }
@@ -332,19 +333,20 @@ const Orders = () => {
                             return (
                               <ExtraOptionCardComponent
                                 image={extra.imgcomb}
-                                btn={<Counter myclass="Counter" />}
+                                btn={true}
                                 text={extra.titulocomb}
                                 width="width-136"
                                 key={extra.nrocomb}
                                 id={extra.nrocomb}
+                                question={4}
                                 price={extra.preccomb}
-                                count={1}
+                                count={0}
                                 isActive={
                                   activeIds[extra.imgcomb] === extra.nrocomb
                                 }
-                                onClick={() =>
-                                  handleImageClick(extra.titulocomb, '0')
-                                }
+                                onClick={() => {
+                                  handleImageClick(extra.titulocomb, '0');
+                                }}
                               />
                             );
                           })}
@@ -368,8 +370,9 @@ const Orders = () => {
                                 width="circle"
                                 key={extra.nrocomb}
                                 id={extra.nrocomb}
+                                question={5}
                                 price={extra.preccomb}
-                                count={1}
+                                count={''}
                                 isActive={
                                   activeIds[extra.imgcomb] === extra.nrocomb
                                 }
@@ -396,8 +399,9 @@ const Orders = () => {
                           width=""
                           key={orderQuestions[4].combinaciones[0].nrocomb}
                           id={orderQuestions[4].combinaciones[0].nrocomb}
+                          question={6}
                           price={orderQuestions[4].combinaciones[0].preccomb}
-                          count={1}
+                          count={''}
                           isActive={
                             activeIds[
                               orderQuestions[4].combinaciones[0].titulocomb
@@ -418,12 +422,13 @@ const Orders = () => {
                               .map((extra: any) => (
                                 <ExtraOptionCardComponent
                                   image={extra.imgcomb}
-                                  btn={<Counter myclass="Counter" />}
+                                  btn={true}
                                   text={extra.titulocomb}
                                   width=""
                                   key={extra.nrocomb}
                                   id={extra.nrocomb}
-                                  count={1}
+                                  question={6}
+                                  count={0}
                                   price={extra.preccomb}
                                   isActive={
                                     activeIds[extra.title] === extra.nrocomb
@@ -450,7 +455,11 @@ const Orders = () => {
             <div className="low-bar-flex ">
               <span className="low-bar-text">Cantidad:</span>
 
-              <Counter myclass="low-bar-cart" />
+              <Counter
+                myclass="low-bar-cart"
+                counter={generalCounter}
+                setCounter={setGeneralCounter}
+              />
             </div>
             <div className="low-bar-right">
               <p className="acum-points">ACUMULAS 0 PTS</p>
