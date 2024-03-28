@@ -2,6 +2,7 @@ const PathConstants = {
   INDEX: '/',
   MENU: '/menu',
   MENU_TYPE: '/menu/:type',
+  MENU_TYPE_ORDERS: '/menu/:type/:order',
   PROMOCIONES: '/promociones',
   PROMOCIONES_DELIVERY: '/promociones/delivery-hamburguesas',
   PROMOCIONES_ID: '/promociones/:id',

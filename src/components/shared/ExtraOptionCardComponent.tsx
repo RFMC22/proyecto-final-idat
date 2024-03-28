@@ -1,12 +1,73 @@
+import { useEffect, useState } from 'react';
 import './../../styles/ExtraOptionCard.css';
+import useShopping from '../../hooks/useShopping';
+import { Counter } from '..';
 
-const ExtraOptionCardComponent = ({ image, btn, width, text }: any) => {
+interface ExtraOptionCardComponent {
+  image: string;
+  btn: any;
+  width: string;
+  text: string;
+  isActive: boolean;
+  question: any;
+  price: number;
+  count: any;
+  id: any;
+  onClick: () => void;
+}
+
+const ExtraOptionCardComponent = ({
+  image,
+  btn,
+  width,
+  text,
+  isActive,
+  onClick,
+  question,
+  id,
+  price,
+  count,
+}: ExtraOptionCardComponent) => {
+  const { handleOrderClick } = useShopping();
+  const [counter, setCounter] = useState(0);
+
+  const handleClick = () => {
+    onClick();
+    handleOrderClick(id, price, text, count === '' ? 1 : counter, question);
+  };
+
+
+  console.log('fuera de handleclick:', counter);
   return (
     <div className={`extraOptionCard ${width}`}>
       <div className="flex-col">
-        <div className="imgContainer">
+        <div
+          className="imgContainer"
+          onClick={() => handleClick()}
+          style={{
+            border: isActive
+              ? '3px solid rgb(34, 57, 143)'
+              : '1px solid rgb(112, 112, 112)',
+          }}
+        >
           <img src={image} alt="item-card" />
-          {btn}
+          {btn && (
+            <Counter
+              myclass="Counter"
+              setCounter={setCounter}
+              counter={counter}
+            />
+          )}
+          {false && (
+            <p
+              style={{
+                textAlign: 'center',
+                fontSize: '14px',
+                fontFamily: 'kulristaRegular',
+                padding: '2px 0',
+              }}
+            >{`+S/.${price}`}</p>
+          )}
         </div>
         <p className="text-wrap">{text}</p>
       </div>
