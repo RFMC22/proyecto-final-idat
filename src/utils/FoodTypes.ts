@@ -31,6 +31,10 @@ const FoodTypes = {
     name: 'Helados',
     path: 'helados'
   },
+  BENEFICIOS: {
+    name: 'beneficios',
+    path: 'beneficios'
+  },
   INKA_CHIPS: {
     name: 'Inka Chips',
     path: 'inka-chips'

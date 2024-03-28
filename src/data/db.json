@@ -1377,6 +1377,7 @@
   ],
   "preguntas_frecuentes": [
     {
+
       "hamburguesas": [
         {
           "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
@@ -1482,6 +1483,7 @@
         }
       ]
     }
+    
   ],
   "orders": [
     {

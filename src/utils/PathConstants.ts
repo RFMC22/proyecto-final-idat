@@ -9,6 +9,7 @@ const PathConstants = {
   COMBOS_ORDERS: '/menu/combos/:order',
   CART: '/checkout/cart',
   BENEFICIOS: '/beneficios',
+  CHECKOUT: '/checkout',
 };
 
 export default PathConstants;
