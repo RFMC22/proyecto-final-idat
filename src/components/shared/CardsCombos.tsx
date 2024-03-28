@@ -53,7 +53,7 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
           <h2>{tituloSeccion}</h2>
           <div className="contenedor-lista-combos">
             <div className="lista-combos">
-              {getInfo(combos).map((combo:any) => (
+              {getInfo(combos).map((combo: any) => (
                 <div className="item-lista">
                   <div className="item-content">
                     <div className="item-card">
@@ -78,7 +78,7 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
                                 mainImg: combo.img,
                                 secondImg: combo.orderimg,
                                 price: combo.precio,
-                                bigSizePrice:combo.bigPrice,
+                                bigSizePrice: combo.bigPrice,
                               });
                             }}
                           >
@@ -90,21 +90,22 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
                   </div>
                 </div>
               ))}
-              {variante && (
-                <div>
-                  <div className="encabezado-pregutnas-frecuentes">
-                    <h2 className="titulo-categoria-preguntas">{subtitulo}</h2>
-                    <p className="descripcion-seccion-preguntas">
-                      {descripcion}
-                    </p>
-                    <h2 className="titulo-preguntas-ultimo">{encabezado}</h2>
-                  </div>
-                  {/* <PreguntasFrecuentes title="¿Cuántos puntos recibo por comprar una hamburguesa online delivery?" children="Los puntos que se reciben por la compra de algún producto de nuestra carta de hamburguesas varían entorno al tamaño de la misma, en proporción se otorga un punto por cada S/1. Conoce tus puntos desde la APP o ingresando en la Web." myclass='' /> */}
-                </div>
-              )}
+
             </div>
           </div>
         </div>
+        {
+          variante &&
+          <div className='general-wh-contenedor'>
+            <div className="encabezado-pregutnas-frecuentes">
+              <h2 className="titulo-categoria-preguntas">{subtitulo}</h2>
+              <p className="descripcion-seccion-preguntas">{descripcion}</p>
+              <h2 className="titulo-preguntas-ultimo">{encabezado}</h2>
+            </div>
+          </div>
+        }
+        <PreguntasFrecuentes myclass='' />
+
       </div>
     </div>
   );

@@ -24,6 +24,7 @@ const Combos = () => {
                 descripcion: "",
                 encabezado: ""
             }
+            
             break;
         case FoodTypes.HAMBURGUESAS.path:
             TabTitle("Disfruta de nuestro delicioso menú de Hamburguesas")
@@ -34,6 +35,7 @@ const Combos = () => {
                 subtitulo: "HAMBURGUESAS A LA PARRILLA",
                 descripcion: "Sabemos que la preparación de la carne de una hamburguesa es una de las partes más importantes. Por ello, Bembos te ofrece una técnica de cocción única en la que la mantenemos suspendida sobre el fuego para otorgarle la jugosidad perfecta que nos caracteriza. Combina tu hamburguesa de carne a la parrilla con los mejores ingredientes que hemos elegido para ti: tocino, plátano, tomate, lechuga, huevo, queso y mucho más. ¡No esperes más y empieza a disfrutar de lo mejor del sabor peruano!",
                 encabezado: "PREGUNTAS FRECUENTES SOBRE NUESTRAS HAMBURGUESAS"
+
             }
             break;
         case FoodTypes.POLLOS.path:
@@ -79,8 +81,8 @@ const Combos = () => {
                 tituloSeccion: "CONOCE NUESTROS DELICIOSOS COMPLEMENTOS | BEMBOS",
                 getData: getComplementos,
                 variante: true,
-                subtitulo: "",
-                descripcion: "",
+                subtitulo: "  ",
+                descripcion: "  ",
                 encabezado: "PREGUNTAS FRECUENTES SOBRE NUESTROS COMPLEMENTOS"
 
             }
