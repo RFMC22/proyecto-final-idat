@@ -17,7 +17,16 @@ import { PathConstants } from '../../utils';
 
 const Cart = () => {
   const { setCartState, cartState, shoppingList } = useShopping();
-  let subTotal = 0;
+
+  let subTotal = [
+    { id: 1, subTotal: 0 },
+    { id: 2, subTotal: 0 },
+    { id: 3, subTotal: 0 },
+    { id: 4, subTotal: 0 },
+    { id: 5, subTotal: 0 },
+  ];
+  let accumulateSubTotal = 0;
+
   const navigate = useNavigate();
 
   const handleClose = () => {
@@ -41,35 +50,58 @@ const Cart = () => {
     return currentHour >= 23 || currentHour < 11; // Disable button between 11 pm and 10 am
   };
 
-  Object.keys(shoppingList).length !== 0 ? console.log(shoppingList) : '';
+  if (Object.keys(shoppingList).length !== 0) {
+    let totalComplements = [
+      { id: 1, subTotal: 0 },
+      { id: 2, subTotal: 0 },
+      { id: 3, subTotal: 0 },
+      { id: 4, subTotal: 0 },
+      { id: 5, subTotal: 0 },
+    ];
+    let totalExtraSauces = [
+      { id: 1, subTotal: 0 },
+      { id: 2, subTotal: 0 },
+      { id: 3, subTotal: 0 },
+      { id: 4, subTotal: 0 },
+      { id: 5, subTotal: 0 },
+    ];
 
-  // Object.keys(shoppingList).length !== 0 ? console.log(shoppingList) : '';
+    shoppingList &&
+      shoppingList.forEach((shoppingItem: any, index: any) => {
+        let totalComplement = 0;
+        shoppingItem.extras.complements &&
+          shoppingItem.extras.complements.forEach((complement: any) => {
+            totalComplement += complement.quantity * complement.price;
+          });
+        totalComplements[index].subTotal = totalComplement;
+      });
 
-  // if (Object.keys(shoppingList).length !== 0) {
-  //   let totalComplements = 0;
-  //   shoppingList.extras.complements &&
-  //     shoppingList.extras.complements.forEach((complement: any) => {
-  //       totalComplements += complement.quantity * complement.price;
-  //     });
-  //   let totalExtraSauces = 0;
-  //   shoppingList.extras.extra_sauces &&
-  //     shoppingList.extras.extra_sauces.forEach((sauce: any) => {
-  //       totalExtraSauces += sauce.quantity * sauce.price;
-  //     });
-  //   console.log(shoppingList.unit_price);
-  //   console.log(totalComplements);
-  //   console.log(totalExtraSauces);
-  //   subTotal = parseFloat(
-  //     (
-  //       ((totalComplements ? totalComplements : 0) +
-  //         (totalExtraSauces ? totalExtraSauces : 0) +
-  //         (shoppingList.unit_price ? shoppingList.unit_price : 0)) *
-  //       shoppingList.quantity
-  //     ).toFixed(3)
-  //   );
+    shoppingList &&
+      shoppingList.forEach((shoppingItem: any, index: any) => {
+        let totalExtraSauce = 0;
+        shoppingItem.extras.extra_sauces &&
+          shoppingItem.extras.extra_sauces.forEach((sauce: any) => {
+            totalExtraSauce += sauce.quantity * sauce.price;
+          });
+        totalExtraSauces[index].subTotal = totalExtraSauce;
+      });
 
-  //   console.log(subTotal);
-  // }
+    shoppingList &&
+      shoppingList.forEach((shoppingItem: any, index: any) => {
+        subTotal[index].subTotal = parseFloat(
+          (
+            totalComplements[index].subTotal +
+            totalExtraSauces[index].subTotal +
+            shoppingItem.unit_price
+          ).toFixed(2)
+        );
+      });
+
+    shoppingList &&
+      subTotal.forEach((sub: any) => {
+        accumulateSubTotal += parseFloat(sub.subTotal.toFixed(3));
+      });
+  }
 
   return (
     <>
@@ -105,7 +137,7 @@ const Cart = () => {
                       Ingrésalos en el siguiente paso
                     </p>
                   </div>
-                  {shoppingList.map((shoppingItem: any) => (
+                  {shoppingList.map((shoppingItem: any, index: any) => (
                     <>
                       <div className="cart-shoppingList">
                         <div className="shopping-item">
@@ -127,7 +159,7 @@ const Cart = () => {
                                   shoppingItem.name.split(' ')[1]
                                 } ${shoppingItem.name.split(' ')[2]} `}
                               </p>
-                              <p className="shopping-price">{`S/. ${shoppingItem.unit_price}`}</p>
+                              <p className="shopping-price">{`S/. ${subTotal[index].subTotal}`}</p>
                             </div>
                           </div>
                           <div className="shopping-right">
@@ -144,7 +176,7 @@ const Cart = () => {
                   <div className="cart-shopping-calculations">
                     <div className="subtotal">
                       <p>Subtotal</p>
-                      <p>S/ {15}</p>
+                      <p>{`S/. ${accumulateSubTotal}`}</p>
                     </div>
                     <div className="delivery">
                       <p>Delivery</p>
@@ -153,7 +185,7 @@ const Cart = () => {
                   </div>
                   <div className="cart-shopping-calculations shopping-result">
                     <p>Total a pagar</p>
-                    <p>S/ {15}</p>
+                    <p>{`S/. ${accumulateSubTotal}`}</p>
                   </div>
                 </div>
                 <div className="complementos">
@@ -170,7 +202,7 @@ const Cart = () => {
                   <div className="btns">
                     <button className="btn btn-rojo" disabled={isDisabled()}>
                       <div className="circle">1</div>
-                      IR A PAGAR <span>S/. {15}</span>
+                      IR A PAGAR <span>{`S/. ${accumulateSubTotal}`}</span>
                     </button>
                     <button className="btn btn-blanco">SEGUIR COMPRANDO</button>
                   </div>

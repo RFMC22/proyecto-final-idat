@@ -213,7 +213,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     // const items = { ...localStorage };
     // console.log(JSON.parse(localStorage.getItem(items[0])))
     // setShoppingList(JSON.parse(localStorage.getItem()));
-    var allItems = [];
+    let allItems = [];
     for (let i = 0; i < localStorage.length; i++) {
       let key = localStorage.key(i);
 
@@ -228,8 +228,9 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         allItems.push(item);
       }
 
-      allItems = allItems.filter(item => item.name.trim() !== '');
-      setShoppingList(allItems)
+      allItems = allItems.filter((item) => item.name.trim() !== '');
+      setShoppingList(allItems);
+
     }
   };
 
