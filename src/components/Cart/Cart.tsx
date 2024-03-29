@@ -158,9 +158,8 @@ const Cart = () => {
                               <p className="shopping-name">
                                 <span className="shopping-name-cantidad">{`0${shoppingItem.quantity} `}</span>
                                 x
-                                {` ${shoppingItem.name.split(' ')[0]} ${
-                                  shoppingItem.name.split(' ')[1]
-                                } ${shoppingItem.name.split(' ')[2]} `}
+                                {` ${shoppingItem.name.split(' ')[0]} ${shoppingItem.name.split(' ')[1]
+                                  } ${shoppingItem.name.split(' ')[2]} `}
                               </p>
                               <p className="shopping-price">{`S/. ${subTotal[index].subTotal}`}</p>
                             </div>
@@ -203,10 +202,12 @@ const Cart = () => {
 
                 <div className="cart-container cart-container-sticky">
                   <div className="btns">
-                    <button className="btn btn-rojo" disabled={isDisabled()}>
-                      <div className="circle">1</div>
-                      IR A PAGAR <span>{`S/. ${accumulateSubTotal}`}</span>
-                    </button>
+                    <Link to={PathConstants.CHECKOUT}>
+                      <button className="btn btn-rojo" disabled={isDisabled()}>
+                        <div className="circle">1</div>
+                        IR A PAGAR <span>{`S/. ${accumulateSubTotal}`}</span>
+                      </button>
+                    </Link>
                     <button className="btn btn-blanco">SEGUIR COMPRANDO</button>
                   </div>
                 </div>
