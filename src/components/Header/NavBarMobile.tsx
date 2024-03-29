@@ -77,7 +77,7 @@ const NavBarMobile = ({ display }: { display: string }) => {
             </ul>
           </li>
         </Link>
-        <Link to={PathConstants.HAMBURGUESAS}>
+        <Link to={`${PathConstants.MENU}/${FoodTypes.HAMBURGUESAS.path}`}>
           <li className="flex-icon">
             <div className="menu-icon-container">
               <img
@@ -86,7 +86,7 @@ const NavBarMobile = ({ display }: { display: string }) => {
                 className="item-icon"
               />
             </div>
-            CUPONES
+            HAMBURGUESAS
           </li>
         </Link>
         <Link to={PathConstants.BENEFICIOS}>

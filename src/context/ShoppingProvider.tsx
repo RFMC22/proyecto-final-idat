@@ -105,12 +105,6 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
             question: question,
           },
         ]);
-    // const number = {
-    //   nombre: 'mediano',
-    //   price: 0,
-    // };
-    // const test = { ...complementos, number };
-    // console.log({ test });
   };
 
   // When the baseList changes ran the OrderList
@@ -210,10 +204,8 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   };
 
   const getFromLocalStorage = () => {
-    // const items = { ...localStorage };
-    // console.log(JSON.parse(localStorage.getItem(items[0])))
-    // setShoppingList(JSON.parse(localStorage.getItem()));
     let allItems = [];
+    let allItemsFiltered=[];
     for (let i = 0; i < localStorage.length; i++) {
       let key = localStorage.key(i);
 
@@ -228,11 +220,17 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         allItems.push(item);
       }
 
-      allItems = allItems.filter((item) => item.name.trim() !== '');
-      setShoppingList(allItems);
-
+      allItemsFiltered = allItems.filter((item) => item.name.trim() !== '');
+      setShoppingList(allItemsFiltered);
+      
     }
+
+    
   };
+
+  useEffect(() => {
+    getFromLocalStorage();
+  }, []);
 
   return (
     <ShoppingContext.Provider

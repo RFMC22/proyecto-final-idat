@@ -64,7 +64,9 @@ const Orders = () => {
           accordion9: true,
         });
         getDataOrders();
-        console.log('Handling combos...');
+
+       
+
         break;
       case 'hamburguesas':
       case 'pollo':
@@ -97,7 +99,7 @@ const Orders = () => {
         getPolloData();
         getDataOrders();
 
-        console.log('Handling menus-al-plato...');
+        
         break;
 
       case 'loncheritas':
@@ -115,7 +117,7 @@ const Orders = () => {
         getPolloData();
         getDataOrders();
 
-        console.log('Handling loncheritas...');
+
         break;
 
       case 'complementos':
@@ -133,7 +135,7 @@ const Orders = () => {
         getPolloData();
         getDataOrders();
 
-        console.log('Handling loncheritas...');
+
         break;
 
       case 'bebidas':
@@ -151,7 +153,7 @@ const Orders = () => {
         getPolloData();
         getDataOrders();
 
-        console.log('Handling loncheritas...');
+
         break;
 
       case 'helados':
@@ -169,12 +171,12 @@ const Orders = () => {
         getPolloData();
         getDataOrders();
 
-        console.log('Handling loncheritas...');
+
         break;
 
       default:
         // Handle other cases if necessary
-        console.log('Unknown address:', address);
+
         setAccordionBoolean({
           accordion1: true,
           accordion2: false,
