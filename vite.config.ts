@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/proyecto-final-idat/'
+  base: 'https://rfmc22.github.io/proyecto-final-idat/'
 })
