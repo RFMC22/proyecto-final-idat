@@ -19,9 +19,10 @@ const NavBarDesktop = () => {
     tabScrollClick(id);
   };
 
-  const { setCartState } = useShopping();
+  const { setCartState,getFromLocalStorage } = useShopping();
   const handleClick = () => {
     setCartState(true);
+    getFromLocalStorage();
   };
 
   return (

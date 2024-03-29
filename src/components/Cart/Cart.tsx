@@ -16,7 +16,8 @@ import { Counter } from '..';
 import { PathConstants } from '../../utils';
 
 const Cart = () => {
-  const { setCartState, cartState, shoppingList } = useShopping();
+  const { setCartState, cartState, shoppingList, getFromLocalStorage } =
+    useShopping();
 
   let subTotal = [
     { id: 1, subTotal: 0 },
@@ -97,11 +98,16 @@ const Cart = () => {
         );
       });
 
-    shoppingList &&
+    subTotal &&
       subTotal.forEach((sub: any) => {
-        accumulateSubTotal += parseFloat(sub.subTotal.toFixed(3));
+        accumulateSubTotal += sub.subTotal;
+        accumulateSubTotal = parseFloat(accumulateSubTotal.toFixed(2));
       });
+
+
   }
+
+
 
   return (
     <>

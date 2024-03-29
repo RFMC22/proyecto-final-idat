@@ -11,6 +11,7 @@ const YellowBtn = ({
   id,
   handleClick,
 }: yellowBtnProps) => {
+  
   const doNothing =()=>{
     
   }

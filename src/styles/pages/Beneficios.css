@@ -205,3 +205,58 @@
     }
   }
 }
+
+.accordion.myQuestions {
+  background: #fff;
+  border: 2px solid #dcdcdc;
+  padding: 5px 10px;
+  margin: 5px 0;
+
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+
+    .icon {
+      color: white;
+      background-color: #193694;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+    }
+  }
+  .circle {
+    display: none;
+  }
+
+  .title {
+    color: #193694;
+    cursor: pointer;
+    text-align: justify;
+    font-weight: 700;
+    font-family: 'kulristaBold', sans-serif;
+    font-size: 18px;
+    padding: 5px 0;
+  }
+
+  .accordion-content {
+    font-family: 'kulristaRegular', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: black;
+  }
+
+  .button {
+    outline: 0;
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.accordion.myQuestions:active {
+  border: 2px solid rgb(255, 181, 0);
+}
+
+.accordion.myQuestions.accordion-header.icon:hover,
+.accordion.myQuestions.accordion-header.icon:visited {
+  background-color: rgb(255, 181, 0);
+}

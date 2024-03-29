@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { BeneficiosHeaderProps, PreguntasFrecuente } from '../interfaces/';
 import './../styles/pages/Beneficios.css';
 import { friendzone, gileos, relacion, destinados } from '../assets/images';
-import { SwiperComponent } from '../components/shared';
+import { Accordion, SwiperComponent } from '../components/shared';
 import { Navigation } from 'swiper/modules';
 import { SwiperSlide } from 'swiper/react';
 import { BeneficioHeader, Card } from '../components';
@@ -90,6 +90,7 @@ const Beneficios = () => {
   }, []);
 
   const cardDefault = { nombre: '', img: '', link: '', id: 1, precio: 0 };
+
   const handleClick = (set: string = 'friendzone') => {
     if (set === 'friendzone') {
       setClickedDataHeader({
@@ -196,40 +197,44 @@ const Beneficios = () => {
             )}
           </SwiperComponent>
         </section>
-        <div className="questions">
+        <div className="container">
           {preguntasFrecuentesData ? (
-            preguntasFrecuentesData[0].beneficios.map((pregunta) => (
-              <PreguntasFrecuentes
-                title={pregunta.titulo}
-                children={pregunta.respuesta}
-                myclass={'MyQuestions'}
-              />
+            preguntasFrecuentesData[0].beneficios.map((pregunta, index) => (
+              <>
+                <Accordion
+                  title={pregunta.titulo}
+                  className={'myQuestions'}
+                  id={index}
+                >
+                  <p>{pregunta.respuesta}</p>
+                </Accordion>
+              </>
             ))
           ) : (
             <>
               <PreguntasFrecuentes
-                title={''}
-                children={''}
+                // title={''}
+                // children={''}
                 myclass={'MyQuestions'}
               />
               <PreguntasFrecuentes
-                title={''}
-                children={''}
+                // title={''}
+                // children={''}
                 myclass={'MyQuestions'}
               />
               <PreguntasFrecuentes
-                title={''}
-                children={''}
+                // title={''}
+                // children={''}
                 myclass={'MyQuestions'}
               />
               <PreguntasFrecuentes
-                title={''}
-                children={''}
+                // title={''}
+                // children={''}
                 myclass={'MyQuestions'}
               />
               <PreguntasFrecuentes
-                title={''}
-                children={''}
+                // title={''}
+                // children={''}
                 myclass={'MyQuestions'}
               />
             </>
