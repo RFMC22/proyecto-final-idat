@@ -26,7 +26,7 @@ const ShoppingContext = createContext<iShoppingType>(iShoppingContext);
 
 const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [cartState, setCartState] = useState<boolean | null>(false);
-  let accumulateList = {};
+  // let accumulateList = {};
   const [orderInfo, setOrderInfo] = useState({
     name: '',
     description: '',
@@ -47,11 +47,32 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   let extras = {};
   let hamburguerOrder = {};
   const [generalCounter, setGeneralCounter] = useState(1);
-  // const [orderBase, setOrderBase] = useState({
-  //   name: '',
-  //   quantity: 0,
-  //   unit_price: 0,
-  // });
+  const [acumulateList, setAccumulateList] = useState({});
+  const [saveLocalStorage, setSaveLocalStorage] = useState(false);
+  const [shoppingList, setShoppingList] = useState({});
+  // Functions for Fetching
+  const getDataPromociones = async () => {
+    const [promos, promosD, promosC, complements, cupons] = await Promise.all([
+      getPromosPersonales(),
+      getPromosDos(),
+      getPromosCompartir(),
+      getComplementos(),
+      getCupones(),
+    ]);
+
+    setPromosPersonales(promos);
+    setPromosDos(promosD);
+    setPromosCompartir(promosC);
+    setComplementos(complements);
+    setCupones(cupons);
+  };
+
+  const getPolloData = async () => {
+    const polloData = await getPollo();
+    polloData && setPolloQuestions(polloData);
+  };
+
+  // Functions for the Shopping Cart
   const handleOrderClick = (
     id: any,
     price: number,
@@ -60,7 +81,6 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     question: number
   ) => {
     const checkBaseList = baseList.some((item) => item.id === id);
-    console.log(checkBaseList);
     checkBaseList
       ? setBaseList((prevBaseList) =>
           prevBaseList.map((item) =>
@@ -85,19 +105,15 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
             question: question,
           },
         ]);
-    // const number = {
-    //   nombre: 'mediano',
-    //   price: 0,
-    // };
-    // const test = { ...complementos, number };
-    // console.log({ test });
   };
 
+  // When the baseList changes ran the OrderList
   useEffect(() => {
     // showData(baseList);
     orderTheList(baseList);
   }, [baseList]);
 
+  // When the pathname changes see if the second element is combos or pollo
   useEffect(() => {
     setGeneralCounter(1);
   }, [location.pathname]);
@@ -169,37 +185,52 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         })),
       };
     }
-
-    accumulateList = { ...hamburguerOrder, extras };
+    setAccumulateList({ ...hamburguerOrder, extras });
+    // accumulateList = { ...hamburguerOrder, extras };
   };
 
-  useEffect(() => {console.log(accumulateList);}, [accumulateList]);
-  const showData = (orderList: any) => {
-    if (orderList) {
-      console.log(orderList);
+  useEffect(() => {
+    if (saveLocalStorage === true) {
+      sentLocalStorage(acumulateList);
+      setSaveLocalStorage(false);
     }
+  }, [acumulateList]);
+
+  const sentLocalStorage = (acumulateList: any) => {
+    localStorage.setItem(
+      `order_${acumulateList.name}`,
+      JSON.stringify(acumulateList)
+    );
   };
 
-  const getDataPromociones = async () => {
-    const [promos, promosD, promosC, complements, cupons] = await Promise.all([
-      getPromosPersonales(),
-      getPromosDos(),
-      getPromosCompartir(),
-      getComplementos(),
-      getCupones(),
-    ]);
+  const getFromLocalStorage = () => {
+    let allItems = [];
+    let allItemsFiltered=[];
+    for (let i = 0; i < localStorage.length; i++) {
+      let key = localStorage.key(i);
 
-    setPromosPersonales(promos);
-    setPromosDos(promosD);
-    setPromosCompartir(promosC);
-    setComplementos(complements);
-    setCupones(cupons);
+      // Check if the key represents an item you've saved
+      // You can add additional checks here if needed
+      // For example, you might want to filter keys that start with a specific prefix
+      if (key.startsWith('order_')) {
+        // Retrieve the value associated with the key
+        let item = JSON.parse(localStorage.getItem(key));
+
+        // Push the item to the array
+        allItems.push(item);
+      }
+
+      allItemsFiltered = allItems.filter((item) => item.name.trim() !== '');
+      setShoppingList(allItemsFiltered);
+      
+    }
+
+    
   };
 
-  const getPolloData = async () => {
-    const polloData = await getPollo();
-    polloData && setPolloQuestions(polloData);
-  };
+  useEffect(() => {
+    getFromLocalStorage();
+  }, []);
 
   return (
     <ShoppingContext.Provider
@@ -221,6 +252,10 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         handleOrderClick,
         setGeneralCounter,
         generalCounter,
+        setSaveLocalStorage,
+        saveLocalStorage,
+        getFromLocalStorage,
+        shoppingList,
       }}
     >
       {children}

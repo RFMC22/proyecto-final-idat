@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './../../styles/ExtraOptionCard.css';
 import useShopping from '../../hooks/useShopping';
 import { Counter } from '..';
@@ -36,13 +36,11 @@ const ExtraOptionCardComponent = ({
     handleOrderClick(id, price, text, count === '' ? 1 : counter, question);
   };
 
-
-  console.log('fuera de handleclick:', counter);
   return (
     <div className={`extraOptionCard ${width}`}>
       <div className="flex-col">
         <div
-          className="imgContainer"
+          className="imgContainer-card"
           onClick={() => handleClick()}
           style={{
             border: isActive

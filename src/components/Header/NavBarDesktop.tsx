@@ -19,9 +19,10 @@ const NavBarDesktop = () => {
     tabScrollClick(id);
   };
 
-  const { setCartState } = useShopping();
+  const { setCartState, getFromLocalStorage } = useShopping();
   const handleClick = () => {
     setCartState(true);
+    getFromLocalStorage();
   };
 
   return (
@@ -106,8 +107,8 @@ const NavBarDesktop = () => {
                   fill="#F4B83F"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M2.81239 34.5941L2.81345 34.6078C2.85701 35.1713 3.02427 35.5983 3.37217 35.9445C3.74336 36.3139 4.17413 36.5 4.62987 36.5H17.513C17.9802 36.5 18.4586 36.3052 18.821 35.9445C19.1834 35.5838 19.3782 35.109 19.3782 34.6463V34.6083L21.9631 17.7191H19.4842C18.3471 21.3052 15.0471 23.7285 11.2727 23.7285C7.49838 23.7285 4.19831 21.3052 3.0613 17.7191H0.570809L2.81239 34.5941ZM2.31494 34.6463C2.36526 35.2973 2.56656 35.8482 3.01948 36.2989C3.4724 36.7496 4.02597 37 4.62987 37H17.513C18.1169 37 18.7208 36.7496 19.1737 36.2989C19.6266 35.8482 19.8782 35.2473 19.8782 34.6463L22.5455 17.2191H19.1234L19.0227 17.5196C17.9659 20.9249 14.8458 23.2285 11.2727 23.2285C7.69968 23.2285 4.57955 20.9249 3.52273 17.5196L3.42208 17.2191H0L2.31494 34.6463Z"
                   fill="#011689"
                 />
@@ -175,7 +176,7 @@ const NavBarDesktop = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to={PathConstants.CUPONES}>Cupones</Link>
+                  <Link to={PathConstants.CUPONES}>CUPONES</Link>
                 </li>
               </ul>
             </li>
@@ -186,7 +187,7 @@ const NavBarDesktop = () => {
                 className="item-icon"
               />
               <Link to={`${PathConstants.MENU}/${FoodTypes.HAMBURGUESAS.path}`}>
-                CUPONES
+                HAMBURGUESAS
               </Link>
             </li>
             <li className="flex">

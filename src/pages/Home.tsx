@@ -136,13 +136,13 @@ const Home = () => {
                 version="1.1"
                 id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
                 x="0px"
                 y="0px"
                 viewBox="0 0 492 492"
                 width="20"
                 height="30"
-                xml:space="preserve"
+                xmlSpace="preserve"
               >
                 <g>
                   <g>
@@ -161,13 +161,13 @@ const Home = () => {
                 version="1.1"
                 id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
                 x="0px"
                 y="0px"
                 viewBox="0 0 451.846 451.847"
                 width="20"
                 height="30"
-                xml:space="preserve"
+                xmlSpace="preserve"
               >
                 <g>
                   <path
@@ -247,15 +247,15 @@ const Home = () => {
               width="500"
               height="130"
               scrolling="no"
-              frameborder="0"
-              allowfullscreen="allowfullscreen"
+              frameBorder="0"
+              allowFullScreen="allowFullScreen"
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               style={{ border: 'none', overflow: 'hidden' }}
             ></iframe>
           </div>
         </div>
       </div>
-      <LowBar display="none-d"/>
+      <LowBar display="none-d" />
     </section>
   );
 };

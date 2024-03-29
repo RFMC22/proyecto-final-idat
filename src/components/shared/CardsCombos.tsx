@@ -34,17 +34,17 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
       }
     };
     fetchData();
-  }, [getData]);
+  }, []);
 
-  const getInfo = (info) => {
+  const getInfo = (info:any) => {
     if (Array.isArray(info)) {
-      console.log(info[0].tipos);
-      return info[0].tipos || []
+      return info[0].tipos || [];
     } else {
-      return info.data || []
+      return info.data || [];
     }
   }
 
+  
 
   return (
     <div className="max-contenedor">
@@ -53,8 +53,8 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
           <h2>{tituloSeccion}</h2>
           <div className="contenedor-lista-combos">
             <div className="lista-combos">
-              {getInfo(combos).map((combo: any) => (
-                <div className="item-lista">
+              {getInfo(combos).map((combo: any, index: any) => (
+                <div className="item-lista" key={index}>
                   <div className="item-content">
                     <div className="item-card">
                       <picture className="card-img">
@@ -90,22 +90,19 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
                   </div>
                 </div>
               ))}
-
             </div>
           </div>
         </div>
-        {
-          variante &&
-          <div className='general-wh-contenedor'>
+        {variante && (
+          <div className="general-wh-contenedor">
             <div className="encabezado-pregutnas-frecuentes">
               <h2 className="titulo-categoria-preguntas">{subtitulo}</h2>
               <p className="descripcion-seccion-preguntas">{descripcion}</p>
               <h2 className="titulo-preguntas-ultimo">{encabezado}</h2>
             </div>
           </div>
-        }
-        <PreguntasFrecuentes myclass='' />
-
+        )}
+        <PreguntasFrecuentes myclass="" />
       </div>
     </div>
   );

@@ -1,7 +1,10 @@
-export { default as BlueBtn } from './BlueBtn'
-export { default as SwiperComponent } from './SwiperComponent'
-export { default as YellowBtn } from './YellowBtn'
-export { default as NavbarCombos } from './NavbarCombos'
-export { default as CardsCombos } from './CardsCombos'
-export { default as PantallaDescarga } from './PantallaDescarga'
-export { default as Accordion } from './Accordion'
+export { default as BlueBtn } from './BlueBtn';
+export { default as SwiperComponent } from './SwiperComponent';
+export { default as YellowBtn } from './YellowBtn';
+export { default as NavbarCombos } from './NavbarCombos';
+export { default as CardsCombos } from './CardsCombos';
+export { default as PantallaDescarga } from './PantallaDescarga';
+export { default as Accordion } from './Accordion';
+export { default as ExtraOptionCardComponent } from './ExtraOptionCardComponent';
+export { default as PreguntasFrecuentes } from './PreguntasFrecuentes';
+export { default as Counter } from './Counter';

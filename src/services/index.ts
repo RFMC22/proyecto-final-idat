@@ -4,7 +4,7 @@ export * from './fetchCupones';
 export * from './fetchHamburguesas'
 export * from './fetchMenuOptions';
 export * from './fetchPromociones';
-export * from './fetchOrders';
+export * from './fetchPreguntasPedido';
 export * from './fetchBebidas';
 export * from './fetchHelados';
 export * from './fetchInkaChips';
