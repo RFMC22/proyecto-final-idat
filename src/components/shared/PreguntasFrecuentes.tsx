@@ -3,8 +3,8 @@ import abierto from '../../../public/abierto.png';
 import cerrado from '../../../public/cerrado.png';
 import { getPreguntasFrecuentes } from '../../services';
 import './../../styles/PreguntasFrecuentes.css';
-import { useParams } from "react-router-dom";
-import { FoodTypes } from "../../utils";
+import { useParams } from 'react-router-dom';
+import { FoodTypes } from '../../utils';
 
 interface AccordionSectionProps {
   myclass: string;
@@ -22,7 +22,7 @@ const PreguntasFrecuentes: React.FC<AccordionSectionProps> = ({ myclass }) => {
     const fetchPreguntasFrecuentes = async () => {
       const data = await getPreguntasFrecuentes();
       if (data && data.data && data.data[0]) {
-        let preguntas = [];
+        let preguntas: any = [];
         switch (type) {
           case FoodTypes.HAMBURGUESAS.path:
             preguntas = data.data[0].hamburguesas;
@@ -60,13 +60,20 @@ const PreguntasFrecuentes: React.FC<AccordionSectionProps> = ({ myclass }) => {
     <div className={`contendor-principal-accordion ${myclass}`}>
       {preguntasFrecuentes.map((pregunta: any, index: number) => (
         <div className="contenedor-accordion-interior" key={index}>
-          <div className="header-accordion" onClick={() => toggleAccordion(index)}>
+          <div
+            className="header-accordion"
+            onClick={() => toggleAccordion(index)}
+          >
             <div className="superior-cerrado-abierto-icon">
               <h3 className="titulo-accordion">{pregunta.titulo}</h3>
-              <div className="img-accordion">{openSections[index] ? imgFalse : imgTrue}</div>
+              <div className="img-accordion">
+                {openSections[index] ? imgFalse : imgTrue}
+              </div>
             </div>
           </div>
-          {openSections[index] && <div className="accordion-content">{pregunta.respuesta}</div>}
+          {openSections[index] && (
+            <div className="accordion-content">{pregunta.respuesta}</div>
+          )}
         </div>
       ))}
     </div>

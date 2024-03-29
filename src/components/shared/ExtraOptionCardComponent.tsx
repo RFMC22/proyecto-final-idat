@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './../../styles/ExtraOptionCard.css';
 import useShopping from '../../hooks/useShopping';
 import { Counter } from '..';
@@ -40,7 +40,7 @@ const ExtraOptionCardComponent = ({
     <div className={`extraOptionCard ${width}`}>
       <div className="flex-col">
         <div
-          className="imgContainer"
+          className="imgContainer-card"
           onClick={() => handleClick()}
           style={{
             border: isActive

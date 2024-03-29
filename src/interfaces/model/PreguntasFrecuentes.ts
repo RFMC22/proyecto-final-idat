@@ -11,7 +11,7 @@ export interface PreguntasFrecuente {
     beneficios: Complemento[];
 }
 
-export interface Complemento {
+interface Complemento {
     titulo: string;
     respuesta: string;
 }

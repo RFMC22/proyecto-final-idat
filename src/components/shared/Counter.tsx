@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import './../../styles/Counter.css';
 
 const Counter = ({ myclass, counter, setCounter }: any) => {

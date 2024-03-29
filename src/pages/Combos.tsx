@@ -132,7 +132,6 @@ const Combos = () => {
             <NavbarCombos />
             <CardsCombos config={combosConfig} />
             <PantallaDescarga />
-
         </div>
     )
 }

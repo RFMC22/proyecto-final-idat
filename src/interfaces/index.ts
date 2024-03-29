@@ -18,12 +18,15 @@ export * from './responses/PolloResponse';
 export * from './responses/PreguntasFrecuentesResponse';
 export * from './responses/CuponResponse';
 export * from './responses/OrdersResponse';
+
 export * from './model/PreguntasFrecuentes.ts';
+export * from './model/Complemento.ts'
+export * from './model/Cupon.ts'
+export * from './model/Menu';
+export * from './model/Orders';
 
 export * from './SwiperProps';
 export * from './MenuProps';
 export * from './NavBarProps';
-export * from './model/Menu';
-export * from './model/Orders';
 export * from './ShoppingProviderProps';
 export * from './BeneficioProps.ts';

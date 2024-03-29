@@ -19,4 +19,10 @@
     background-color: white;
     overflow: hidden;
   }
+
+  .button {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
 }
