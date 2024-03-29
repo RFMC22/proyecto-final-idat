@@ -6,7 +6,12 @@ import { Link, useLocation } from 'react-router-dom';
 import useShopping from '../../hooks/useShopping';
 import { PathConstants, FoodTypes } from '../../utils';
 import { tabScrollClick } from '../../utils/GeneralFunctions';
-import { menuIcon, promocionesIcon, hamburguesasIcon, beneficiosIcon } from '../../assets/images';
+import {
+  menuIcon,
+  promocionesIcon,
+  hamburguesasIcon,
+  beneficiosIcon,
+} from '../../assets/images';
 
 const NavBarDesktop = () => {
   const location = useLocation();
@@ -25,7 +30,7 @@ const NavBarDesktop = () => {
         <div className="flex flex-between gap-20">
           <ul className="flex-5 width-70">
             <li className="flex">
-              <img src={menuIcon} alt="menuIcon" className='item-icon' />
+              <img src={menuIcon} alt="menuIcon" className="item-icon" />
               <Link to={PathConstants.MENU}>MENU</Link>
             </li>
             <li className="flex">
@@ -131,11 +136,17 @@ const NavBarDesktop = () => {
                   fill="#F9A213"
                 />
               </svg>
-              <Link to={`${PathConstants.MENU}/${FoodTypes.COMBOS.path}`}>COMBOS</Link>
+              <Link to={`${PathConstants.MENU}/${FoodTypes.COMBOS.path}`}>
+                COMBOS
+              </Link>
             </li>
             <li className="nav-menu-item">
               <div className="flex">
-                <img src={promocionesIcon} alt="promocionesIcon" className='item-icon' />
+                <img
+                  src={promocionesIcon}
+                  alt="promocionesIcon"
+                  className="item-icon"
+                />
                 <Link to={PathConstants.PROMOCIONES_DELIVERY}>PROMOCIONES</Link>
               </div>
               <ul className="hoversubs">
@@ -169,11 +180,21 @@ const NavBarDesktop = () => {
               </ul>
             </li>
             <li className="flex">
-              <img src={hamburguesasIcon} alt="hamburguesasIcon" className='item-icon' />
-              <Link to={`${PathConstants.MENU}/${FoodTypes.HAMBURGUESAS.path}`}>Cupones</Link>
+              <img
+                src={hamburguesasIcon}
+                alt="hamburguesasIcon"
+                className="item-icon"
+              />
+              <Link to={`${PathConstants.MENU}/${FoodTypes.HAMBURGUESAS.path}`}>
+                CUPONES
+              </Link>
             </li>
             <li className="flex">
-              <img src={beneficiosIcon} alt="beneficiosIcon" className='item-icon' />
+              <img
+                src={beneficiosIcon}
+                alt="beneficiosIcon"
+                className="item-icon"
+              />
               <Link to={PathConstants.BENEFICIOS}>BENEFICIOS</Link>
             </li>
           </ul>
@@ -189,17 +210,17 @@ const NavBarDesktop = () => {
             handleClick=""
           />
           <Link to={PathConstants.CART} state={{ background: location }}>
-          <YellowBtn
-            text={''}
-            redText={''}
-            icon={iconCart}
-            position=""
-            iconHeight=""
-            Circle="redCircle"
-            id="cart"
-            handleClick={handleClick}
-          />
-          </Link> 
+            <YellowBtn
+              text={''}
+              redText={''}
+              icon={iconCart}
+              position=""
+              iconHeight=""
+              Circle="redCircle"
+              id="cart"
+              handleClick={handleClick}
+            />
+          </Link>
         </div>
       </div>
     </div>

@@ -1,0 +1,85 @@
+{
+  "orders": [
+    {
+      "name": "combo extremo",
+      "quantity": 1,
+      "unit_price": 13,
+      "total_price": 13,
+      "size": [
+        { "sizeId": "mediano", "price": 0 },
+        { "baseSize": true, "price": 0 },
+        { "bigSize": false, "price": 3 }
+      ]
+    },
+    {
+      "name": "nombre-producto",
+      "quantity": 1,
+      "unit_price": 13,
+      "total_price": 13,
+      "baseSize": 0,
+      "bigSize": 3
+    },
+    {
+      "name": "nombre-producto",
+      "quantity": 1,
+      "unit_price": 13,
+      "total_price": 13,
+      "extras": [
+        {
+          "size": [
+            { "type": "regular", "price": 0 },
+            { "type": "medium", "price": 1 },
+            { "type": "big", "price": 2 }
+          ],
+          "combos": [
+            { "type": "regular", "price": 4.9, "selected": false },
+            { "type": "medium", "price": 4.9, "selected": false },
+            { "type": "big", "price": 4.9, "selected": true }
+          ],
+          "remove_ingredient": [
+            { "type": "lettuce", "selected": true },
+            { "type": "mayonnaise", "selected": true },
+            { "type": "tomato", "selected": true }
+          ],
+          "soda": [
+            { "type": "cocacolasugar", "price": 0, "selected": false },
+            { "type": "cocacolanosugar", "price": 0, "selected": false },
+            { "type": "inkacola", "price": 0, "selected": true }
+          ],
+          "complements": [
+            { "type": "medium", "price": 4.9, "quantity": 0 },
+            { "type": "big", "price": 4.9, "quantity": 0 },
+            { "type": "coca cola", "price": 4.9, "quantity": 0 }
+          ],
+          "sauces": [
+            { "type": "mayonnaise", "selected": true },
+            { "type": "ketchup", "selected": true },
+            { "type": "chili", "selected": true }
+          ],
+          "extra-sauces": [
+            { "type": "mayonnaise", "price": 1, "quantity": 0 },
+            { "type": "ketchup", "price": 1.5, "quantity": 0 },
+            { "type": "chili", "price": 1.5, "quantity": 0 }
+          ],
+          "special-sauces": [
+            { "type": "tartara", "price": 1, "quantity": 0 },
+            { "type": "barrio", "price": 1.5, "quantity": 0 }
+          ]
+        }
+      ],
+      "location": "San Miguel",
+      "delivery_type": "pick-up",
+      "personal_info": [
+        {
+          "name": "nombre",
+          "last_name": "nombre",
+          "type_document": [{ "type": 1, "selected": true }],
+          "document_number": "nombre"
+        }
+      ],
+      "type_payment": [{ "type": 1, "selected": true }],
+      "type_invoice": [{ "type": 1, "selected": true }],
+      "completed_payment": true
+    }
+  ]
+}

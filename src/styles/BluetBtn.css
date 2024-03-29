@@ -10,3 +10,114 @@
   margin-bottom: 0px;
   font-weight: 400;
 }
+
+.low-bar-blueBtn {
+  font-size: 18px;
+  padding: 1px 6px;
+  width: 218px;
+  height: 43px;
+  font-family: 'kulturistaBold';
+  font-weight: 600;
+}
+
+.loading-message {
+  width: 300px;
+  height: auto;
+  color: #21388b;
+}
+
+.loading-container {
+  box-sizing: border-box;
+  padding: 20px 30px;
+  width: 560px;
+  height: 296px;
+  border-radius: 15px;
+  font-family: 'kulristaRegular', sans-serif;
+}
+
+.swal2-popup.swal2-modal.popup-container-xyz.swal2-show {
+  box-sizing: border-box;
+  padding: 20px 30px;
+  width: 560px;
+  height: 296px;
+  border-radius: 15px;
+  font-family: 'kulristaRegular', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  align-items: end;
+  justify-content: center;
+  justify-items: center;
+
+  div.swal2-html-container {
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.popup-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: 'kulristaRegular', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+.swal2-actions {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  gap: 10px;
+  padding-bottom: 15px;
+  margin-top: 5px;
+}
+
+.swal2-cancel.cancelbtn.popup-btn.swal2-styled.swal2-default-outline {
+  background-color: rgb(255, 181, 0);
+  border-radius: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: 'kulristaRegular', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+.swal2-confirm.confirmbtn.popup-btn.swal2-styled.swal2-default-outline {
+  background-color: rgb(33, 56, 139);
+  border-radius: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: 'kulristaRegular', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.popup-title {
+  color: rgb(10, 38, 60);
+  font-family: 'kulristaBold', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0 0 5px 0;
+}
+
+.popup-maintext {
+  color: rgb(33, 56, 139);
+  font-family: 'kulristaBold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.popup-secondarytext {
+  font-family: 'kulristaBold', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+  color: rgb(3, 8, 25);
+}
+
+.swal2-image.popup-image {
+  margin: 0 10px 0;
+}
