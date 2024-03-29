@@ -1,9 +1,7 @@
-import { useEffect } from 'react';
 import useShopping from '../../hooks/useShopping';
 import './../../styles/BluetBtn.css';
 import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { PathConstants } from '../../utils';
 
 const BlueBtn = ({
@@ -16,9 +14,8 @@ const BlueBtn = ({
   setSaveLocalStorage: any;
 }) => {
   const navigate = useNavigate();
-  const { handleOrderClick, saveLocalStorage, getFromLocalStorage } =
-    useShopping();
-  const MySwal = withReactContent(Swal);
+  const { handleOrderClick, getFromLocalStorage } = useShopping();
+  // const MySwal = withReactContent(Swal);
   const location = useLocation();
   const LoadingView = () => {
     // Show loading indicator with SweetAlert2
@@ -60,23 +57,13 @@ const BlueBtn = ({
         },
       }).then((result) => {
         if (result.isConfirmed) {
-          // Handle confirmation logic here
-          // window.location.href = `${
-          //   PathConstants.CART
-          // }?background=${encodeURIComponent(window.location.pathname)}`;
-          // navigate(PathConstants.CART, { state: { background: window.location } });
           navigate(PathConstants.CART, {
             state: { background: location.pathname },
           });
-          console.log('Ver bolsa de Compras');
-          // <Link to={PathConstants.CART} state={{ background: location }} />;
-          // console.log('Ver bolsa de Compras');
         } else {
-          // Handle cancellation logic here
-          console.log('Seguir Comprando');
         }
       });
-    }, 1500); // Simulated loading time: 3000 milliseconds
+    }, 1500);
 
     return null;
   };
@@ -99,8 +86,3 @@ const BlueBtn = ({
 };
 
 export default BlueBtn;
-
-// handleOrderClick(id, price, text, count === '' ? 1 : counter, question)
-{
-  /* <Link to={PathConstants.CART} state={{ background: location }}></Link> */
-}
