@@ -1,7 +1,8 @@
-import axios from "axios";
-import { CuponResponse } from "../interfaces";
+import { Cupon, CuponResponse } from "../interfaces";
+import { CollectionsConstants } from "../utils";
+import { configGetCollection } from "./fetchBase";
 
 export async function getCupones():Promise<CuponResponse>{
-    const respuesta = await axios.get(import.meta.env.VITE_API_URL_CUPONES); 
-    return respuesta;
+    const data = await configGetCollection<Cupon>(CollectionsConstants.CUPONES); 
+    return {data:data || []};
 }
