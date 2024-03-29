@@ -8,4 +8,5 @@ export { default as Combos } from './Combos';
 export { default as Tiendas } from './Tiendas';
 export { default as Orders } from './Pedidos/Orders';
 export { default as Beneficios } from './Beneficios';
+export { default as CHECKOUT } from './Checkout';
 export { default as Product } from './admin/Product';
