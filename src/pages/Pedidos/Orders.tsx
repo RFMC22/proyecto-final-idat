@@ -30,7 +30,8 @@ const Orders = () => {
     polloQuestions,
     getPolloData,
     generalCounter,
-    setGeneralCounter
+    setGeneralCounter,
+    setSaveLocalStorage
   } = useShopping();
 
   const getDataOrders = async () => {
@@ -553,9 +554,9 @@ const Orders = () => {
             <div className="low-bar-right">
               <p className="acum-points">ACUMULAS 0 PTS</p>
               <BlueBtn
-                text={`AGREGAR S/.32.80`}
+                text={`AGREGAR`}
                 myclass="bluetBtn low-bar-blueBtn"
-                
+                setSaveLocalStorage={setSaveLocalStorage}
               />
             </div>
           </div>

@@ -42,8 +42,8 @@ export type iShoppingType = {
     price: number;
     bigSizePrice: number;
   };
-  setSaveLocalStorage:any
-
+  setSaveLocalStorage: any;
+  getFromLocalStorage:any;
   baseList: OrderItem[];
   generalCounter: number;
   setGeneralCounter: React.Dispatch<React.SetStateAction<number>>;
@@ -59,6 +59,8 @@ export type iShoppingType = {
     }>
   >;
   setBaseList: Dispatch<SetStateAction<OrderItem[]>>;
+  saveLocalStorage: boolean;
+  shoppingList:any
 };
 
 export const iShoppingContext = {
@@ -87,5 +89,8 @@ export const iShoppingContext = {
   setOrderInfo: () => {},
   baseList: [],
   setBaseList: () => {},
-  setSaveLocalStorage:()=>{}
+  setSaveLocalStorage: () => {},
+  saveLocalStorage: false,
+  getFromLocalStorage:()=>{},
+  shoppingList:{},
 };

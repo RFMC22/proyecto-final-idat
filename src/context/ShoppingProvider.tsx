@@ -49,7 +49,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [generalCounter, setGeneralCounter] = useState(1);
   const [acumulateList, setAccumulateList] = useState({});
   const [saveLocalStorage, setSaveLocalStorage] = useState(false);
-
+  const [shoppingList, setShoppingList] = useState({});
   // Functions for Fetching
   const getDataPromociones = async () => {
     const [promos, promosD, promosC, complements, cupons] = await Promise.all([
@@ -81,7 +81,6 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     question: number
   ) => {
     const checkBaseList = baseList.some((item) => item.id === id);
-    console.log(checkBaseList);
     checkBaseList
       ? setBaseList((prevBaseList) =>
           prevBaseList.map((item) =>
@@ -197,15 +196,44 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   };
 
   useEffect(() => {
-    console.log(acumulateList);
     if (saveLocalStorage === true) {
-      sentLocalStorage(acumulateList)
+      sentLocalStorage(acumulateList);
+      setSaveLocalStorage(false);
     }
   }, [acumulateList]);
 
-  const sentLocalStorage = (acumulateList:any) => {
-    localStorage.setItem('order', JSON.stringify(acumulateList));
+  const sentLocalStorage = (acumulateList: any) => {
+    localStorage.setItem(
+      `order_${acumulateList.name}`,
+      JSON.stringify(acumulateList)
+    );
   };
+
+  const getFromLocalStorage = () => {
+    // const items = { ...localStorage };
+    // console.log(JSON.parse(localStorage.getItem(items[0])))
+    // setShoppingList(JSON.parse(localStorage.getItem()));
+    var allItems = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      let key = localStorage.key(i);
+
+      // Check if the key represents an item you've saved
+      // You can add additional checks here if needed
+      // For example, you might want to filter keys that start with a specific prefix
+      if (key.startsWith('order_')) {
+        // Retrieve the value associated with the key
+        let item = JSON.parse(localStorage.getItem(key));
+
+        // Push the item to the array
+        allItems.push(item);
+      }
+
+      allItems = allItems.filter(item => item.name.trim() !== '');
+
+      console.log(allItems);
+    }
+  };
+
   return (
     <ShoppingContext.Provider
       value={{
@@ -227,6 +255,9 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         setGeneralCounter,
         generalCounter,
         setSaveLocalStorage,
+        saveLocalStorage,
+        getFromLocalStorage,
+        shoppingList,
       }}
     >
       {children}

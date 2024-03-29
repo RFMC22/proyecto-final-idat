@@ -1640,39 +1640,39 @@
       "combinaciones": [
         {
           "nrocomb": 16,
-          "titulocomb": "Coca Cola Sabor Original 500 ml + S/5.90",
+          "titulocomb": "Coca Cola Sabor Original 500 ml + S/0.00",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-sabor-original_1.webp",
-          "preccomb": 5.9
+          "preccomb": 0
         },
         {
           "nrocomb": 17,
-          "titulocomb": "Coca Cola Sin Azúcar 500 ml + S/.5.90",
+          "titulocomb": "Coca Cola Sin Azúcar 500 ml + S/.0.00",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-sin-azucar_1_1.webp",
-          "preccomb": 5.9
+          "preccomb": 0
         },
         {
           "nrocomb": 18,
-          "titulocomb": "Inca Kola Sabor Original 500 ml + S/.5.90",
+          "titulocomb": "Inca Kola Sabor Original 500 ml + S/.0.00",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/i/n/incakola-sabor-original_1.webp",
-          "preccomb": 5.9
+          "preccomb": 0
         },
         {
           "nrocomb": 19,
-          "titulocomb": "Inca kola Sin Azúcar 500 ml + S/.5.90",
+          "titulocomb": "Inca kola Sin Azúcar 500 ml + S/.0.00",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/i/n/inca-kola-sin-azucar_1_1.webp",
-          "preccomb": 5.9
+          "preccomb": 0
         },
         {
           "nrocomb": 20,
-          "titulocomb": "Sprite Sabor Original 500 ml + S/.5.90",
+          "titulocomb": "Sprite Sabor Original 500 ml + S/.0.00",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/s/p/sprite-con-azucar_2.webp",
-          "preccomb": 5.9
+          "preccomb": 0
         },
         {
           "nrocomb": 21,
-          "titulocomb": "Fanta Sabor Original 500 ml + S/.5.90",
+          "titulocomb": "Fanta Sabor Original 500 ml + S/.0.00",
           "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_72x72/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/f/a/fanta-con-azucar_3_2.webp",
-          "preccomb": 5.9
+          "preccomb": 0
         }
       ]
     },
