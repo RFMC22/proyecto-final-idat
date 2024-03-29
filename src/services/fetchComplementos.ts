@@ -1,7 +1,8 @@
-import axios from "axios";
-import { ComplementoResponse } from "../interfaces";
+import { Complemento, ComplementoResponse } from "../interfaces";
+import { configGetCollection } from "./fetchBase";
+import { CollectionsConstants } from "../utils";
 
 export async function getComplementos(): Promise<ComplementoResponse> {
-    const respuesta = await axios.get(import.meta.env.VITE_API_URL_COMPLEMENTOS);
-    return respuesta;
+    const data = await configGetCollection<Complemento>(CollectionsConstants.COMPLEMENTOS);
+    return {data:data ?? []};
 }

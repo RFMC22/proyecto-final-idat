@@ -34,7 +34,7 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
       }
     };
     fetchData();
-  }, [getData]);
+  }, []);
 
   const getInfo = (info:any) => {
     if (Array.isArray(info)) {
@@ -42,7 +42,9 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
     } else {
       return info.data || [];
     }
-  };
+  }
+
+  
 
   return (
     <div className="max-contenedor">

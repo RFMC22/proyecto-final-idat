@@ -1,8 +1,8 @@
-import axios from 'axios';
-
-import { MenuResponse } from '../interfaces';
+import { MenuProps, MenuResponse } from '../interfaces';
+import { configGetCollection } from './fetchBase';
+import { CollectionsConstants } from '../utils';
 
 export async function getMenuOptions(): Promise<MenuResponse> {
-  const respuesta = await axios.get(import.meta.env.VITE_API_URL_MENU);
-  return respuesta;
+  const data = await configGetCollection<MenuProps>(CollectionsConstants.MENU)
+  return {data:data || []};
 }
