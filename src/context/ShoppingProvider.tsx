@@ -197,15 +197,12 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   }, [acumulateList]);
 
   const sentLocalStorage = (acumulateList: any) => {
-    localStorage.setItem(
-      `order_${acumulateList.name}`,
-      JSON.stringify(acumulateList)
-    );
+    localStorage.setItem(`order_${Date.now()}`, JSON.stringify(acumulateList));
   };
 
   const getFromLocalStorage = () => {
     let allItems = [];
-    let allItemsFiltered=[];
+    let allItemsFiltered = [];
     for (let i = 0; i < localStorage.length; i++) {
       let key = localStorage.key(i);
 
@@ -222,10 +219,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
 
       allItemsFiltered = allItems.filter((item) => item.name.trim() !== '');
       setShoppingList(allItemsFiltered);
-      
     }
-
-    
   };
 
   useEffect(() => {

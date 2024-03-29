@@ -13,10 +13,15 @@ const BlueBtn = ({
   myclass: string;
   setSaveLocalStorage: any;
 }) => {
+  // const [swalShown, setSwalShown] = useState(false);
   const navigate = useNavigate();
   const { handleOrderClick, getFromLocalStorage } = useShopping();
   // const MySwal = withReactContent(Swal);
   const location = useLocation();
+
+  const goToCart = () => {
+    navigate(PathConstants.CART, { state: { background: location } });
+  };
   const LoadingView = () => {
     // Show loading indicator with SweetAlert2
     const loadingToast = Swal.fire({
@@ -45,7 +50,7 @@ const BlueBtn = ({
         showCancelButton: true,
         cancelButtonText: 'SEGUIR COMPRANDO',
         cancelButtonColor: 'rgb(33, 56, 139)',
-        confirmButtonText: 'VER BOLSA DE COMPRAS',
+        confirmButtonText: `VER BOLSA DE COMPRAS`,
         confirmButtonColor: 'rgb(255, 181, 0)',
         allowOutsideClick: false, // Prevent dismissing by clicking outside
         customClass: {
@@ -57,9 +62,8 @@ const BlueBtn = ({
         },
       }).then((result) => {
         if (result.isConfirmed) {
-          navigate(PathConstants.CART, {
-            state: { background: location.pathname },
-          });
+          Swal.close();
+          goToCart();
         } else {
         }
       });
