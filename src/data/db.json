@@ -2,7 +2,7 @@
   "combos": [
     {
       "nombre": "Combo Extrema",
-      "precio": 32.80,
+      "precio": 32.8,
       "id": 1,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-extrema-nuevo-bb.jpg",
       "link": "combo-extrema",
@@ -24,7 +24,7 @@
     },
     {
       "nombre": "Combo A lo Pobre",
-      "precio": 27.80,
+      "precio": 27.8,
       "id": 3,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-a-lo-pobre-nuevo-bb.jpg",
       "link": "combo-a-lo-pobre",
@@ -35,7 +35,7 @@
     },
     {
       "nombre": "Combo Churrita",
-      "precio": 27.80,
+      "precio": 27.8,
       "id": 4,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-churrita-nuevo-bb.jpg",
       "link": "combo-churrita",
@@ -46,7 +46,7 @@
     },
     {
       "nombre": "Combo Alemana",
-      "precio": 27.80,
+      "precio": 27.8,
       "id": 5,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-alemana-nuevo-bb.jpg",
       "link": "combo-alemana",
@@ -57,7 +57,7 @@
     },
     {
       "nombre": "Combo Queabuso",
-      "precio": 27.80,
+      "precio": 27.8,
       "id": 6,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-queabuso-nuevo-bb.jpg",
       "link": "combo-queabuso",
@@ -68,7 +68,7 @@
     },
     {
       "nombre": "Combo Royal",
-      "precio": 26.80,
+      "precio": 26.8,
       "id": 7,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-royal-nuevo-bb.jpg",
       "link": "combo-royal",
@@ -79,7 +79,7 @@
     },
     {
       "nombre": "Combo Queso Tocino",
-      "precio": 26.80,
+      "precio": 26.8,
       "id": 8,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-queso-tocino-nuevo-bb.jpg",
       "link": "combo-queso-tocino",
@@ -90,7 +90,7 @@
     },
     {
       "nombre": "Combo Cheese",
-      "precio": 25.80,
+      "precio": 25.8,
       "id": 9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-cheese-nuevo-bb.jpg",
       "link": "combo-cheese",
@@ -101,7 +101,7 @@
     },
     {
       "nombre": "Combo Clásica",
-      "precio": 23.80,
+      "precio": 23.8,
       "id": 10,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-clasica-nuevo-bb.jpg",
       "link": "combo-clasica",
@@ -114,7 +114,7 @@
   "hamburguesas": [
     {
       "nombre": "Hamburguesa Clásica Bembos",
-      "precio": 16.90,
+      "precio": 16.9,
       "id": 11,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-clasica_1_1.jpg",
       "link": "hamburguesa-clasica-bembos",
@@ -122,7 +122,7 @@
     },
     {
       "nombre": "Hamburguesa Cheese",
-      "precio": 18.90,
+      "precio": 18.9,
       "id": 12,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-cheese-base.jpg",
       "link": "hamburguesa-cheese",
@@ -130,7 +130,7 @@
     },
     {
       "nombre": "Hamburguesa Bembos Queso Tocino",
-      "precio": 19.90,
+      "precio": 19.9,
       "id": 13,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-tocino_1.jpg",
       "link": "hamburguesa-bembos-queso-tocino",
@@ -138,7 +138,7 @@
     },
     {
       "nombre": "Hamburguesa Royal",
-      "precio": 19.90,
+      "precio": 19.9,
       "id": 14,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-royal-base_1.jpg",
       "link": "hamburguesa-royal",
@@ -146,7 +146,7 @@
     },
     {
       "nombre": "Hamburguesa Churrita",
-      "precio": 20.90,
+      "precio": 20.9,
       "id": 15,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-churrita_1_1_1.jpg",
       "link": "hamburguesa-churrita",
@@ -154,7 +154,7 @@
     },
     {
       "nombre": "Hamburguesa A lo Pobre",
-      "precio": 20.90,
+      "precio": 20.9,
       "id": 16,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-a-lo-pobre-base_1.jpg",
       "link": "hamburguesa-a-lo-pobre",
@@ -162,7 +162,7 @@
     },
     {
       "nombre": "Alemana",
-      "precio": 20.90,
+      "precio": 20.9,
       "id": 17,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-alemana.jpg",
       "link": "hamburguesa-alemana",
@@ -170,7 +170,7 @@
     },
     {
       "nombre": "Queabuso",
-      "precio": 20.90,
+      "precio": 20.9,
       "id": 18,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-la-sin-nombre.jpg",
       "link": "hamburguesa-queabuso",
@@ -178,7 +178,7 @@
     },
     {
       "nombre": "Hamburguesa Parrillera",
-      "precio": 23.90,
+      "precio": 23.9,
       "id": 19,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-parrillera-base.jpg",
       "link": "hamburguesa-parrillera",
@@ -186,7 +186,7 @@
     },
     {
       "nombre": "Hamburguesa La Carretillera",
-      "precio": 23.90,
+      "precio": 23.9,
       "id": 20,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-carretillera-base.jpg",
       "link": "hamburguesa-carretillera",
@@ -194,7 +194,7 @@
     },
     {
       "nombre": "Hamburguesa Extrema",
-      "precio": 25.90,
+      "precio": 25.9,
       "id": 21,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/a/hamburguesa-bembos-extrema_1.jpg",
       "link": "hamburguesa-extrema",
@@ -206,7 +206,7 @@
       "tipos": [
         {
           "nombre": "Bembroster clasica",
-          "precio": 12.90,
+          "precio": 12.9,
           "id": 22,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-clasica-regular_3_1.jpg",
           "link": "bembroster-clasica",
@@ -214,7 +214,7 @@
         },
         {
           "nombre": "Bembroster Tártara",
-          "precio": 14.90,
+          "precio": 14.9,
           "id": 23,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-tartara-base_1_1.jpg",
           "link": "bembroster-tartara",
@@ -222,7 +222,7 @@
         },
         {
           "nombre": "Bembroster Queso Tocino",
-          "precio": 15.90,
+          "precio": 15.9,
           "id": 24,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/e/bembroster-queso-tocino-base_2.jpg",
           "link": "bembroster-queso-tocino",
@@ -230,7 +230,7 @@
         },
         {
           "nombre": "Bembos Chicken Grill",
-          "precio": 16.90,
+          "precio": 16.9,
           "id": 25,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/h/chicken-base.jpg",
           "link": "bembos-chicken-grill",
@@ -354,7 +354,7 @@
       "tipos": [
         {
           "nombre": "Loncherita básica de pollo",
-          "precio": 10.90,
+          "precio": 10.9,
           "id": 26,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/l/o/loncherita-basica-pollo.jpg",
           "link": "loncherita-basica-de-pollo",
@@ -362,7 +362,7 @@
         },
         {
           "nombre": "Loncherita Básica",
-          "precio": 10.90,
+          "precio": 10.9,
           "id": 27,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/l/o/loncherita-basica_1.jpg",
           "link": "loncherita-basica",
@@ -370,7 +370,7 @@
         },
         {
           "nombre": "Loncherita Nuggets",
-          "precio": 10.90,
+          "precio": 10.9,
           "id": 28,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/l/o/loncherita-nuggets_1.jpg",
           "link": "loncherita-nuggets",
@@ -553,7 +553,7 @@
   "complementos": [
     {
       "nombre": "Papas Inka Chips",
-      "precio": 3.00,
+      "precio": 3.0,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-inka-chips-nueva.jpg",
       "id": 29,
       "link": "papas-inka-chips",
@@ -561,7 +561,7 @@
     },
     {
       "nombre": "Papas Fritas Bembos",
-      "precio": 4.90,
+      "precio": 4.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/n/u/nueva-papas-medianas_2.jpg",
       "id": 30,
       "link": "papas-fritas-bembos",
@@ -569,7 +569,7 @@
     },
     {
       "nombre": "Chicken nuggets",
-      "precio": 10.50,
+      "precio": 10.5,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/n/u/nuggets-base.jpg",
       "id": 31,
       "link": "chicken-nuggets",
@@ -577,7 +577,7 @@
     },
     {
       "nombre": "Cheese Fingers",
-      "precio": 11.90,
+      "precio": 11.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/h/cheese-fingers-base_3.jpg",
       "id": 32,
       "link": "cheese-fingers",
@@ -595,7 +595,7 @@
   "bebidas": [
     {
       "nombre": "Agua San Luis S/G",
-      "precio": 4.90,
+      "precio": 4.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/s/a/san-luis-sin-gas-nueva.jpg",
       "id": 34,
       "link": "agua-san-luis-s-g",
@@ -603,7 +603,7 @@
     },
     {
       "nombre": "Coca Cola Sabor Original 500 ml",
-      "precio": 5.90,
+      "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-original-500ml-nuevo.jpg",
       "id": 35,
       "link": "coca-cola-sabor-original-500-ml",
@@ -611,7 +611,7 @@
     },
     {
       "nombre": "Coca Cola Sin Azúcar 500 ml",
-      "precio": 5.90,
+      "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/coca-cola-sin-azucar-500ml-nuevo.jpg",
       "id": 36,
       "link": "coca-cola-sin-azucar-500-ml",
@@ -619,7 +619,7 @@
     },
     {
       "nombre": "Inca Kola Sabor Original 500 ml",
-      "precio": 5.90,
+      "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/i/n/inca-kola-original-500ml-nuevo.jpg",
       "id": 37,
       "link": "inka-kola-sabor-original-500-ml",
@@ -627,7 +627,7 @@
     },
     {
       "nombre": "Sprite Sabor Original 500 ml",
-      "precio": 5.90,
+      "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/s/p/sprite-500ml-nuevo.jpg",
       "id": 38,
       "link": "sprite-sabor-original-500-ml",
@@ -635,7 +635,7 @@
     },
     {
       "nombre": "Fanta Sabor Original 500 ml",
-      "precio": 5.90,
+      "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/f/a/fanta-500ml-nuevo.jpg",
       "id": 39,
       "link": "fanta-sabor-original-500-ml",
@@ -643,7 +643,7 @@
     },
     {
       "nombre": "Inca kola Sin Azúcar 500 ml",
-      "precio": 5.90,
+      "precio": 5.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/i/n/inca-kola-sin-kola-500ml-nuevo.jpg",
       "id": 40,
       "link": "inca-kola-sin-azucar-500-ml",
@@ -653,7 +653,7 @@
   "helados": [
     {
       "nombre": "Helado Mini Princesa",
-      "precio": 4.90,
+      "precio": 4.9,
       "id": 41,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_144,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/h/e/helado-mini-princesa-base_1.jpg",
       "link": "helado-mini-princesa",
@@ -739,7 +739,7 @@
   "inka-chips": [
     {
       "nombre": "Papas Inka Chips",
-      "precio": 3.00,
+      "precio": 3.0,
       "id": 42,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-inka-chips-nueva.jpg",
       "link": "papas-inka-chips",
@@ -806,8 +806,8 @@
     {
       "nombre": "Dupla Perfecta",
       "descripcion": "",
-      "precio_actual": 30.90,
-      "precio_antiguo": 40.60,
+      "precio_actual": 30.9,
+      "precio_antiguo": 40.6,
       "descuento": 0,
       "id": 52,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-royal-cheese-bb.webp"
@@ -815,8 +815,8 @@
     {
       "nombre": "Combo A lo pobre",
       "descripcion": "",
-      "precio_actual": 14.90,
-      "precio_antiguo": 26.80,
+      "precio_actual": 14.9,
+      "precio_antiguo": 26.8,
       "descuento": 0,
       "id": 53,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-a-lo-pobre-oct.webp"
@@ -824,8 +824,8 @@
     {
       "nombre": "Dúo Extrema",
       "descripcion": "",
-      "precio_actual": 30.90,
-      "precio_antiguo": 51.60,
+      "precio_actual": 30.9,
+      "precio_antiguo": 51.6,
       "descuento": 0,
       "id": 54,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-duo-extrema.webp"
@@ -833,8 +833,8 @@
     {
       "nombre": "Extremadamente Cheesy",
       "descripcion": "",
-      "precio_actual": 57.90,
-      "precio_antiguo": 91.20,
+      "precio_actual": 57.9,
+      "precio_antiguo": 91.2,
       "descuento": 0,
       "id": 55,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-extremadamente-cheesy-bb.webp"
@@ -842,8 +842,8 @@
     {
       "nombre": "Familiar Parrillero",
       "descripcion": "",
-      "precio_actual": 54.90,
-      "precio_antiguo": 85.20,
+      "precio_actual": 54.9,
+      "precio_antiguo": 85.2,
       "descuento": 0,
       "id": 56,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-familiar-parrillero-bb.webp"
@@ -851,8 +851,8 @@
     {
       "nombre": "Parrillera con antojito",
       "descripcion": "",
-      "precio_actual": 18.90,
-      "precio_antiguo": 28.70,
+      "precio_actual": 18.9,
+      "precio_antiguo": 28.7,
       "descuento": 0,
       "id": 57,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-parrillera-mini-princesa.webp"
@@ -860,8 +860,8 @@
     {
       "nombre": "Combo Interbank",
       "descripcion": "",
-      "precio_actual": 19.90,
-      "precio_antiguo": 30.30,
+      "precio_actual": 19.9,
+      "precio_antiguo": 30.3,
       "descuento": 0,
       "id": 58,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-interbank-oct.webp"
@@ -869,8 +869,8 @@
     {
       "nombre": "Familiar 1",
       "descripcion": "",
-      "precio_actual": 49.90,
-      "precio_antiguo": 83.20,
+      "precio_actual": 49.9,
+      "precio_antiguo": 83.2,
       "descuento": 0,
       "id": 59,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/f/a/familiar-1-bembos.webp"
@@ -878,8 +878,8 @@
     {
       "nombre": " Promo Churrita",
       "descripcion": "",
-      "precio_actual": 16.90,
-      "precio_antiguo": 27.70,
+      "precio_actual": 16.9,
+      "precio_antiguo": 27.7,
       "descuento": 0,
       "id": 60,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/h/churrita-base-individual.webp"
@@ -887,8 +887,8 @@
     {
       "nombre": "Combo Cheese",
       "descripcion": "",
-      "precio_actual": 12.90,
-      "precio_antiguo": 19.80,
+      "precio_actual": 12.9,
+      "precio_antiguo": 19.8,
       "descuento": 0,
       "id": 61,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/combo-cheese-nuevo.webp"
@@ -898,8 +898,8 @@
     {
       "nombre": "Combo A lo pobre",
       "descripcion": "1 A lo pobre mediana + 1 Inca Kola",
-      "precio_actual": 14.90,
-      "precio_antiguo": 26.80,
+      "precio_actual": 14.9,
+      "precio_antiguo": 26.8,
       "descuento": 44,
       "id": 62,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-a-lo-pobre-oct.webp"
@@ -907,8 +907,8 @@
     {
       "nombre": "Personal Cheese",
       "descripcion": "Cheese mediana, papa mediana",
-      "precio_actual": 17.90,
-      "precio_antiguo": 23.00,
+      "precio_actual": 17.9,
+      "precio_antiguo": 23.0,
       "descuento": 25,
       "id": 63,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-cheese-bembos.webp"
@@ -916,8 +916,8 @@
     {
       "nombre": "Personal Clásico",
       "descripcion": "Clásica mediana, papa mediana",
-      "precio_actual": 15.90,
-      "precio_antiguo": 21.00,
+      "precio_actual": 15.9,
+      "precio_antiguo": 21.0,
       "descuento": 27,
       "id": 64,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/p/e/personal-clasico-bembos-delivery.webp"
@@ -925,8 +925,8 @@
     {
       "nombre": "Promo Churrita",
       "descripcion": "1 churrita regular, 1 papa regular, 1 gaseosa 500 ml",
-      "precio_actual": 16.90,
-      "precio_antiguo": 27.70,
+      "precio_actual": 16.9,
+      "precio_antiguo": 27.7,
       "descuento": 39,
       "id": 65,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/h/churrita-base-individual.webp"
@@ -934,8 +934,8 @@
     {
       "nombre": "Combo Tártara",
       "descripcion": "Tártara regular + papa mediana",
-      "precio_actual": 11.90,
-      "precio_antiguo": 13.00,
+      "precio_actual": 11.9,
+      "precio_antiguo": 13.0,
       "descuento": 14,
       "id": 66,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/a/base-bembos-tartara_2.webp"
@@ -943,8 +943,8 @@
     {
       "nombre": "Parrillera con antojito",
       "descripcion": "1 Parrillera, 1 papa regular, 1 helado Mini..",
-      "precio_actual": 18.90,
-      "precio_antiguo": 28.70,
+      "precio_actual": 18.9,
+      "precio_antiguo": 28.7,
       "descuento": 34,
       "id": 67,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-parrillera-mini-princesa.webp"
@@ -954,8 +954,8 @@
     {
       "nombre_azul": "Dupla Perfecta Cyber",
       "descripcion": "1 Cheese regular, 1 Royal regular, 2 papas regulares..",
-      "precio_actual": 24.90,
-      "precio_antiguo": 40.60,
+      "precio_actual": 24.9,
+      "precio_antiguo": 40.6,
       "descuento": 39,
       "id": 68,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-dupla-perfecta-cyber-nov-2023.webp",
@@ -964,8 +964,8 @@
     {
       "nombre_azul": "Dúo Queso Tocino",
       "descripcion": "2 Queso Tocino regulares, 2 Papas medianas.",
-      "precio_actual": 27.90,
-      "precio_antiguo": 43.60,
+      "precio_actual": 27.9,
+      "precio_antiguo": 43.6,
       "descuento": 42,
       "id": 69,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-dupla-perfecta-cyber-nov-2023.webp",
@@ -974,8 +974,8 @@
     {
       "nombre_negro": "Dúo Churrita",
       "descripcion": "2 Churritas regulares, 2 papas regulares",
-      "precio_actual": 23.90,
-      "precio_antiguo": 44.60,
+      "precio_actual": 23.9,
+      "precio_antiguo": 44.6,
       "descuento": 45,
       "id": 70,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/combos-800x1370-churrita.webp",
@@ -984,8 +984,8 @@
     {
       "nombre_negro": "Dúo Extrema",
       "descripcion": "2 Extrema regulares + 2 papas regulares",
-      "precio_actual": 30.90,
-      "precio_antiguo": 51.60,
+      "precio_actual": 30.9,
+      "precio_antiguo": 51.6,
       "descuento": 40,
       "id": 71,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-duo-extrema.webp",
@@ -994,8 +994,8 @@
     {
       "nombre_negro": "Dupla Perfecta",
       "descripcion": "1 Cheese regular, 1 Royal regular, 2 papas regulares",
-      "precio_actual": 30.90,
-      "precio_antiguo": 40.60,
+      "precio_actual": 30.9,
+      "precio_antiguo": 40.6,
       "descuento": 24,
       "id": 52,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-royal-cheese-bb.webp"
@@ -1003,8 +1003,8 @@
     {
       "nombre_negro": "Queabuso Cyber Yape",
       "descripcion": "1 Queabuso regular, 1 Clásica regular, 2 papas regulares",
-      "precio_actual": 39.60,
-      "precio_antiguo": 20.60,
+      "precio_actual": 39.6,
+      "precio_antiguo": 20.6,
       "descuento": 13,
       "id": 73,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/q/u/queabuso-800x1370.webp",
@@ -1015,8 +1015,8 @@
     {
       "nombre_azul": "Familiar Parrillero Cyber",
       "descripcion": "2 Clásicas regulares, 2 Parrilleras regulares, 4 papa...",
-      "precio_actual": 49.90,
-      "precio_antiguo": 85.20,
+      "precio_actual": 49.9,
+      "precio_antiguo": 85.2,
       "descuento": 41,
       "id": 74,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-dupla-perfecta-cyber-nov-2023.webp",
@@ -1025,8 +1025,8 @@
     {
       "nombre_azul": "Extremadamente Cheesy Cyber",
       "descripcion": "2 Extremas regulares, 2 Cheese regulares, 4 papas...",
-      "precio_actual": 52.90,
-      "precio_antiguo": 91.20,
+      "precio_actual": 52.9,
+      "precio_antiguo": 91.2,
       "descuento": 42,
       "id": 75,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-dupla-perfecta-cyber-nov-2023.webp",
@@ -1035,8 +1035,8 @@
     {
       "nombre_negro": "Trío Power",
       "descripcion": "2 Clásicas medianas, 1 A lo Pobre regulares, 3 Papas...",
-      "precio_actual": 45.90,
-      "precio_antiguo": 66.40,
+      "precio_actual": 45.9,
+      "precio_antiguo": 66.4,
       "descuento": 31,
       "id": 76,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/t/r/trio-power-bembos.webp",
@@ -1045,8 +1045,8 @@
     {
       "nombre_negro": "Familiar 1",
       "descripcion": "4 Royal regulares, 4 Papas regulares",
-      "precio_actual": 49.90,
-      "precio_antiguo": 83.20,
+      "precio_actual": 49.9,
+      "precio_antiguo": 83.2,
       "descuento": 40,
       "id": 77,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/f/a/familiar-1-bembos.webp",
@@ -1055,8 +1055,8 @@
     {
       "nombre_negro": "La Cuádruple",
       "descripcion": "2 Queso Tocino regular, 2 Churrita regular, 1 papa...",
-      "precio_actual": 51.90,
-      "precio_antiguo": 79.10,
+      "precio_actual": 51.9,
+      "precio_antiguo": 79.1,
       "descuento": 40,
       "id": 78,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/combo-parrillera-800x1370.webp",
@@ -1080,7 +1080,7 @@
       "nombre": "Parrillera Regular",
       "descripcion": "2 parrilleras regulares, 2 papas regulares",
       "aviso": "Ingresa el cupón de suscriptores de pchujoy.com antes de finalizar la compra y obtén la promoción a S/.26.90",
-      "precio_actual": 47.60,
+      "precio_actual": 47.6,
       "precio_antiguo": "",
       "descuento": "",
       "id": 80,
@@ -1091,7 +1091,7 @@
       "nombre": "Entel 2x1 Royal 2023",
       "descripcion": "2 Royal mediana, 2 papas regulares Mayonesa x 2,...",
       "aviso": "Ingresa el cupón de Entel antes de finalizar la compra y obtén la promoción a S/23.80",
-      "precio_actual": 47.60,
+      "precio_actual": 47.6,
       "precio_antiguo": "",
       "descuento": "",
       "id": 81,
@@ -1102,7 +1102,7 @@
       "nombre": "Plaza Vea Dúo",
       "descripcion": "1 Queso Tocino regular, 1 Clásica regular, 2...",
       "aviso": "Ingresa el cupón de Yape antes de finalizar la compra y obtén la promoción a S/21.90",
-      "precio_actual": 36.90,
+      "precio_actual": 36.9,
       "precio_antiguo": "",
       "descuento": "",
       "id": 82,
@@ -1113,7 +1113,7 @@
       "nombre": "Entel 2x1 Royal 2023",
       "descripcion": "2 Parrillera mediana, 2 papa regular Mayonesa x2, Ketch...",
       "aviso": "Ingresa el cupón de Entel antes de finalizar la compra y obtén la promoción a S/27.80",
-      "precio_actual": 55.60,
+      "precio_actual": 55.6,
       "precio_antiguo": "",
       "descuento": "",
       "id": 83,
@@ -1124,7 +1124,7 @@
       "nombre": "Entel 2x1 Royal 2023",
       "descripcion": "2 Clásicas mediana, 2 papa regular, Mayonesa x2, Ketch...",
       "aviso": "Ingresa el cupón de Entel antes de finalizar la compra y obtén la promoción a S/20.80",
-      "precio_actual": 41.60,
+      "precio_actual": 41.6,
       "precio_antiguo": "",
       "descuento": "",
       "id": 84,
@@ -1135,7 +1135,7 @@
       "nombre": "2X1 Queabuso 2023",
       "descripcion": "2 Queabuso medianas, 2 papas regulares, Mayonesa x2,...",
       "aviso": "Ingresa el cupón de Entel antes de finalizar la compra y obtén la promoción a S/24.80",
-      "precio_actual": 49.60,
+      "precio_actual": 49.6,
       "precio_antiguo": "",
       "descuento": "",
       "id": 85,
@@ -1377,6 +1377,7 @@
   ],
   "preguntas_frecuentes": [
     {
+
       "hamburguesas": [
         {
           "titulo": "¿Cuántos puntos recibo por comprar una hamburguesa online delivery?",
@@ -1482,6 +1483,7 @@
         }
       ]
     }
+    
   ],
   "orders": [
     {
@@ -1661,7 +1663,7 @@
         {
           "nrocomb": 24,
           "titulocomb": "Ketchup + S/0.00",
-          "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_68x68/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/m/a/mayonesa_1_2.jpg",
+          "imgcomb": "https://www.bembos.com.pe/_ipx/q_60,s_68x68/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/k/e/ketchup_1.jpg",
           "preccomb": 0
         },
         {
@@ -1680,7 +1682,7 @@
         {
           "nrocomb": 26,
           "titulocomb": "",
-          "imgcomb": "https://res.cloudinary.com/dlwq4rdll/image/upload/v1700114239/todas_las_cremas_vfnrlt.png",
+          "imgcomb": "https://www.bembos.com.pe/_nuxt/img/all-salsa.ab23071.svg",
           "preccomb": 0
         },
         {
@@ -1707,7 +1709,7 @@
   "menus_al_plato": [
     {
       "nombre": "Menú A lo pobre",
-      "precio": 18.90,
+      "precio": 18.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-a-lo-pobre-menu-2024.jpg",
       "id": 81,
       "link": "menú-a-lo-pobre",
@@ -1715,7 +1717,7 @@
     },
     {
       "nombre": "Menú Taypa",
-      "precio": 18.90,
+      "precio": 18.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-taypa-menu-2024.jpg",
       "id": 82,
       "link": "menu-taypa",
@@ -1723,7 +1725,7 @@
     },
     {
       "nombre": "Menú Pechugon",
-      "precio": 16.90,
+      "precio": 16.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-pechugon-menu-2024.jpg",
       "id": 83,
       "link": "menu-prechugon",
@@ -1731,13 +1733,13 @@
     },
     {
       "nombre": "Burger Menú",
-      "precio": 16.90,
+      "precio": 16.9,
       "img": "https://www.bembos.com.pe/_ipx/q_85,w_290,f_webp/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-burger-menu-2024.jpg",
       "id": 84,
       "link": "burger-menu",
       "terminoscondiciones": "Foto referencial. Stock mínimo disponible 500 unidades. Válido hasta agotar stock. Válido de lunes a viernes por Web,App, WhatsApp bot y Call Center. Zona de reparto limitada. Recargo por delivery S/ 5.90."
     }
-    ],
+  ],
   "beneficios": [
     {
       "relacion": [

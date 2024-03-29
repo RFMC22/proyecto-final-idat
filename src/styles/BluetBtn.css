@@ -10,3 +10,12 @@
   margin-bottom: 0px;
   font-weight: 400;
 }
+
+.low-bar-blueBtn {
+  font-size: 18px;
+  padding: 1px 6px;
+  width: 218px;
+  height: 43px;
+  font-family: 'kulturistaBold';
+  font-weight: 600;
+}

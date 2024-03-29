@@ -16,8 +16,8 @@ import { Counter } from '..';
 import { PathConstants } from '../../utils';
 
 const Cart = () => {
-  const { setCartState, cartState } = useShopping();
-  const [payBtnDisable, setPayBtnDisable] = useState(false);
+  const { setCartState, cartState,accumulateList } = useShopping();
+
 
   const navigate = useNavigate();
 
@@ -74,6 +74,7 @@ const Cart = () => {
                   Ingrésalos en el siguiente paso
                 </p>
               </div>
+
               <div className="cart-shoppingList">
                 <div className="shopping-item">
                   <div className="shopping-left">
@@ -103,6 +104,7 @@ const Cart = () => {
                   </div>
                 </div>
               </div>
+
               <div className="cart-shopping-calculations">
                 <div className="subtotal">
                   <p>Subtotal</p>

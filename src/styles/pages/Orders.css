@@ -1,5 +1,8 @@
 .Orders {
   margin-bottom: 200px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
 
   .order-container {
     display: flex;
@@ -27,6 +30,7 @@
     .order-details {
       background-color: white;
       margin-left: 40px;
+      padding: 20px;
 
       .order-title {
         color: rgb(35, 56, 139);
@@ -88,6 +92,56 @@
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
+    }
+  }
+}
+.orders-low-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(246, 247, 248);
+  box-shadow: 0 0 6px -3px #000;
+
+  .low-bar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .low-bar-flex {
+      display: flex;
+      width: 60%;
+      justify-content: right;
+      align-items: center;
+      gap: 15px;
+      margin-right: 80px;
+
+      .low-bar-text {
+        font-family: 'kulturistaRegular';
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+        margin-right: 10px;
+        font-weight: 600;
+      }
+    }
+    .low-bar-right {
+      width: 40%;
+      .acum-points {
+        font-size: 13px;
+        color: #e10b19;
+        font-family: 'kulturistaRegular';
+        padding-top: 5px;
+        padding-left: 60px;
+      }
+    }
+
+    .low-bar-flex-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
     }
   }
 }
