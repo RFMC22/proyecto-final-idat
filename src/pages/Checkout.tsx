@@ -10,8 +10,16 @@ import amexTarjeta from '../../public/amexTarjeta.svg'
 import visaTarjeta from '../../public/visaTarjeta.svg'
 import yape from '../../public/yape.svg'
 import { useForm } from 'react-hook-form'
+import useShopping from '../hooks/useShopping'
+
 const Checkout = () => {
-    const { register, handleSubmit } = useForm()
+    const { register, handleSubmit, formState: { errors }, setValue, watch } = useForm()
+    const selectedPaymentMethod = watch('metodoPago');
+    const { shopingList } = useShopping()
+    const onSubmit = handleSubmit((data) => {
+        console.log(data)
+    })
+    console.log(shopingList)
     return (
         <div className='contenedor-maximo'>
             <section className='checkout-separacion'>
@@ -22,111 +30,156 @@ const Checkout = () => {
 
                     <div className='ubicacion-tienda'>
                         <img src={iconMas} className='iconMas' />
-                        <p className='text-direccion'>Aurora - Av. Benavides N° 1821</p>
+                        <p className='text-direccion'
+                        >Aurora - Av. Benavides N° 1821</p>
                         <img src={iconLapiz} className='iconLapiz' />
                     </div>
-                    <form onSubmit={handleSubmit((data) => {
-                        console.log(data)
-                    })} className='formulario-checkout'>
+                    <form onSubmit={onSubmit} className='formulario-checkout'>
                         <p>Datos personales:</p>
                         <div className='input-contendor-twoo'>
-                            <div className='item-input'>
-                                {/* Nombre */}
-                                <img src={iconPerfil} />
-                                <input type="text"
-                                    {...register('nombre')}
-                                />
-                            </div>
-                            <div className='item-input'>
-                                {/* Apellido */}
-                                <img src={iconPerfil} />
-                                <input type="text"
-                                    {...register('apellido')}
-                                />
+                            <div className='contenedor-error'>
+                                <div className={`item-input ${errors.name ? 'error' : ''}`}>
+                                    {/* Nombre */}
+                                    <img src={iconPerfil} />
+                                    <input type="text" placeholder='Nombre*'
+                                        {...register('name', {
+                                            required: true,
+
+                                        })}
+                                    />
+                                </div>
+                                {
+                                    errors.name && <h5 className='mensaje-error'>Este es un campo requerido.</h5>
+                                }
                             </div>
 
+                            <div className='contenedor-error'>
+                                <div className={`item-input ${errors.lastname ? 'error' : ''}`}>
+                                    {/* Apellido */}
+                                    <img src={iconPerfil} />
+                                    <input type="text" placeholder='Apellido*'
+                                        {...register('lastname', {
+                                            required: true,
+
+                                        })}
+
+                                    />
+                                </div>
+                                {
+                                    errors.lastname && <h5 className='mensaje-error'>Este es un campo requerido.</h5>
+                                }
+                            </div>
                         </div>
+
                         <div className='input-contendor-twoo'>
-                            <div className='item-input'>
-                                {/* Documentacion */}
-                                <img src={iconDni} />
-                                <select id="tipoDocumento"
-                                    {...register('tipoDocumento')}
-                                >
-                                    <option value="tipo">Tipo de documento</option>
-                                    <option value="dni">DNI</option>
-                                    <option value="carnet">Carnet de extranjería</option>
-                                    <option value="pasaporte">Pasaporte</option>
-                                </select>
+                            <div className='contenedor-error'>
+                                <div className={`item-input ${errors.typeDocument ? 'error' : ''}`}>
+                                    {/* Documentacion */}
+                                    <img src={iconDni} />
+                                    <select id="typeDocument"
+                                        {...register('typeDocument', {
+                                            required: true,
+
+                                        })}
+                                    >
+                                        <option value="tipo">Tipo de documento</option>
+                                        <option value="dni">DNI</option>
+                                        <option value="carnet">Carnet de extranjería</option>
+                                        <option value="pasaporte">Pasaporte</option>
+                                    </select>
+                                </div>
+                                {
+                                    errors.typeDocument && <h5 className='mensaje-error'>Este es un campo requerido.</h5>
+                                }
                             </div>
-                            <div className='item-input'>
-                                {/* N° de documento */}
-                                <img src={iconDni} />
-                                <input type="number"
-                                    {...register('numeroDocumento')}
-                                />
+                            <div className='contenedor-error'>
+                                <div className={`item-input ${errors.numberDocument ? 'error' : ''}`}>
+                                    {/* N° de documento */}
+                                    <img src={iconDni} />
+                                    <input type="number" placeholder='Nro. de documento*'
+                                        {...register('numberDocument', {
+                                            required: true,
+
+                                        })}
+                                    />
+                                </div>
+                                {
+                                    errors.numberDocument && <h5 className='mensaje-error'>Este es un campo requerido.</h5>
+                                }
+
                             </div>
                         </div>
+
                         <div className='input-contendor-twoo'>
-                            <div className='item-input'>
-                                {/* Correo */}
-                                <img src={iconMail} />
-                                <input type="email"
-                                    {...register('correo')}
-                                />
+                            <div className='contenedor-error'>
+                                <div className={`item-input ${errors.email ? 'error' : ''}`}>
+                                    {/* Correo */}
+                                    <img src={iconMail} />
+                                    <input type="email" placeholder='Correo*'
+                                        {...register('email', {
+                                            required: true,
+
+                                        })}
+                                    />
+                                </div>
+                                {
+                                    errors.email && <h5 className='mensaje-error'>Este es un campo requerido.</h5>
+                                }
                             </div>
-                            <div className='item-input'>
-                                {/* N° celular */}
-                                <img src={iconPhone} />
-                                <input type="tel"
-                                    {...register('telefono')}
-                                />
+                            <div className='contenedor-error'>
+                                <div className={`item-input ${errors.phoneNumber ? 'error' : ''}`}>
+                                    {/* N° celular */}
+                                    <img src={iconPhone} />
+                                    <input type="tel" placeholder='Celular*'
+                                        {...register('phoneNumber', {
+                                            required: true,
+
+                                        })}
+                                    />
+                                </div>
+                                {
+                                    errors.phoneNumber && <h5 className='mensaje-error'>Este es un campo requerido.</h5>
+                                }
                             </div>
                         </div>
+
                         <div className='seccion-pago-final'>
                             <p>Selecionar método de pago</p>
                             <div className='contenedor-metodos-pagos'>
                                 <h4>Pago online</h4>
                                 <div className='item-metodos'>
                                     <li className='metodo-tipo-incognita'><img src={incognita} /></li>
-                                    <button className='metodo-tipo'
-                                        {...register('Visa')}
-                                    ><img src={visaTarjeta} /></button>
-                                    <button className='metodo-tipo'><img src={yape} /></button>
-                                    <button className='metodo-tipo'><img src={amexTarjeta} /></button>
+                                    <button className={`metodo-tipo ${selectedPaymentMethod === 'visa' ? 'selected' : ''}`} type="button" onClick={() => setValue('paymentMethod', 'visa')}><img src={visaTarjeta} /></button>
+                                    <button className={`metodo-tipo ${selectedPaymentMethod === 'yape' ? 'selected' : ''}`} type="button" onClick={() => setValue('paymentMethod', 'yape')}><img src={yape} /></button>
+                                    <button className={`metodo-tipo ${selectedPaymentMethod === 'amex' ? 'selected' : ''}`} type="button" onClick={() => setValue('paymentMethod', 'amex')}><img src={amexTarjeta} /></button>
                                 </div>
                             </div>
                             <p>Tipo de comprobante</p>
                             <div className='contenedor-comprobantes'>
                                 <div className='item-compro'>
                                     <input type="checkbox" id='simple'
-                                        {...register('boletaSimple')}
+                                        {...register('simpleTicket')}
                                     />
                                     <label htmlFor="simple">Boleta Simple</label>
                                 </div>
                                 <div className='item-compro'>
                                     <input type="checkbox" id='conDni'
-                                        {...register('boletaConDni')}
+                                        {...register('ticketWithID')}
                                     />
                                     <label htmlFor="conDni">Boleta con DNI</label>
                                 </div>
-                                <div className='item-compro'>
-                                    <input type="checkbox" id='factura'
-                                        {...register('factura')}
-                                    />
-                                    <label htmlFor="factura">Factura</label>
-                                </div>
+
                             </div>
                             <div className='terms'>
                                 <div className='terms-item'>
                                     <input type="checkbox" id='promociones-term'
-                                        {...register('termPromociones')}
+                                        {...register('promotionalTerms')}
                                     />
                                     <label htmlFor="promociones-term">Acepto recibir <a> promociones y novedades.</a></label>
                                 </div>
                                 <div className='terms-item'>
                                     <input type="checkbox" id='datos-term'
-                                        {...register('termTransferDatos')}
+                                        {...register('dataTransferTerms')}
                                     />
                                     <label htmlFor="datos-term">Acepto recibir la transferencia de <a > datos a empresas asociadas.</a></label>
                                 </div>
@@ -134,7 +187,7 @@ const Checkout = () => {
                                 <div className='terms-item'>
 
                                     <input type="checkbox" id='privacidad-term'
-                                        {...register('termPrivacidad')}
+                                        {...register('privacyTerms')}
                                     />
                                     <label htmlFor="privacidad-term">Acepto los <a> términos y condiciones y política de privacidad de datos personales.</a></label>
                                 </div>

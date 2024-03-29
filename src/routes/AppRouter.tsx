@@ -43,7 +43,9 @@ const AppRouter = () => {
             path={PathConstants.BENEFICIOS}
             element={<Beneficios />}
           ></Route>
-          <Route path={PathConstants.CART} element={<Cart />}></Route>
+          <Route path={PathConstants.CART}
+            element={<Cart />}>
+          </Route>
           <Route
           path={PathConstants.ADMIN_PRODUCT}
           element={<Product/>}
