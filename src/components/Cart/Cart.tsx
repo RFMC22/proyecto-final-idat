@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './../../styles/Cart.css';
-
 import { ComplementoResponse } from '../../interfaces';
 import { getComplementos } from '../../services/fetchComplementos';
 import CartSwiper from './CartSwiper';
@@ -9,14 +8,12 @@ import { CiTrash } from 'react-icons/ci';
 import { GoChevronDown } from 'react-icons/go';
 import { IoIosClose } from 'react-icons/io';
 import useShopping from '../../hooks/useShopping';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { GoAlert } from 'react-icons/go';
 import { Counter } from '..';
-import { PathConstants } from '../../utils';
 
 const Cart = () => {
-  const { setCartState, cartState, shoppingList, getFromLocalStorage } =
+  const { setCartState, cartState, shoppingList } =
     useShopping();
 
   let subTotal = [
@@ -144,7 +141,7 @@ const Cart = () => {
                     </p>
                   </div>
                   {shoppingList.map((shoppingItem: any, index: any) => (
-                    <>
+                    <div key={index}>
                       <div className="cart-shoppingList">
                         <div className="shopping-item">
                           <div className="shopping-left">
@@ -177,7 +174,7 @@ const Cart = () => {
                           </div>
                         </div>
                       </div>
-                    </>
+                    </div>
                   ))}
                   <div className="cart-shopping-calculations">
                     <div className="subtotal">

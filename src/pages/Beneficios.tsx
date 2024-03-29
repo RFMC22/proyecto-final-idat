@@ -197,10 +197,10 @@ const Beneficios = () => {
             )}
           </SwiperComponent>
         </section>
-        <div className="container">
+        <div className="question-container">
           {preguntasFrecuentesData ? (
             preguntasFrecuentesData[0].beneficios.map((pregunta, index) => (
-              <>
+              <div key={index}>
                 <Accordion
                   title={pregunta.titulo}
                   className={'myQuestions'}
@@ -208,7 +208,7 @@ const Beneficios = () => {
                 >
                   <p>{pregunta.respuesta}</p>
                 </Accordion>
-              </>
+              </div>
             ))
           ) : (
             <>

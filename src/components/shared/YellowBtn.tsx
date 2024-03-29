@@ -13,7 +13,7 @@ const YellowBtn = ({
 }: yellowBtnProps) => {
   
   const doNothing =()=>{
-    
+    id 
   }
 
   return (
