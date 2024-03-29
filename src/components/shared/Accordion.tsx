@@ -16,7 +16,7 @@ const Accordion: React.FC<AccordionProps> = ({
   className,
   id,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);

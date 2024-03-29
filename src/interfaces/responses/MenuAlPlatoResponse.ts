@@ -1,5 +1,5 @@
-import { Menu } from "../model/MenuAlPlato";
+import { MenusAlPlato } from "../model/MenuAlPlato";
 
 export interface MenuAlPlatoResponse {
-    data?: Menu[];
+    data?: MenusAlPlato[];
 }

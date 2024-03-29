@@ -69,14 +69,13 @@ const Menu = () => {
       <div className="container-m ">
         <MenuSwiper slidesArray={slidesArray} display={'none-m'} />
         <MenuSwiper slidesArray={slidesMobileArray} display={'none-d'} />
-
         {menuCardsOptions.data ? (
           <MenuCards menuCardOptions={menuCardsOptions.data} />
         ) : (
           ''
         )}
 
-       
+
       </div>
     </section>
   );

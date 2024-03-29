@@ -1,6 +1,7 @@
-export interface Menu {
+export interface MenusAlPlato {
     nombre: string;
+    precio: number;
     img: string;
-    link: string;
     id: number;
+    link: string;
 }
