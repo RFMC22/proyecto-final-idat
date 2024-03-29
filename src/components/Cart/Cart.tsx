@@ -43,31 +43,33 @@ const Cart = () => {
 
   Object.keys(shoppingList).length !== 0 ? console.log(shoppingList) : '';
 
-  if (Object.keys(shoppingList).length !== 0) {
-    let totalComplements = 0;
-    shoppingList.extras.complements &&
-      shoppingList.extras.complements.forEach((complement: any) => {
-        totalComplements += complement.quantity * complement.price;
-      });
-    let totalExtraSauces = 0;
-    shoppingList.extras.extra_sauces &&
-      shoppingList.extras.extra_sauces.forEach((sauce: any) => {
-        totalExtraSauces += sauce.quantity * sauce.price;
-      });
-    console.log(shoppingList.unit_price);
-    console.log(totalComplements);
-    console.log(totalExtraSauces);
-    subTotal = parseFloat(
-      (
-        ((totalComplements ? totalComplements : 0) +
-          (totalExtraSauces ? totalExtraSauces : 0) +
-          (shoppingList.unit_price ? shoppingList.unit_price : 0)) *
-        shoppingList.quantity
-      ).toFixed(3)
-    );
+  // Object.keys(shoppingList).length !== 0 ? console.log(shoppingList) : '';
 
-    console.log(subTotal);
-  }
+  // if (Object.keys(shoppingList).length !== 0) {
+  //   let totalComplements = 0;
+  //   shoppingList.extras.complements &&
+  //     shoppingList.extras.complements.forEach((complement: any) => {
+  //       totalComplements += complement.quantity * complement.price;
+  //     });
+  //   let totalExtraSauces = 0;
+  //   shoppingList.extras.extra_sauces &&
+  //     shoppingList.extras.extra_sauces.forEach((sauce: any) => {
+  //       totalExtraSauces += sauce.quantity * sauce.price;
+  //     });
+  //   console.log(shoppingList.unit_price);
+  //   console.log(totalComplements);
+  //   console.log(totalExtraSauces);
+  //   subTotal = parseFloat(
+  //     (
+  //       ((totalComplements ? totalComplements : 0) +
+  //         (totalExtraSauces ? totalExtraSauces : 0) +
+  //         (shoppingList.unit_price ? shoppingList.unit_price : 0)) *
+  //       shoppingList.quantity
+  //     ).toFixed(3)
+  //   );
+
+  //   console.log(subTotal);
+  // }
 
   return (
     <>
@@ -103,45 +105,46 @@ const Cart = () => {
                       Ingrésalos en el siguiente paso
                     </p>
                   </div>
-
-                  <div className="cart-shoppingList">
-                    <div className="shopping-item">
-                      <div className="shopping-left">
-                        <div className="edit">
-                          <FaPencil className="edit-icon" />
-                        </div>
-                        <div className="image-container">
-                          <img
-                            src="https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-cyber-parrillero-marzo-2024.jpg"
-                            alt="product image"
-                          />
-                        </div>
-                        <div className="shopping-text">
-                          <p className="shopping-name">
-                            <span className="shopping-name-cantidad">{`0${shoppingList.quantity} `}</span>
-                            x
-                            {` ${shoppingList.name.split(' ')[0]} ${
-                              shoppingList.name.split(' ')[1]
-                            } ${shoppingList.name.split(' ')[2]} `}
-                          </p>
-                          <p className="shopping-price">
-                            S/. {subTotal}
-                          </p>
+                  {shoppingList.map((shoppingItem: any) => (
+                    <>
+                      <div className="cart-shoppingList">
+                        <div className="shopping-item">
+                          <div className="shopping-left">
+                            <div className="edit">
+                              <FaPencil className="edit-icon" />
+                            </div>
+                            <div className="image-container">
+                              <img
+                                src="https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-cyber-parrillero-marzo-2024.jpg"
+                                alt="product image"
+                              />
+                            </div>
+                            <div className="shopping-text">
+                              <p className="shopping-name">
+                                <span className="shopping-name-cantidad">{`0${shoppingItem.quantity} `}</span>
+                                x
+                                {` ${shoppingItem.name.split(' ')[0]} ${
+                                  shoppingItem.name.split(' ')[1]
+                                } ${shoppingItem.name.split(' ')[2]} `}
+                              </p>
+                              <p className="shopping-price">{`S/. ${shoppingItem.unit_price}`}</p>
+                            </div>
+                          </div>
+                          <div className="shopping-right">
+                            <div className="actions">
+                              <CiTrash className="trash-icon" />
+                              <p className="readMore">Leer más</p>
+                            </div>
+                            <Counter myclass="counter-cart" />
+                          </div>
                         </div>
                       </div>
-                      <div className="shopping-right">
-                        <div className="actions">
-                          <CiTrash className="trash-icon" />
-                          <p className="readMore">Leer más</p>
-                        </div>
-                        <Counter myclass="counter-cart" />
-                      </div>
-                    </div>
-                  </div>
+                    </>
+                  ))}
                   <div className="cart-shopping-calculations">
                     <div className="subtotal">
                       <p>Subtotal</p>
-                      <p>S/ {subTotal}</p>
+                      <p>S/ {15}</p>
                     </div>
                     <div className="delivery">
                       <p>Delivery</p>
@@ -150,7 +153,7 @@ const Cart = () => {
                   </div>
                   <div className="cart-shopping-calculations shopping-result">
                     <p>Total a pagar</p>
-                    <p>S/ {subTotal}</p>
+                    <p>S/ {15}</p>
                   </div>
                 </div>
                 <div className="complementos">
@@ -167,7 +170,7 @@ const Cart = () => {
                   <div className="btns">
                     <button className="btn btn-rojo" disabled={isDisabled()}>
                       <div className="circle">1</div>
-                      IR A PAGAR <span>S/. {subTotal}</span>
+                      IR A PAGAR <span>S/. {15}</span>
                     </button>
                     <button className="btn btn-blanco">SEGUIR COMPRANDO</button>
                   </div>

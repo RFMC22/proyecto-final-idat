@@ -229,8 +229,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
       }
 
       allItems = allItems.filter(item => item.name.trim() !== '');
-
-      console.log(allItems);
+      setShoppingList(allItems)
     }
   };
 
