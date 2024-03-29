@@ -50,6 +50,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [acumulateList, setAccumulateList] = useState({});
   const [saveLocalStorage, setSaveLocalStorage] = useState(false);
   const [shoppingList, setShoppingList] = useState({});
+  const [numberOrders, setNumberOrders]=useState(0)
   // Functions for Fetching
   const getDataPromociones = async () => {
     const [promos, promosD, promosC, complements, cupons] = await Promise.all([
@@ -80,6 +81,14 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     count: any,
     question: number
   ) => {
+    console.log(
+      'handle order click en context:',
+      id,
+      price,
+      text,
+      count,
+      question
+    );
     const checkBaseList = baseList.some((item) => item.id === id);
     checkBaseList
       ? setBaseList((prevBaseList) =>
@@ -117,11 +126,9 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   useEffect(() => {
     setGeneralCounter(1);
   }, [location.pathname]);
-  // useEffect(() => {
-  //   showData(orderBase);
-  // }, [orderBase]);
 
   const orderTheList = (baseList: any) => {
+    console.log(baseList);
     const burguerItem = baseList.filter((item: any) => item.question === 1);
     if (burguerItem[0]) {
       hamburguerOrder = {
@@ -185,6 +192,18 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         })),
       };
     }
+
+    const extra_combos = baseList.filter((item: any) => item.question === 7);
+    if (extra_combos[0]) {
+      extras = {
+        ...extras,
+        extra_combos: extra_combos.map((extra_combo: any) => ({
+          type: extra_combo.product,
+          price: extra_combo.price,
+          selected: true,
+        })),
+      };
+    }
     setAccumulateList({ ...hamburguerOrder, extras });
     // accumulateList = { ...hamburguerOrder, extras };
   };
@@ -209,22 +228,28 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
       // Check if the key represents an item you've saved
       // You can add additional checks here if needed
       // For example, you might want to filter keys that start with a specific prefix
-      if (key.startsWith('order_')) {
+      if (key && key.startsWith('order_')) {
         // Retrieve the value associated with the key
-        let item = JSON.parse(localStorage.getItem(key));
+        let itemString = localStorage.getItem(key);
+        if (itemString !== null) {
+          // Check if itemString is not null
+          let item = JSON.parse(itemString);
 
-        // Push the item to the array
-        allItems.push(item);
+          // Push the item to the array
+          allItems.push(item);
+        }
+
+        allItemsFiltered = allItems.filter((item) => item.name.trim() !== '');
+        setShoppingList(allItemsFiltered);
       }
-
-      allItemsFiltered = allItems.filter((item) => item.name.trim() !== '');
-      setShoppingList(allItemsFiltered);
     }
   };
 
   useEffect(() => {
     getFromLocalStorage();
   }, []);
+
+  
 
   return (
     <ShoppingContext.Provider
@@ -250,6 +275,8 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         saveLocalStorage,
         getFromLocalStorage,
         shoppingList,
+        setNumberOrders,
+        numberOrders
       }}
     >
       {children}

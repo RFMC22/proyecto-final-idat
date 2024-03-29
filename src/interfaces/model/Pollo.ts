@@ -1,7 +1,7 @@
 
-export interface Pollo {
-    pollo: Pollo[];
-}
+// export interface Pollo {
+//     pollo: Pollo[];
+// }
 
 export interface Pollo {
     tipos?: Tipo[];

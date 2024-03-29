@@ -8,6 +8,7 @@ import { PreguntasPedido } from '../../interfaces';
 import useShopping from '../../hooks/useShopping';
 import { useLocation } from 'react-router-dom';
 import { BlueBtn } from '../../components/shared';
+import { TabTitle } from '../../utils/GeneralFunctions';
 
 const Orders = () => {
   const location = useLocation();
@@ -24,6 +25,15 @@ const Orders = () => {
     accordion8: false,
     accordion9: false,
   });
+  TabTitle(
+    `${
+      location.pathname.split('/')[3].split('-')[0].charAt(0).toUpperCase() +
+      location.pathname.split('/')[3].split('-')[0].slice(1)
+    } ${
+      location.pathname.split('/')[3].split('-')[1].charAt(0).toUpperCase() +
+      location.pathname.split('/')[3].split('-')[1].slice(1)
+    }`
+  );
 
   const {
     orderInfo,
@@ -31,7 +41,7 @@ const Orders = () => {
     getPolloData,
     generalCounter,
     setGeneralCounter,
-    setSaveLocalStorage
+    setSaveLocalStorage,
   } = useShopping();
 
   const getDataOrders = async () => {
@@ -65,8 +75,6 @@ const Orders = () => {
         });
         getDataOrders();
 
-       
-
         break;
       case 'hamburguesas':
       case 'pollo':
@@ -99,7 +107,6 @@ const Orders = () => {
         getPolloData();
         getDataOrders();
 
-        
         break;
 
       case 'loncheritas':
@@ -116,7 +123,6 @@ const Orders = () => {
         });
         getPolloData();
         getDataOrders();
-
 
         break;
 
@@ -135,7 +141,6 @@ const Orders = () => {
         getPolloData();
         getDataOrders();
 
-
         break;
 
       case 'bebidas':
@@ -153,7 +158,6 @@ const Orders = () => {
         getPolloData();
         getDataOrders();
 
-
         break;
 
       case 'helados':
@@ -170,7 +174,6 @@ const Orders = () => {
         });
         getPolloData();
         getDataOrders();
-
 
         break;
 
@@ -208,7 +211,10 @@ const Orders = () => {
     <>
       <div className="container">
         <section className="Orders">
-          <Breadcrumb />
+          <div className="container-breadcrumb">
+            <Breadcrumb />
+          </div>
+
           <div className="order-container">
             <div className="order-right">
               <div className="imgContainer">
@@ -237,7 +243,7 @@ const Orders = () => {
                           width=""
                           key={orderInfo.secondImg}
                           question={1}
-                          id={1}
+                          id={49}
                           price={0 + orderInfo.price}
                           count={generalCounter}
                           isActive={
@@ -258,7 +264,7 @@ const Orders = () => {
                             width=""
                             key={orderInfo.secondImg + 1}
                             question={1}
-                            id={1}
+                            id={49}
                             price={orderInfo.bigSizePrice + orderInfo.price}
                             count={generalCounter}
                             isActive={
@@ -427,7 +433,7 @@ const Orders = () => {
                                 image={extra.imgcomb}
                                 btn={true}
                                 text={extra.titulocomb}
-                                width="width-136"
+                                width=""
                                 key={extra.nrocomb}
                                 id={extra.nrocomb}
                                 question={4}

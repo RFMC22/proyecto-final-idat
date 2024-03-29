@@ -35,10 +35,6 @@ const AppRouter = () => {
             element={<Promociones />}
           ></Route>
           <Route path={PathConstants.CUPONES} element={<Cupones />}></Route>
-          {/* <Route
-            path={PathConstants.COMBOS_ORDERS}
-            element={<Orders />}
-          ></Route> */}
           <Route
             path={PathConstants.MENU_TYPE_ORDERS}
             element={<Orders />}

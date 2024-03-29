@@ -24,6 +24,10 @@
     .fill-white {
       fill: rgb(33, 56, 139);
     }
+
+    .none-d {
+      display: block;
+    }
   }
 
   .imgContainer {
@@ -41,10 +45,10 @@
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .flex {
@@ -59,8 +63,9 @@
   }
 
   .container-m {
-    width: 420px;
-    margin: 0 auto;
+    /* width: 350px; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
   }
 
   .hamburguer {

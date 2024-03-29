@@ -15,7 +15,7 @@ const BlueBtn = ({
 }) => {
   // const [swalShown, setSwalShown] = useState(false);
   const navigate = useNavigate();
-  const { handleOrderClick, getFromLocalStorage } = useShopping();
+  const { handleOrderClick, getFromLocalStorage,setCartState } = useShopping();
   // const MySwal = withReactContent(Swal);
   const location = useLocation();
 
@@ -63,7 +63,9 @@ const BlueBtn = ({
       }).then((result) => {
         if (result.isConfirmed) {
           Swal.close();
+          setCartState(true)
           goToCart();
+          getFromLocalStorage();
         } else {
         }
       });

@@ -1,36 +1,52 @@
 .Orders {
   margin-bottom: 200px;
   background-color: white;
-  padding: 20px;
   border-radius: 15px;
 
+  .container-breadcrumb {
+    padding: 20px;
+  }
   .order-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .order-right {
-      margin-right: 56px;
+      margin-right: 0px;
+      width: 100%;
+      position: sticky;
+      z-index: 1;
+      top: 0;
     }
 
     .imgContainer {
-      width: 340px;
+      /* width: 340px; */
+      width: 100%;
       float: left;
-      border-radius: 10px;
-      max-height: 340px;
+      /* border-radius: 10px; */
+      max-height: 520px;
       overflow: hidden;
+      margin: 10px auto;
 
       img {
         width: 100%;
-        max-height: 340px;
-        border-radius: 15px 15px 0 0;
+        /* max-height: 340px; */
+        /* border-radius: 15px 15px 0 0; */
         object-fit: cover;
+        height: 500px;
       }
     }
 
     .order-details {
+      margin-top: 500px;
+      border-radius: 15px 15px 0 0;
+      z-index: 980;
+      position: sticky;
+      bottom: 0;
       background-color: white;
-      margin-left: 40px;
-      padding: 20px;
+      margin-left: 0px;
+      padding: 40px;
 
       .order-title {
         color: rgb(35, 56, 139);
@@ -98,27 +114,30 @@
 .orders-low-bar {
   position: fixed;
   bottom: 0;
+  z-index: 999;
   width: 100%;
   height: 80px;
   background-color: rgb(246, 247, 248);
   box-shadow: 0 0 6px -3px #000;
 
   .low-bar-content {
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 
     .low-bar-flex {
-      display: flex;
-      width: 60%;
+      display: block;
+      width: 30%;
       justify-content: right;
       align-items: center;
       gap: 15px;
-      margin-right: 80px;
+      margin-right: 10px;
 
       .low-bar-text {
-        font-family: 'kulturistaRegular';
+        display: none;
+        font-family: 'kultristaRegular';
         font-size: 12px;
         text-transform: uppercase;
         padding-bottom: 6px;
@@ -127,13 +146,15 @@
       }
     }
     .low-bar-right {
-      width: 40%;
+      width: 70%;
+      text-align: center;
       .acum-points {
         font-size: 13px;
         color: #e10b19;
-        font-family: 'kulturistaRegular';
+        font-family: 'kulristaRegular';
         padding-top: 5px;
-        padding-left: 60px;
+        /* padding-left: 60px; */
+        text-align: center;
       }
     }
 
@@ -142,6 +163,78 @@
       width: 100%;
       height: 100%;
       align-items: center;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .Orders {
+    .order-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: end;
+      /* height: 100vh; */
+      position: relative;
+      overflow-y: hidden;
+
+      .order-right {
+        margin-right: 0;
+        display: block;
+        height: 100%;
+        width: 35%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+      }
+
+      .imgContainer {
+        margin: 30px auto;
+        width: 340px;
+        border-radius: 10px;
+        max-height: 340px;
+
+        img {
+          border-radius: 15px 15px 0 0;
+          max-height: 340px;
+        }
+      }
+
+      .order-details {
+        width: 60%;
+        background-color: white;
+        padding: 20px;
+        display: block;
+        margin-top: 0;
+        z-index: 1;
+        position: relative;
+        top: 0;
+        overflow-y: scroll;
+        height: 100vh;
+      }
+    }
+  }
+
+  .orders-low-bar {
+    .low-bar-content {
+      .low-bar-flex {
+        display: flex;
+        margin-right: 80px;
+        width: 60%;
+
+        .low-bar-text {
+          display: block;
+        }
+      }
+
+      .low-bar-right {
+        width: 40%;
+        text-align: left;
+        .acum-points {
+          padding-left: 60px;
+          text-align: left;
+        }
+      }
     }
   }
 }

@@ -54,7 +54,7 @@ const Header = () => {
               text={'Pide en tiendas'}
               redText={'SIN COLAS'}
               icon={iconStore}
-              position=""
+              position="responsive-topbarButton"
               iconHeight=""
               Circle="none"
               id='1'

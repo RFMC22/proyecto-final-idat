@@ -61,6 +61,8 @@ export type iShoppingType = {
   setBaseList: Dispatch<SetStateAction<OrderItem[]>>;
   saveLocalStorage: boolean;
   shoppingList:any
+  numberOrders:number,
+  setNumberOrders:any
 };
 
 export const iShoppingContext = {
@@ -93,4 +95,6 @@ export const iShoppingContext = {
   saveLocalStorage: false,
   getFromLocalStorage:()=>{},
   shoppingList:{},
+  numberOrders:0,
+  setNumberOrders:()=>{}
 };
