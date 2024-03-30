@@ -53,7 +53,7 @@ const Header = () => {
               ></path>
             </svg>
           </Link>
-            <div className='textDelivery'>
+            <div className='textDelivery none-m display-d'>
               <p>Recoger en</p>
               <p className='location'>{selectLocal.sede}{' '}
               <span>
