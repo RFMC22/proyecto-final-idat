@@ -7,7 +7,7 @@ import { Navigation, Pagination, Grid } from 'swiper/modules';
 import { SwiperComponent } from "../components/shared";
 import { Card, Tabs } from "../components";
 import useShopping from "../hooks/useShopping";
-import { PathConstants } from "../utils/PathConstants";
+import { PathConstants } from "../utils";
 import { Link } from "react-router-dom";
 
 const Promociones = () => {
@@ -16,10 +16,12 @@ const Promociones = () => {
           promosDos,
           promosCompartir,
           complementos,
-          cupones
+          cupones,
+          selectLocal
         } = useShopping();
   TabTitle('Promociones de Hamburguesas Bembos | Delivery Perú');
-
+  const { distrito, sede } = selectLocal;
+  
   useEffect(()=>{
     getDataPromociones();
   },[]);
@@ -86,7 +88,7 @@ const Promociones = () => {
             <div className="ppromos-address-col1 address">
               <div className="ppromos-mark-yellow"></div> 
               <div className="ppromos-address-col1-text">
-                <Link to={`${PathConstants.RECOJO}/recojo`}><span>Av. Benavides N° 1821</span> <b>Aurora</b></Link>
+                <Link to={`${PathConstants.RECOJO}/recojo`}><span> {sede} </span> <b> {distrito} </b></Link>
               </div>
             </div> 
             <div className="promos-hasta-label-w">

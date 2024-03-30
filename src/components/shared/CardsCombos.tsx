@@ -34,7 +34,7 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
       }
     };
     fetchData();
-  }, []);
+  }, [getData]);
 
   const getInfo = (info:any) => {
     if (Array.isArray(info)) {

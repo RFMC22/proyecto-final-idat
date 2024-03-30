@@ -10,6 +10,7 @@ import {
 } from '../interfaces';
 import {
   getComplementos,
+  getLocales,
   getPollo,
   getPromosCompartir,
   getPromosDos,
@@ -50,6 +51,8 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [acumulateList, setAccumulateList] = useState({});
   const [saveLocalStorage, setSaveLocalStorage] = useState(false);
   const [shoppingList, setShoppingList] = useState({});
+  const [locales, setLocales] = useState({});
+  const [selectLocal, setSelectLocal] = useState({}); 
   // Functions for Fetching
   const getDataPromociones = async () => {
     const [promos, promosD, promosC, complements, cupons] = await Promise.all([
@@ -66,6 +69,11 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     setComplementos(complements);
     setCupones(cupons);
   };
+
+  const getDataLocales = async () => {
+    const localesData = await getLocales();
+    setLocales(localesData);
+  }
 
   const getPolloData = async () => {
     const polloData = await getPollo();
@@ -202,6 +210,13 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
       JSON.stringify(acumulateList)
     );
   };
+  const setLocalStorage = (location) => {
+    localStorage.setItem(`location`, JSON.stringify(location));
+  }
+  const getLocalStorage = () => {
+    const locationLocalStorage =  JSON.parse(localStorage.getItem('location'));
+    setSelectLocal(locationLocalStorage)
+  }
 
   const getFromLocalStorage = () => {
     let allItems = [];
@@ -230,6 +245,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
 
   useEffect(() => {
     getFromLocalStorage();
+    getLocalStorage();
   }, []);
 
   return (
@@ -245,6 +261,8 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         complementos,
         cupones,
         getDataPromociones,
+        getDataLocales,
+        locales,
         polloQuestions,
         getPolloData,
         setBaseList,
@@ -256,6 +274,9 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         saveLocalStorage,
         getFromLocalStorage,
         shoppingList,
+        selectLocal,
+        setLocalStorage,
+        getLocalStorage
       }}
     >
       {children}
