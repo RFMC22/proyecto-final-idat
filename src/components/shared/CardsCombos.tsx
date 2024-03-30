@@ -42,7 +42,9 @@ const CardsCombos: React.FC<{ config: ComboConfigProps }> = ({ config }) => {
     } else {
       return info.data || [];
     }
-  };
+  }
+
+  
 
   return (
     <div className="max-contenedor">
