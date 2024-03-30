@@ -11,3 +11,4 @@ export * from './fetchInkaChips';
 export * from './fetchLoncheritas';
 export * from './fetchPollo';
 export * from './fetchPreguntasFrecuentes';
+export * from './fetchLocales'

@@ -23,6 +23,7 @@ export type iShoppingType = {
   promosPersonales: PromocionPersonalResponse;
   promosDos: PromocionDosResponse;
   promosCompartir: PromocionCompartirResponse;
+  locales:any;
   complementos: ComplementoResponse;
   cupones: CuponResponse;
   handleOrderClick: (
@@ -33,6 +34,7 @@ export type iShoppingType = {
     question: number
   ) => void;
   getDataPromociones: () => Promise<void>;
+  getDataLocales: () => Promise<void>;
   getPolloData: () => Promise<void>;
   polloQuestions: Pollo[];
   orderInfo: {
@@ -61,7 +63,10 @@ export type iShoppingType = {
   >;
   setBaseList: Dispatch<SetStateAction<OrderItem[]>>;
   saveLocalStorage: boolean;
-  shoppingList:any
+  shoppingList:any;
+  selectLocal: any;
+  setLocalStorage: any
+  getLocalStorage:any;
   numberOrders:number,
   setNumberOrders:any
 };
@@ -70,6 +75,7 @@ export const iShoppingContext = {
   cartState: false,
   setCartState: () => {},
   promosPersonales: {},
+  locales:{},
   promosDos: {},
   promosCompartir: {},
   complementos: {},
@@ -78,6 +84,7 @@ export const iShoppingContext = {
   generalCounter: 1,
   setGeneralCounter: () => {},
   getDataPromociones: async () => {},
+  getDataLocales: async () => {},
   getPolloData: async () => {},
   handleOrderClick: () => {},
   setOrderItem: () => [{}],
@@ -97,5 +104,8 @@ export const iShoppingContext = {
   getFromLocalStorage:()=>{},
   shoppingList:{},
   numberOrders:0,
-  setNumberOrders:()=>{}
+  setNumberOrders:()=>{},
+  selectLocal: {},
+  setLocalStorage: () => {},
+  getLocalStorage: () => {}
 };

@@ -6,9 +6,11 @@ import NavBarDesktop from './NavBarDesktop';
 import iconStore from './../../assets/images/icon-store.svg';
 import { Link } from 'react-router-dom';
 import { PathConstants } from '../../utils';
+import useShopping from '../../hooks/useShopping';
 
 const Header = () => {
   const [openHamburguer, setOpenHamburguer] = useState<boolean>(false);
+  const {selectLocal} = useShopping();
 
   const handleOpenHamburguer = () => {
     setOpenHamburguer(true);
@@ -24,6 +26,7 @@ const Header = () => {
 
       <div className="topBar">
         <div className="container-m grid">
+          <div className='flex flex-start flex-gap-1'>
           <Link to={PathConstants.INDEX}>
             <svg
               data-v-17182645=""
@@ -48,7 +51,17 @@ const Header = () => {
               ></path>
             </svg>
           </Link>
-
+            <div className='textDelivery'>
+              <p>Recoger en</p>
+              <p className='location'>{selectLocal.sede}{' '}
+              <span>
+                <Link to={`${PathConstants.RECOJO}/recojo`} className='textDelivery text-underline'>
+                  Cambiar
+                </Link>
+              </span>
+              </p>
+            </div>
+          </div>
           <div className="flex none-d">
             <YellowBtn
               text={'Pide en tiendas'}

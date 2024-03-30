@@ -11,6 +11,9 @@ import { useEffect, useState } from "react";
 
 const Tiendas = () => {
   TabTitle('Promociones de Hamburguesas en Perú | Bembos Delivery');
+
+  const [query, setQuery] = useState("");
+
   const {
     getDataPromociones,
     promosDos,
@@ -22,7 +25,6 @@ const Tiendas = () => {
     getDataPromociones();
   },[])
 
-  const [query, setQuery] = useState("");
   function search(data, type_search) {
     if (!data || !Array.isArray(data)) {
       return []

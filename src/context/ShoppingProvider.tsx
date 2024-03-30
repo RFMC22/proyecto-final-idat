@@ -10,6 +10,7 @@ import {
 } from '../interfaces';
 import {
   getComplementos,
+  getLocales,
   getPollo,
   getPromosCompartir,
   getPromosDos,
@@ -52,6 +53,8 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [saveLocalStorage, setSaveLocalStorage] = useState(false);
   const [shoppingList, setShoppingList] = useState({});
   const [numberOrders, setNumberOrders] = useState(0);
+  const [locales, setLocales] = useState({});
+  const [selectLocal, setSelectLocal] = useState({}); 
   // Functions for Fetching
   const getDataPromociones = async () => {
     const [promos, promosD, promosC, complements, cupons] = await Promise.all([
@@ -68,6 +71,11 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     setComplementos(complements);
     setCupones(cupons);
   };
+
+  const getDataLocales = async () => {
+    const localesData = await getLocales();
+    setLocales(localesData);
+  }
 
   const getPolloData = async () => {
     try {
@@ -224,6 +232,13 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const sentLocalStorage = (acumulateList: any) => {
     localStorage.setItem(`order_${Date.now()}`, JSON.stringify(acumulateList));
   };
+  const setLocalStorage = (location:any) => {
+    localStorage.setItem(`location`, JSON.stringify(location));
+  }
+  const getLocalStorage = () => {
+    const locationLocalStorage =  JSON.parse(localStorage.getItem('location'));
+    setSelectLocal(locationLocalStorage)
+  }
 
   const getFromLocalStorage = () => {
     let allItems = [];
@@ -245,6 +260,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
 
   useEffect(() => {
     getFromLocalStorage();
+    getLocalStorage();
   }, []);
 
   return (
@@ -260,6 +276,8 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         complementos,
         cupones,
         getDataPromociones,
+        getDataLocales,
+        locales,
         polloQuestions,
         getPolloData,
         setBaseList,
@@ -273,6 +291,9 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         shoppingList,
         setNumberOrders,
         numberOrders,
+        selectLocal,
+        setLocalStorage,
+        getLocalStorage
       }}
     >
       {children}

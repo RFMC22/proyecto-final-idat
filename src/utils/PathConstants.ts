@@ -9,6 +9,8 @@ const PathConstants = {
   CUPONES: '/cupones',
   COMBOS_ORDERS: '/menu/combos/:order',
   CART: '/checkout/cart',
+  RECOJO:'/ubicacion',
+  RECOJO_ID: '/ubicacion/:id',
   BENEFICIOS: '/beneficios',
   CHECKOUT: '/checkout',
   ADMIN_PRODUCT: '/admin/product'

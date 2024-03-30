@@ -8,14 +8,15 @@ import { CiTrash } from 'react-icons/ci';
 import { GoChevronDown } from 'react-icons/go';
 import { IoIosClose } from 'react-icons/io';
 import useShopping from '../../hooks/useShopping';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { GoAlert } from 'react-icons/go';
+import { PathConstants } from '../../utils';
 
 const Cart = () => {
-  const { setCartState, cartState, shoppingList, setNumberOrders } =
+  const { setCartState, cartState, shoppingList, setNumberOrders, selectLocal } =
     useShopping();
 
-  let subTotal = [
+  const subTotal = [
     { id: 1, subTotal: 0 },
     { id: 2, subTotal: 0 },
     { id: 3, subTotal: 0 },
@@ -137,7 +138,7 @@ const Cart = () => {
           <section className="Cart">
             <div className="cart-header flex">
               <p className="cart-address">
-                Entregar en: <span>Av. Benavides N°1821</span>
+                Entregar en: <Link to={`${PathConstants.RECOJO}/recojo`} className='location'> {selectLocal.sede} </Link>
               </p>
               <GoChevronDown className="select" />
               <IoIosClose className="close" onClick={handleClose} />

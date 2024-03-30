@@ -56,12 +56,17 @@
     align-items: center;
     justify-content: center;
   }
+  .flex-start {
+    justify-content: start;
+  }
   .flex-around {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+  .flex-gap-1 {
+    gap: 1rem;
+  }
   .container-m {
     /* width: 350px; */
     /* margin: 0 auto; */
@@ -160,6 +165,12 @@
           background-color: transparent;
           border: none;
           color: white;
+        }
+        .location {
+          color: #fff;
+        }
+        .text-underline {
+          text-decoration: underline;
         }
       }
 
