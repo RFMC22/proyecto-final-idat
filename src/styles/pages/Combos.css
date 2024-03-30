@@ -134,7 +134,7 @@ main {
     height: 50px;
     width: 100%;
     position: fixed;
-    top: 219.4px;
+    top: 214px;
     right: 0;
     left: 0;
     z-index: 2;
@@ -212,13 +212,118 @@ main {
 
 }
 
+.content-carrito {
+    display: none;
+}
+
 @media(max-width:1052px) {
-    .cencelado {
-        display: none;
+    .nav-responsivo {
+        height: 100px;
+        position: fixed;
+        bottom: 0;
+        z-index: 20;
+    }
+
+    .contenedor-navegacion-combos .navegacion-seccion-combos .collapsed {
+        width: 1000px;
+        z-index: 2;
+        transition: none;
+        border-radius: 0;
+        border: none;
+        border-top: 1px solid #ccc;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 500px;
+        padding: 0;
+        overflow-y: scroll;
+    }
+
+    .contenedor-navegacion-combos .selec-amarillo {
+        border-radius: 0;
+        height: 100%;
+
+    }
+
+    .contenedor-navegacion-combos {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 490px;
+        border: 1px solid #ccc;
+        background: #d4d5d6;
+        overflow-y: scroll;
+    }
+
+    .navegacion-seccion-combos ul {
+        color: #fff;
+        width: 1053px;
+        background-color: var(--blue);
+        border: none;
+        padding: 0;
+        align-items: center;
+        box-shadow: 0 3px 10px #ccc;
+        border-radius: 0;
+    }
+
+    .navegacion-seccion-combos ul li:hover {
+        border-radius: 0;
+        background-color: var(--yellow-100);
+    }
+
+    .navegacion-seccion-combos ul li a {
+        color: #fff;
+        font-family: var(--din);
+        padding: 13px 5px;
+        font-size: 19px;
     }
 
     .contenedor-fondo-medio {
         margin: 40px 10px 30px 10px;
+    }
+
+    .content-carrito {
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        font-family: var(--kulristaR);
+        font-weight: 300;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        height: 40px;
+        justify-content: space-between;
+        position: relative;
+        z-index: 100;
+        margin-top: 45px;
+        left: 0;
+        right: 0;
+        width: auto;
+        background-color: #e10b19;
+
+    }
+
+    .content-carrito h4 {
+        font-weight: 300;
+        width: 200px;
+        text-align: center;
+
+    }
+
+    .content-carrito img {
+        width: 50px;
+        height: 30px;
+        color: #fff;
+
+    }
+
+    .content-carrito p {
+        text-align: center;
+
     }
 }
 
@@ -241,7 +346,7 @@ main {
 
 
     .contenedor-fondo-medio {
-        margin: 30px 10px;
+        margin: 0px 10px;
     }
 
     main {

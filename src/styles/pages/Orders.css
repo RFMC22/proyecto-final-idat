@@ -6,6 +6,7 @@
   .container-breadcrumb {
     padding: 20px;
   }
+
   .order-container {
     display: flex;
     flex-direction: column;
@@ -96,12 +97,14 @@
         border-radius: 50%;
         margin-right: 10px;
       }
+
       .icon {
         width: 50px;
         height: 50px;
         color: rgb(33, 56, 139);
       }
     }
+
     .title {
       color: rgb(33, 56, 139);
       font-family: 'din', sans-serif;
@@ -111,6 +114,7 @@
     }
   }
 }
+
 .orders-low-bar {
   position: fixed;
   bottom: 0;
@@ -145,9 +149,11 @@
         font-weight: 600;
       }
     }
+
     .low-bar-right {
       width: 70%;
       text-align: center;
+
       .acum-points {
         font-size: 13px;
         color: #e10b19;
@@ -189,7 +195,7 @@
       }
 
       .imgContainer {
-        margin: 30px auto;
+        margin: 30px 50px;
         width: 340px;
         border-radius: 10px;
         max-height: 340px;
@@ -230,6 +236,7 @@
       .low-bar-right {
         width: 40%;
         text-align: left;
+
         .acum-points {
           padding-left: 60px;
           text-align: left;

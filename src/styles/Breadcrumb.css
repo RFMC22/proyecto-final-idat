@@ -1,19 +1,23 @@
 .breadcrumb {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    margin: 15px 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 15px 0;
 
-    li {
-      text-transform: capitalize;
-      text-decoration: underline;
-      color: rgb(0, 0, 238);
-      font-size: 19px;
-      font-family: 'din', sans-serif;
-    }
-
-    span {
-      font-size: 14px;
-      font-family: 'din', sans-serif;
-    }
+  li {
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: rgb(0, 0, 238);
+    font-size: 19px;
+    font-family: 'din', sans-serif;
   }
+
+  span {
+    font-size: 14px;
+    font-family: 'din', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
