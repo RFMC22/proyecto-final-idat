@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 5px 15px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
   color: rgb(23, 48, 131);
   cursor: pointer;
@@ -59,4 +59,17 @@
 .btnYellow.position-right {
   flex-direction: row-reverse;
   gap: 5px;
+}
+
+@media (min-width: 800px) {
+  .btnYellow.responsive-topbarButton {
+    font-size: 16px;
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      align-content: center;
+      /* justify-content: center; */
+    }
+  }
 }

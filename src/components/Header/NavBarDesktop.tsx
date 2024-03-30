@@ -19,7 +19,7 @@ const NavBarDesktop = () => {
     tabScrollClick(id);
   };
 
-  const { setCartState, getFromLocalStorage } = useShopping();
+  const { setCartState, getFromLocalStorage,numberOrders } = useShopping();
   const handleClick = () => {
     setCartState(true);
     getFromLocalStorage();
@@ -218,7 +218,7 @@ const NavBarDesktop = () => {
               position=""
               iconHeight=""
               Circle="redCircle"
-              id="cart"
+              id={numberOrders}
               handleClick={handleClick}
             />
           </Link>

@@ -22,6 +22,7 @@ import {
   iShoppingType,
 } from '../interfaces/IShopping';
 import { getCupones } from '../services/fetchCupones';
+import { Pollo } from '../interfaces/model/Pollo';
 
 const ShoppingContext = createContext<iShoppingType>(iShoppingContext);
 
@@ -43,7 +44,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     useState<PromocionCompartirResponse>({});
   const [complementos, setComplementos] = useState<ComplementoResponse>({});
   const [cupones, setCupones] = useState<CuponResponse>({});
-  const [polloQuestions, setPolloQuestions] = useState<PolloResponse>({});
+  const [polloQuestions, setPolloQuestions] = useState<Pollo[]>([]);
   const [baseList, setBaseList] = useState<OrderItem[]>([]);
   let extras = {};
   let hamburguerOrder = {};
@@ -51,6 +52,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [acumulateList, setAccumulateList] = useState({});
   const [saveLocalStorage, setSaveLocalStorage] = useState(false);
   const [shoppingList, setShoppingList] = useState({});
+  const [numberOrders, setNumberOrders] = useState(0);
   const [locales, setLocales] = useState({});
   const [selectLocal, setSelectLocal] = useState({}); 
   // Functions for Fetching
@@ -75,9 +77,15 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     setLocales(localesData);
   }
 
+
   const getPolloData = async () => {
-    const polloData = await getPollo();
-    polloData && setPolloQuestions(polloData);
+    try {
+      const polloData = await getPollo();
+      polloData && setPolloQuestions(polloData);
+      polloData && console.log(polloData);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   // Functions for the Shopping Cart
@@ -88,6 +96,14 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     count: any,
     question: number
   ) => {
+    console.log(
+      'handle order click en context:',
+      id,
+      price,
+      text,
+      count,
+      question
+    );
     const checkBaseList = baseList.some((item) => item.id === id);
     checkBaseList
       ? setBaseList((prevBaseList) =>
@@ -125,11 +141,9 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   useEffect(() => {
     setGeneralCounter(1);
   }, [location.pathname]);
-  // useEffect(() => {
-  //   showData(orderBase);
-  // }, [orderBase]);
 
   const orderTheList = (baseList: any) => {
+    // console.log(baseList);
     const burguerItem = baseList.filter((item: any) => item.question === 1);
     if (burguerItem[0]) {
       hamburguerOrder = {
@@ -193,6 +207,18 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         })),
       };
     }
+
+    const extra_combos = baseList.filter((item: any) => item.question === 7);
+    if (extra_combos[0]) {
+      extras = {
+        ...extras,
+        extra_combos: extra_combos.map((extra_combo: any) => ({
+          type: extra_combo.product,
+          price: extra_combo.price,
+          selected: true,
+        })),
+      };
+    }
     setAccumulateList({ ...hamburguerOrder, extras });
     // accumulateList = { ...hamburguerOrder, extras };
   };
@@ -205,12 +231,9 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   }, [acumulateList]);
 
   const sentLocalStorage = (acumulateList: any) => {
-    localStorage.setItem(
-      `order_${acumulateList.name}`,
-      JSON.stringify(acumulateList)
-    );
+    localStorage.setItem(`order_${Date.now()}`, JSON.stringify(acumulateList));
   };
-  const setLocalStorage = (location) => {
+  const setLocalStorage = (location:any) => {
     localStorage.setItem(`location`, JSON.stringify(location));
   }
   const getLocalStorage = () => {
@@ -220,31 +243,25 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
 
   const getFromLocalStorage = () => {
     let allItems = [];
-    let allItemsFiltered=[];
+    let allItemsFiltered = [];
     for (let i = 0; i < localStorage.length; i++) {
       let key = localStorage.key(i);
+      if (key && key.startsWith('order_')) {
+        let itemString = localStorage.getItem(key);
+        if (itemString !== null) {
+          let item = JSON.parse(itemString);
+          allItems.push(item);
+        }
 
-      // Check if the key represents an item you've saved
-      // You can add additional checks here if needed
-      // For example, you might want to filter keys that start with a specific prefix
-      if (key.startsWith('order_')) {
-        // Retrieve the value associated with the key
-        let item = JSON.parse(localStorage.getItem(key));
-
-        // Push the item to the array
-        allItems.push(item);
+        allItemsFiltered = allItems.filter((item) => item.name.trim() !== '');
+        setShoppingList(allItemsFiltered);
       }
-
-      allItemsFiltered = allItems.filter((item) => item.name.trim() !== '');
-      setShoppingList(allItemsFiltered);
-      
     }
-
-    
   };
 
   useEffect(() => {
     getFromLocalStorage();
+    getLocalStorage();
     getLocalStorage();
   }, []);
 
@@ -274,6 +291,8 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         saveLocalStorage,
         getFromLocalStorage,
         shoppingList,
+        setNumberOrders,
+        numberOrders,
         selectLocal,
         setLocalStorage,
         getLocalStorage
