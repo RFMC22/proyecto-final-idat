@@ -1,0 +1,130 @@
+.recojo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgb(204, 204, 204);
+}
+.r-content {
+  padding: 1rem 10rem;
+  text-align: center;
+}
+
+.recojo .title {
+  background-color: #21388b;
+  color: #fbb905;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.r-content .b {
+  font-size: 1rem;
+  font-family: var(--kulristaB);
+  text-transform: uppercase;
+  color: #21388b;
+  background: none;
+  outline: none;
+  border: none;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid red;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.r-content .b svg {
+  font-size: 3rem;
+  margin-bottom: .6rem;
+}
+.r-content .input input {
+  padding: 0.5rem 1rem;
+  width: 70%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  margin-bottom: 1rem;
+}
+.content-sedes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+.sedes {
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.sedes .te {
+  text-align: start;
+  font-size: 1.5rem;
+  color: #21388b;
+}
+.sedes .st {
+  text-align: start;
+  font-size: 1.2rem;
+  font-family: var(--kulristaR);
+  margin-bottom: 0.4rem;
+}
+.sedes button {
+  color: #21388b;
+  border: 2px solid #21388b;
+  background: none;
+  font-family: var(--kulristaB);
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.popup-recojo{
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.title-recojo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #21388b;
+}
+.title-recojo p{
+  color: #fff;
+  font-size: 1.4rem;
+  color: #fbb905;
+  text-transform: uppercase;
+}
+.close-recojo {
+  position: absolute;
+  right: 0;
+}
+.cancel-btn-recojo{
+  border:2px solid #21388b !important;
+  background: none !important;
+  color: #21388b !important;
+}
+.popup-recojo button{
+  border-radius: 1rem !important;
+}
+.popup-recojo .swal2-html-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.popup-recojo .distrito {
+  font-size: 1.5rem;
+  color: #21388b;
+}
+.popup-recojo .sede {
+  font-size: 1rem;
+  font-family: var(--kulristaR);
+  margin-bottom: .5rem;
+  color: #000;
+}
+.popup-recojo .tiempo {
+  color: #000;
+  font-family: var(--kulristaR);
+}
+.popup-recojo .tiempo span {
+  font-family: var(--kulristaB);
+}

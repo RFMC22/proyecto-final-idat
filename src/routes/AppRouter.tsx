@@ -3,7 +3,7 @@ import {
   Beneficios, Combos, Cupones, 
   Error404, Home, Menu, Orders, 
   Product, 
-  Promociones, Root, Tiendas } from "../pages"
+  Promociones, Recojo, Root, Tiendas } from "../pages"
 import { Cart } from "../components"
 import { PathConstants } from "../utils"
 import Checkout from "../pages/Checkout"
@@ -27,10 +27,6 @@ const AppRouter = () => {
             element={<Promociones />}
           ></Route>
           <Route path={PathConstants.CUPONES} element={<Cupones />}></Route>
-          {/* <Route
-            path={PathConstants.COMBOS_ORDERS}
-            element={<Orders />}
-          ></Route> */}
           <Route
             path={PathConstants.MENU_TYPE_ORDERS}
             element={<Orders />}
@@ -53,6 +49,10 @@ const AppRouter = () => {
           <Route
             path={PathConstants.CHECKOUT}
             element={<Checkout />}
+          ></Route>
+          <Route
+            path={PathConstants.RECOJO_ID}
+            element={<Recojo />}
           ></Route>
         </Route>
       </Routes>

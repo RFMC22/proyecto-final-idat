@@ -40,6 +40,12 @@
       color: black;
       cursor: pointer;
     }
+    .location {
+      color: #000;
+    }
+    &:hover .location {
+      text-decoration: underline;
+    }
   }
 
   .select {
