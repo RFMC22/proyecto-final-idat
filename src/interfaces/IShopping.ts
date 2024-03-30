@@ -7,6 +7,7 @@ import {
   PromocionDosResponse,
   PromocionPersonalResponse,
 } from '.';
+import { Pollo } from './model/Pollo';
 
 export interface cartStateProps {}
 
@@ -22,6 +23,7 @@ export type iShoppingType = {
   promosPersonales: PromocionPersonalResponse;
   promosDos: PromocionDosResponse;
   promosCompartir: PromocionCompartirResponse;
+  locales:any;
   complementos: ComplementoResponse;
   cupones: CuponResponse;
   handleOrderClick: (
@@ -32,8 +34,9 @@ export type iShoppingType = {
     question: number
   ) => void;
   getDataPromociones: () => Promise<void>;
+  getDataLocales: () => Promise<void>;
   getPolloData: () => Promise<void>;
-  polloQuestions: PolloResponse;
+  polloQuestions: Pollo[];
   orderInfo: {
     name: string;
     description: string;
@@ -60,21 +63,30 @@ export type iShoppingType = {
   >;
   setBaseList: Dispatch<SetStateAction<OrderItem[]>>;
   saveLocalStorage: boolean;
-  shoppingList:any
+  shoppingList:any;
+  selectLocal: any;
+  setLocalStorage: any
+  getLocalStorage:any;
+  numberOrders:number,
+  setNumberOrders:any
 };
 
 export const iShoppingContext = {
   cartState: false,
   setCartState: () => {},
   promosPersonales: {},
+  locales:{},
+  locales:{},
   promosDos: {},
   promosCompartir: {},
   complementos: {},
   cupones: {},
-  polloQuestions: {},
+  polloQuestions: [],
   generalCounter: 1,
   setGeneralCounter: () => {},
   getDataPromociones: async () => {},
+  getDataLocales: async () => {},
+  getDataLocales: async () => {},
   getPolloData: async () => {},
   handleOrderClick: () => {},
   setOrderItem: () => [{}],
@@ -93,4 +105,9 @@ export const iShoppingContext = {
   saveLocalStorage: false,
   getFromLocalStorage:()=>{},
   shoppingList:{},
+  numberOrders:0,
+  setNumberOrders:()=>{},
+  selectLocal: {},
+  setLocalStorage: () => {},
+  getLocalStorage: () => {}
 };

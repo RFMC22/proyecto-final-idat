@@ -9,6 +9,6 @@ export interface yellowBtnProps {
   position: string;
   iconHeight: string;
   Circle: string;
-  id: string;
+  id: any;
   handleClick:any;
 }

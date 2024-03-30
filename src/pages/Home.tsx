@@ -188,7 +188,6 @@ const Home = () => {
                 img={menu.img}
                 link={menu.link}
                 id={menu.id}
-                precio={0}
               />
             </SwiperSlide>
           ))}

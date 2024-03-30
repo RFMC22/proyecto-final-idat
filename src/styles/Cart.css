@@ -40,6 +40,12 @@
       color: black;
       cursor: pointer;
     }
+    .location {
+      color: #000;
+    }
+    &:hover .location {
+      text-decoration: underline;
+    }
   }
 
   .select {
@@ -208,9 +214,22 @@
     .shopping-item {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       border-top: 2px solid rgb(204, 204, 204);
       padding: 10px 0 20px 0;
+
+      .shopping-details {
+        padding: 10px 50px;
+        font-family: 'din', sans-serif;
+        .shopping-details-question {
+          font-size: 13px;
+          font-weight: 700;
+        }
+        .shopping-details-answer {
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
 
       .shopping-left {
         display: flex;
@@ -266,6 +285,7 @@
       }
 
       .shopping-right {
+        padding-top: 20px;
         .actions {
           display: flex;
           justify-content: space-between;
