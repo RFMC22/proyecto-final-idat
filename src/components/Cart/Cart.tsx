@@ -10,11 +10,10 @@ import { IoIosClose } from 'react-icons/io';
 import useShopping from '../../hooks/useShopping';
 import { Link, useNavigate } from 'react-router-dom';
 import { GoAlert } from 'react-icons/go';
-import { Counter } from '..';
 import { PathConstants } from '../../utils';
 
 const Cart = () => {
-  const { setCartState, cartState, shoppingList, selectLocal } =
+  const { setCartState, cartState, shoppingList, setNumberOrders, selectLocal } =
     useShopping();
 
   const subTotal = [
@@ -39,7 +38,7 @@ const Cart = () => {
       const data = await getComplementos();
       return setComplementos(data);
     };
-
+    // setCartState(true);
     getDataComplementos();
   }, []);
 
@@ -50,14 +49,21 @@ const Cart = () => {
   };
 
   if (Object.keys(shoppingList).length !== 0) {
-    const totalComplements = [
+    let totalComplements = [
       { id: 1, subTotal: 0 },
       { id: 2, subTotal: 0 },
       { id: 3, subTotal: 0 },
       { id: 4, subTotal: 0 },
       { id: 5, subTotal: 0 },
     ];
-    const totalExtraSauces = [
+    let totalExtraSauces = [
+      { id: 1, subTotal: 0 },
+      { id: 2, subTotal: 0 },
+      { id: 3, subTotal: 0 },
+      { id: 4, subTotal: 0 },
+      { id: 5, subTotal: 0 },
+    ];
+    let totalExtraCombos = [
       { id: 1, subTotal: 0 },
       { id: 2, subTotal: 0 },
       { id: 3, subTotal: 0 },
@@ -87,11 +93,22 @@ const Cart = () => {
 
     shoppingList &&
       shoppingList.forEach((shoppingItem: any, index: any) => {
+        let totalExtraCombo = 0;
+        shoppingItem.extras.extra_combos &&
+          shoppingItem.extras.extra_combos.forEach((sauce: any) => {
+            totalExtraCombo += sauce.quantity * sauce.price;
+          });
+        totalExtraCombos[index].subTotal = totalExtraCombo;
+      });
+
+    shoppingList &&
+      shoppingList.forEach((shoppingItem: any, index: any) => {
         subTotal[index].subTotal = parseFloat(
           (
-            totalComplements[index].subTotal +
-            totalExtraSauces[index].subTotal +
-            shoppingItem.unit_price
+            (totalComplements[index].subTotal +
+              totalExtraSauces[index].subTotal +
+              shoppingItem.unit_price) *
+            shoppingItem.quantity
           ).toFixed(2)
         );
       });
@@ -101,11 +118,17 @@ const Cart = () => {
         accumulateSubTotal += sub.subTotal;
         accumulateSubTotal = parseFloat(accumulateSubTotal.toFixed(2));
       });
-
-
   }
 
+  if (Object.keys(shoppingList).length !== 0) {
+    setNumberOrders(shoppingList.length);
+  }
 
+  const [readMoreState, setReadMoreState] = useState(false);
+
+  const handleReadMore = () => {
+    setReadMoreState(!readMoreState);
+  };
 
   return (
     <>
@@ -145,32 +168,84 @@ const Cart = () => {
                     <div key={index}>
                       <div className="cart-shoppingList">
                         <div className="shopping-item">
-                          <div className="shopping-left">
-                            <div className="edit">
-                              <FaPencil className="edit-icon" />
-                            </div>
-                            <div className="image-container">
-                              <img
-                                src="https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-cyber-parrillero-marzo-2024.jpg"
-                                alt="product image"
-                              />
-                            </div>
-                            <div className="shopping-text">
-                              <p className="shopping-name">
-                                <span className="shopping-name-cantidad">{`0${shoppingItem.quantity} `}</span>
-                                x
-                                {` ${shoppingItem.name.split(' ')[0]} ${shoppingItem.name.split(' ')[1]
+                          <div className="shoppint-item-left">
+                            <div className="shopping-left">
+                              <div className="edit">
+                                <FaPencil className="edit-icon" />
+                              </div>
+                              <div className="image-container">
+                                <img
+                                  src="https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-cyber-parrillero-marzo-2024.jpg"
+                                  alt="product image"
+                                />
+                              </div>
+                              <div className="shopping-text">
+                                <p className="shopping-name">
+                                  <span className="shopping-name-cantidad">{`0${shoppingItem.quantity} `}</span>
+                                  x
+                                  {` ${shoppingItem.name.split(' ')[0]} ${
+                                    shoppingItem.name.split(' ')[1]
                                   } ${shoppingItem.name.split(' ')[2]} `}
-                              </p>
-                              <p className="shopping-price">{`S/. ${subTotal[index].subTotal}`}</p>
+                                </p>
+                                <p className="shopping-price">{`S/. ${subTotal[index].subTotal}`}</p>
+                              </div>
                             </div>
+                            {readMoreState && (
+                              <div className="shopping-details">
+                                {shoppingItem.extras.soda ? (
+                                  <div className="shopping-details-item">
+                                    <p className="shopping-details-question">
+                                      Elige el sabor de tu gaseosa
+                                    </p>
+                                    <p className="shopping-details-answer">
+                                      {`1 x ${shoppingItem.extras.soda[0].type}`}
+                                    </p>
+                                  </div>
+                                ) : (
+                                  ''
+                                )}
+
+                                {shoppingItem.extras.size ? (
+                                  <div className="shopping-details-item">
+                                    <p className="shopping-details-question">
+                                      Elige el tamaño de tus papas
+                                    </p>
+                                    <p className="shopping-details-answer">
+                                      {`1 x ${shoppingItem.extras.size[0].type}`}
+                                    </p>
+                                  </div>
+                                ) : (
+                                  ''
+                                )}
+
+                                {shoppingItem.extras.complements ? (
+                                  <div className="shopping-details-item">
+                                    <p className="shopping-details-question">
+                                      ¿Desea algun extra?
+                                    </p>
+                                    {shoppingItem.extras.complements.map(
+                                      (complemento: any) => (
+                                        <p className="shopping-details-answer">
+                                          {`${complemento.quantity} x ${complemento.type}`}
+                                        </p>
+                                      )
+                                    )}
+                                  </div>
+                                ) : (
+                                  ''
+                                )}
+                              </div>
+                            )}
                           </div>
+
                           <div className="shopping-right">
                             <div className="actions">
                               <CiTrash className="trash-icon" />
-                              <p className="readMore">Leer más</p>
+                              <p className="readMore" onClick={handleReadMore}>
+                                Leer más
+                              </p>
                             </div>
-                            <Counter myclass="counter-cart" />
+                            {/* <Counter myclass="counter-cart" /> */}
                           </div>
                         </div>
                       </div>
@@ -203,13 +278,13 @@ const Cart = () => {
 
                 <div className="cart-container cart-container-sticky">
                   <div className="btns">
-                    <Link to={PathConstants.CHECKOUT}>
-                      <button className="btn btn-rojo" disabled={isDisabled()}>
-                        <div className="circle">1</div>
-                        IR A PAGAR <span>{`S/. ${accumulateSubTotal}`}</span>
-                      </button>
-                    </Link>
-                    <button className="btn btn-blanco">SEGUIR COMPRANDO</button>
+                    <button className="btn btn-rojo" disabled={isDisabled()}>
+                      <div className="circle">1</div>
+                      IR A PAGAR <span>{`S/. ${accumulateSubTotal}`}</span>
+                    </button>
+                    <button className="btn btn-blanco" onClick={handleClose}>
+                      SEGUIR COMPRANDO
+                    </button>
                   </div>
                 </div>
               </>

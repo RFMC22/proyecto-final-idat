@@ -7,6 +7,7 @@ import {
   PromocionDosResponse,
   PromocionPersonalResponse,
 } from '.';
+import { Pollo } from './model/Pollo';
 
 export interface cartStateProps {}
 
@@ -35,7 +36,7 @@ export type iShoppingType = {
   getDataPromociones: () => Promise<void>;
   getDataLocales: () => Promise<void>;
   getPolloData: () => Promise<void>;
-  polloQuestions: PolloResponse;
+  polloQuestions: Pollo[];
   orderInfo: {
     name: string;
     description: string;
@@ -66,6 +67,8 @@ export type iShoppingType = {
   selectLocal: any;
   setLocalStorage: any
   getLocalStorage:any;
+  numberOrders:number,
+  setNumberOrders:any
 };
 
 export const iShoppingContext = {
@@ -73,14 +76,16 @@ export const iShoppingContext = {
   setCartState: () => {},
   promosPersonales: {},
   locales:{},
+  locales:{},
   promosDos: {},
   promosCompartir: {},
   complementos: {},
   cupones: {},
-  polloQuestions: {},
+  polloQuestions: [],
   generalCounter: 1,
   setGeneralCounter: () => {},
   getDataPromociones: async () => {},
+  getDataLocales: async () => {},
   getDataLocales: async () => {},
   getPolloData: async () => {},
   handleOrderClick: () => {},
@@ -100,6 +105,8 @@ export const iShoppingContext = {
   saveLocalStorage: false,
   getFromLocalStorage:()=>{},
   shoppingList:{},
+  numberOrders:0,
+  setNumberOrders:()=>{},
   selectLocal: {},
   setLocalStorage: () => {},
   getLocalStorage: () => {}

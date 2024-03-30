@@ -34,6 +34,7 @@ const ExtraOptionCardComponent = ({
   const handleClick = () => {
     onClick();
     handleOrderClick(id, price, text, count === '' ? 1 : counter, question);
+    console.log('handle order click en extra card component:',id,price,text,count,counter,question);
   };
 
   return (

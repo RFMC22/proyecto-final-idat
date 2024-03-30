@@ -13,7 +13,7 @@ const YellowBtn = ({
 }: yellowBtnProps) => {
   
   const doNothing =()=>{
-    id 
+     
   }
 
   return (
@@ -25,7 +25,7 @@ const YellowBtn = ({
 
       <img src={icon} alt="icon" className={`icon ${iconHeight}`} onClick={handleClick} />
       <div className="relative">
-        <span className={`${Circle}`}>0</span>
+        <span className={`${Circle}`}>{id}</span>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const MenuCards = ({ menuCardOptions }: any) => {
               </div>
 
               <div className="flex flex-center">
-                <BlueBtn text="Ver todos" myclass="" setSaveLocalStorage={''} />
+                <BlueBtn text="Ver todos" myclass="bluetBtn" setSaveLocalStorage={''} />
               </div>
             </Link>
 
