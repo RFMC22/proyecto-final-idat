@@ -11,6 +11,7 @@ import { BeneficioHeader, Card } from '../components';
 // import { BeneficiosResponse } from '../interfaces/responses/BeneficiosResponse';
 import { getBeneficios } from '../services/fetchBeneficios';
 import { Destinado } from '../interfaces/model/Beneficios';
+import ErrorServer from '../components/shared/ErrorServer';
 
 const Beneficios = () => {
   const [preguntasFrecuentesData, setPreguntasFrecuentesData] =
@@ -190,12 +191,7 @@ const Beneficios = () => {
               ))
             ) : (
               // Render default cards when clickedData is undefined or empty
-              friendzoneData &&
-              friendzoneData.map((relationship) => (
-                <SwiperSlide key={relationship.id}>
-                  <Card {...relationship} />
-                </SwiperSlide>
-              ))
+              <ErrorServer />
             )}
           </SwiperComponent>
         </section>

@@ -8,3 +8,4 @@ export { default as Accordion } from './Accordion';
 export { default as ExtraOptionCardComponent } from './ExtraOptionCardComponent';
 export { default as PreguntasFrecuentes } from './PreguntasFrecuentes';
 export { default as Counter } from './Counter';
+export { default as Error } from './Counter';
