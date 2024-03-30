@@ -215,7 +215,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   }
   const getLocalStorage = () => {
     const locationLocalStorage =  JSON.parse(localStorage.getItem('location'));
-    setSelectLocal(locationLocalStorage)
+    setSelectLocal(locationLocalStorage || {})
   }
 
   const getFromLocalStorage = () => {
