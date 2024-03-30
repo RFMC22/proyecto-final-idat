@@ -10,17 +10,17 @@ import imgYape from '../../public/imgYape.jpg'
 import yape from '../../public/yape.svg'
 import { useForm } from 'react-hook-form'
 import useShopping from '../hooks/useShopping'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { configPostCollection } from '../services/fetchBase'
-import { CollectionsConstants } from '../utils'
+import { CollectionsConstants, PathConstants } from '../utils'
 import Swal from 'sweetalert2'
-
-const Checkout = () => {
-    const { register, handleSubmit, formState: { errors }, setValue, watch, reset } = useForm();
-    const selectedPaymentMethod = watch('metodoPago');
-    const { shoppingList, getFromLocalStorage } = useShopping();
+import { Link } from 'react-router-dom'
 
 
+const Checkout: React.FC = () => {
+    const { register, handleSubmit, formState: { errors }, setValue,  reset } = useForm();
+    const { shoppingList, getFromLocalStorage, selectLocal } = useShopping();
+    const [formSubmitted, setFormSubmitted] = useState(false);
     let ordersInfo = {}
 
     let accumulateSubTotal = 0;
@@ -33,23 +33,40 @@ const Checkout = () => {
     }
 
     const onSubmit = handleSubmit((data) => {
-
-
         ordersInfo = {
             items: shoppingList,
             personal_info: data
-        }
+        };
         const postData = async () => {
-            console.log(ordersInfo)
-            await configPostCollection(CollectionsConstants.ORDERS, ordersInfo);
+            try {
+                console.log(ordersInfo);
+                await configPostCollection(CollectionsConstants.ORDERS, ordersInfo);
+                localStorage.clear();
+                reset();
+                setFormSubmitted(true);
 
-        }
-        postData()
-        reset()
+            } catch (error) {
+                console.error('Error al enviar los datos:', error);
+            }
+        };
+        postData();
     });
     useEffect(() => {
         getFromLocalStorage();
     }, []);
+
+
+    const handleRenud = () => {
+        if (formSubmitted) { 
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Gracias por tu compra",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+    };
 
     const handlePayment = () => {
         Swal.fire({
@@ -70,6 +87,14 @@ const Checkout = () => {
                 cancelButton: 'swal2-cancel',
                 confirmButton: 'swal2-confirm'
             }
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+                setValue('payment', 'true');
+            } else if (result.isDenied) {
+                setValue('payment', 'false');
+            }
+
         });
     };
     return (
@@ -83,7 +108,7 @@ const Checkout = () => {
                     <div className='ubicacion-tienda'>
                         <img src={iconMas} className='iconMas' />
                         <p className='text-direccion'
-                        >Aurora - Av. Benavides N° 1821</p>
+                        > <Link to={`${PathConstants.RECOJO}/recojo`} className='location'> {selectLocal.sede} </Link></p>
                         <img src={iconLapiz} className='iconLapiz' />
                     </div>
                     <form onSubmit={onSubmit} className='formulario-checkout'>
@@ -199,11 +224,13 @@ const Checkout = () => {
                             <p>Selecionar método de pago</p>
                             <div className='contenedor-metodos-pagos'>
                                 <h4>Pago online</h4>
-                                <div className='item-metodos'>
+                                <div className='item-metodos' >
 
                                     <li className='metodo-tipo-incognita'><img src={incognita} /></li>
-                                    <button className={`metodo-tipo ${selectedPaymentMethod === 'yape' ? 'selected' : ''}`} type="button" onClick={() => setValue('paymentMethod', 'yape')}><img src={yape} /></button>
-                                    <button className={`metodo-tipo ${selectedPaymentMethod === 'yape' ? 'selected' : ''}`} type="button" onClick={handlePayment}><img src={yape} /></button>
+
+                                    <button className={`metodo-tipo ${errors.payment ? 'denied-pago' : ''}`} type="button" onClick={handlePayment}
+
+                                    ><img src={yape} /></button>
 
                                 </div>
                             </div>
@@ -252,7 +279,8 @@ const Checkout = () => {
 
                             </div>
                         </div>
-                        <button type='submit' className='btn-finalizado'><span className='circle-one'>1</span>finalizar compra <span className='price-checkout'>S/. 32.80</span></button>
+
+                        <button type='submit' className='btn-finalizado' onClick={handleRenud}><span className='circle-one'>1</span>finalizar compra <span className='price-checkout'>S/. 32.80</span></button>
                     </form>
                 </div>
             </section>

@@ -338,6 +338,14 @@
     gap: 20px;
 }
 
+.aprobado-yape {
+    border: 1px solid black;
+}
+
+.error-pago {
+    border: 3px solid red;
+}
+
 .contenedor-error {
     width: 50%;
 }
