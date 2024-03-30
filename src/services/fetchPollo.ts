@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { PolloResponse } from '../interfaces';
 import { Pollo } from '../interfaces/model/Pollo';
 
 export const getPollo = async (): Promise<Pollo[]> => {

@@ -39,6 +39,10 @@ yarn fakeData
 * GitFlow
 * Metodologia agil
 * BEM
+* Firestore
+* SweetAlert2
+* React Hook Form
+* Json Server
 
 ##  Estructura de carpeta y archivos 🔧
 ![alt text](image.png)
