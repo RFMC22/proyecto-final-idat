@@ -212,6 +212,26 @@ main {
 
 }
 
+@media(max-width:1052px) {
+    .cencelado {
+        display: none;
+    }
+
+    .contenedor-fondo-medio {
+        margin: 40px 10px 30px 10px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    .contenedor-fondo-medio {
+        margin: 0 10px 30px 10px;
+    }
+
+    main {
+        padding-top: 150px;
+    }
+}
 
 @media (max-width: 600px) {
 

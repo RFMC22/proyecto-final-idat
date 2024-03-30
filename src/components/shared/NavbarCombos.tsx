@@ -24,26 +24,51 @@ const NavbarCombos = () => {
   };
 
   return (
-    <header className="contenedor-navegacion-combos">
-      <nav className="navegacion-seccion-combos">
-        <ul className={isExpanded ? '' : 'collapsed'}>
-          {Object.values(FoodTypes).map((foodType, index) => (
-            <Link
-              key={index}
-              to={`${PathConstants.MENU}/${foodType.path}`}
-              onClick={() => handleItemClick(index)}
-            >
-              <li
-                key={foodType.path}
-                className={index === selectedItem ? 'selec-amarillo' : ''}
+    <div className='nav-responsivo cencelado'>
+      <header className="contenedor-navegacion-combos">
+        <nav className="navegacion-seccion-combos">
+          <ul className={isExpanded ? '' : 'collapsed'}>
+            {Object.values(FoodTypes).map((foodType, index) => (
+              <Link
+                key={index}
+                to={`${PathConstants.MENU}/${foodType.path}`}
+                onClick={() => handleItemClick(index)}
               >
-                <a>{foodType.name}</a>
-              </li>
-            </Link>
-          ))}
-        </ul>
-      </nav>
-    </header>
+                <li
+                  key={foodType.path}
+                  className={index === selectedItem ? 'selec-amarillo' : ''}
+                >
+                  <a>{foodType.name}</a>
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </nav>
+      </header>
+      <div className='responsivo-activo'>
+        <header className="contenedor-navegacion-combos">
+          <nav className="navegacion-seccion-combos">
+            <ul className={isExpanded ? '' : 'collapsed'}>
+              {Object.values(FoodTypes).map((foodType, index) => (
+                <Link
+                  key={index}
+                  to={`${PathConstants.MENU}/${foodType.path}`}
+                  onClick={() => handleItemClick(index)}
+                >
+                  <li
+                    key={foodType.path}
+                    className={index === selectedItem ? 'selec-amarillo' : ''}
+                  >
+                    <a>{foodType.name}</a>
+                  </li>
+                </Link>
+              ))}
+            </ul>
+          </nav>
+        </header>
+        
+      </div>
+    </div>
   );
 };
 

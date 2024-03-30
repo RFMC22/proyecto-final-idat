@@ -8,8 +8,9 @@ import { CiTrash } from 'react-icons/ci';
 import { GoChevronDown } from 'react-icons/go';
 import { IoIosClose } from 'react-icons/io';
 import useShopping from '../../hooks/useShopping';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { GoAlert } from 'react-icons/go';
+import { Counter } from '..';
 import { PathConstants } from '../../utils';
 
 const Cart = () => {
@@ -26,10 +27,19 @@ const Cart = () => {
   let accumulateSubTotal = 0;
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleClose = () => {
     setCartState(false);
-    navigate(-1);
+    if (location.pathname === PathConstants.CHECKOUT) {
+      navigate(1);
+    } else {
+      navigate(-1);
+    }
+  };
+  const handleGoToCheckout = () => {
+    setCartState(false);
+    navigate(PathConstants.CHECKOUT);
   };
   const [complementos, setComplementos] = useState<ComplementoResponse>({});
 
@@ -45,7 +55,7 @@ const Cart = () => {
   const isDisabled = () => {
     const currentDate = new Date();
     const currentHour = currentDate.getHours();
-    return currentHour >= 23 || currentHour < 11; // Disable button between 11 pm and 10 am
+    return currentHour >= 23 || currentHour < 11 // Disable button between 11 pm and 10 am
   };
 
   if (Object.keys(shoppingList).length !== 0) {
@@ -278,13 +288,15 @@ const Cart = () => {
 
                 <div className="cart-container cart-container-sticky">
                   <div className="btns">
-                    <button className="btn btn-rojo" disabled={isDisabled()}>
-                      <div className="circle">1</div>
-                      IR A PAGAR <span>{`S/. ${accumulateSubTotal}`}</span>
-                    </button>
-                    <button className="btn btn-blanco" onClick={handleClose}>
-                      SEGUIR COMPRANDO
-                    </button>
+                    <Link to={PathConstants.CHECKOUT}>
+                      <button className="btn btn-rojo" disabled={isDisabled()} onClick={handleGoToCheckout}>
+                        <div className="circle">1</div>
+                        IR A PAGAR <span>{`S/. ${accumulateSubTotal}`}</span>
+                      </button>
+                    </Link>
+
+
+                    <button className="btn btn-blanco">SEGUIR COMPRANDO</button>
                   </div>
                 </div>
               </>
