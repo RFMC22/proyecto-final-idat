@@ -1,8 +1,11 @@
-import axios from 'axios';
 
-export async function getPreguntas(): Promise<any> {
-  const respuesta = await axios.get(
-    import.meta.env.VITE_API_URL_PREGUNTAS_PEDIDOS
+import { PreguntasPedido, PreguntasResponse } from '../interfaces';
+import { configGetCollection } from './fetchBase';
+import { CollectionsConstants } from '../utils';
+
+export async function getPreguntas(): Promise<PreguntasResponse> {
+  const data = await configGetCollection<PreguntasPedido>(
+    CollectionsConstants.PREGUNTAS_PEDIDOS
   );
-  return respuesta;
+  return { data: data || [] };
 }

@@ -1,5 +1,5 @@
 import { PreguntasPedido } from '../';
 
-export interface OrdenesResponse {
+export interface PreguntasResponse {
   data?: PreguntasPedido[];
 }

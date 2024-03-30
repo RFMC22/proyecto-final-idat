@@ -42,12 +42,13 @@ const AppRouter = () => {
             element={<Cart />}>
           </Route>
           <Route
-          path={PathConstants.ADMIN_PRODUCT}
-          element={<Product/>}
+            path={PathConstants.ADMIN_PRODUCT}
+            element={<Product />}
           ></Route>
+          <Route path={PathConstants.CHECKOUT} element={<Checkout />}></Route>
           <Route
-            path={PathConstants.CHECKOUT}
-            element={<Checkout />}
+            path={PathConstants.RECOJO_ID}
+            element={<Recojo />}
           ></Route>
           <Route
             path={PathConstants.RECOJO_ID}
