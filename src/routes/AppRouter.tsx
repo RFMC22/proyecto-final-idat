@@ -17,7 +17,6 @@ const AppRouter = () => {
         <Route
           path={PathConstants.INDEX}
           element={<Root />}
-          errorElement={<Error404 />}
         >
           <Route index element={<Home />}></Route>
           <Route path={PathConstants.MENU_TYPE} element={<Combos />}></Route>
@@ -56,6 +55,7 @@ const AppRouter = () => {
             element={<Recojo />}
           ></Route>
         </Route>
+        <Route path="*" element={<Error404 />} />
       </Routes>
       {background && (
         <Routes>
