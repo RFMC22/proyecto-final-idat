@@ -7,17 +7,18 @@ const MenuCards = ({ menuCardOptions }: any) => {
     <section className="MenuCards">
       {menuCardOptions.map((menuOption: any) => {
         return (
-          <article
-            className="flex flex-col width-100 position-relative"
-            key={menuOption.id}
-          >
+          <article className="flex flex-col width-100" key={menuOption.id}>
             <Link to={menuOption.link}>
               <div className="imageContainer">
                 <img src={menuOption.img} alt="menu1" />
               </div>
 
               <div className="flex flex-center">
-                <BlueBtn text="Ver todos" myclass="bluetBtn" setSaveLocalStorage={''} />
+                <BlueBtn
+                  text="Ver todos"
+                  myclass="bluetBtn"
+                  setSaveLocalStorage={''}
+                />
               </div>
             </Link>
 

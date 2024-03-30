@@ -25,10 +25,10 @@ import { useEffect, useState } from 'react';
 import { MenuResponse } from '../interfaces/';
 import { getMenuOptions } from '../services/';
 import { TabTitle } from '../utils/GeneralFunctions';
+import ErrorServer from '../components/shared/ErrorServer';
 
 const Menu = () => {
-
-  TabTitle("¡Descubre todas las delicias que tenemos para ti en nuestro menú!")
+  TabTitle('¡Descubre todas las delicias que tenemos para ti en nuestro menú!');
   const slidesArray: Array<string> = [
     slide1,
     slide2,
@@ -55,13 +55,17 @@ const Menu = () => {
 
   useEffect(() => {
     const getMenuData = async () => {
-      const data = await getMenuOptions();
-      return setMenuCardsOptions(data);
+      try {
+        const data = await getMenuOptions();
+        return setMenuCardsOptions(data);
+      } catch (error) {
+        console.log(error);
+      }
     };
     getMenuData();
   }, []);
 
-
+  console.log(menuCardsOptions.data?.length);
   return (
     <section className="Menu container-m sectionContainer">
       <h1 className="menuTitle">ELIGE TU MENÚ DE BEMBOS</h1>
@@ -69,13 +73,11 @@ const Menu = () => {
       <div className="container-m ">
         <MenuSwiper slidesArray={slidesArray} display={'none-m'} />
         <MenuSwiper slidesArray={slidesMobileArray} display={'none-d'} />
-        {menuCardsOptions.data ? (
+        {menuCardsOptions.data && menuCardsOptions.data?.length !== 0 ? (
           <MenuCards menuCardOptions={menuCardsOptions.data} />
         ) : (
-          ''
+          <ErrorServer />
         )}
-
-
       </div>
     </section>
   );
