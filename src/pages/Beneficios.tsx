@@ -62,14 +62,14 @@ const Beneficios = () => {
   const getBeneficiosData = async () => {
     try {
       const response = await getBeneficios();
+
       // setBeneficiosOptions(response);
       if (response.data !== undefined) {
+        console.log(response.data);
         for (const beneficio of response.data) {
           const { relacion, frienzone, gileos, destinados } = beneficio;
-
           if (relacion) {
             setRelacionData(relacion);
-            console.log(relacion);
           }
           if (frienzone) {
             setFriendzoneData(frienzone);
@@ -87,10 +87,13 @@ const Beneficios = () => {
       console.log(error);
     }
   };
+
+  console.log(relacion);
   useEffect(() => {
     getBeneficiosData();
     getDataOrders();
   }, []);
+
 
   const cardDefault = { nombre: '', img: '', link: '', id: 1, precio: 0 };
 
@@ -130,6 +133,7 @@ const Beneficios = () => {
     }
   };
 
+  console.log(clickedData);
   return (
     <section className="container">
       <div className="Beneficios">
@@ -191,7 +195,11 @@ const Beneficios = () => {
               ))
             ) : (
               // Render default cards when clickedData is undefined or empty
-              <ErrorServer />
+              friendzoneData &&
+              friendzoneData.map((relationship) => (
+                <SwiperSlide key={relationship.id}>
+                  <Card {...relationship} />
+                </SwiperSlide>))
             )}
           </SwiperComponent>
         </section>
