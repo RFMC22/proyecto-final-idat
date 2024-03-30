@@ -68,6 +68,7 @@ const Beneficios = () => {
 
           if (relacion) {
             setRelacionData(relacion);
+            console.log(relacion);
           }
           if (frienzone) {
             setFriendzoneData(frienzone);
