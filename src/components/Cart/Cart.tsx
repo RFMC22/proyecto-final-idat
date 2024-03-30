@@ -12,11 +12,8 @@ import { useNavigate } from 'react-router-dom';
 import { GoAlert } from 'react-icons/go';
 
 const Cart = () => {
-
-  
   const { setCartState, cartState, shoppingList, setNumberOrders } =
     useShopping();
-
 
   let subTotal = [
     { id: 1, subTotal: 0 },
@@ -114,7 +111,6 @@ const Cart = () => {
           ).toFixed(2)
         );
       });
-
 
     subTotal &&
       subTotal.forEach((sub: any) => {
@@ -243,10 +239,7 @@ const Cart = () => {
 
                           <div className="shopping-right">
                             <div className="actions">
-                              <CiTrash
-                                className="trash-icon"
-                                
-                              />
+                              <CiTrash className="trash-icon" />
                               <p className="readMore" onClick={handleReadMore}>
                                 Leer más
                               </p>
@@ -288,7 +281,9 @@ const Cart = () => {
                       <div className="circle">1</div>
                       IR A PAGAR <span>{`S/. ${accumulateSubTotal}`}</span>
                     </button>
-                    <button className="btn btn-blanco">SEGUIR COMPRANDO</button>
+                    <button className="btn btn-blanco" onClick={handleClose}>
+                      SEGUIR COMPRANDO
+                    </button>
                   </div>
                 </div>
               </>
