@@ -280,7 +280,17 @@
 }
 
 .contenedor-img {
-    width: 30%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.contenedor-img img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
 }
 
 .contenedor-txt {
@@ -301,7 +311,7 @@
 
 .contenedor-detalle {
     width: 100%;
-    height: 210px;
+    height: 270px;
     overflow-x: auto;
 }
 
@@ -330,4 +340,84 @@
 
 .contenedor-error {
     width: 50%;
+}
+
+.seccion-detalle-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+}
+
+.sec-final {
+    border-top: 2px solid #ccc;
+}
+
+.sec-final p {
+    color: #111;
+    font-size: 20px;
+}
+
+.desc-left {
+    font-weight: 700;
+    color: #676767;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.desc-precio {
+    color: #030819;
+    font-weight: 700;
+}
+
+.red-color {
+    color: #f0000f;
+}
+
+.title-encabezado-detalle {
+    color: var(--blue);
+    padding: 15px 0;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.search-cupon {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--blue);
+    max-width: 180px;
+}
+
+.btn-cupon {
+    margin-left: 10px;
+    padding: 10px 25px;
+    background: #fff;
+    border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .25);
+    border-radius: 11px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #757575;
+    cursor: pointer;
+}
+
+.cupon-descuento {
+    padding-bottom: 50px;
+}
+
+.contenedor-body-2 {
+    font-family: var(--kulristaB);
+    padding: 0 40px;
+}
+
+.swal2-actions.actions-class.pruebaclass {
+    display: block;
+    grid-column-end: 1;
+    gap: 10px;
+    padding-bottom: 15px;
+    margin-top: 5px;
 }
