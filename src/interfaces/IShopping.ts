@@ -7,6 +7,7 @@ import {
   PromocionDosResponse,
   PromocionPersonalResponse,
 } from '.';
+import { Pollo } from './model/Pollo';
 
 export interface cartStateProps {}
 
@@ -33,7 +34,7 @@ export type iShoppingType = {
   ) => void;
   getDataPromociones: () => Promise<void>;
   getPolloData: () => Promise<void>;
-  polloQuestions: PolloResponse;
+  polloQuestions: Pollo[];
   orderInfo: {
     name: string;
     description: string;
@@ -73,7 +74,7 @@ export const iShoppingContext = {
   promosCompartir: {},
   complementos: {},
   cupones: {},
-  polloQuestions: {},
+  polloQuestions: [],
   generalCounter: 1,
   setGeneralCounter: () => {},
   getDataPromociones: async () => {},

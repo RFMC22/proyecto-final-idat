@@ -21,6 +21,7 @@ import {
   iShoppingType,
 } from '../interfaces/IShopping';
 import { getCupones } from '../services/fetchCupones';
+import { Pollo } from '../interfaces/model/Pollo';
 
 const ShoppingContext = createContext<iShoppingType>(iShoppingContext);
 
@@ -42,7 +43,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     useState<PromocionCompartirResponse>({});
   const [complementos, setComplementos] = useState<ComplementoResponse>({});
   const [cupones, setCupones] = useState<CuponResponse>({});
-  const [polloQuestions, setPolloQuestions] = useState<PolloResponse>({});
+  const [polloQuestions, setPolloQuestions] = useState<Pollo[]>([]);
   const [baseList, setBaseList] = useState<OrderItem[]>([]);
   let extras = {};
   let hamburguerOrder = {};
@@ -50,7 +51,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   const [acumulateList, setAccumulateList] = useState({});
   const [saveLocalStorage, setSaveLocalStorage] = useState(false);
   const [shoppingList, setShoppingList] = useState({});
-  const [numberOrders, setNumberOrders]=useState(0)
+  const [numberOrders, setNumberOrders] = useState(0);
   // Functions for Fetching
   const getDataPromociones = async () => {
     const [promos, promosD, promosC, complements, cupons] = await Promise.all([
@@ -69,8 +70,13 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   };
 
   const getPolloData = async () => {
-    const polloData = await getPollo();
-    polloData && setPolloQuestions(polloData);
+    try {
+      const polloData = await getPollo();
+      polloData && setPolloQuestions(polloData);
+      polloData && console.log(polloData);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   // Functions for the Shopping Cart
@@ -128,7 +134,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   }, [location.pathname]);
 
   const orderTheList = (baseList: any) => {
-    console.log(baseList);
+    // console.log(baseList);
     const burguerItem = baseList.filter((item: any) => item.question === 1);
     if (burguerItem[0]) {
       hamburguerOrder = {
@@ -224,18 +230,10 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     let allItemsFiltered = [];
     for (let i = 0; i < localStorage.length; i++) {
       let key = localStorage.key(i);
-
-      // Check if the key represents an item you've saved
-      // You can add additional checks here if needed
-      // For example, you might want to filter keys that start with a specific prefix
       if (key && key.startsWith('order_')) {
-        // Retrieve the value associated with the key
         let itemString = localStorage.getItem(key);
         if (itemString !== null) {
-          // Check if itemString is not null
           let item = JSON.parse(itemString);
-
-          // Push the item to the array
           allItems.push(item);
         }
 
@@ -248,8 +246,6 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   useEffect(() => {
     getFromLocalStorage();
   }, []);
-
-  
 
   return (
     <ShoppingContext.Provider
@@ -276,7 +272,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         getFromLocalStorage,
         shoppingList,
         setNumberOrders,
-        numberOrders
+        numberOrders,
       }}
     >
       {children}

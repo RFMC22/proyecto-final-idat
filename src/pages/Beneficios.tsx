@@ -8,7 +8,7 @@ import { Accordion, SwiperComponent } from '../components/shared';
 import { Navigation } from 'swiper/modules';
 import { SwiperSlide } from 'swiper/react';
 import { BeneficioHeader, Card } from '../components';
-import { BeneficiosResponse } from '../interfaces/responses/BeneficiosResponse';
+// import { BeneficiosResponse } from '../interfaces/responses/BeneficiosResponse';
 import { getBeneficios } from '../services/fetchBeneficios';
 import { Destinado } from '../interfaces/model/Beneficios';
 
@@ -16,8 +16,8 @@ const Beneficios = () => {
   const [preguntasFrecuentesData, setPreguntasFrecuentesData] =
     useState<PreguntasFrecuente[]>();
 
-  const [beneficiosOptions, setBeneficiosOptions] =
-    useState<BeneficiosResponse>({});
+  // const [beneficiosOptions, setBeneficiosOptions] =
+  //   useState<BeneficiosResponse>({});
   const [relacionData, setRelacionData] = useState<Destinado[] | undefined>();
   const [friendzoneData, setFriendzoneData] = useState<
     Destinado[] | undefined
@@ -55,12 +55,13 @@ const Beneficios = () => {
       return response && setPreguntasFrecuentesData(response.data);
     } catch (error) {
       console.log(error);
+      // console.log(beneficiosOptions);
     }
   };
   const getBeneficiosData = async () => {
     try {
       const response = await getBeneficios();
-      setBeneficiosOptions(response);
+      // setBeneficiosOptions(response);
       if (response.data !== undefined) {
         for (const beneficio of response.data) {
           const { relacion, frienzone, gileos, destinados } = beneficio;

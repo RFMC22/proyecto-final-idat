@@ -290,7 +290,7 @@ const Orders = () => {
                       id={2}
                     >
                       <section className="items-container">
-                        {polloQuestions[1].preguntas[0].combinaciones &&
+                        {polloQuestions[1].preguntas && polloQuestions[1].preguntas[0].combinaciones &&
                           polloQuestions[1].preguntas[0].combinaciones.map(
                             (extra: any) => {
                               return (
@@ -327,7 +327,7 @@ const Orders = () => {
                       id={2}
                     >
                       <section className="items-container">
-                        {polloQuestions[1].preguntas[1].combinaciones &&
+                        {polloQuestions[1].preguntas && polloQuestions[1].preguntas[1].combinaciones &&
                           polloQuestions[1].preguntas[1].combinaciones.map(
                             (extra: any) => {
                               return (
