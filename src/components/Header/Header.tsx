@@ -7,9 +7,11 @@ import iconStore from './../../assets/images/icon-store.svg';
 import { Link } from 'react-router-dom';
 import { PathConstants } from '../../utils';
 import useShopping from '../../hooks/useShopping';
+import useShopping from '../../hooks/useShopping';
 
 const Header = () => {
   const [openHamburguer, setOpenHamburguer] = useState<boolean>(false);
+  const {selectLocal} = useShopping();
   const {selectLocal} = useShopping();
 
   const handleOpenHamburguer = () => {

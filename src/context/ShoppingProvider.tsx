@@ -11,6 +11,7 @@ import {
 import {
   getComplementos,
   getLocales,
+  getLocales,
   getPollo,
   getPromosCompartir,
   getPromosDos,
@@ -71,6 +72,11 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     setComplementos(complements);
     setCupones(cupons);
   };
+
+  const getDataLocales = async () => {
+    const localesData = await getLocales();
+    setLocales(localesData);
+  }
 
   const getDataLocales = async () => {
     const localesData = await getLocales();
@@ -261,6 +267,7 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
   useEffect(() => {
     getFromLocalStorage();
     getLocalStorage();
+    getLocalStorage();
   }, []);
 
   return (
@@ -276,6 +283,8 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         complementos,
         cupones,
         getDataPromociones,
+        getDataLocales,
+        locales,
         getDataLocales,
         locales,
         polloQuestions,

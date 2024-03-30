@@ -4,11 +4,11 @@ import { useEffect } from 'react';
 import { GrUserManager } from 'react-icons/gr';
 import { SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Grid } from 'swiper/modules';
-import { SwiperComponent } from '../components/shared';
-import { Card, Tabs } from '../components';
-import useShopping from '../hooks/useShopping';
-import { Link } from 'react-router-dom';
-import { PathConstants } from '../utils';
+import { SwiperComponent } from "../components/shared";
+import { Card, Tabs } from "../components";
+import useShopping from "../hooks/useShopping";
+import { PathConstants } from "../utils";
+import { Link } from "react-router-dom";
 
 const Promociones = () => {
   const {
@@ -19,7 +19,8 @@ const Promociones = () => {
     complementos,
     cupones,
     setCartState,
-    selectLocal,
+    selectLocal,,
+          selectLocal
   } = useShopping();
   TabTitle('Promociones de Hamburguesas Bembos | Delivery Perú');
   const { distrito, sede } = selectLocal;

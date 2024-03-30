@@ -51,6 +51,10 @@ const AppRouter = () => {
             path={PathConstants.RECOJO_ID}
             element={<Recojo />}
           ></Route>
+          <Route
+            path={PathConstants.RECOJO_ID}
+            element={<Recojo />}
+          ></Route>
         </Route>
       </Routes>
       {background && (
