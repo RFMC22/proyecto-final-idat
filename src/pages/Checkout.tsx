@@ -6,20 +6,72 @@ import iconMail from '../../public/iconMail.svg'
 import iconPhone from '../../public/iconPhone.svg'
 import iconDni from '../../public/iconDni.svg'
 import incognita from '../../public/icognita.svg'
-import amexTarjeta from '../../public/amexTarjeta.svg'
-import visaTarjeta from '../../public/visaTarjeta.svg'
+import imgYape from '../../public/imgYape.jpg'
 import yape from '../../public/yape.svg'
 import { useForm } from 'react-hook-form'
 import useShopping from '../hooks/useShopping'
+import { useEffect } from 'react'
+import { configPostCollection } from '../services/fetchBase'
+import { CollectionsConstants } from '../utils'
+import Swal from 'sweetalert2'
 
 const Checkout = () => {
-    const { register, handleSubmit, formState: { errors }, setValue, watch } = useForm()
+    const { register, handleSubmit, formState: { errors }, setValue, watch, reset } = useForm();
     const selectedPaymentMethod = watch('metodoPago');
-    const { shopingList } = useShopping()
+    const { shoppingList, getFromLocalStorage } = useShopping();
+
+
+    let ordersInfo = {}
+
+    let accumulateSubTotal = 0;
+
+    if (Array.isArray(shoppingList)) {
+        shoppingList.forEach((item: any) => {
+            accumulateSubTotal += item.unit_price;
+            accumulateSubTotal = parseFloat(accumulateSubTotal.toFixed(2));
+        });
+    }
+
     const onSubmit = handleSubmit((data) => {
-        console.log(data)
-    })
-    console.log(shopingList)
+
+
+        ordersInfo = {
+            items: shoppingList,
+            personal_info: data
+        }
+        const postData = async () => {
+            console.log(ordersInfo)
+            await configPostCollection(CollectionsConstants.ORDERS, ordersInfo);
+
+        }
+        postData()
+        reset()
+    });
+    useEffect(() => {
+        getFromLocalStorage();
+    }, []);
+
+    const handlePayment = () => {
+        Swal.fire({
+            title: 'Pagá con yape',
+            imageUrl: imgYape,
+            imageWidth: 150,
+            imageHeight: 150,
+            timer: 4000,
+            showCancelButton: true,
+            confirmButtonText: 'Pagar',
+            cancelButtonText: 'Cancelar',
+            showCloseButton: true,
+            customClass: {
+                container: 'container-class-2',
+                actions: 'actions-class pruebaclass',
+                popup: 'swal2-popup noGrid',
+                image: 'swal2-image img-yape',
+                cancelButton: 'swal2-cancel',
+                confirmButton: 'swal2-confirm'
+            }
+        });
+    };
     return (
         <div className='contenedor-maximo'>
             <section className='checkout-separacion'>
@@ -148,10 +200,11 @@ const Checkout = () => {
                             <div className='contenedor-metodos-pagos'>
                                 <h4>Pago online</h4>
                                 <div className='item-metodos'>
+
                                     <li className='metodo-tipo-incognita'><img src={incognita} /></li>
-                                    <button className={`metodo-tipo ${selectedPaymentMethod === 'visa' ? 'selected' : ''}`} type="button" onClick={() => setValue('paymentMethod', 'visa')}><img src={visaTarjeta} /></button>
                                     <button className={`metodo-tipo ${selectedPaymentMethod === 'yape' ? 'selected' : ''}`} type="button" onClick={() => setValue('paymentMethod', 'yape')}><img src={yape} /></button>
-                                    <button className={`metodo-tipo ${selectedPaymentMethod === 'amex' ? 'selected' : ''}`} type="button" onClick={() => setValue('paymentMethod', 'amex')}><img src={amexTarjeta} /></button>
+                                    <button className={`metodo-tipo ${selectedPaymentMethod === 'yape' ? 'selected' : ''}`} type="button" onClick={handlePayment}><img src={yape} /></button>
+
                                 </div>
                             </div>
                             <p>Tipo de comprobante</p>
@@ -187,9 +240,14 @@ const Checkout = () => {
                                 <div className='terms-item'>
 
                                     <input type="checkbox" id='privacidad-term'
-                                        {...register('privacyTerms')}
+                                        {...register('privacyTerms', {
+                                            required: true
+                                        })}
                                     />
                                     <label htmlFor="privacidad-term">Acepto los <a> términos y condiciones y política de privacidad de datos personales.</a></label>
+                                    {
+                                        errors.phoneNumber && <h5 className='mensaje-error'>Debe aceptar los terminos y condiciones.</h5>
+                                    }
                                 </div>
 
                             </div>
@@ -200,48 +258,51 @@ const Checkout = () => {
             </section>
             <aside className='checkout-separacion'>
                 <h2 className='title-checkout'>DETALLE DE PEDIDO</h2>
-                <div className='contenedor-detalle contenedor-body'>
-                    <div className='detalle-item'>
-                        <div className='contenedor-img'>
-                            <img src="" />
+                <div className='contenedor-detalle contenedor-body-2'>
+                    {(Object.keys(shoppingList).length !== 0) && shoppingList.map((item: any, index: number) => (
+                        <div className='detalle-item' key={index}>
+                            <div className='contenedor-img'>
+                                <img src='https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-cyber-parrillero-marzo-2024.jpg' alt='Imagen del producto' />
+                            </div>
+                            <div className='contenedor-txt'>
+                                <p className='nombre-pedido'>{`${item.quantity} x ${item.name}`}</p>
+                                <p className='precio-detalle'>{`S/. ${item.unit_price}`}</p>
+                                <a href='#'>Ver detalle</a>
+                            </div>
                         </div>
-                        <div className='contenedor-txt'>
-                            <p className='nombre-pedido'>1 x Combo Extrema</p>
-                            <p className='precio-detalle'>S/. 32.80</p>
-                            <a href="">Ver detalle</a>
-                        </div>
-                    </div>
-                    <div className='detalle-item'>
-                        <div className='contenedor-img'>
-                            <img src="" />
-                        </div>
-                        <div className='contenedor-txt'>
-                            <p className='nombre-pedido'>1 x Combo Extrema</p>
-                            <p className='precio-detalle'>S/. 32.80</p>
-                            <a href="">Ver detalle</a>
-                        </div>
-                    </div>
-                    <div className='detalle-item'>
-                        <div className='contenedor-img'>
-                            <img src="" />
-                        </div>
-                        <div className='contenedor-txt'>
-                            <p className='nombre-pedido'>1 x Combo Extrema</p>
-                            <p className='precio-detalle'>S/. 32.80</p>
-                            <a href="">Ver detalle</a>
-                        </div>
-                    </div>
-                    <div className='detalle-item'>
-                        <div className='contenedor-img'>
-                            <img src="" />
-                        </div>
-                        <div className='contenedor-txt'>
-                            <p className='nombre-pedido'>1 x Combo Extrema</p>
-                            <p className='precio-detalle'>S/. 32.80</p>
-                            <a href="">Ver detalle</a>
-                        </div>
-                    </div>
+                    ))}
+
                 </div>
+                <div className='detalle-costo contenedor-body-2'>
+                    <p className='title-encabezado-detalle'>Ingresa tu cupón de descuento</p>
+                    <div className='cupon-descuento'>
+                        <input type="search" id='cupon' className='search-cupon' placeholder='Código' />
+                        <button type='submit' id='cupon' className='btn-cupon'>Aplicar</button>
+                    </div>
+
+                    <div className='contenedor-detalle-precio'>
+                        <div className='seccion-detalle-item'>
+                            <p className='desc-left'>Subtotal</p>
+                            <p className='desc-precio'>{`S/. ${accumulateSubTotal.toFixed(2)}`}</p>
+                        </div>
+                        <div className='seccion-detalle-item'>
+                            <p className='desc-left'>Envío</p>
+                            <p className='desc-precio'>S/. 0.00</p>
+                        </div>
+                        <div className='seccion-detalle-item'>
+                            <p className='desc-left'>Puntos de compra</p>
+                            <p className='desc-precio red-color'>0pts</p>
+                        </div>
+                        <div className='seccion-detalle-item sec-final'>
+                            <p className='desc-left'>Total</p>
+                            <p className='desc-precio'>{`S/. ${accumulateSubTotal.toFixed(2)}`}</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
             </aside>
         </div>
     )
