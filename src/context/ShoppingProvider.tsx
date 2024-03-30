@@ -11,7 +11,6 @@ import {
 import {
   getComplementos,
   getLocales,
-  getLocales,
   getPollo,
   getPromosCompartir,
   getPromosDos,
@@ -78,10 +77,6 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
     setLocales(localesData);
   }
 
-  const getDataLocales = async () => {
-    const localesData = await getLocales();
-    setLocales(localesData);
-  }
 
   const getPolloData = async () => {
     try {
@@ -283,8 +278,6 @@ const ShoppingProvider = ({ children }: ShoppingProviderProps) => {
         complementos,
         cupones,
         getDataPromociones,
-        getDataLocales,
-        locales,
         getDataLocales,
         locales,
         polloQuestions,

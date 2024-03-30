@@ -19,8 +19,7 @@ const Promociones = () => {
     complementos,
     cupones,
     setCartState,
-    selectLocal,,
-          selectLocal
+    selectLocal,
   } = useShopping();
   TabTitle('Promociones de Hamburguesas Bembos | Delivery Perú');
   const { distrito, sede } = selectLocal;

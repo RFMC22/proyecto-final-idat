@@ -139,7 +139,6 @@ const Cart = () => {
             <div className="cart-header flex">
               <p className="cart-address">
                 Entregar en: <Link to={`${PathConstants.RECOJO}/recojo`} className='location'> {selectLocal.sede} </Link>
-                Entregar en: <Link to={`${PathConstants.RECOJO}/recojo`} className='location'> {selectLocal.sede} </Link>
               </p>
               <GoChevronDown className="select" />
               <IoIosClose className="close" onClick={handleClose} />
