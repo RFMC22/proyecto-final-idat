@@ -3,7 +3,7 @@ import { database } from "../firebase/Config"
 
 export const configGetCollection = async <T>(collect:string): Promise<T[] | undefined> => {
   try {
-    const collectionReference = collection(database, collects);
+    const collectionReference = collection(database, collect);
     const dataDocs = await getDocs(collectionReference);
     if (dataDocs) {
       const data = dataDocs.docs.map(doc => doc.data() as T);
